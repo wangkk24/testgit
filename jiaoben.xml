@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<buildScripts>
+			<buildScript tool="coverity" buildFile="build.bat" /> <!-Coverity编译脚本文件配置 -->
+			
+			<buildScript tool="fortify" buildFile="fortify.bat" /> <!-fortify编译脚本文件配置 -->
+			
+			<buildScript tool="klocwork" buildFile="build.bat" /> <!-klocwork编译脚本文件配置 -->
+			
+			<buildScript tool="secbrella" buildFile="build.bat" /> <!-secbrella编译脚本文件配置 -->
+			
+</buildScripts>
