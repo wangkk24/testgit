@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.pukka.ydepg.moudule.multviewforstb.multiview.module.play.LandPlayControlView
+        android:id="@+id/playcontrolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:background="@color/textTipBg"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/player_text_size"
+        tools:text="100M/s" />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/aerialview_bg"
+        android:layout_width="@dimen/aerialView_width"
+        android:layout_height="@dimen/aerialView_height"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone" />
+
+    <com.pukka.ydepg.moudule.multviewforstb.multiview.module.view.AerialView
+        android:id="@+id/aerialview"
+        android:layout_width="192dp"
+        android:layout_height="108dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:visibility="gone"
+        app:aerialBgColor="@color/aerialBgColor"
+        app:aerialColor="@color/aerialColor"
+        app:aerialTextColor="@color/aerialTextColor"
+        app:bgColor="@color/aerialViewBg"
+        app:drawBg="false" />
+
+    <com.pukka.ydepg.moudule.multviewforstb.multiview.module.view.AngleView
+        android:id="@+id/angleview"
+        android:visibility="gone"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_width="340dp"
+        android:layout_height="340dp"/>
+
+    <com.pukka.ydepg.moudule.multviewforstb.multiview.module.view.LoadingTextView
+        android:id="@+id/loading_view"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+    <ViewStub
+        android:id="@+id/logcat"
+        android:layout="@layout/recyclerview_logcat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:focusable="false">
+    <!--用户信息-->
+    <RelativeLayout
+        android:id="@+id/rl_userinfo"
+        android:layout_width="@dimen/my_function_userinfo_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft">
+
+        <TextView
+            android:id="@+id/tv_userinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="@string/launcher_my_user_info"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/my_userInfo_textSize"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_userinfo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_userinfo_title"
+            android:layout_marginTop="@dimen/margin_26"
+            android:background="@drawable/select_bg_main_myfuntem"
+            android:focusable="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_userinfo_avatar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_function_userinfo_height"
+                android:focusable="false"
+                android:visibility="visible"
+                android:gravity="center_vertical">
+
+                <com.pukka.ydepg.moudule.featured.view.CircleImageView
+                    android:id="@+id/cirleIv_my_function_avatar"
+                    android:layout_width="@dimen/my_function_userinfo_avatar_width"
+                    android:layout_height="@dimen/my_function_userinfo_avatar_width"
+                    android:layout_marginLeft="@dimen/margin_30"
+                    android:focusable="false"
+                    android:src="@drawable/user_default_avatar" />
+
+                <TextView
+                    android:id="@+id/tv_my_function_busness_account_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:layout_toRightOf="@id/cirleIv_my_function_avatar"
+                    android:focusable="false"
+                    android:text="@string/my_user_name"
+                    android:textColor="@color/white_0"
+                    android:textSize="@dimen/my_productEnd_textSize" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_my_function_busness_account_title"
+                    android:layout_below="@id/tv_my_function_busness_account_title"
+                    android:focusable="false"
+                    android:textColor="@color/white_0"
+                    android:textSize="@dimen/my_productEnd_textSize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_userinfo_text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/my_function_userinfo_height"
+                android:focusable="false"
+                android:padding="@dimen/margin_8"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+
+                    <com.pukka.ydepg.common.extview.TextViewExt
+                        android:id="@+id/tv_my_function_busness_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_userInfo"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:maxEms="15"
+                        android:singleLine="true"
+                        android:text="@string/my_userinfo_bussness_account"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/update_text_size" />
+
+                    <com.pukka.ydepg.common.extview.TextViewExt
+                        android:id="@+id/tv_productEnd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_userInfo"
+                        android:focusable="false"
+                        android:text="@string/launcher_my_product_end"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/update_text_size" />
+
+                    <com.pukka.ydepg.common.extview.TextViewExt
+                        android:id="@+id/tv_deviceVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_userInfo"
+                        android:focusable="false"
+                        android:text="@string/launcher_my_device_version"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/update_text_size" />
+
+                    <com.pukka.ydepg.common.extview.TextViewExt
+                        android:id="@+id/tv_versionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_userInfo"
+                        android:focusable="false"
+                        android:text="@string/launcher_my_stbId"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/update_text_size" />
+
+
+                    <com.pukka.ydepg.common.extview.TextViewExt
+                        android:id="@+id/tv_stbId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/tv_userInfo"
+                        android:focusable="false"
+                        android:text="@string/launcher_my_stbId"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/update_text_size" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/my_function_recycler_width_882"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rl_userinfo"
+        android:layout_marginLeft="@dimen/function_item_margin_16"
+        android:layout_marginRight="@dimen/function_item_margin_70"
+        android:layout_toRightOf="@id/rl_userinfo"
+        android:clipToPadding="true"
+        android:clipChildren="true"
+        android:focusable="false"
+        >
+
+        <TextView
+            android:id="@+id/tv_my_function_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="@string/launcher_my_function"
+            android:paddingStart="@dimen/margin_2"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/my_userInfo_textSize"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+
+        <com.pukka.ydepg.customui.tv.widget.RecyclerViewTV
+            android:id="@+id/rv_my_fragment_function"
+            android:layout_width="@dimen/my_function_recycler_width_882"
+            android:layout_height="@dimen/my_moreText_margin_top"
+            android:layout_below="@+id/tv_my_function_title"
+            android:paddingStart="@dimen/margin_3.75"
+            android:paddingEnd="@dimen/margin_3.75"
+            android:layout_marginTop="@dimen/margin_1.5"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:visibility="visible"
+            android:focusable="false">
+
+        </com.pukka.ydepg.customui.tv.widget.RecyclerViewTV>
+    </RelativeLayout>
+</merge>

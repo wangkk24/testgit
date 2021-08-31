@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.pushmessage.view.MessageDialogManageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_0">
+    <RelativeLayout
+        android:id="@+id/text_rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/content_text_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/my_moreText_margin_top"
+            android:layout_marginRight="@dimen/my_moreText_margin_top"
+            android:layout_marginTop="@dimen/pan_layer_height"
+            android:lineSpacingExtra="8dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textColor="@color/marquee_color"
+            android:textSize="@dimen/order_item_name_text_size" />
+
+        <TextView
+            android:id="@+id/ok_text_tv"
+            android:layout_width="@dimen/message_192"
+            android:layout_height="@dimen/message_48"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/orderpay_llproductprice_margintop"
+            android:background="@drawable/select_message_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/message_i_know"
+            android:textColor="@color/marquee_color"
+            android:textSize="@dimen/order_item_time_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/play_rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="@dimen/dialog_message_width"
+            android:layout_height="@dimen/dialog_message_height"
+            android:layout_marginTop="@dimen/dialog_message_top"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster_bb" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/paylink_close_btn_margintop"
+            android:layout_marginTop="@dimen/paylink_close_btn_margintop"
+            android:textColor="@color/white_0"
+            android:textSize="@dimen/margin_36" />
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/content_play_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/pan_nav13_item_text_marginLeft"
+            android:layout_marginLeft="@dimen/my_moreText_margin_top"
+            android:layout_marginRight="@dimen/my_moreText_margin_top"
+            android:ellipsize="end"
+            android:lineSpacingExtra="1.3dp"
+            android:maxLines="3"
+            android:textColor="@color/message_info"
+            android:textSize="@dimen/order_item_name_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancel_play_tv"
+                android:layout_width="@dimen/message_192"
+                android:layout_height="@dimen/message_48"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select_message_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/message_cancel"
+                android:textColor="@color/marquee_color"
+                android:textSize="@dimen/order_item_time_text_size" />
+
+            <TextView
+                android:id="@+id/play_tv"
+                android:layout_width="@dimen/message_192"
+                android:layout_height="@dimen/message_48"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:background="@drawable/select_message_bg"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/message_play"
+                android:textColor="@color/marquee_color"
+                android:textSize="@dimen/order_item_time_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.pukka.ydepg.common.pushmessage.view.MessageDialogManageView>

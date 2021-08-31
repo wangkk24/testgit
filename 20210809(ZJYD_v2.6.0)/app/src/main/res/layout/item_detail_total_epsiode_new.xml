@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/detail_total_episode_bg_width"
+    android:layout_height="@dimen/detail_total_episode_bg_height"
+    android:id="@+id/episodes_name"
+    android:background="@drawable/detail_episode_total_item_bg_new"
+    android:focusable="true"
+    android:gravity="center"
+    android:singleLine="true"
+    android:ellipsize="end"
+    android:paddingRight="@dimen/margin_27"
+    android:paddingLeft="@dimen/margin_27"
+
+    android:textSize="@dimen/search_hot_tip_size" />

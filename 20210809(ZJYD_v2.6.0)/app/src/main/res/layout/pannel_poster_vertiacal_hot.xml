@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="false">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/home_pannel_title_layout" />
+
+    <ImageView
+        android:id="@+id/im_hot_rank_poster"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="@dimen/pan_poster11_item_width"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginStart="@dimen/pan_common_group_marginLeft"
+        android:layout_marginTop="@dimen/margin_10"
+        android:src="@drawable/hot_leader"
+        android:gravity="center"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/help_detail_item_height">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linear_vertical_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_245"
+        android:layout_below="@+id/im_hot_rank_poster"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginStart="@dimen/pan_common_group_marginLeft"
+        android:layout_marginEnd="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_12"
+        android:focusable="false"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+        <!--电视剧-->
+        <RelativeLayout
+            android:layout_width="@dimen/pan_poster13_item_width"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingStart="@dimen/margin_10"
+            android:paddingEnd="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_15"
+            android:background="@color/parent_set_center_bg"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            tools:ignore="RtlSymmetry">
+            
+            <ImageView
+                android:id="@+id/im_hot_rank_subposter01"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:src="@drawable/hot_movie"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin_36" />
+            
+            <androidx.leanback.widget.VerticalGridView
+                android:id="@+id/rv_hot_rank01"
+                android:layout_below="@+id/im_hot_rank_subposter01"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                app:focusOutEnd="true"
+                app:focusOutFront="true"
+                android:focusableInTouchMode="false">
+            </androidx.leanback.widget.VerticalGridView>
+        </RelativeLayout>
+
+        <!--电影-->
+        <RelativeLayout
+            android:layout_width="@dimen/pan_poster13_item_width"
+            android:layout_marginStart="@dimen/pan_common_item_marginLeft"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingStart="@dimen/margin_10"
+            android:paddingEnd="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_15"
+            android:background="@color/parent_set_center_bg"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/im_hot_rank_subposter02"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:src="@drawable/hot_series"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin_36" />
+            <androidx.leanback.widget.VerticalGridView
+                android:id="@+id/rv_hot_rank02"
+                android:layout_below="@+id/im_hot_rank_subposter02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                app:focusOutEnd="true"
+                app:focusOutFront="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+            </androidx.leanback.widget.VerticalGridView>
+        </RelativeLayout>
+
+        <!--综艺-->
+        <RelativeLayout
+            android:layout_width="@dimen/pan_poster13_item_width"
+            android:layout_marginStart="@dimen/pan_common_item_marginLeft"
+            android:paddingTop="@dimen/margin_10"
+            android:paddingStart="@dimen/margin_10"
+            android:paddingEnd="@dimen/margin_10"
+            android:paddingBottom="@dimen/margin_15"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="@color/parent_set_center_bg"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/im_hot_rank_subposter03"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:src="@drawable/hot_variety_show"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin_36" />
+            <androidx.leanback.widget.VerticalGridView
+                android:id="@+id/rv_hot_rank03"
+                android:layout_below="@+id/im_hot_rank_subposter03"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                app:focusOutEnd="true"
+                app:focusOutFront="true"
+                android:focusableInTouchMode="false">
+            </androidx.leanback.widget.VerticalGridView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</merge>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_3">
+
+    <RelativeLayout
+        android:layout_width="@dimen/vod_controller_item_width"
+        android:layout_height="@dimen/vod_controller_item_height">
+
+        <ImageView
+            android:id="@+id/controller_item_bg"
+            android:layout_width="@dimen/vod_controller_item_width"
+            android:layout_height="@dimen/vod_controller_item_height"
+            android:src="@drawable/controller_item_bg_selector"
+            android:scaleType="fitXY"
+            android:focusable="true"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/vipimg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_19"
+            android:scaleType="fitStart"/>
+
+        <ImageView
+            android:id="@+id/markimg"
+            android:layout_width="@dimen/margin_30"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_30"
+            android:scaleType="fitStart"
+            android:src="@drawable/playcontroller_mark_selector"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_30"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:id="@+id/controller_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_24"
+            android:textColor="#ffffff"
+            android:includeFontPadding="false"
+            android:layout_alignParentBottom="true"
+            android:text="18">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/controller_playing_icon"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_20"
+            android:layout_toRightOf="@+id/controller_item_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_3"
+            android:scaleType="fitXY"
+            >
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

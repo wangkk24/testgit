@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_height="match_parent">
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_height="match_parent">
+        </androidx.viewpager2.widget.ViewPager2>
+        <LinearLayout
+            android:id="@+id/pointgroup"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_8"
+            android:minWidth="@dimen/margin_50"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical|right"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:orientation="horizontal">
+        </LinearLayout>
+</RelativeLayout>

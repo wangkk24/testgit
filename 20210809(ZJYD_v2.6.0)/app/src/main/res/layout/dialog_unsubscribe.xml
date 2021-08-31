@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_unsubscriber">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dialog_unsubscribe_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_248"
+        android:gravity="center"
+        android:text="退订成功"
+        android:textColor="@color/white_0"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"/>
+
+    <ImageView
+        android:id="@+id/dialog_unsubscribe_title"
+        android:layout_width="@dimen/margin_528"
+        android:layout_height="@dimen/margin_24"
+        android:src="@drawable/unsubscrbie_tip"
+        android:layout_marginTop="@dimen/margin_200"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        />
+    <TextView
+        android:id="@+id/dialog_unsubscribe_tip"
+        android:layout_width="wrap_content"
+        android:maxWidth="@dimen/order_my_order_unsubscribe_tip_width"
+        android:layout_height="@dimen/margin_140"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dialog_unsubscribe_title"
+        android:layout_marginTop="@dimen/margin_78"
+        android:textSize="@dimen/margin_22"
+        android:textColor="#ffffff"
+        android:focusable="false"/>
+    <LinearLayout
+        android:id="@+id/dialog_unsubscribe_button_layout"
+        android:layout_width="@dimen/order_my_order_unsubscribe_button_width"
+        android:layout_height="@dimen/margin_74"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dialog_unsubscribe_title"
+        android:layout_marginTop="@dimen/order_my_order_unsubscribe_button_margintop">
+
+        <TextView
+            android:id="@+id/dialog_unsubscribe_button_cancel"
+            android:layout_width="@dimen/margin_185"
+            android:layout_height="@dimen/margin_56"
+            android:background="@drawable/dialog_unsubscribe_button_selector"
+            android:focusable="true"
+            android:layout_marginTop="@dimen/margin_9"
+            android:layout_marginBottom="@dimen/margin_9"
+            android:textSize="@dimen/margin_24"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/margin_25"
+            android:textColor="@color/my_order_unsubscribe_button_Text_color"/>
+
+        <TextView
+            android:id="@+id/dialog_unsubscribe_button_confirm"
+            android:layout_width="@dimen/margin_185"
+            android:layout_height="@dimen/margin_56"
+            android:background="@drawable/dialog_unsubscribe_button_selector"
+            android:focusable="true"
+            android:gravity="center"
+            android:textSize="@dimen/margin_24"
+            android:layout_marginTop="@dimen/margin_9"
+            android:layout_marginBottom="@dimen/margin_9"
+            android:layout_marginStart="@dimen/margin_65"
+            android:layout_marginEnd="@dimen/margin_25"
+            android:textColor="@color/my_order_unsubscribe_button_Text_color"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/dialog_unsubscribe_button_cancel"-->
+            <!--android:layout_width="@dimen/margin_126.3"-->
+            <!--android:layout_height="@dimen/margin_46"-->
+            <!--android:src="@drawable/dialog_unsubscribe_cancel_selector"-->
+            <!--android:layout_marginTop="@dimen/margin_9"-->
+            <!--android:layout_marginStart="@dimen/margin_25"-->
+            <!--android:focusable="true">-->
+        <!--</ImageView>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/dialog_unsubscribe_button_confirm"-->
+            <!--android:layout_width="@dimen/margin_126.3"-->
+            <!--android:layout_height="@dimen/margin_46"-->
+            <!--android:layout_marginStart="@dimen/margin_50"-->
+            <!--android:src="@drawable/dialog_unsubscribe_confirm_selector"-->
+            <!--android:layout_marginTop="@dimen/margin_9"-->
+            <!--android:focusable="true">-->
+        <!--</ImageView>-->
+    </LinearLayout>
+
+</RelativeLayout>

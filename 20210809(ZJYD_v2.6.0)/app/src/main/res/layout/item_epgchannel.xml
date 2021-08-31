@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.ChannelLinearLayoutFocusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_focusview"
+    android:layout_width="@dimen/epgitem_channel_rlwidth"
+    android:layout_height="@dimen/epgitem_channel_rlheight"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+  <RelativeLayout
+      android:id="@+id/rl_content"
+      android:layout_width="@dimen/epgitem_channel_inrlwidth"
+      android:layout_height="@dimen/epgitem_channel_inrlheight"
+      android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_program_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/epgitem_channel_rlpaddingleft">
+
+      <ImageView
+          android:id="@+id/iv_program_play"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:scaleType="centerInside"
+          android:src="@drawable/play_16"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/tv_program_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toRightOf="@id/iv_program_play"
+          android:ellipsize="marquee"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:singleLine="true"
+          android:text="秀才遇到兵"
+          android:textColor="@color/c21_color"
+          android:textSize="@dimen/epgitem_channel_pnamesize" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_program_name"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/epgitem_channel_cnamepaddingleft">
+
+      <TextView
+          android:id="@+id/tv_channel_no"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="10"
+          android:textColor="@color/c24_color"
+          android:paddingRight="@dimen/margin_10"
+          android:textSize="@dimen/epgitem_channel_cnamesize" />
+
+      <TextView
+          android:id="@+id/tv_channel_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="浙江卫视"
+          android:textColor="@color/c24_color"
+          android:textSize="@dimen/epgitem_channel_cnamesize" />
+    </LinearLayout>
+
+
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/iv_right"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/epgitem_channel_cnamepaddingleft"
+      android:scaleType="centerInside"
+      android:src="@drawable/right"
+      android:visibility="gone" />
+
+</com.pukka.ydepg.customui.focusView.ChannelLinearLayoutFocusView>

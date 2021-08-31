@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/style_three_item_poster_width"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:layout_marginBottom="@dimen/style_three_item_margin"
+    android:layout_marginTop="@dimen/margin_10"
+    android:layout_marginLeft="@dimen/style_three_item_margin"
+    android:layout_marginRight="@dimen/style_three_item_margin"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/movies_list_item_img_bg"
+        android:layout_width="@dimen/style_three_item_poster_width"
+        android:layout_height="@dimen/style_three_item_poster_height"
+        android:padding="2dp"
+        android:background="@drawable/movies_list_item_selector">
+
+        <ImageView
+            android:id="@+id/movies_list_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/movies_list_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/movies_list_item_score_margin_right"
+            android:layout_marginRight="@dimen/movies_list_item_score_margin_right"
+            android:text="8.0"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T252_C24_Light_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/movies_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movies_list_item_name_margin_left"
+        android:layout_marginRight="@dimen/movies_list_item_name_margin_right"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/style_four_item_marginH"
+        android:text="惊天魔盗团惊天魔盗团惊天魔盗团"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T24_C21_Light_size" />
+</LinearLayout>

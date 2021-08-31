@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_shimmer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/view_shimmer_shimmerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_base_alpha="1"
+        app:shimmer_auto_start="false">
+
+        <ImageView
+            android:id="@+id/view_shimmer_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_poster_bg"
+            android:scaleType="fitXY"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

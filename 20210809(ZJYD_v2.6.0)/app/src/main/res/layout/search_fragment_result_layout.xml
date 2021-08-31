@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical" >
+
+    <!-- 搜索结果布局 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_fragment_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/margin_20"
+        android:paddingLeft="@dimen/margin_13"
+        android:paddingRight="@dimen/margin_13"
+        android:paddingBottom="@dimen/margin_15"
+        android:focusableInTouchMode="false"/>
+
+    <!-- 搜索无结果布局 -->
+    <RelativeLayout
+        android:visibility="gone"
+        android:focusable="false"
+        android:id="@+id/no_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/no_data_image"
+            android:focusable="false"
+            android:layout_width="@dimen/pan_l1_r4_right_item_height"
+            android:layout_height="@dimen/pan_l1_r4_right_item_height"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_notificationd_data" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_below="@id/no_data_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_15"
+            android:text="@string/no_data_title"
+            android:textColor="@drawable/activity_search_subject_text_selector"
+            android:textSize="@dimen/no_data_size" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/no_data_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:gravity="center"
+            android:focusable="false"
+            android:text="@string/no_data_content"
+            android:textColor="@drawable/activity_search_subject_text_selector"
+            android:textSize="@dimen/no_data_size" />
+    </RelativeLayout>
+
+</LinearLayout>

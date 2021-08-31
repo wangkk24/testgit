@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surfaceview1"
+        android:layout_width="@dimen/multi_play_width"
+        android:layout_height="@dimen/multi_play_height"
+        android:focusable="true"
+        android:nextFocusRight="@id/surfaceview2"
+        android:nextFocusDown="@id/surfaceview3" />
+
+    <SurfaceView
+        android:id="@+id/surfaceview2"
+        android:layout_width="@dimen/multi_play_width"
+        android:layout_height="@dimen/multi_play_height"
+        android:layout_marginStart="@dimen/multi_play_width"
+        android:focusable="true"
+        android:nextFocusLeft="@id/surfaceview1"
+        android:nextFocusDown="@id/surfaceview4" />
+
+    <SurfaceView
+        android:id="@+id/surfaceview3"
+        android:layout_width="@dimen/multi_play_width"
+        android:layout_height="@dimen/multi_play_height"
+        android:layout_marginTop="@dimen/multi_play_height"
+        android:focusable="true"
+        android:nextFocusRight="@id/surfaceview4"
+        android:nextFocusUp="@id/surfaceview1" />
+
+    <SurfaceView
+        android:id="@+id/surfaceview4"
+        android:layout_width="@dimen/multi_play_width"
+        android:layout_height="@dimen/multi_play_height"
+        android:layout_marginStart="@dimen/multi_play_width"
+        android:layout_marginTop="@dimen/multi_play_height"
+        android:focusable="true"
+        android:nextFocusLeft="@id/surfaceview3"
+        android:nextFocusUp="@id/surfaceview2" />
+
+
+    <com.pukka.ydepg.moudule.multviewforstb.multiview.module.play.LandPlayControlView
+        android:id="@+id/playcontrolview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/forgroud"
+        android:layout_width="@dimen/multi_play_width"
+        android:layout_height="@dimen/multi_play_height"
+        android:background="@drawable/play_forground" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:background="#1A000000"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/player_text_size"
+        tools:text="100M/s" />
+
+    <com.pukka.ydepg.moudule.multviewforstb.multiview.module.view.LoadingTextView
+        android:id="@+id/loading_view"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="50dp"/>
+
+    <ViewStub
+        android:id="@+id/logcat"
+        android:layout="@layout/recyclerview_logcat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tVod_cloumn_item_hight"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:focusable="true"
+    android:background="@drawable/select_tvod_selected"
+    android:gravity="center"
+    android:id="@+id/rela_channel_bg">
+
+    <TextView
+        android:id="@+id/catagory_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="sssssss"
+        android:textColor="@color/tVod_cloumn_name_TextColor"
+        android:textSize="@dimen/tVodProgramList_MenuItem_ItemTitle_TextSize"/>
+</RelativeLayout>

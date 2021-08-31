@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/orderlist_title_marginLeft"
+        android:layout_marginTop="@dimen/orderlist_title_marginTop"
+        android:text="产品选择"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/orderlist_title_textsize" />
+
+    <com.pukka.ydepg.moudule.vod.view.FocusHorizontalGridView
+        android:id="@+id/hlist_order"
+        android:layout_width="@dimen/orderlist_width"
+        android:layout_height="@dimen/orderlist_height"
+        android:layout_marginLeft="@dimen/orderlist_margin"
+        android:layout_marginTop="@dimen/orderlist_marginTop"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/orderlist_paddingtBottom"
+        android:paddingLeft="@dimen/orderlist_paddingLeft"
+        android:paddingRight="@dimen/orderlist_paddingRight"
+        android:paddingTop="@dimen/orderlist_paddingtTop" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_indate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hlist_order"
+        android:layout_marginLeft="@dimen/orderlist_indate_marginLeft"
+        android:layout_marginRight="@dimen/orderlist_detail_marginLeft"
+        android:layout_marginTop="@dimen/unipay_countflag_marginright"
+        android:text="请选择支付方式"
+        android:textColor="@color/c24_color"
+        android:textSize="@dimen/orderlist_title_textsize" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_indate"
+        android:layout_marginLeft="@dimen/orderlist_detail_marginLeft"
+        android:layout_marginTop="@dimen/divider_width"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/uni_pay"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paylink_line_view_height"
+            android:gravity="center"
+            android:background="@drawable/uni_pay_selector">
+
+            <ImageView
+                android:layout_width="@dimen/orderlist_item_width"
+                android:layout_height="@dimen/notifity_list_super_layout_height"
+                android:layout_margin="2dp"
+                android:background="@drawable/uni_pay_selected"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/persion_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:padding="@dimen/paylink_line_view_height"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/unipay_btncancle_marginleft"
+            android:background="@drawable/uni_pay_selector">
+
+            <ImageView
+                android:layout_width="@dimen/orderlist_item_width"
+                android:layout_margin="@dimen/paylink_line_view_height"
+                android:layout_height="@dimen/notifity_list_super_layout_height"
+                android:focusable="false"
+                android:background="@drawable/persion_selected" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="@dimen/marketing_width"
+        android:layout_height="@dimen/margin_80"
+        android:layout_below="@+id/tv_indate"
+        android:id="@+id/discount_ly"
+        android:layout_marginLeft="@dimen/launcher_logo1_margin_left"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:focusable="false"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/uni_pay_selector">
+
+            <ImageView
+                android:id="@+id/discount_img"
+                android:src="@drawable/default_poster_bg"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:padding="@dimen/margin_7"
+            android:gravity="center"
+            android:background="@drawable/uni_pay_selector">
+
+            <TextView
+                android:id="@+id/discount_destv"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:layout_width="match_parent"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/epgitem_channel_cnamesize"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

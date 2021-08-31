@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collection_list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/my_8dp"
+    android:layout_marginTop="@dimen/my_8dp"
+    android:background="@drawable/transparent_drawable"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/collection_list_name_layout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/collection_item_min_height"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ic_device_type"
+            android:src="@drawable/icon_tv"
+            android:layout_marginStart="@dimen/margin_14"
+            android:layout_marginTop="@dimen/margin_11.2"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24"
+
+
+            />
+
+        <TextView
+            android:id="@+id/collection_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/collection_item_min_height"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:layout_toRightOf="@+id/ic_device_type"
+            android:layout_marginStart="@dimen/margin_22"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxWidth="@dimen/collection_item_min_width"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/collection_item_name_text_size" />
+        <TextView
+            android:id="@+id/collection_list_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/collection_list_item_name"
+            android:layout_marginTop="@dimen/me_margin_5dp"
+            android:layout_toRightOf="@+id/ic_device_type"
+            android:layout_marginStart="@dimen/margin_22"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="@dimen/collection_item_min_width"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/collection_item_time_text_size"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/collection_list_item_check"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/collection_list_item_delete"
+        android:background="@drawable/mytv_btn_layout_bg"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/margin_93"
+        android:layout_width="@dimen/history_item_check_width"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/mytv_main_check_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/mytv_choice_bg"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/collection_list_item_play"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/collection_list_item_delete"
+        android:gravity="center"
+        android:background="@drawable/mytv_item_bg"
+        android:layout_marginRight="@dimen/margin_93"
+        android:layout_width="@dimen/history_item_check_width"
+        android:layout_height="@dimen/history_item_check_width"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/play_48"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/collection_list_item_delete"
+        android:layout_width="@dimen/history_item_check_width"
+        android:layout_height="@dimen/history_item_check_width"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/mytv_btn_layout_bg"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/delete_32" />
+    </LinearLayout>
+
+</RelativeLayout>

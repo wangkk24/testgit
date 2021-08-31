@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_order_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg"
+    android:focusable="false"
+    android:visibility="gone">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:focusable="false">
+
+    <TextView
+        android:id="@+id/tv_order_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:text="你还没有订购，需要订购之后继续观看"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T11_C21_Light_size"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_order_btn"
+        android:layout_width="304dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/tv_order_remind"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/activity_update_btn_selector"
+        android:focusable="true"
+        >
+
+      <TextView
+          android:id="@+id/tv_order"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:focusable="false"
+          android:text="订购"
+          android:textColor="@color/c21_color"
+          android:textSize="@dimen/T23_C21_Light_size"
+          />
+
+    </RelativeLayout>
+  </RelativeLayout>
+</RelativeLayout>

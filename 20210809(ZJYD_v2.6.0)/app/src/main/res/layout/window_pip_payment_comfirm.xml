@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_transition_recommend_list_height"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_pip_payment_comfirm"
+        android:layout_marginLeft="@dimen/margin_114"
+        android:layout_marginRight="@dimen/margin_114"
+        android:layout_marginTop="@dimen/margin_248"
+        >
+
+        <ImageView
+            android:id="@+id/iv_payment_succ"
+            android:layout_width="@dimen/margin_46"
+            android:layout_height="@dimen/margin_46"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:rotation="180"
+            android:layout_marginTop="@dimen/margin_43"
+            android:src="@drawable/info_96"
+            />
+
+        <TextView
+            android:id="@+id/tv_payment_tips"
+            android:layout_width="@dimen/order_center_line_width"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_payment_succ"
+            android:layout_marginLeft="@dimen/margin_64"
+            android:layout_marginRight="@dimen/margin_64"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_26"
+            android:gravity="center_horizontal"
+            android:text="是否确认订购影视VIP包产品，标准资费29.9元/月"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/margin_24"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="@dimen/margin_5"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_43"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="@dimen/margin_200"
+                android:layout_height="@dimen/unipay_btnconfirm_height"
+                android:background="@drawable/detail_button_selector"
+                android:text="取消"
+                android:layout_marginRight="@dimen/margin_22"
+                android:textColor="@drawable/pay_text_color_selector"
+                android:textSize="@dimen/unipay_btntextsize"/>
+
+            <Button
+                android:id="@+id/comfirm_btn"
+                android:layout_width="@dimen/margin_200"
+                android:layout_marginLeft="@dimen/margin_22"
+                android:layout_height="@dimen/unipay_btnconfirm_height"
+                android:background="@drawable/detail_button_selector"
+                android:text="确认"
+                android:textColor="@drawable/pay_text_color_selector"
+                android:textSize="@dimen/unipay_btntextsize"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

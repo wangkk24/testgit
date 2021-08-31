@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/default_detail_bg"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/activity_my_movie_menu"
+        android:layout_width="@dimen/movie_menu_width"
+        android:layout_marginLeft="@dimen/movie_menu_marginleft"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/activity_mytv_movie_title"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/movie_menu_margintop"
+            android:text="@string/mytv_movie_title"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/movie_menu_title_size"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/activity_mytv_movie_history"
+            android:layout_below="@+id/activity_mytv_movie_title"
+            android:layout_width="@dimen/movie_menu_width"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:focusable="true"
+            android:background="@drawable/my_movie_btn_bg"
+            android:layout_marginTop="@dimen/margin_48"
+            android:text="@string/mytv_movie_history"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size"
+            android:layout_height="@dimen/margin_48" />
+
+        <TextView
+            android:id="@+id/activity_mytv_movie_collection"
+            android:layout_below="@+id/activity_mytv_movie_history"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:layout_width="@dimen/movie_menu_width"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center_vertical"
+            android:focusable="true"
+            android:background="@drawable/my_movie_btn_bg"
+            android:text="@string/mytv_movie_collection"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size"
+            android:layout_height="@dimen/margin_48" />
+    </RelativeLayout>
+    <!--android:src="@drawable/line"-->
+    <ImageView
+        android:id="@+id/line"
+        android:layout_toRightOf="@+id/activity_my_movie_menu"
+        android:layout_marginLeft="@dimen/margin_36"
+        android:layout_width="@dimen/movies_list_view_width"
+        android:background="@color/c24_color"
+        android:layout_marginTop="@dimen/movies_list_line_margintop"
+        android:layout_marginBottom="@dimen/margin_70"
+        android:layout_height="match_parent"/>
+    <FrameLayout
+        android:id="@+id/activity_my_movie_content"
+        android:layout_width="match_parent"
+        android:focusable="true"
+        android:descendantFocusability="afterDescendants"
+        android:layout_marginLeft="@dimen/margin_60"
+        android:layout_toRightOf="@+id/line"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!-- 引导页面(首次进入显示) -->
+    <ImageView
+        android:id="@+id/iv_child_first_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_guide"
+        android:focusable="true"
+        android:nextFocusUp="@+id/search_first_guide"
+        android:nextFocusRight="@+id/search_first_guide"
+        android:nextFocusDown="@+id/search_first_guide"
+        android:nextFocusLeft="@+id/search_first_guide"
+        android:visibility="gone"/>
+
+</RelativeLayout>

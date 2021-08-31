@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/controller_floor_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/vod_controller_floor_title_textsize"
+        android:textColor="#ffffff"
+        android:includeFontPadding="false"
+        android:text="选集"
+        android:focusable="true"
+        android:layout_marginStart="@dimen/margin_46"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/controller_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/controller_floor_title"
+        android:layout_marginStart="@dimen/margin_46">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/controller_floor_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/controller_floor_title">
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/controller_floor_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vod_controller_recyclerview_height"
+            android:layout_marginTop="@dimen/margin_13"
+            android:layout_marginBottom="@dimen/margin_13"
+            android:layout_marginEnd="@dimen/margin_42"
+            android:layout_marginStart="@dimen/margin_37.5"
+            >
+        </androidx.leanback.widget.HorizontalGridView>
+
+        <ImageView
+            android:id="@+id/controller_icon_right"
+            android:layout_width="@dimen/margin_20"
+            android:layout_height="@dimen/margin_36"
+            android:scaleType="fitXY"
+            android:src="@drawable/controller_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/margin_10"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            >
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+    
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/player_view_bgcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    >
+  <FrameLayout
+      android:id="@+id/fm_player"
+      android:background="@color/player_view_bgcolor"
+      android:layout_gravity="center"
+      android:focusable="false"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+  <View
+      android:focusable="false"
+      android:id="@+id/v_cover"
+      android:background="@color/player_view_bgcolor"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+
+  <RelativeLayout
+      android:id="@+id/player_top_record"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:visibility="gone">
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_13dp"
+        android:textColor="#FFEBEBEB"
+        android:textSize="@dimen/margin_36sp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:focusableInTouchMode="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textIsSelectable="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_setting_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_13dp"
+        android:textColor="#FFEBEBEB"
+        android:textSize="@dimen/margin_20sp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:focusableInTouchMode="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+
+    <TextView
+        android:id="@+id/tv_name_up_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFEBEBEB"
+        android:textSize="@dimen/margin_32dp"
+        android:maxEms="10"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_63dp"
+        android:focusableInTouchMode="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+
+    <ImageView
+        android:id="@+id/tv_setting_record_img"
+        android:layout_width="@dimen/margin_25dp"
+        android:layout_height="@dimen/margin_25dp"
+        android:background="@drawable/tv_info"
+        android:layout_toLeftOf="@id/tv_setting_record"/>
+
+  </RelativeLayout>
+  <include layout="@layout/player_controlview"/>
+
+  <LinearLayout
+      android:id="@+id/pb_back_to_start_ll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="bottom|center"
+      android:layout_marginBottom="105dp"
+      android:focusable="false"
+      android:orientation="horizontal"
+      android:visibility="gone"
+      android:layout_gravity="bottom">
+
+    <TextView
+        android:id="@+id/pb_back_to_start_tv"
+        android:layout_width="204dp"
+        android:layout_height="51dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#1f1f1f"/>
+
+  </LinearLayout>
+  <!--<ProgressBar-->
+      <!--android:id="@+id/pb_loading"-->
+      <!--android:layout_gravity="center"-->
+      <!--style="@style/Base.Widget.AppCompat.ProgressBar"-->
+      <!--android:layout_width="100dp"-->
+      <!--android:focusable="false"-->
+      <!--android:layout_height="100dp"-->
+      <!--/>-->
+  <com.pukka.ydepg.view.loadingball.MonIndicator
+      android:id="@+id/pb_loading"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      app:circleRadius="@dimen/circleRadius"
+      app:cycle="800"
+      android:layout_centerInParent="true"/>
+
+</FrameLayout>

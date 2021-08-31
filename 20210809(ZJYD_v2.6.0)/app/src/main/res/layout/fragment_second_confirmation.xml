@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:paddingLeft="@dimen/margin_126.3">
+
+    <RelativeLayout
+        android:id="@+id/child_lock_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/child_lock_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/orderpay_rlproductinfo_width"
+            android:focusable="false"
+            android:text="@string/children_lock"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/unipay_selectsize" />
+
+        <TextView
+            android:id="@+id/child_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/child_lock_title"
+            android:layout_marginTop="@dimen/margin_10"
+            android:focusable="false"
+            android:text="@string/open_children_lock"
+            android:textColor="@color/c29_color"
+            android:textSize="@dimen/search_text_size" />
+
+        <TextView
+            android:id="@+id/switch_lock"
+            android:layout_width="@dimen/margin_224"
+            android:layout_height="@dimen/margin_52"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/search_hot_width"
+            android:layout_marginTop="@dimen/second_confirmation_margin"
+            android:background="@drawable/bg_switch_lock"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/confirmation_open"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/filter_name_size_small" />
+
+        <LinearLayout
+            android:id="@+id/phone_lly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/child_hint"
+            android:layout_marginTop="@dimen/margin_50"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:text="进行本次操作,  需通过手机短信验证, "
+                android:textColor="@color/c30_color"
+                android:textSize="@dimen/T12_C21_Bold_size" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/me_margin_5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:text="验证手机号:"
+                    android:textColor="@color/c30_color"
+                    android:textSize="@dimen/T12_C21_Bold_size"/>
+
+                <TextView
+                    android:id="@+id/account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/featured_detail_10dp"
+                    android:text="【17712353064】"
+                    android:textColor="@color/c25_color"
+                    android:textSize="@dimen/T12_C21_Bold_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_55"
+                android:layout_marginTop="@dimen/featured_detail_15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/send_btn"
+                    android:layout_width="@dimen/pan_height_200"
+                    android:layout_height="@dimen/orderpay_input_phonenumber_height"
+                    android:background="@drawable/activity_update_btn_selector"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/send_verification"
+                    android:textColor="@drawable/activity_launcher_text_selector"
+                    android:textSize="@dimen/T23_C21_Light_size" />
+
+                <EditText
+                    android:id="@+id/et_input_verification"
+                    android:layout_width="@dimen/pan_height_200"
+                    android:layout_height="@dimen/orderpay_input_phonenumber_height"
+                    android:layout_marginLeft="@dimen/featured_detail_10dp"
+                    android:background="@drawable/activity_update_btn_selector"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:paddingLeft="@dimen/orderpay_input_phonenumber_paddingleft"
+                    android:singleLine="true"
+                    android:textColor="@drawable/activity_launcher_text_selector"
+                    android:textColorHint="@drawable/activity_launcher_text_selector"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="@dimen/orderpay_input_phonenumber_textsize" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/comfirm_btn"
+                android:layout_width="@dimen/second_comfirm_btn_width"
+                android:layout_height="@dimen/unipay_btnconfirm_height"
+                android:layout_marginTop="@dimen/featured_detail_15dp"
+                android:background="@drawable/detail_button_selector"
+                android:text="确认更变"
+                android:textColor="@color/c30_color"
+                android:textSize="@dimen/unipay_btntextsize" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/uni_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/orderpay_rlproductinfo_width"
+        android:visibility="gone"
+        android:focusable="false"
+        android:text="@string/uni_children_hint"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/unipay_title_textsize" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/order_transition_list_item_layout"
+        android:layout_width="@dimen/history_list_item_width"
+        android:layout_height="@dimen/history_list_item_height"
+        android:background="@drawable/order_transition_list_item_seletor"
+        android:focusable="false"
+        android:padding="@dimen/margin_2">
+        <ImageView
+            android:id="@+id/order_transition_list_item_cover"
+            android:layout_width="@dimen/history_list_item_width"
+            android:layout_height="@dimen/history_list_item_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster"/>
+
+        <ImageView
+            android:id="@+id/vipimg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_26"
+            android:layout_marginStart="@dimen/margin_10"
+            android:scaleType="fitStart"/>
+
+        <View
+            android:id="@+id/shadow_layout"
+            android:layout_width="@dimen/history_list_item_width"
+            android:layout_height="@dimen/margin_60"
+            android:background="@drawable/order_shadow_layout"
+            android:layout_alignParentBottom="true">
+        </View>
+        
+        <TextView
+            android:id="@+id/order_transition_list_item_title"
+            android:layout_width="@dimen/history_list_item_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:paddingStart="@dimen/margin_15"
+            android:paddingEnd="@dimen/margin_15"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="烈火英雄"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/margin_17"
+            android:includeFontPadding="false"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

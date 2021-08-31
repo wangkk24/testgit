@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.LinearLayoutFoucsView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_focusview"
+    android:layout_width="@dimen/margin_176"
+    android:layout_height="48dp"
+    android:focusable="true"
+    android:layout_marginBottom="@dimen/margin_18"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+  <RelativeLayout
+      android:layout_width="@dimen/margin_176"
+      android:layout_height="@dimen/epgitem_column_typeheight"
+      android:focusable="false"
+      android:focusableInTouchMode="false">
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="@dimen/margin_176"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_8"
+        android:paddingRight="@dimen/margin_8"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:ellipsize="marquee"
+        android:textColor="@color/c24_color"
+        android:textSize="@dimen/epgitem_column_textsize"
+        />
+  </RelativeLayout>
+</com.pukka.ydepg.customui.focusView.LinearLayoutFoucsView>

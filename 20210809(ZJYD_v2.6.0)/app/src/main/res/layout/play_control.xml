@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/center_control_height_size"
+        android:background="@color/playBottomBg">
+
+        <ImageView
+            android:id="@+id/play_state"
+            android:layout_width="@dimen/center_control_pause_size"
+            android:layout_height="@dimen/center_control_pause_size"
+            android:scaleType="fitCenter"
+            android:src="@drawable/center_player_playstate"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/control_seekbar_height"
+            android:layout_marginStart="10dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/control_seekbar_marginstart"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/time_text"
+            app:layout_constraintStart_toEndOf="@id/play_state"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:max="100"
+            tools:progress="20"
+            tools:secondaryProgress="30" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:includeFontPadding="false"
+            android:text="00:00:00/00:00:00"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cover_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/seekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/seekbar"
+            app:layout_constraintTop_toTopOf="@id/seekbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_topic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/style_two_text_marginTop"
+            android:paddingLeft="@dimen/style_two_text_padding"
+            android:paddingRight="@dimen/style_two_text_padding"
+            android:text=""
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/style_two_title_size" />
+
+        <TextView
+            android:textColor="@color/c21_color"
+            android:id="@+id/tv_topic_desc"
+            android:layout_width="@dimen/style_two_subtext_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_topic_title"
+            android:layout_marginTop="@dimen/style_two_subtext_marginTop"
+            android:ellipsize="end"
+            android:lineSpacingExtra="8dp"
+            android:maxLines="3"
+            android:layout_marginLeft="@dimen/style_two_subtext_paddingLeft"
+            android:textSize="@dimen/T30_C21_Bold_size"
+            android:text="" />
+
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/movies_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/style_two_movies_lsit_height"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            android:paddingLeft="@dimen/style_two_gridV_paddingLeft"
+            android:paddingRight="@dimen/style_two_gridV_paddingRight"
+            android:paddingTop="@dimen/style_two_gridV_paddingTop"
+            android:paddingBottom="@dimen/style_two_gridV_paddingBottom"
+            android:visibility="visible" />
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/mRecyclerViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/style_two_gridH_height_357"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="@dimen/epglist_rvchannel_bottomspace"
+            android:paddingLeft="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/movies_list_margin_left"
+            android:paddingRight="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/style_two_gridH_paddingRight"
+            android:visibility="gone" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+        tools:parentTag="android.widget.FrameLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/center_control_width"
+        android:layout_height="@dimen/center_control_height"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+            android:layout_height="@dimen/center_control_height"
+            android:background="@drawable/center_playcontrol"
+            android:layout_width="@dimen/center_control_width"/>
+
+    <ImageView
+            android:id="@+id/play_state"
+            android:layout_height="@dimen/center_control_pause_size"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/center_player_playstate"
+            android:layout_width="@dimen/center_control_pause_size"/>
+
+    <SeekBar
+            android:paddingStart="@dimen/control_seekbar_marginstart"
+            android:paddingEnd="@dimen/control_seekbar_marginstart"
+            android:id="@+id/seekbar"
+            android:progressDrawable="@drawable/seekbar_style"
+            android:thumb="@null"
+            tools:max="100"
+            tools:progress="20"
+            android:layout_gravity="bottom"
+            tools:secondaryProgress="30"
+            android:layout_height="@dimen/control_seekbar_height"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"/>
+
+    <TextView
+            android:id="@+id/time_text"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/cover_text_size"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="bottom"
+            android:text="00:00:00/00:00:00"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+</merge>

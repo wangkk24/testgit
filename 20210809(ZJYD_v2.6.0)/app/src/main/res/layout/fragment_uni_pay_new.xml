@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/margin_114"
+        android:layout_marginLeft="@dimen/margin_114"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginBottom="@dimen/margin_32">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="252"
+            android:background="@drawable/order_paymode_bg">
+
+            <TextView
+                android:id="@+id/order_paymode_ordertip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin_22.5"
+                android:text="@string/order_paymode_ordertip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_70"
+                android:textColor="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:id="@+id/order_paymode_item"
+                android:layout_width="@dimen/order_list_bg_width_muti"
+                android:layout_height="@dimen/order_list_bg_height_muti"
+                android:layout_below="@+id/order_paymode_ordertip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_21"
+                >
+                <View
+                    android:id="@+id/order_paymode_bg_up"
+                    android:layout_width="@dimen/order_list_bg_width_muti"
+                    android:layout_height="@dimen/margin_60"
+                    android:background="@drawable/order_paymode_item_bg_up">
+                </View>
+                <View
+                    android:layout_width="@dimen/order_list_bg_width_muti"
+                    android:layout_height="@dimen/margin_106"
+                    android:layout_below="@+id/order_paymode_bg_up"
+                    android:background="@drawable/order_paymode_item_bg_down">
+                </View>
+
+                <TextView
+                    android:id="@+id/order_paymode_item_title"
+                    android:layout_width="@dimen/order_list_title_width_muti"
+                    android:layout_height="@dimen/order_list_title_height"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin_21"
+                    android:textColor="#2F4ECD"
+                    android:text=""
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/order_paymode_item_discount"
+                    android:layout_marginTop="@dimen/margin_9"
+                    android:layout_width="@dimen/margin_38.3"
+                    android:layout_height="@dimen/margin_21"
+                    android:layout_below="@+id/order_paymode_item_title"
+                    android:text="5折"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/mytv_history_count"
+                    android:focusable="false"
+                    android:textSize="@dimen/margin_17"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/order_paymode_price_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:layout_below="@+id/order_paymode_item_title"
+                    android:layout_marginTop="@dimen/margin_20"
+                    >
+
+                    <TextView
+                        android:id="@+id/order_paymode_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#1C33A0"
+                        android:textSize="@dimen/margin_45"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:focusable="false"
+                        />
+                    <TextView
+                        android:id="@+id/order_paymode_price_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#1C33A0"
+                        android:textSize="@dimen/order_list_price_small_size"
+                        android:gravity="center"
+                        android:focusable="false"
+                        android:includeFontPadding="false"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/order_paymode_item_discountprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_paymode_price_layout"
+                    android:layout_centerHorizontal="true"
+                    android:text="原价：39.9元/月"
+                    android:includeFontPadding="false"
+                    android:textColor="#1C33A0"
+                    android:textSize="@dimen/margin_16"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/order_paymode_event_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_paymode_item"
+                android:layout_marginStart="@dimen/margin_31.5"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/order_paymode_eventtip"
+                android:textColor="#E9E9E9"
+                android:textSize="@dimen/margin_12"
+                android:includeFontPadding="false"
+                />
+
+            <com.pukka.ydepg.common.extview.VerticalScrollTextView
+                android:id="@+id/order_paymode_event_text"
+                android:background="@drawable/order_transition_textview_bg_selected"
+                android:layout_width="@dimen/order_paymode_item_autoscroll_width"
+                android:layout_height="@dimen/margin_128"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_below="@+id/order_paymode_event_tip"
+                android:layout_marginStart="@dimen/margin_31.5"
+                android:textSize="@dimen/margin_12"
+                android:textColor="#E9E9E9"
+                android:lineSpacingExtra="@dimen/margin_5"
+                android:ellipsize="end"
+                app:tv_line="6"
+                android:focusable="true"
+                />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="352"
+            android:background="#F2F2F2">
+            <!--二维码界面-->
+            <LinearLayout
+                android:id="@+id/qrcode_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_marginRight="@dimen/margin_52"
+                    android:layout_marginLeft="@dimen/margin_52"
+                    android:layout_marginTop="@dimen/margin_67.5"
+                    android:text="@string/pay_img_code_hint_new"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/margin_21"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/iv_unipay_qrcode"
+                    android:layout_width="@dimen/details_poster_height_new"
+                    android:layout_height="@dimen/details_poster_height_new"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/default_poster" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_24"
+                    android:text="@string/code_hint"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/margin_21" />
+
+
+            </LinearLayout>
+            <!--统一支付-->
+            <RelativeLayout
+
+                android:visibility="gone"
+                android:id="@+id/uni_pay_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_72.1"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/account_hint_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/account_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="目前您的宽带电视关联手机号为"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/margin_22"
+                        android:layout_marginLeft="@dimen/margin_45"
+                        />
+
+                    <TextView
+                        android:id="@+id/account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/account_hint"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:focusable="false"
+                        android:text="17712353064"
+                        android:textColor="#0B4BB7"
+                        android:textSize="@dimen/margin_21"
+                        android:layout_marginLeft="@dimen/margin_45"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+
+                    android:id="@+id/code_rly"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/account_hint_layout"
+                    android:layout_marginLeft="@dimen/margin_45"
+                    >
+
+                    <TextView
+                        android:id="@+id/code_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_30"
+                        android:text="请输入图形验证码"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/margin_21"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/code_ly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/orderpay_input_phonenumber_height"
+                        android:layout_below="@+id/code_hint"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:gravity="bottom"
+                        android:orientation="horizontal">
+
+                        <EditText
+
+                            android:id="@+id/et_code_number"
+                            android:layout_width="@dimen/pan_height_200"
+                            android:layout_height="@dimen/orderpay_input_phonenumber_height"
+                            android:background="@drawable/order_paymode_editview_seletor"
+                            android:digits="1234567890"
+                            android:inputType="phone"
+                            android:paddingLeft="@dimen/orderlist_paddingtBottom"
+                            android:singleLine="true"
+                            android:textColor="@color/c21_color"
+                            android:textColorHint="@color/c24_color"
+                            android:textCursorDrawable="@drawable/edittext_cursor"
+                            android:textSize="@dimen/orderpay_input_phonenumber_textsize" />
+
+                        <ImageView
+                            android:id="@+id/identifyingCodeImg"
+                            android:layout_width="@dimen/margin_106"
+                            android:layout_height="@dimen/orderpay_input_phonenumber_height"
+                            android:layout_marginLeft="@dimen/margin_15"
+                            android:background="@drawable/verification_code_selector"
+                            android:scaleType="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:gravity="bottom"
+                            android:text="看不清，点击图片换一个"
+                            android:textColor="@color/order_paymode_buttom_textcolor"
+                            android:textSize="@dimen/margin_16" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/comfirm_btn"
+                        android:layout_width="@dimen/pan_height_200"
+                        android:layout_height="@dimen/unipay_btnconfirm_height"
+                        android:layout_below="@+id/code_ly"
+                        android:layout_marginTop="@dimen/featured_detail_15dp"
+                        android:background="@drawable/payment_button_selector"
+                        android:text="确认支付"
+                        android:textColor="@color/order_paymode_buttom_textcolor"
+                        android:textSize="@dimen/unipay_btntextsize"
+                        />
+
+                    <TextView
+                        android:id="@+id/child_hint"
+
+                        android:includeFontPadding="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/comfirm_btn"
+                        android:layout_marginTop="@dimen/help_line_marginleft"
+                        android:layout_marginRight="@dimen/margin_60"
+                        android:text="@string/uni_pay_child_new"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/margin_16"
+                        />
+                </RelativeLayout>
+                <Button
+
+                    android:id="@+id/comfirm_btn_normal"
+                    android:layout_width="@dimen/pan_height_200"
+                    android:layout_below="@+id/account_hint_layout"
+                    android:layout_height="@dimen/unipay_btnconfirm_height"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:background="@drawable/payment_button_selector"
+                    android:text="确认支付"
+                    android:textColor="@color/order_paymode_buttom_textcolor"
+                    android:textSize="@dimen/unipay_btntextsize"
+                    android:layout_marginLeft="@dimen/margin_45"/>
+
+                <TextView
+
+                    android:id="@+id/child_hint_normal"
+                    android:layout_below="@+id/account_hint_layout"
+                    android:layout_width="@dimen/payment_tips_width"
+                    android:layout_marginTop="@dimen/margin_126.3"
+                    android:textSize="@dimen/margin_16"
+                    android:textColor="#333333"
+                    android:text="@string/uni_pay_child_new"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_45"
+                    android:layout_marginRight="@dimen/margin_60"
+                    />
+            </RelativeLayout>
+            <!--儿童锁支付-->
+            <RelativeLayout
+                android:id="@+id/children_pay_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/margin_65"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/children_account_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前您的宽带电视关联手机号为"
+                    android:textColor="#333333"
+                    android:layout_marginTop="@dimen/margin_72.1"
+                    android:textSize="@dimen/margin_22"
+                    android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/children_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/children_account_hint"
+                    android:text="17712353064"
+                    android:textColor="#0B4BB7"
+                    android:textSize="@dimen/margin_22"
+                    android:includeFontPadding="false"
+                    android:layout_marginTop="@dimen/margin_7"/>
+
+                <Button
+                    android:id="@+id/get_verification"
+                    android:layout_width="@dimen/pan_height_200"
+                    android:layout_height="@dimen/margin_48"
+                    android:layout_below="@+id/children_account"
+                    android:layout_marginTop="@dimen/margin_14"
+
+                    android:background="@drawable/payment_button_selector"
+                    android:text="获取验证码"
+                    android:textColor="@color/order_paymode_buttom_textcolor"
+                    android:textSize="@dimen/margin_21" />
+
+                <EditText
+                    android:id="@+id/et_input_verification"
+                    android:layout_width="@dimen/margin_382"
+                    android:layout_height="@dimen/margin_48"
+                    android:layout_below="@+id/get_verification"
+                    android:layout_marginTop="@dimen/margin_30"
+                    android:background="@drawable/phone_edit_seletor"
+                    android:digits="1234567890"
+                    android:hint="请输入验证码"
+                    android:inputType="phone"
+                    android:paddingLeft="@dimen/pan_poster13m_item_title_marginBottom"
+                    android:singleLine="true"
+                    android:textColor="@color/order_paymode_buttom_textcolor"
+                    android:textColorHint="#848486"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    android:textSize="@dimen/orderpay_input_phonenumber_textsize" />
+
+                <Button
+                    android:id="@+id/children_comfirm_btn"
+                    android:layout_width="@dimen/pan_height_200"
+                    android:layout_height="@dimen/margin_48"
+                    android:layout_below="@+id/et_input_verification"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/payment_button_selector"
+                    android:text="确认支付"
+                    android:textColor="@color/order_paymode_buttom_textcolor"
+                    android:textSize="@dimen/unipay_btntextsize" />
+
+                <TextView
+                    android:id="@+id/children_child_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/children_comfirm_btn"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_65"
+                    android:text="@string/uni_pay_verification"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/margin_21"
+                    android:includeFontPadding="false"
+                    />
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginStart="@dimen/margin_65"-->
+                    <!--&gt;-->
+                    <!--<RelativeLayout-->
+                        <!--android:layout_width="@dimen/payment_unipay_layout_width"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:id="@+id/children_account_layout"-->
+                        <!--android:layout_marginTop="@dimen/margin_106"-->
+                        <!--&gt;-->
+
+                        <!---->
+
+
+                    <!--</RelativeLayout>-->
+
+                    <!--<RelativeLayout-->
+                        <!--android:id="@+id/verification_ly"-->
+                        <!--android:layout_width="@dimen/payment_unipay_layout_width"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_below="@+id/children_account_layout"-->
+                        <!--android:layout_marginTop="@dimen/margin_50"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--&gt;-->
+
+                        <!---->
+
+                    <!--</RelativeLayout>-->
+
+                    <!---->
+
+                <!--</RelativeLayout>-->
+
+
+
+            </RelativeLayout>
+            <!--未开通统一支付提示-->
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

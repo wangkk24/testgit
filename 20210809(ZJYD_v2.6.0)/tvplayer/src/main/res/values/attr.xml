@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="EasierTvPlayView">
+    <attr name="AutoPlay" format="boolean"/>
+    <attr name="isLittle" format="boolean"/>
+      <attr name="isVodDetail" format="boolean"/>
+    <attr name="play_type" format="string"/>
+    <attr name="is_main_play_view" format="boolean"/>
+    <attr name="play_resize_mode" format="string"/>
+    <attr name="PlayControlViewBackground" format="reference"/>
+    <attr name="ControlViewBackground" format="reference"/>
+  </declare-styleable>
+    <declare-styleable name="monindicator">
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleSpacing" format="dimension" />
+        <attr name="cycle" format="integer" />
+    </declare-styleable>
+</resources>

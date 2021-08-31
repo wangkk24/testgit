@@ -1,0 +1,99 @@
+说明：将如下格式的json数据配置到multiView.json文件中，然后使用adb工具push到机顶盒内置存储sdcard下，打开app即可自动读取数据。
+
+
+====================================================================
+{
+  "background": "",
+  "isShowPlayVersion": true,
+  "loginRouteForUpgrade":"http://101.91.202.229:8082/EDS/V3/LoginRoute",
+  "crashPolicy":"0",
+  "isShowSpeed": false,
+  "showLogcat": false,
+  "showCameraView": false,
+  "allVideoConfig": [
+    {
+      "ResourcePlayURL": [
+        "http://173.8.255.56/88888888/16/20200803/268436600/268436600.mpd"
+      ],
+      "ResourceName": "傣族舞蹈",
+      "MediaType": 2,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "mainCameraId": 0,
+      "CameraDegree": 360,
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      },
+      "isRecyclePlay":false
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200723/268436549/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200723/268436551/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200723/268436550/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200723/268436552/index.m3u8"
+      ],
+      "ResourceName": "多机位点播长稳4h",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      },
+      "viewSizes":[
+          {
+            "width":0,
+            "height":0,
+            "left":0,
+            "right":0
+          }
+      ]
+    }
+  ]
+}
+
+====================================================================
+10月份需求新增字段
+配置图片的地址 如果要加载本地图片的地址 配置图片路径为  sdcard/图片所在位置
+1. “background” ：是配置当前首页的背景图片，支持加载本地图片和网络图片
+2. “isShowPlayVersion”：当前首页是否要展示版本号和屏幕的信息
+3. “enforceProgressiveScanning” ：1为强制逐行扫描
+4. "picture": {
+       "playBackground": "",
+       "posterUrl": ""
+    }
+    配置当前的首页的播放列表海报以及播放场景的背景图片，支持加载本地图片和网络图片
+5. "viewSizes":[
+     {
+       "width":0,
+       "height":0,
+       "left":0,
+       "right":0
+     }
+   ]
+    如果需要修改屏幕的大小，只在多机位内容上进行配置，要么配置一个，要么配置四个；如果不需要就不要添加这个字段
+6."isRecyclePlay":false 这个配置在自由视角内容上，表示当前是否支持循环播放，多机位不支持
+7."loginRouteForUpgrade":"http://101.91.202.229:8082/EDS/V3/LoginRoute" 配置apk升级的登录调度接口
+8."isShowSpeed" : 这个是配置自由视角是否展示下载速率，true为展示，false为不展示
+9."CameraDegree" : 这个配置的值为大于0且小于等于360
+10."ViewType" : 0的模式为一大三小 1的模式为四等分
+12月新增
+11."crashPolicy":"0" 播放器捕获crash开关。0代表关闭，1代表打开，2代表播放器运行时打开，释放时关闭。
+20211月新增：
+12."mainCameraId": 1,主机位ID，自由视角的默认机位ID，取值为大于0
+13."cameraNum": 36,机位总数，自由视角的机位总数，取值大于0
+2021年2月24日新增：
+"showLogcat":false 显示json配置数据以及UI的日志。
+2021年04月07日修改与新增:
+以下关键字调整到json最外层：
+isShowSpeed
+showLogcat
+新增是否显示自由视角机位位置的圆圈视图
+"showCameraView": false

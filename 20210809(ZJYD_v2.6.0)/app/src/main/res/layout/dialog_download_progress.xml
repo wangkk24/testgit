@@ -1,0 +1,41 @@
+<!-- 背景图片长宽比 2.026-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_upgrade_width"
+    android:layout_height="@dimen/dialog_upgrade_progress_height"
+    android:background="@drawable/download_notification"
+    android:focusable="false"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dialog_upgrade_progress_bar_posY">
+
+        <ProgressBar
+            android:id="@+id/downloadProgress"
+            android:layout_width="@dimen/dialog_upgrade_progress_bar_width"
+            android:layout_height="@dimen/dialog_upgrade_progress_bar_height"
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@drawable/shape_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"/>
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dialog_upgrade_progress_text_posX"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="15sp"
+            android:textColor="@android:color/white"
+            android:text="%"/>
+    </LinearLayout>
+
+</LinearLayout>

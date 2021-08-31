@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?><!--focusableInTouchMode只是测试鼠标效果-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/tv_nav_parent"
+    android:layout_height="@dimen/launcher_nav_item_height"
+
+    android:focusable="true"
+    android:gravity="center">
+<!--android:background="@drawable/activity_launcher_nav_selector"-->
+    <RelativeLayout
+        android:id="@+id/rl_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/launcher_nav_item_height"
+        android:layout_gravity="center"
+        android:paddingLeft="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_5"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/im_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/launcher_nav_item_height" />
+
+        <TextView
+            android:id="@+id/tv_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="item1"
+            android:paddingStart="@dimen/margin_15"
+            android:paddingEnd="@dimen/margin_15"
+
+
+            android:textSize="@dimen/launcher_nav_item_textSize" />
+        <!--android:textColor="@color/c24_color"-->
+        <!--android:background="@drawable/activity_launcher_nav_selector"-->
+
+        <com.pukka.ydepg.common.extview.LinearLayoutExt
+            android:id="@+id/ll_nav_title_line"
+            android:layout_below="@+id/tv_nav_title"
+            android:layout_width="match_parent"
+            android:paddingStart="@dimen/margin_17"
+            android:visibility="gone"
+            android:paddingEnd="@dimen/margin_17"
+            android:layout_centerInParent="true"
+            android:layout_height="@dimen/margin_5">
+            <com.pukka.ydepg.common.extview.ImageViewExt
+                android:id="@+id/im_nav_title_line"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <!--android:src="@drawable/shape_bg_main_nav_focus"-->
+        </com.pukka.ydepg.common.extview.LinearLayoutExt>
+        
+    </RelativeLayout>
+</FrameLayout>

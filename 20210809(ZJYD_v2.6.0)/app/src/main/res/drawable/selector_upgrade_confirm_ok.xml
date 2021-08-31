@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@drawable/upgrade_ok_focus"  android:state_focused="true"/>
+<item android:drawable="@drawable/upgrade_ok_normal" android:state_focused="false"/>
+</selector>

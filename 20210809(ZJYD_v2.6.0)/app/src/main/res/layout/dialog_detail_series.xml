@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280px"
+    android:layout_height="720px"
+    android:background="@drawable/popup_dialog_bg_shadow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="740px"
+        android:layout_marginTop="96px"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="30px"
+            android:text="系列"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T12_C21_Bold_size"
+            android:textStyle="bold" />
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/series_list"
+            android:layout_marginTop="30px"
+            android:layout_width="344px"
+            android:layout_height="450px"/>
+    </LinearLayout>
+
+</RelativeLayout>

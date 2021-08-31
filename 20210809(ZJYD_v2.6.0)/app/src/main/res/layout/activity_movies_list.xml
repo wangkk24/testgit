@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movies_list_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movies_list_catagory_list_margin_left"
+        android:layout_marginTop="@dimen/movies_list_catagory_list_margin_top">
+
+        <TextView
+            android:id="@+id/root_catagory_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T12_C21_Bold_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/page_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/movies_list_page_num_margin_left"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T23_C21_Light_size"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/page_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c23_color"
+            android:textSize="@dimen/T23_C23_Light_size"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linlayout_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_30"
+        android:layout_gravity="right"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/movies_list_margin_right"
+        android:layout_marginTop="@dimen/movies_list_filter_margin_top"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/filter_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c23_color"
+            android:textSize="@dimen/T23_C23_Light_size" />
+        <LinearLayout
+            android:layout_width="@dimen/margin_80"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/movies_list_filter_img_margin_left"
+            android:layout_height="@dimen/margin_30">
+        <ImageView
+            android:id="@+id/filter_img"
+            android:layout_width="@dimen/movies_list_filter_img_width"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@drawable/filter_normal" />
+
+        <TextView
+            android:id="@+id/filter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/movies_list_filter_name_margin_left"
+            android:text="筛选"
+            android:gravity="center"
+            android:textColor="@color/c23_color"
+            android:textSize="@dimen/T23_C23_Light_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/movies_list_margin_bottom"
+        android:layout_marginLeft="@dimen/movies_list_margin_left"
+        android:layout_marginRight="@dimen/movies_list_margin_right"
+        android:layout_marginTop="@dimen/movies_list_margin_top">
+
+        <LinearLayout
+            android:id="@+id/movies_list_no_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/movies_list_no_content_img_width"
+                android:layout_height="@dimen/movies_list_no_content_img_height"
+                android:src="@drawable/movies_list_no_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/movies_list_no_content_text_margin_top"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="无内容"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/movies_category_no_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="150px"
+            android:layout_toRightOf="@id/movies_list_no_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/movies_list_no_content_img_width"
+                android:layout_height="@dimen/movies_list_no_content_img_height"
+                android:src="@drawable/movies_list_no_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/movies_list_no_content_text_margin_top"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="无内容"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.pukka.ydepg.common.extview.MyHorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="@dimen/movies_list_layout_width"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/catagory_lists"
+                android:layout_width="@dimen/movies_list_catagory_lists_width"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relayout_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="@dimen/movies_list_first_catagory_list_margin_left"
+                    android:layout_marginRight="@dimen/movies_list_first_catagory_list_margin_right"
+                    android:layout_marginTop="@dimen/movies_list_margin_top"
+                    android:background="@drawable/movies_list_catagory_item_selector"
+                    android:focusable="true">
+
+                    <ImageView
+                        android:id="@+id/activity_movie_list_icon_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/movies_list_catagory_item_text_margin_left"
+                        android:src="@drawable/icon_sc_search" />
+                </RelativeLayout>
+
+                <androidx.leanback.widget.VerticalGridView
+                    android:id="@+id/first_catagory_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relayout_search"
+                    android:layout_marginBottom="@dimen/movies_list_margin_bottom"
+                    android:layout_marginLeft="@dimen/movies_list_first_catagory_list_margin_left"
+                    android:layout_marginRight="@dimen/movies_list_first_catagory_list_margin_right" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/movies_list_line"
+                android:layout_width="@dimen/movies_list_view_width"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/movies_list_margin_bottom"
+                android:layout_marginTop="@dimen/movies_list_margin_top"
+                android:layout_toRightOf="@id/catagory_lists"
+                android:background="@color/c17_color" />
+
+            <com.pukka.ydepg.moudule.vod.view.FocusVerticalGridView
+                android:id="@+id/movies_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/movies_list_margin_bottom"
+                android:layout_marginTop="@dimen/movies_list_margin_top"
+                android:layout_toRightOf="@id/catagory_lists"
+                android:clipToPadding="false"
+                android:paddingLeft="@dimen/movies_list_margin_left"
+                android:paddingRight="@dimen/movies_list_margin_right"
+                android:paddingTop="@dimen/movies_list_padding_top" />
+        </RelativeLayout>
+    </com.pukka.ydepg.common.extview.MyHorizontalScrollView>
+
+    <RelativeLayout
+        android:id="@+id/progressrel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/movies_list_progress"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/tvplay_progress_loading"
+            android:visibility="gone" />
+    </RelativeLayout>
+</androidx.leanback.widget.BrowseFrameLayout>

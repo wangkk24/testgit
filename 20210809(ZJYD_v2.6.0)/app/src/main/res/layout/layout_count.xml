@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_skip_count"
+        android:layout_width="@dimen/margin_106"
+        android:layout_height="@dimen/margin_32"
+        android:background="@drawable/welcome_text_bg"
+        android:layout_marginBottom="@dimen/margin_28.5"
+        android:layout_marginEnd="@dimen/margin_28.5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:textSize="@dimen/margin_15"
+        android:textColor="#fffefe"
+        />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/text_count_layout"
+        android:orientation="horizontal"
+        android:layout_width="@dimen/margin_106"
+        android:layout_height="@dimen/margin_30"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_28.5"
+        android:layout_marginEnd="@dimen/margin_28.5"
+        android:background="@drawable/welcome_text_bg"
+        >
+
+        <TextView
+            android:id="@+id/text_count_count"
+            android:layout_width="@dimen/margin_50"
+            android:layout_height="@dimen/margin_28.5"
+            android:gravity="right|center_vertical"
+            android:textSize="@dimen/margin_14"
+            android:textColor="#f86d0e"
+            />
+        <TextView
+            android:id="@+id/text_count_ad"
+            android:layout_width="@dimen/margin_102"
+            android:layout_height="@dimen/margin_32"
+            android:text="|    广告"
+            android:gravity="left|center_vertical"
+            android:textSize="@dimen/margin_14"
+            android:textColor="#fffefe"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/text_ad"
+        android:layout_width="@dimen/margin_46"
+        android:layout_height="@dimen/margin_28.5"
+        android:src="@drawable/ad_welcome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_28.5"
+        android:layout_marginTop="@dimen/margin_28.5"
+        android:scaleType="fitXY"/>
+
+</RelativeLayout>

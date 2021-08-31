@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/notifity_list_width"
+    android:layout_height="@dimen/notifity_list_height"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/bg_notification_selector"
+    android:focusable="true"
+   >
+
+    <RelativeLayout
+        android:layout_width="@dimen/notifity_list_width"
+        android:layout_height="@dimen/notifity_list_height">
+
+        <RelativeLayout
+            android:id="@+id/sub_relativelayout"
+            android:layout_width="@dimen/notifity_list_super_layout_width"
+            android:layout_marginLeft="@dimen/margin_1.5"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/notifity_list_super_layout_height">
+
+            <TextView
+                android:id="@+id/notification_adapter_title"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_22.5"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="通知标题 01"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/notifity_list_name_size" />
+
+            <TextView
+                android:id="@+id/notification_adapter_time_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_160"
+                android:text="2017-03-22"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/notifity_list_time_size" />
+
+            <TextView
+                android:id="@+id/notification_adapter_time_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_24"
+                android:layout_toRightOf="@+id/notification_adapter_time_big"
+                android:text="11:40"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/notifity_list_time_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_adapter_delete_btn"
+            android:layout_width="@dimen/notifity_list_delete_width"
+            android:layout_height="@dimen/notifity_list_super_layout_height"
+            android:focusable="true"
+            android:layout_marginRight="@dimen/margin_1.5"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="@dimen/margin_1.5"
+                android:layout_height="match_parent"
+                android:background="@color/c02_color" />
+
+            <Button
+                android:layout_width="@dimen/margin_30"
+                android:layout_height="@dimen/margin_30"
+                android:layout_centerInParent="true"
+                android:background="@drawable/notificationd_delete"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

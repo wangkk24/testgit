@@ -1,0 +1,297 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+//apply plugin: 'me.tatarka.retrolambda'
+//apply plugin: 'com.jakewharton.hugo'
+
+buildscript {
+  repositories {
+    //拷贝插件jar 到/plugin，或指定目录
+    flatDir { dirs rootProject.projectDir.toString() + '/plugin' }
+  }
+}
+
+repositories {
+  /**
+   * for aar package
+   */
+  flatDir {
+    dirs '../libs/self_lib/aar/'
+    dirs '../libs/thirdparty_lib/aar/'
+    /**
+     * 解决Module里面调用aar出现Failed to resolve的问题
+     */
+    dirs project(':tvplayer').file('../libs/thirdparty_lib/aar/')
+  }
+}
+
+android {
+  compileSdkVersion rootProject.ext.android.CompileSdkVersion
+  buildToolsVersion rootProject.ext.android.BuildToolsVersion
+
+  //    dexOptions {
+  //        additionalParameters '--multi-dex', '--main-dex-list=' + file('multidex-config.txt').absolutePath, '--minimal-main-dex'
+  //    }
+
+  ndkVersion "21.1.6352462"
+
+  sourceSets {
+    main {
+        jniLibs.srcDir '../jniso/UBD/'
+    }
+  }
+
+  configurations.all {
+    resolutionStrategy.force deps.multidex
+  }
+  defaultConfig {
+    applicationId "com.pukka.ydepg"
+    minSdkVersion rootProject.ext.android.MinSdkVersion
+    targetSdkVersion rootProject.ext.android.TargetSdkVersion
+    versionCode rootProject.ext.android.versionCode
+    versionName rootProject.ext.android.versionName
+
+    multiDexEnabled true
+
+    renderscriptTargetApi 19
+    renderscriptSupportModeEnabled true    // Enable RS support
+
+    ndk {
+      abiFilters "armeabi"
+      abiFilters "armeabi-v7a"
+      abiFilters "x86"
+    }
+  }
+  
+  signingConfigs {
+
+    debug {
+      storeFile file('../key/zj_epg.jks')
+      storePassword "123456"
+      keyAlias "key0"
+      keyPassword "654321"
+
+      // 同时满足下面两个条件才需要此配置
+      // 1. Gradle版本 >= 2.14.1
+      // 2. Android Gradle Plugin 版本 >= 2.2.0
+      // 作用是只使用旧版签名，禁用V2版签名模式
+      v2SigningEnabled false
+    }
+
+    release {
+      storeFile file('../key/zj_epg.jks')
+      storePassword "123456"
+      keyAlias "key0"
+      keyPassword "654321"
+
+      // 同时满足下面两个条件才需要此配置
+      // 1. Gradle版本 >= 2.14.1
+      // 2. Android Gradle Plugin 版本 >= 2.2.0
+      // 作用是只使用旧版签名，禁用V2版签名模式
+      v2SigningEnabled false
+    }
+  }
+
+  buildTypes {
+    debug {
+      multiDexKeepFile file('multidex-config.txt')
+      def formattedDate = new Date().format('yyyyMMdd')
+      def svnLog = formattedDate + "_debug"
+      def df = new SimpleDateFormat("yyyyMMdd_HHmmss")
+      buildConfigField "String", "SVN_LOG", '\"' + svnLog + '\"'
+      buildConfigField "Boolean", "DEBUG_LOG", "true"
+      buildConfigField "Boolean", "TEST", "false"
+      buildConfigField "Boolean", "CONFIG_ENABLE", "true"
+      //空间视频
+      buildConfigField "String", "BUIL_TIME", "\"${df.format(new Date())}\""
+      buildConfigField "String", "APP_DESC", "\"\""
+      buildConfigField "boolean", "LOG_ENABLE", "true"
+      zipAlignEnabled true //使用zipAlign优化
+      //shrinkResources true    // 移除无用的resource文件
+      signingConfig signingConfigs.debug
+
+      versionNameSuffix " Debug"
+    }
+    release {
+      multiDexKeepFile file('multidex-config.txt')
+      def formattedDate = new Date().format('yyyyMMdd')
+      def svnLog = formattedDate + "_release"
+      def df = new SimpleDateFormat("yyyyMMdd_HHmmss")
+      buildConfigField "String", "SVN_LOG", '\"' + svnLog + '\"'
+      buildConfigField "Boolean", "DEBUG_LOG", "false"
+      buildConfigField "Boolean", "TEST", "false"
+      buildConfigField "Boolean", "CONFIG_ENABLE", "false"
+      //空间视频
+      buildConfigField "String", "BUIL_TIME", "\"${df.format(new Date())}\""
+      buildConfigField "String", "APP_DESC", "\"\""
+      buildConfigField "boolean", "LOG_ENABLE", "true"
+      zipAlignEnabled true //使用zipAlign优化
+      //shrinkResources true    // 移除无用的resource文件
+      signingConfig signingConfigs.release
+
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  android.applicationVariants.all { variant ->
+    def formattedDate = new Date().format('yyyyMMdd')
+    def versionName
+
+    variant.outputs.all { output ->
+      def outputFile = output.outputFile
+      if (outputFile != null && outputFile.name.contains('release')) {
+        versionName = variant.versionName
+        outputFileName = "${versionName}_CODE${variant.versionCode}_${formattedDate}_release.apk"
+      } else {
+        versionName = "${variant.versionName}".substring(0,"${variant.versionName}".length()-6)
+        outputFileName = "${versionName}_CODE${variant.versionCode}_${formattedDate}_debug.apk"
+      }
+    }
+
+    def folderName = formattedDate + "(" + versionName + ")"
+    variant.getPackageApplication().outputDirectory = new File(project.rootDir.absolutePath + "/../ZJYD_PACKAGE/${folderName}")
+  }
+
+  compileOptions {
+    // 指定用 Java8 编译
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  dexOptions {
+    javaMaxHeapSize "4g"
+    preDexLibraries = false
+  }
+}
+
+
+
+android {
+  lintOptions {
+    checkReleaseBuilds false
+    abortOnError false
+  }
+}
+
+repositories {
+  flatDir {
+    dirs 'libs'
+  }
+}
+//解决jar包引用重复报错
+android {
+  packagingOptions {
+    exclude 'META-INF/DEPENDENCIES'
+    exclude 'META-INF/NOTICE'
+    exclude 'META-INF/LICENSE'
+    exclude 'META-INF/LICENSE.txt'
+    exclude 'META-INF/NOTICE.txt'
+    exclude 'META-INF/rxjava.properties'
+  }
+}
+
+dependencies {
+  implementation fileTree(include: ['*.jar'], dir: 'libs')
+  implementation project(path: ':vrlib')
+
+  //UBD SDK
+  compile files('../libs/thirdparty_lib/ott-encrypt.jar')
+
+  //UBD SDK
+  compile files('../libs/thirdparty_lib/UBD/ott-log.jar')
+  compile files('../libs/thirdparty_lib/UBD/ott-network.jar')
+  compile files('../libs/thirdparty_lib/UBD/ott-ubd.jar')
+
+  //第三方支付SDK
+  compile files('../libs/thirdparty_lib/pay/payment-sign-3.0.jar')
+  compile files('../libs/thirdparty_lib/pay/commons-httpclient-3.1.jar')
+  compile files('../libs/thirdparty_lib/pay/commons-bcprov-2.0.jar')
+
+  //易视腾提供的静默安装
+  compile files('../libs/thirdparty_lib/install/InstallClient.jar')
+
+  //语音SDK
+  compile files('../libs/thirdparty_lib/voice/XiriFeedback.jar')
+  compile files('../libs/thirdparty_lib/voice/XiriScene.jar')
+
+  //认证SDK
+  compile files('../libs/thirdparty_lib/auth/TokenManager_20170717.jar')
+
+  //空间视频
+  compile files('../libs/thirdparty_lib/huaweicloudplayer.jar')
+  //compile files('../libs/thirdparty_lib/ott-log.jar')
+  //其他本地第三方
+  implementation deps.apache_common_codec
+
+  /*Android support基础库*/
+  implementation deps.design
+  implementation deps.leanback    /*TV必须的依赖库*/
+  implementation deps.multidex
+  implementation deps.recyclerviewV7
+  implementation deps.supportV4
+  implementation deps.appcompatV7
+
+  /*ButterKnife注解*/
+  implementation deps.butterknife
+  annotationProcessor deps.butterknifeCompiler
+
+  /*Glide图片加载库*/
+  implementation(deps.glide) { exclude group: 'com.android.support' }
+  annotationProcessor deps.glide_compiler
+
+  /*Android网络库*/
+  implementation deps.okhttp
+  implementation deps.retrofit
+  implementation deps.retrofit_convert_gson
+
+  /*rx-android-java*/
+  implementation deps.rxjava
+  implementation(deps.rxandroid) { exclude group: 'io.reactivex.rxjava2' } //rxandroid:2.1.1依赖rxjava:2.2.6
+  compile files('../libs/thirdparty_lib/adapter-rxjava2-2.3.0.jar')
+
+  //rxlifecycle
+  compile files('../libs/thirdparty_lib/rxlifecycle-2.2.1.jar')
+  compile(name: 'rxlifecycle-components-2.2.1', ext: 'aar')   /* aar start */
+  compile(name: 'rxlifecycle-android-2.2.1',    ext: 'aar')     /* aar end */
+
+  //闪光控件
+  implementation 'com.github.mmin18:realtimeblurview:1.1.2'
+  implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+  //其他工具
+  implementation deps.eventbus
+  implementation deps.gson
+  implementation deps.jackson        //UBD依赖库
+  implementation deps.zxing_core     //生成二维码
+  implementation group: 'commons-io',     name: 'commons-io',     version: '2.6'    //commons-io 2.7及以上版本使用了jdk1.7及更高版本中的方法,如果使用2.7及之后版本,需要注意兼容性问题
+                                                                                      //当前项目miniSdkVersion为19 android4.4 内置JDK版本为1.6 运行时可能会出错
+  implementation group: 'com.mikesamuel', name: 'json-sanitizer', version: '1.2.3'  //用以解决Codex扫描JSON注入的问题
+  implementation group: 'com.belerweb',   name: 'pinyin4j',       version: '2.5.1'  //汉字转拼音工具库,用于搜索关键字匹配结果高亮
+
+  implementation "com.android.support:support-annotations:28.0.0"
+  implementation "androidx.viewpager2:viewpager2:1.0.0"
+  implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+
+  //xml解析
+  implementation group: 'org.simpleframework', name: 'simple-xml', version: '2.7.1'
+  
+  annotationProcessor "com.android.support:support-annotations:28.0.0"
+
+  /*解决exoplayer和ButterKnife冲突,指定同一个版本*/
+  configurations.all {
+    resolutionStrategy.force "com.android.support:support-annotations:${depsVersion.support}"
+    resolutionStrategy.force "com.android.support:appcompat-v7:${depsVersion.support}"
+    resolutionStrategy.force "com.fasterxml.jackson.core:jackson-annotations:${depsVersion.jackson}"
+    resolutionStrategy.force "com.squareup.okio:okio:${depsVersion.okio}"//okhttp[3.12.1]依赖okio[1.15.0] 开源整改优选okio[1.14.1]
+  }
+
+  //工程依赖
+  implementation project(':tvplayer')
+  implementation project(':zjyd-annotation')
+  annotationProcessor project(':zjyd-compiler')
+  annotationProcessor project(':vrlib')
+
+  //内存优化工具,只在debug模式下有效，所以不用担心用户在正式环境下也会出现LeakCanary收集
+  //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.3'
+}

@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+repositories{
+  flatDir{
+    dirs '../libs/thirdparty_lib/aar/'
+  }
+}
+
+android {
+  compileSdkVersion rootProject.ext.android.CompileSdkVersion
+  buildToolsVersion rootProject.ext.android.BuildToolsVersion
+
+  defaultConfig {
+    minSdkVersion rootProject.ext.android.MinSdkVersion
+    targetSdkVersion rootProject.ext.android.TargetSdkVersion
+    versionCode 1
+    versionName "1.0"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  api deps.exoplayer_core
+  api deps.exoplayer_ui
+  api deps.exoplayer_hls
+  compileOnly deps.eventbus
+  compileOnly deps.appcompatV7
+  compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+  implementation 'androidx.annotation:annotation:1.1.0'
+}

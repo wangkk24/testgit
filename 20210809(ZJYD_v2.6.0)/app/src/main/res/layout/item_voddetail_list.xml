@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true">
+
+
+    <RelativeLayout
+        android:id="@+id/item_voddetail_bg_layout"
+        android:layout_width="@dimen/new_voddetail_item_width"
+        android:layout_height="@dimen/new_voddetail_item_height"
+        android:layout_marginTop="@dimen/margin_2"
+        android:padding="@dimen/margin_2"
+        android:background="@drawable/mytv_history_list_item_selector"
+        android:focusable="false">
+
+        <com.pukka.ydepg.launcher.view.CustomRoundImageView
+            android:id="@+id/item_voddetail_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:radius_imageview="8dp"
+            android:focusable="false"/>
+
+        <ImageView
+            android:id="@+id/vipimg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_26"
+            android:layout_marginStart="@dimen/margin_10"
+            android:scaleType="fitStart"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/item_voddetail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="@dimen/new_voddetail_item_width"
+        android:layout_below="@+id/item_voddetail_bg_layout"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/margin_22.5"
+        android:gravity="center"
+        android:focusable="false"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        />
+
+</RelativeLayout>

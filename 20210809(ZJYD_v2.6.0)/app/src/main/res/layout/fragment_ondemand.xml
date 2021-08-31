@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.FrameLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fm_ondemand_container"
+    android:layout_height="match_parent">
+    <com.pukka.ydepg.view.PlayView
+        android:id="@+id/play_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:play_type="TYPE_NATIVE"
+        app:play_resize_mode="AUTO"
+        app:ControlViewBackground="@drawable/playcontrolview_background"
+        app:AutoPlay="false"/>
+    <include layout="@layout/player_order_button"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/tryseelayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/product_detail_margin_top"
+        android:layout_height="@dimen/margin_50">
+        <TextView
+            android:id="@+id/seehinttv"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/c36_color"
+            android:background="@color/transparent_50"
+            android:text="您可以免费观看5分钟，观看完整版请点击"
+            android:textSize="@dimen/featured_detail_32sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/c37_color"
+            android:text="@string/enter_and_player"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@color/transparent_50"
+            android:textSize="@dimen/featured_detail_32sp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/marketing_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+                android:id="@+id/marketing_content"
+                android:layout_width="@dimen/marketing_content_width"
+                android:layout_height="@dimen/marketing_content_height"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="@dimen/marketing_content_margin_bottom"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription"/>
+    </LinearLayout>
+    <com.pukka.ydepg.common.ad.ui.CountDownRelativeLayouyt
+        android:id="@+id/advert_hint"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.pukka.ydepg.common.extview.FrameLayoutExt>

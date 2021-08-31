@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.RelativeLayoutFocusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/tVod_A_210"
+    android:layout_height="@dimen/tVod_A_120"
+    android:focusable="true"
+    android:id="@+id/rela_channel"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_marginTop="@dimen/margin_20"
+    android:background="@drawable/select_tvod_selected">
+
+    <ImageView
+        android:id="@+id/movies_list_item_img"
+        android:layout_width="@dimen/margin_60"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_15"
+        android:scaleType="fitCenter"
+        android:src="@drawable/channel_default_logo"
+        android:layout_height="@dimen/margin_60" />
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/movies_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:text="惊天魔盗"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:textColor="@color/c43_color"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/collection_detail_text_size" />
+</com.pukka.ydepg.customui.focusView.RelativeLayoutFocusView>

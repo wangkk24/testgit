@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/margin_26"></corners>
+    <solid android:color="@color/epg_scroll_ads_bgcolor_focus"></solid>
+
+
+</shape>

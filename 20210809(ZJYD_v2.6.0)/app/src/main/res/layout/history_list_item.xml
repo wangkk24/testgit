@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:layout_marginTop="@dimen/my_8dp"
+    android:layout_marginBottom="@dimen/my_8dp"
+    android:descendantFocusability="beforeDescendants"
+    android:id="@+id/history_list_item_layout"
+    android:maxHeight="@dimen/history_item_min_height"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/history_list_name_layout"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:minHeight="@dimen/margin_48"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/ic_history_type"
+            android:src="@drawable/icon_tv"
+            android:layout_marginTop="@dimen/margin_11.2"
+            android:layout_marginStart="@dimen/margin_14"
+            android:layout_width="@dimen/margin_24"
+            android:layout_height="@dimen/margin_24" />
+        <TextView
+            android:id="@+id/history_list_item_name"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:layout_toRightOf="@+id/ic_history_type"
+            android:layout_marginStart="@dimen/margin_22"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:maxWidth="@dimen/history_item_min_width"
+            android:layout_marginLeft="58px"
+            android:textSize="@dimen/history_item_name_text_size"
+            android:textColor="@color/c21_color"
+            android:layout_height="@dimen/history_item_name_height" />
+        <LinearLayout
+            android:id="@+id/history_progress_layout"
+            android:layout_below="@+id/history_list_item_name"
+            android:orientation="horizontal"
+            android:maxWidth="@dimen/history_item_min_width"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/me_margin_5dp"
+            android:layout_toRightOf="@+id/ic_history_type"
+            android:layout_marginStart="@dimen/margin_22"
+            android:layout_marginLeft="58px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:id="@+id/pr_progress"
+                android:layout_gravity="center_vertical"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:visibility="gone"
+                android:progress="0"
+                android:progressDrawable="@drawable/mytv_progressbar"
+                android:layout_width="@dimen/history_item_progress_width"
+                android:layout_height="@dimen/history_item_progress_height" />
+            <TextView
+                android:id="@+id/history_list_item_time"
+                android:maxLines="1"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:ellipsize="end"
+                android:textSize="@dimen/history_item_text_size"
+                android:visibility="gone"
+                android:textColor="@color/c21_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/history_list_item_all_time"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/history_item_text_size"
+                android:visibility="gone"
+                android:textColor="@color/c24_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/history_list_item_check"
+        android:background="@drawable/mytv_btn_layout_bg"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/history_list_name_layout"
+        android:layout_alignBottom="@+id/history_list_name_layout"
+        android:layout_marginRight="@dimen/margin_93"
+        android:layout_alignParentRight="true"
+        android:layout_toLeftOf="@+id/history_list_item_delete"
+        android:visibility="gone"
+        android:layout_width="@dimen/history_item_check_width"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/mytv_main_check_img"
+            android:scaleType="centerCrop"
+            android:background="@drawable/mytv_choice_bg"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_list_item_play"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/history_list_item_delete"
+        android:gravity="center"
+        android:background="@drawable/mytv_item_bg"
+        android:layout_marginRight="@dimen/margin_93"
+        android:layout_width="@dimen/history_item_check_width"
+        android:layout_height="@dimen/history_item_check_width"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/play_48"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_list_item_delete"
+        android:background="@drawable/mytv_btn_layout_bg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_alignTop="@+id/history_list_name_layout"
+        android:layout_alignBottom="@+id/history_list_name_layout"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone"
+        android:layout_width="@dimen/history_item_check_width"
+        android:layout_height="@dimen/history_item_check_width">
+        <ImageView
+            android:src="@drawable/delete_32"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

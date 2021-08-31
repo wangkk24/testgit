@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/style_one_item_width"
+    android:layout_height="@dimen/style_one_item_height"
+    android:layout_marginBottom="@dimen/style_one_item_marginV"
+    android:layout_marginLeft="@dimen/style_one_item_marginH"
+    android:layout_marginRight="@dimen/style_one_item_marginH"
+    android:layout_marginTop="@dimen/style_one_item_marginV"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/movies_list_item_img_bg"
+        android:layout_width="@dimen/style_one_item_poster_width"
+        android:layout_height="@dimen/style_one_item_poster_height"
+        android:background="@drawable/movies_list_item_selector"
+        android:padding="@dimen/movies_list_item_img_bg_padding">
+
+        <ImageView
+            android:id="@+id/movies_list_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster" />
+
+        <View
+            android:id="@+id/movies_list_poster_right_view"
+            android:layout_width="@dimen/style_item_layer_size"
+            android:layout_height="@dimen/style_item_layer_size"
+            android:layout_alignParentRight="true" />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movies_list_item_view_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/movies_list_shadow" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/movies_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/style_one_item_text_margin"
+            android:layout_marginLeft="@dimen/style_one_item_text_margin"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T24_C21_Light_size" />
+    </RelativeLayout>
+</RelativeLayout>

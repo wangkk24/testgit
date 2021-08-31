@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_item_root_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/order_list_item_layout"
+        android:layout_width="640dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="96dp">
+        <TextView
+            android:id="@+id/ordered_list_item_name"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:gravity="center_vertical"
+            android:ellipsize="marquee"
+            android:maxWidth="527dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="@dimen/T212_C21_Light_size"
+            android:textColor="@color/c21_color"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ordered_list_item_price"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="34dp"
+            android:textSize="@dimen/T212_C21_Light_size"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/c21_color"
+            android:text="$ 1.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/order_list_item_time"
+            android:maxLines="1"
+            android:layout_marginLeft="30dp"
+            android:ellipsize="end"
+            android:maxWidth="527dp"
+            android:textSize="@dimen/T24_C21_Light_size"
+            android:visibility="visible"
+            android:textColor="@color/c21_color"
+            android:layout_marginTop="48dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/unsubscriber_layout"
+        android:background="@drawable/mytv_btn_layout_bg"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:focusableInTouchMode="true"
+        android:layout_toRightOf="@+id/order_list_item_layout"
+        android:focusable="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/imageUnsubscriber"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </RelativeLayout>
+</RelativeLayout>

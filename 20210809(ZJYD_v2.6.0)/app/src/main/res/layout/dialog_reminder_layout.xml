@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_popwindow"
+    android:layout_height="match_parent"
+    android:gravity="right">
+  <TextView
+      android:id="@+id/tv_dialog_title"
+      android:layout_width="@dimen/dialog_reminder_title_width"
+      android:textSize="@dimen/dialog_reminder_title_textSize"
+      android:text="@string/mytv_dialog_title"
+      android:visibility="invisible"
+      android:layout_marginTop="@dimen/dialog_reminder_title_margintop"
+      android:layout_marginRight="@dimen/dialog_reminder_title_marginright"
+      android:textColor="@color/c21_color"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/tv_dialog_detail"
+      android:layout_marginTop="@dimen/dialog_reminder_detail_margintop"
+      android:layout_width="@dimen/dialog_reminder_detail_width"
+      android:textSize="@dimen/dialog_reminder_detail_textSize"
+      android:layout_marginRight="@dimen/dialog_reminder_detail_marginright"
+      android:textColor="@color/c24_color"
+      android:text="@string/mytv_dialog_content"
+      android:layout_height="wrap_content" />
+  <TextView
+      android:id="@+id/tv_dialog_ok"
+      android:layout_marginTop="@dimen/dialog_reminder_ok_margintop"
+      android:layout_width="@dimen/dialog_reminder_ok_width"
+      android:text="@string/mytv_dialog_sure"
+      android:background="@drawable/my_dialog_ok_bg"
+      android:focusable="true"
+      android:layout_marginRight="@dimen/dialog_reminder_ok_marginright"
+      android:gravity="center"
+      android:textSize="@dimen/dialog_reminder_okcancel_textSize"
+      android:textColor="@color/c21_color"
+      android:layout_height="@dimen/dialog_reminder_ok_height" />
+  <TextView
+      android:id="@+id/tv_dialog_cancel"
+      android:layout_marginTop="@dimen/dialog_reminder_cancel_margintop"
+      android:layout_width="@dimen/dialog_reminder_cancel_width"
+      android:text="@string/mytv_dialog_cancel"
+      android:background="@drawable/my_dialog_ok_bg"
+      android:focusable="true"
+      android:layout_marginRight="@dimen/dialog_reminder_cancel_marginright"
+      android:gravity="center"
+      android:textSize="@dimen/dialog_reminder_okcancel_textSize"
+      android:textColor="@color/c21_color"
+      android:layout_height="@dimen/dialog_reminder_cancel_height" />
+
+</LinearLayout>

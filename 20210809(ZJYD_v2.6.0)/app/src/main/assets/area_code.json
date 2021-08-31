@@ -1,0 +1,637 @@
+{
+  "1": {
+    "areacode": "1",
+    "foreignsn": "1",
+    "areaname": "浙江"
+  },
+  "2": {
+    "areacode": "2",
+    "foreignsn": "2",
+    "areaname": "test"
+  },
+  "3": {
+    "areacode": "3",
+    "foreignsn": "3",
+    "areaname": "固网"
+  },
+  "4": {
+    "areacode": "571",
+    "foreignsn": "571",
+    "areaname": "杭州"
+  },
+  "5": {
+    "areacode": "572",
+    "foreignsn": "572",
+    "areaname": "湖州"
+  },
+  "6": {
+    "areacode": "574",
+    "foreignsn": "574",
+    "areaname": "宁波"
+  },
+  "7": {
+    "areacode": "579",
+    "foreignsn": "579",
+    "areaname": "金华"
+  },
+  "8": {
+    "areacode": "577",
+    "foreignsn": "577",
+    "areaname": "温州"
+  },
+  "9": {
+    "areacode": "575",
+    "foreignsn": "575",
+    "areaname": "绍兴"
+  },
+  "10": {
+    "areacode": "5755",
+    "foreignsn": "5755",
+    "areaname": "新昌县"
+  },
+  "11": {
+    "areacode": "571B",
+    "foreignsn": "571B",
+    "areaname": "西湖"
+  },
+  "12": {
+    "areacode": "5711",
+    "foreignsn": "5711",
+    "areaname": "杭州"
+  },
+  "13": {
+    "areacode": "5712",
+    "foreignsn": "5712",
+    "areaname": "萧山"
+  },
+  "14": {
+    "areacode": "5713",
+    "foreignsn": "5713",
+    "areaname": "富阳"
+  },
+  "15": {
+    "areacode": "5714",
+    "foreignsn": "5714",
+    "areaname": "余杭"
+  },
+  "16": {
+    "areacode": "5771",
+    "foreignsn": "5771",
+    "areaname": "鹿城"
+  },
+  "17": {
+    "areacode": "5791",
+    "foreignsn": "5791",
+    "areaname": "婺城"
+  },
+  "18": {
+    "areacode": "5792",
+    "foreignsn": "5792",
+    "areaname": "义乌"
+  },
+  "19": {
+    "areacode": "5793",
+    "foreignsn": "5793",
+    "areaname": "磐安"
+  },
+  "20": {
+    "areacode": "5775",
+    "foreignsn": "5775",
+    "areaname": "永嘉"
+  },
+  "21": {
+    "areacode": "5776",
+    "foreignsn": "5776",
+    "areaname": "洞头"
+  },
+  "22": {
+    "areacode": "5777",
+    "foreignsn": "5777",
+    "areaname": "文成"
+  },
+  "23": {
+    "areacode": "5778",
+    "foreignsn": "5778",
+    "areaname": "泰顺"
+  },
+  "24": {
+    "areacode": "570",
+    "foreignsn": "570",
+    "areaname": "衢州"
+  },
+  "25": {
+    "areacode": "5701",
+    "foreignsn": "5701",
+    "areaname": "柯城"
+  },
+  "26": {
+    "areacode": "5702",
+    "foreignsn": "5702",
+    "areaname": "江山"
+  },
+  "27": {
+    "areacode": "5703",
+    "foreignsn": "5703",
+    "areaname": "常山"
+  },
+  "28": {
+    "areacode": "5794",
+    "foreignsn": "5794",
+    "areaname": "兰溪"
+  },
+  "29": {
+    "areacode": "5795",
+    "foreignsn": "5795",
+    "areaname": "东阳"
+  },
+  "30": {
+    "areacode": "5796",
+    "foreignsn": "5796",
+    "areaname": "永康"
+  },
+  "31": {
+    "areacode": "5797",
+    "foreignsn": "5797",
+    "areaname": "浦江"
+  },
+  "32": {
+    "areacode": "5798",
+    "foreignsn": "5798",
+    "areaname": "武义"
+  },
+  "33": {
+    "areacode": "5721",
+    "foreignsn": "5721",
+    "areaname": "吴兴"
+  },
+  "34": {
+    "areacode": "5722",
+    "foreignsn": "5722",
+    "areaname": "长兴"
+  },
+  "35": {
+    "areacode": "5723",
+    "foreignsn": "5723",
+    "areaname": "德清"
+  },
+  "36": {
+    "areacode": "5724",
+    "foreignsn": "5724",
+    "areaname": "安吉"
+  },
+  "37": {
+    "areacode": "5799",
+    "foreignsn": "5799",
+    "areaname": "金东"
+  },
+  "38": {
+    "areacode": "573",
+    "foreignsn": "573",
+    "areaname": "嘉兴"
+  },
+  "39": {
+    "areacode": "5731",
+    "foreignsn": "5731",
+    "areaname": "嘉兴"
+  },
+  "40": {
+    "areacode": "5732",
+    "foreignsn": "5732",
+    "areaname": "桐乡"
+  },
+  "41": {
+    "areacode": "5733",
+    "foreignsn": "5733",
+    "areaname": "海宁"
+  },
+  "42": {
+    "areacode": "5734",
+    "foreignsn": "5734",
+    "areaname": "嘉善"
+  },
+  "43": {
+    "areacode": "5735",
+    "foreignsn": "5735",
+    "areaname": "平湖"
+  },
+  "44": {
+    "areacode": "5736",
+    "foreignsn": "5736",
+    "areaname": "海盐"
+  },
+  "45": {
+    "areacode": "580",
+    "foreignsn": "580",
+    "areaname": "舟山"
+  },
+  "46": {
+    "areacode": "5801",
+    "foreignsn": "5801",
+    "areaname": "定海"
+  },
+  "47": {
+    "areacode": "5802",
+    "foreignsn": "5802",
+    "areaname": "普陀"
+  },
+  "48": {
+    "areacode": "5803",
+    "foreignsn": "5803",
+    "areaname": "岱山"
+  },
+  "49": {
+    "areacode": "5804",
+    "foreignsn": "5804",
+    "areaname": "嵊泗"
+  },
+  "50": {
+    "areacode": "578",
+    "foreignsn": "578",
+    "areaname": "丽水"
+  },
+  "51": {
+    "areacode": "5782",
+    "foreignsn": "5782",
+    "areaname": "缙云"
+  },
+  "52": {
+    "areacode": "5783",
+    "foreignsn": "5783",
+    "areaname": "青田"
+  },
+  "53": {
+    "areacode": "5784",
+    "foreignsn": "5784",
+    "areaname": "云和"
+  },
+  "54": {
+    "areacode": "5785",
+    "foreignsn": "5785",
+    "areaname": "庆元"
+  },
+  "55": {
+    "areacode": "5786",
+    "foreignsn": "5786",
+    "areaname": "龙泉"
+  },
+  "56": {
+    "areacode": "5787",
+    "foreignsn": "5787",
+    "areaname": "遂昌"
+  },
+  "57": {
+    "areacode": "5788",
+    "foreignsn": "5788",
+    "areaname": "松阳"
+  },
+  "58": {
+    "areacode": "5789",
+    "foreignsn": "5789",
+    "areaname": "景宁"
+  },
+  "59": {
+    "areacode": "5780",
+    "foreignsn": "5780",
+    "areaname": "要客"
+  },
+  "60": {
+    "areacode": "5781",
+    "foreignsn": "5781",
+    "areaname": "丽水"
+  },
+  "61": {
+    "areacode": "5715",
+    "foreignsn": "5715",
+    "areaname": "建德"
+  },
+  "62": {
+    "areacode": "5716",
+    "foreignsn": "5716",
+    "areaname": "淳安"
+  },
+  "63": {
+    "areacode": "5717",
+    "foreignsn": "5717",
+    "areaname": "桐庐"
+  },
+  "64": {
+    "areacode": "5718",
+    "foreignsn": "5718",
+    "areaname": "临安"
+  },
+  "65": {
+    "areacode": "5719",
+    "foreignsn": "5719",
+    "areaname": "滨江"
+  },
+  "66": {
+    "areacode": "571A",
+    "foreignsn": "571A",
+    "areaname": "下沙"
+  },
+  "67": {
+    "areacode": "571C",
+    "foreignsn": "571C",
+    "areaname": "江干"
+  },
+  "68": {
+    "areacode": "571D",
+    "foreignsn": "571D",
+    "areaname": "拱墅"
+  },
+  "69": {
+    "areacode": "5704",
+    "foreignsn": "5704",
+    "areaname": "开化"
+  },
+  "70": {
+    "areacode": "5705",
+    "foreignsn": "5705",
+    "areaname": "龙游"
+  },
+  "71": {
+    "areacode": "5706",
+    "foreignsn": "5706",
+    "areaname": "衢江"
+  },
+  "72": {
+    "areacode": "5725",
+    "foreignsn": "5725",
+    "areaname": "南浔"
+  },
+  "73": {
+    "areacode": "5751",
+    "foreignsn": "5751",
+    "areaname": "越城"
+  },
+  "74": {
+    "areacode": "5752",
+    "foreignsn": "5752",
+    "areaname": "诸暨"
+  },
+  "75": {
+    "areacode": "5753",
+    "foreignsn": "5753",
+    "areaname": "上虞"
+  },
+  "76": {
+    "areacode": "5754",
+    "foreignsn": "5754",
+    "areaname": "嵊州"
+  },
+  "77": {
+    "areacode": "5756",
+    "foreignsn": "5756",
+    "areaname": "绍兴县"
+  },
+  "78": {
+    "areacode": "576",
+    "foreignsn": "576",
+    "areaname": "台州"
+  },
+  "79": {
+    "areacode": "5761",
+    "foreignsn": "5761",
+    "areaname": "椒江"
+  },
+  "80": {
+    "areacode": "5762",
+    "foreignsn": "5762",
+    "areaname": "黄岩"
+  },
+  "81": {
+    "areacode": "5763",
+    "foreignsn": "5763",
+    "areaname": "路桥"
+  },
+  "82": {
+    "areacode": "5764",
+    "foreignsn": "5764",
+    "areaname": "临海"
+  },
+  "83": {
+    "areacode": "5765",
+    "foreignsn": "5765",
+    "areaname": "温岭"
+  },
+  "84": {
+    "areacode": "5766",
+    "foreignsn": "5766",
+    "areaname": "仙居"
+  },
+  "85": {
+    "areacode": "5767",
+    "foreignsn": "5767",
+    "areaname": "天台"
+  },
+  "86": {
+    "areacode": "5768",
+    "foreignsn": "5768",
+    "areaname": "三门"
+  },
+  "87": {
+    "areacode": "5769",
+    "foreignsn": "5769",
+    "areaname": "玉环"
+  },
+  "88": {
+    "areacode": "5772",
+    "foreignsn": "5772",
+    "areaname": "乐清"
+  },
+  "89": {
+    "areacode": "5773",
+    "foreignsn": "5773",
+    "areaname": "瑞安"
+  },
+  "90": {
+    "areacode": "5774",
+    "foreignsn": "5774",
+    "areaname": "平阳"
+  },
+  "91": {
+    "areacode": "5779",
+    "foreignsn": "5779",
+    "areaname": "苍南"
+  },
+  "92": {
+    "areacode": "577A",
+    "foreignsn": "577A",
+    "areaname": "瓯海"
+  },
+  "93": {
+    "areacode": "577B",
+    "foreignsn": "577B",
+    "areaname": "龙湾"
+  },
+  "94": {
+    "areacode": "5741",
+    "foreignsn": "5741",
+    "areaname": "海曙"
+  },
+  "95": {
+    "areacode": "5742",
+    "foreignsn": "5742",
+    "areaname": "余姚"
+  },
+  "96": {
+    "areacode": "5743",
+    "foreignsn": "5743",
+    "areaname": "慈溪"
+  },
+  "97": {
+    "areacode": "5744",
+    "foreignsn": "5744",
+    "areaname": "象山"
+  },
+  "98": {
+    "areacode": "5745",
+    "foreignsn": "5745",
+    "areaname": "北仑"
+  },
+  "99": {
+    "areacode": "5746",
+    "foreignsn": "5746",
+    "areaname": "宁海"
+  },
+  "100": {
+    "areacode": "5747",
+    "foreignsn": "5747",
+    "areaname": "奉化"
+  },
+  "101": {
+    "areacode": "5748",
+    "foreignsn": "5748",
+    "areaname": "镇海"
+  },
+  "102": {
+    "areacode": "5749",
+    "foreignsn": "5749",
+    "areaname": "鄞州"
+  },
+  "103": {
+    "areacode": "574A",
+    "foreignsn": "574A",
+    "areaname": "科技园区"
+  },
+  "104": {
+    "areacode": "574C",
+    "foreignsn": "574C",
+    "areaname": "江北"
+  },
+  "105": {
+    "areacode": "201",
+    "foreignsn": "201",
+    "areaname": "测试"
+  },
+  "106": {
+    "areacode": "578B",
+    "foreignsn": "578B",
+    "areaname": "南城"
+  },
+  "107": {
+    "areacode": "571E",
+    "foreignsn": "571E",
+    "areaname": "集团客户中心"
+  },
+  "108": {
+    "areacode": "571Z",
+    "foreignsn": "571Z",
+    "areaname": "电子商务中心"
+  },
+  "109": {
+    "areacode": "571F",
+    "foreignsn": "571F",
+    "areaname": "销售部"
+  },
+  "110": {
+    "areacode": "574B",
+    "foreignsn": "574B",
+    "areaname": "江东"
+  },
+  "111": {
+    "areacode": "574Z",
+    "foreignsn": "574Z",
+    "areaname": "电子商务中心"
+  },
+  "112": {
+    "areacode": "577Z",
+    "foreignsn": "577Z",
+    "areaname": "电子商务中心"
+  },
+  "113": {
+    "areacode": "573Z",
+    "foreignsn": "573Z",
+    "areaname": "电子商务中心"
+  },
+  "114": {
+    "areacode": "572Z",
+    "foreignsn": "572Z",
+    "areaname": "电子商务中心"
+  },
+  "115": {
+    "areacode": "575Z",
+    "foreignsn": "575Z",
+    "areaname": "电子商务中心"
+  },
+  "116": {
+    "areacode": "579Z",
+    "foreignsn": "579Z",
+    "areaname": "电子商务中心"
+  },
+  "117": {
+    "areacode": "570Z",
+    "foreignsn": "570Z",
+    "areaname": "电子商务中心"
+  },
+  "118": {
+    "areacode": "576Z",
+    "foreignsn": "576Z",
+    "areaname": "电子商务中心"
+  },
+  "119": {
+    "areacode": "576N",
+    "foreignsn": "576N",
+    "areaname": "台州电子渠道（虚拟）"
+  },
+  "120": {
+    "areacode": "578Z",
+    "foreignsn": "578Z",
+    "areaname": "电子商务中心"
+  },
+  "121": {
+    "areacode": "580Z",
+    "foreignsn": "580Z",
+    "areaname": "电子商务中心"
+  },
+  "122": {
+    "areacode": "202",
+    "foreignsn": "202",
+    "areaname": "测试123"
+  },
+  "123": {
+    "areacode": "2021",
+    "foreignsn": "2021",
+    "areaname": "test123"
+  },
+  "124": {
+    "areacode": "203",
+    "foreignsn": "203",
+    "areaname": "测试124"
+  },
+  "125": {
+    "areacode": "2500",
+    "foreignsn": "2500",
+    "areaname": "phmtest"
+  },
+  "126": {
+    "areacode": "2501",
+    "foreignsn": "2501",
+    "areaname": "phmtest2"
+  },
+  "-1": {
+    "areacode": "-1",
+    "foreignsn": "-1",
+    "areaname": "AllArea"
+  }
+}

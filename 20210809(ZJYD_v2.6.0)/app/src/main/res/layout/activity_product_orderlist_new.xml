@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/order_center_bg">
+
+    <TextView
+        android:id="@+id/order_list_slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_70"
+        android:textColor="@color/white_0"
+        android:textSize="@dimen/order_list_slogan_size"
+        android:gravity="center"
+        android:focusable="false"
+        android:includeFontPadding="false"
+        />
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_layout_single"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/order_list_title_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_list_title_image_height_multi"
+            android:layout_marginTop="@dimen/order_list_title_image_margin_top"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/order_list_title_selling_point"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_102"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_below="@+id/order_list_title_image"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/order_list_list"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_list_list_height"
+            android:layout_below="@+id/order_list_title_selling_point"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginLeft="@dimen/margin_128"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            >
+        </androidx.leanback.widget.HorizontalGridView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_list_list_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_list_list_height"
+            android:layout_below="@+id/order_list_title_selling_point"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/order_list_des_align"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_167"
+            android:focusable="false"
+            android:textColor="@color/order_list_price"
+            android:textSize="@dimen/order_list_des_size"
+            android:layout_alignLeft="@+id/order_list_list_auto"
+            android:layout_alignRight="@+id/order_list_list_auto"
+            android:paddingLeft="@dimen/margin_13"
+            android:paddingRight="@dimen/margin_13"
+            android:visibility="gone"
+            android:lineSpacingExtra="@dimen/margin_5"
+            app:tv_line="7"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/margin_563"
+            />
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/order_list_des"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_152"
+            android:layout_marginLeft="@dimen/order_list_des_magin_left"
+            android:layout_marginRight="@dimen/order_list_des_magin_left"
+            android:focusable="false"
+            android:textColor="@color/order_list_price"
+            android:textSize="@dimen/order_list_des_size"
+            android:visibility="gone"
+            android:lineSpacingExtra="@dimen/margin_5"
+            app:tv_line="6"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/margin_563"
+            />
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/order_list_des_over"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_167"
+            android:layout_marginLeft="@dimen/margin_128"
+            android:layout_marginRight="@dimen/margin_128"
+            android:focusable="false"
+            android:textColor="@color/order_list_price"
+            android:textSize="@dimen/order_list_des_size"
+            android:visibility="gone"
+            android:lineSpacingExtra="@dimen/margin_5"
+            app:tv_line="6"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/margin_563"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_layout_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/order_list_title_image_multi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_list_title_image_height_multi"
+            android:layout_marginTop="@dimen/order_list_title_image_margin_top"
+            android:focusable="false"
+            android:scaleType="fitXY" />
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/order_list_list_up"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_list_list_height_multi"
+            android:layout_below="@+id/order_list_title_image_multi"
+            android:layout_marginTop="@dimen/margin_30"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            android:layout_marginLeft="@dimen/margin_82"
+            >
+        </androidx.leanback.widget.HorizontalGridView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_list_list_up_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_list_list_height_multi"
+            android:layout_below="@+id/order_list_title_image_multi"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/order_list_list_down"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_list_list_height_multi"
+            android:layout_marginTop="@dimen/margin_382"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            android:layout_marginLeft="@dimen/margin_82"
+            >
+        </androidx.leanback.widget.HorizontalGridView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/order_list_list_down_auto"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/order_list_list_height_multi"
+            android:layout_marginTop="@dimen/margin_382"
+            android:layout_centerHorizontal="true"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/order_list_des_align_multi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_162"
+            android:focusable="false"
+            android:textColor="@color/order_list_price"
+            android:textSize="@dimen/order_list_des_size"
+            android:layout_marginLeft="@dimen/margin_218"
+            android:layout_marginRight="@dimen/margin_218"
+            android:layout_marginTop="@dimen/margin_590"
+            android:paddingLeft="@dimen/margin_13"
+            android:paddingRight="@dimen/margin_13"
+            android:visibility="gone"
+            android:lineSpacingExtra="@dimen/margin_5"
+            app:tv_line="7"
+            android:ellipsize="end"
+            />
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/order_list_des_multi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_162"
+            android:layout_marginLeft="@dimen/margin_92"
+            android:layout_marginRight="@dimen/margin_86"
+            android:layout_marginTop="@dimen/margin_590"
+            android:focusable="false"
+            android:textColor="@color/order_list_price"
+            android:textSize="@dimen/order_list_des_size"
+            android:visibility="gone"
+            android:lineSpacingExtra="@dimen/margin_5"
+            app:tv_line="6"
+            android:ellipsize="end"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

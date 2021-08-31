@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/test_tv"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="1111111"
+        android:textSize="@dimen/margin_33"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:background="@color/white_0"
+        android:layout_height="match_parent">
+
+    </TextView>
+
+</LinearLayout>

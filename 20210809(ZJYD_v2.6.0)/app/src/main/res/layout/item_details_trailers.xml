@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="276px"
+    android:layout_height="164px"
+    android:background="@drawable/login_keybord_item_selector"
+    android:focusable="true"
+    android:padding="2px">
+
+    <ImageView
+        android:id="@+id/trailers_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/default_poster"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+
+        <View
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_centerInParent="true"
+            android:background="@drawable/trailers_play_icon" />
+
+        <TextView
+            android:id="@+id/video_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16px"
+            android:layout_marginRight="16px"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T24_C21_Light_size" />
+    </RelativeLayout>
+</RelativeLayout>

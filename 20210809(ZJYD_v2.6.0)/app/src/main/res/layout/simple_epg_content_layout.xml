@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_simple_epg_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <com.pukka.ydepg.customui.tv.widget.ReflectItemView
+        android:id="@+id/ri_simple_search"
+        android:layout_width="@dimen/launcher_search_size"
+        android:layout_height="@dimen/launcher_search_size"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginRight="445dp"
+        app:isShape="true"
+        app:radius="@dimen/launcher_search_radius">
+
+        <com.pukka.ydepg.common.extview.ImageViewExt
+            android:id="@+id/iv_simple_search"
+            android:layout_width="@dimen/launcher_search_iv_size"
+            android:layout_height="@dimen/launcher_search_iv_size"
+            android:background="@drawable/activity_launcher_search_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:nextFocusLeft="@+id/simple_epg_item1"
+            android:nextFocusDown="@+id/rl_simple_epg_group2" />
+    </com.pukka.ydepg.customui.tv.widget.ReflectItemView>
+
+    <RelativeLayout
+        android:id="@+id/rl_simple_epg_group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_92.6"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false">
+        <!--左侧四个-->
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item1"
+            android:layout_width="@dimen/oldman_launcher_leftitem_width"
+            android:layout_height="@dimen/oldman_launcher_leftitem_height"
+            android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+            android:focusable="true"
+            ><!--android:nextFocusUp="@id/iv_simple_search"-->
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item2"
+            android:layout_width="@dimen/oldman_launcher_leftitem_width"
+            android:layout_height="@dimen/oldman_launcher_leftitem_height"
+            android:layout_below="@id/simple_epg_item1"
+            android:layout_alignLeft="@id/simple_epg_item1"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item3"
+            android:layout_width="@dimen/oldman_launcher_leftitem_width"
+            android:layout_height="@dimen/oldman_launcher_leftitem_height"
+            android:layout_below="@id/simple_epg_item2"
+            android:layout_alignLeft="@id/simple_epg_item1"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item4"
+            android:layout_width="@dimen/oldman_launcher_leftitem_width"
+            android:layout_height="@dimen/oldman_launcher_leftitem_height"
+            android:layout_below="@id/simple_epg_item3"
+            android:layout_alignLeft="@id/simple_epg_item1"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <!--底部五个-->
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item5"
+            android:layout_width="@dimen/oldman_launcher_bottomitem_width"
+            android:layout_height="@dimen/oldman_launcher_bottomitem_height"
+            android:layout_below="@id/simple_epg_item4"
+            android:layout_alignLeft="@id/simple_epg_item1"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item6"
+            android:layout_width="@dimen/oldman_launcher_bottomitem_width"
+            android:layout_height="@dimen/oldman_launcher_bottomitem_height"
+            android:layout_alignTop="@id/simple_epg_item5"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@id/simple_epg_item5"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item7"
+            android:layout_width="@dimen/oldman_launcher_bottomitem_width"
+            android:layout_height="@dimen/oldman_launcher_bottomitem_height"
+            android:layout_alignTop="@id/simple_epg_item6"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@id/simple_epg_item6"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item8"
+            android:layout_width="@dimen/oldman_launcher_bottomitem_width"
+            android:layout_height="@dimen/oldman_launcher_bottomitem_height"
+            android:layout_alignTop="@id/simple_epg_item7"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@id/simple_epg_item7"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item9"
+            android:layout_width="@dimen/oldman_launcher_bottomitem_width"
+            android:layout_height="@dimen/oldman_launcher_bottomitem_height"
+            android:layout_alignTop="@id/simple_epg_item8"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@id/simple_epg_item8"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+    </RelativeLayout>
+    <!--中部大图-->
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/rl_simple_epg_group2"
+        android:layout_width="@dimen/oldman_launcher_centeritem_width"
+        android:layout_height="@dimen/oldman_launcher_centeritem_height"
+        android:layout_alignTop="@id/rl_simple_epg_group1"
+        android:layout_marginLeft="@dimen/margin_234"
+        android:focusable="true"
+        android:gravity="center"
+        android:nextFocusLeft="@id/simple_epg_item1"
+        android:nextFocusRight="@+id/rl_simple_epg_group3"
+        android:nextFocusDown="@id/simple_epg_item6"><!--android:nextFocusUp="@id/iv_simple_search"-->
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item10_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            app:posterType="1">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:id="@+id/iv_ads"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster112434_topItem_textMarginLeft"
+                android:layout_marginRight="@dimen/margin_24"
+                android:layout_marginBottom="@dimen/pan_poster112434_topItem_textMarginBottom"
+                android:focusable="false"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_top1_title"
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_poster112434_topItem_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.customui.tv.PlayViewWindow
+            android:id="@+id/playview_simpleEpg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:visibility="gone"
+            app:AutoPlay="true"
+            app:isLittle="true"
+            app:play_resize_mode="AUTO"
+            app:play_type="TYPE_NAVIE">
+
+        </com.pukka.ydepg.customui.tv.PlayViewWindow>
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+    <!--右侧轮播图-->
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/rl_simple_epg_group3"
+        android:layout_width="@dimen/oldman_launcher_rightitem_width"
+        android:layout_height="@dimen/oldman_launcher_rightitem_height"
+        android:layout_alignTop="@id/rl_simple_epg_group2"
+        android:layout_marginLeft="@dimen/oldman_launcher_group3_marginLeft"
+        android:focusable="true"
+        ><!--android:nextFocusUp="@id/iv_simple_search"-->
+
+        <com.pukka.ydepg.customui.tv.autoscroll.AutoScrollViewPager
+            android:id="@+id/simple_epg_item11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:dot_marginleft="@dimen/margin_10"
+            app:dot_selected="@drawable/simple_epg_viewpager_dot_selected"
+            app:dot_unselect="@drawable/simple_epg_viewpager_dot_unselected"
+            app:dots_marginBottom="@dimen/margin_10"
+            app:dots_marginRight="@dimen/margin_10">
+
+        </com.pukka.ydepg.customui.tv.autoscroll.AutoScrollViewPager>
+
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/simple_epg_shimmer_imageview"
+            />
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+    <!--右侧四个小图-->
+    <RelativeLayout
+        android:id="@+id/rl_simple_epg_group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_simple_epg_group3"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false">
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item12"
+            android:layout_width="@dimen/oldman_launcher_rightstaticitem_width"
+            android:layout_height="@dimen/oldman_launcher_rightstaticitem_height"
+            android:layout_marginLeft="@dimen/oldman_launcher_group3_marginLeft"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item13"
+            android:layout_width="@dimen/oldman_launcher_rightstaticitem_width"
+            android:layout_height="@dimen/oldman_launcher_rightstaticitem_height"
+            android:layout_below="@+id/simple_epg_item12"
+            android:layout_marginLeft="@dimen/oldman_launcher_group3_marginLeft"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item14"
+            android:layout_width="@dimen/oldman_launcher_rightstaticitem_width"
+            android:layout_height="@dimen/oldman_launcher_rightstaticitem_height"
+            android:layout_below="@id/simple_epg_item13"
+            android:layout_marginLeft="@dimen/oldman_launcher_group3_marginLeft"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+        <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+            android:id="@+id/simple_epg_item15"
+            android:layout_width="@dimen/oldman_launcher_rightstaticitem_width"
+            android:layout_height="@dimen/oldman_launcher_rightstaticitem_height"
+            android:layout_below="@id/simple_epg_item14"
+            android:layout_marginLeft="@dimen/oldman_launcher_group3_marginLeft"
+            android:layout_marginTop="@dimen/margin_16"
+            android:focusable="true">
+
+            <com.pukka.ydepg.common.extview.ShimmerImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_scaleType="fitXY"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pan_layer_height"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@drawable/phm_shadow_layer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+                android:layout_marginRight="@dimen/margin_20"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/phmTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+                <TextView
+                    style="@style/phmSubTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                    android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+            </LinearLayout>
+        </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

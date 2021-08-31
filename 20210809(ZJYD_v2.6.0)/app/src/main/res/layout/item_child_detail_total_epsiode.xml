@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="wrap_content"
+          android:layout_height="@dimen/featured_detail_40px"
+          android:id="@+id/episodes_name"
+          android:background="@drawable/child_total_episode_selector"
+          android:focusable="true"
+          android:singleLine="true"
+          android:ellipsize="end"
+          android:gravity="center"
+          android:textStyle="italic"
+    android:paddingRight="@dimen/margin_20"
+    android:paddingLeft="@dimen/margin_20"
+          android:textColor="@drawable/child_epsiode_text_selector"
+          android:textSize="@dimen/search_hot_tip_size" />

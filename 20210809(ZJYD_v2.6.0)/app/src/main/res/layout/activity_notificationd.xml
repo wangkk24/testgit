@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg">
+
+    <TextView
+        android:id="@+id/notification_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_102"
+        android:layout_marginTop="@dimen/margin_70"
+        android:text="@string/notificationd"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/history_title_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/page_linearlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_52.6"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/notification_tv"
+        android:layout_marginLeft="@dimen/margin_99.2"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/notificationd_sub_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/history_title_text_size"
+        />
+    <TextView
+        android:id="@+id/notificationd_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textColor="@color/c23_color"
+        android:textSize="@dimen/history_title_text_size"
+        />
+    <TextView
+        android:id="@+id/notificationd_parent_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/c23_color"
+        android:textSize="@dimen/history_title_text_size"
+        />
+    </LinearLayout>
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/notification_list"
+        android:layout_width="@dimen/notifity_list_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_55"
+        android:layout_below="@+id/notification_tv"
+        android:layout_marginTop="@dimen/margin_39" />
+
+    <TextView
+        android:id="@+id/notification_detail_introduce"
+        android:layout_width="@dimen/notifity_detail_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_78"
+        android:layout_marginTop="@dimen/margin_108.2"
+        android:lineSpacingExtra="@dimen/margin_7.5"
+        android:maxLines="14"
+        android:textColor="@color/c24_color"
+        android:textSize="@dimen/history_detail_text_size" />
+
+    <WebView
+        android:id="@+id/notification_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent">
+    </WebView>
+    <RelativeLayout
+        android:id="@+id/no_notificationd_data"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/no_data_image"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_notificationd_data"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/history_detail_text_size"
+            android:layout_below="@+id/no_data_image"
+            android:text="没有系统通知。"
+            android:textColor="@color/c03_color"
+            />
+    </RelativeLayout>
+</RelativeLayout>

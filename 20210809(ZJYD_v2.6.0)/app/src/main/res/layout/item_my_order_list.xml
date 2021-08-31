@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_my_order_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/order_center_my_order_list_item_height"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/item_my_order_list_content"
+        android:layout_width="@dimen/my_order_item_width"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_item_my_order_type"
+            android:layout_width="@dimen/my_order_header_type_width"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/my_order_header_type"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_order_formheader_textSize" />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_name"
+            style="@style/phmTitleStyle"
+            android:layout_width="@dimen/my_order_header_name_width"
+            android:layout_height="wrap_content"
+            android:text="@string/my_order_header_name"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_order_formheader_textSize" />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_price"
+            android:layout_width="@dimen/my_order_header_price_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_14"
+            android:paddingBottom="@dimen/my_btnLayout_margin_bottom"
+            android:text="@string/my_order_header_price"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/go_order_item_superscript_textSize" />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_ordertime"
+            android:layout_width="@dimen/my_order_header_ordertime_width"
+            android:layout_height="wrap_content"
+            android:text="@string/my_order_header_ordertime"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_order_formheader_textSize" />
+
+        <TextView
+            android:id="@+id/tv_item_my_order_expiretime"
+            android:layout_width="@dimen/my_order_header_expiretime_container_width"
+            android:layout_height="wrap_content"
+            android:text="@string/my_order_header_unsubscribetime"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_order_formheader_textSize" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_action_layout"
+        android:layout_width="@dimen/order_center_my_order_list_item_height"
+        android:layout_height="@dimen/order_center_my_order_list_item_height"
+        android:layout_alignParentRight="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_my_order_item_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</RelativeLayout>

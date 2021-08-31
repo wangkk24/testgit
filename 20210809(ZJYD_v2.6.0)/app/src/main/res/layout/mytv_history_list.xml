@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mytv_history_list"
+        android:layout_marginTop="@dimen/margin_128"
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:layout_marginBottom="@dimen/margin_104"
+        android:layout_marginLeft="@dimen/margin_126.3"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="@dimen/movie_no_data_width"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/no_data_intro"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/c01_color"
+            android:textSize="@dimen/movie_no_data_text_size"
+            android:text="@string/has_no_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/no_data_btn"
+            android:orientation="vertical"
+            android:background="@drawable/my_dialog_btn_foucs"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_60"
+            android:layout_marginRight="@dimen/margin_60"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/adds_96"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_gravity="center"
+                android:textSize="@dimen/movie_no_data_text_size"
+                android:id="@+id/no_data_action"
+                android:textColor="@color/c01_color"
+                android:layout_width="wrap_content"
+                android:text="@string/add"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>

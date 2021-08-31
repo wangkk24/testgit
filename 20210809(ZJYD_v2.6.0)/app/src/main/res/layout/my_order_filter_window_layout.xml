@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.BrowseFrameLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_order_filter_root"
+    android:layout_width="@dimen/my_order_filter_window_width"
+    android:layout_height="@dimen/my_order_filter_window_height"
+    android:background="@drawable/my_order_filter_window_bg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/my_order_filter_yearContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_48"
+        android:layout_marginRight="@dimen/margin_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_order_filter_year_title"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_my_order_filter_year1"
+            android:layout_width="@dimen/my_order_filter_year_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/c30_color"
+            android:nextFocusLeft="@null"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+
+        <TextView
+            android:id="@+id/tv_my_order_filter_year2"
+            android:layout_width="@dimen/my_order_filter_year_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:id="@+id/tv_my_order_filter_year3"
+            android:layout_width="@dimen/my_order_filter_year_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:id="@+id/tv_my_order_year_all"
+            android:nextFocusRight="@null"
+            android:layout_width="@dimen/margin_72.1"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/my_order_filter_all"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_order_filter_monthContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:layout_marginTop="@dimen/margin_146"
+        android:layout_marginBottom="@dimen/margin_48"
+        android:layout_marginRight="@dimen/margin_50"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_order_filter_month_title"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="01"
+            android:nextFocusLeft="@null"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="02"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="03"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="04"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="05"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="06"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="07"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="08"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="09"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="11"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/my_order_filter_month_item_width"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+        <TextView
+            android:layout_width="@dimen/margin_72.1"
+            android:layout_height="@dimen/my_order_filter_year_item_height"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:background="@drawable/selector_order_center_dialog_filter"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/my_order_filter_all"
+            android:textColor="@color/c30_color"
+            android:nextFocusRight="@null"
+            android:textSize="@dimen/my_order_filter_title_textSize" />
+
+    </LinearLayout>
+</com.pukka.ydepg.common.extview.BrowseFrameLayoutExt>

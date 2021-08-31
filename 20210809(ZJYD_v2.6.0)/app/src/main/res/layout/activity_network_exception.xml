@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="732px"
+    android:layout_height="314px"
+    android:background="@drawable/network_error_background">
+
+    <View
+        android:layout_width="26px"
+        android:layout_height="26px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="40px"
+        android:background="@drawable/network_notion"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="80px"
+        android:text="提醒"
+        android:textColor="@android:color/white"
+        android:textSize="30px" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="84px"
+        android:background="@drawable/network_error_notion_line" />
+
+    <TextView
+        android:id="@+id/common_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="105px"
+        android:paddingLeft="10px"
+        android:paddingRight="10px"
+        android:textColor="@android:color/white"
+        android:textSize="24px" />
+
+    <Button
+        android:id="@+id/common_button"
+        android:layout_width="198px"
+        android:layout_height="86px"
+        android:layout_marginTop="220px"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/network_dialog_button_selector"
+        android:focusable="true"
+        android:text="取 消"
+        android:textColor="#ffffff"
+        android:textSize="26px" />
+
+    <Button
+        android:id="@+id/setting_button"
+        android:layout_width="198px"
+        android:layout_height="86px"
+        android:layout_marginTop="220px"
+        android:layout_marginLeft="80px"
+        android:background="@drawable/network_dialog_button_selector"
+        android:focusable="true"
+        android:text="网络设置"
+        android:textColor="#ffffff"
+        android:textSize="26px"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="198px"
+        android:layout_height="86px"
+        android:layout_marginTop="220px"
+        android:layout_marginLeft="460px"
+        android:background="@drawable/network_dialog_button_selector"
+        android:focusable="true"
+        android:text="重新检测"
+        android:textColor="#ffffff"
+        android:textSize="26px"
+        android:visibility="gone"/>
+</RelativeLayout>

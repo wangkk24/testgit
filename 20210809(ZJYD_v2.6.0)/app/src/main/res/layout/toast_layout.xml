@@ -1,0 +1,23 @@
+<com.pukka.ydepg.common.extview.RelativeLayoutExt
+    android:id="@+id/toast_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:minWidth="450dp"
+        android:singleLine="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/c07_color"
+        android:gravity="center"
+        android:paddingLeft="50px"
+        android:paddingRight="50px"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T24_C21_Light_size" />
+
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/order_list_bg_width_muti"
+    android:layout_height="@dimen/order_list_bg_height_muti"
+    android:focusable="true"
+    >
+
+    <ImageView
+        android:id="@+id/order_list_bg_unselected"
+        android:layout_width="@dimen/order_list_bg_width_muti"
+        android:layout_height="@dimen/order_list_bg_height_muti"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/order_list_bg_unselected"
+        android:focusable="false"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/order_list_title_without4k"
+        android:layout_width="@dimen/order_list_title_width_muti"
+        android:layout_height="@dimen/order_list_title_height"
+        android:gravity="center"
+        android:textSize="@dimen/order_list_title_size"
+        android:textColor="@color/white_0"
+        android:text="3元点播"
+        android:focusable="false"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/order_list_discount_layout"
+        android:layout_width="@dimen/order_list_bg_width_muti"
+        android:layout_height="@dimen/order_list_discount_height"
+        android:layout_below="@+id/order_list_title_without4k"
+        android:layout_marginTop="@dimen/margin_6"
+        android:focusable="false">
+        <TextView
+            android:id="@+id/order_list_discount"
+            android:paddingLeft="@dimen/margin_6"
+            android:paddingRight="@dimen/margin_6"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="5折"
+            android:layout_alignParentRight="true"
+            android:background="@color/mytv_history_count"
+            android:focusable="false"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/order_list_price_layout"
+        android:layout_width="@dimen/order_list_bg_width_muti"
+        android:layout_height="@dimen/margin_45"
+        android:layout_below="@+id/order_list_title_without4k"
+        android:layout_marginBottom="@dimen/margin_11"
+        android:focusable="false"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:focusable="false"
+            >
+
+            <TextView
+                android:id="@+id/order_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20.00"
+                android:textColor="@color/white_0"
+                android:textSize="@dimen/margin_45"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:focusable="false"
+                />
+            <TextView
+                android:id="@+id/order_list_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="元/月"
+                android:textColor="@color/white_0"
+                android:textSize="@dimen/order_list_price_small_size"
+                android:gravity="center"
+                android:focusable="false"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/order_list_bg_width_muti"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/order_list_price_layout"
+        >
+        <TextView
+            android:id="@+id/order_list_org_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_list_org_price_height"
+            android:text="原价：39.9元/月"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/order_list_price"
+            android:focusable="false"
+            android:textSize="@dimen/order_list_price_small_size"
+            />
+        <TextView
+            android:id="@+id/order_list_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_list_org_price_height"
+            android:layout_below="@+id/order_list_org_price"
+            android:layout_marginTop="@dimen/margin_6"
+            android:text="连续包月"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/order_list_price"
+            android:focusable="false"
+            android:textSize="@dimen/order_list_price_small_size"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/order_center_bg"
+    >
+
+    <ImageView
+        android:id="@+id/order_transition_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/order_center_bg"/>
+
+    <ScrollView
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_70">
+
+            <TextView
+                android:visibility="gone" android:id="@+id/order_transition_event_slogan_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="老会员大回馈，连续订购一年，每月仅需20元！"
+                android:textSize="@dimen/margin_30"
+                android:layout_centerHorizontal="true"
+                android:includeFontPadding="false"
+                android:textColor="@color/white_0"
+                android:focusable="false"
+                >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/order_transition_title_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_list_title_image_height_multi"
+                android:layout_below="@+id/order_transition_event_slogan_textview"
+                android:layout_marginTop="@dimen/margin_10"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                />
+
+            <RelativeLayout
+                android:visibility="invisible"
+                android:id="@+id/order_transition_item_layout"
+                android:layout_width="@dimen/margin_191"
+                android:layout_height="@dimen/search_ranking_image_height"
+                android:background="@drawable/order_list_bg_unselected"
+                android:layout_below="@+id/order_transition_title_image"
+                android:layout_marginTop="@dimen/margin_46"
+                android:layout_marginStart="@dimen/margin_146"
+                android:focusable="false"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/order_transition_item_title_layout"
+                    android:layout_width="@dimen/margin_191"
+                    android:layout_height="@dimen/details_star_view_to_title_margin"
+                    android:focusable="false">
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/order_transition_item_title_without4k"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:gravity="center"
+                        android:textSize="@dimen/margin_21"
+                        android:textColor="#ffffff"
+                        android:text="3元点播"
+                        android:focusable="false"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:scrollHorizontally="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <LinearLayout
+                        android:id="@+id/order_transition_item_title_4k_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/order_transition_item_title_4k"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:gravity="center"
+                            android:textSize="@dimen/margin_21"
+                            android:textColor="@color/white_0"
+                            android:text="3元点播"
+                            android:focusable="false"
+                            android:includeFontPadding="false"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            />
+                        <TextView
+                            android:id="@+id/order_transition_item_4k"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:layout_marginEnd="@dimen/margin_10"
+                            android:text="(含4K)"
+                            android:textSize="@dimen/margin_21"
+                            android:gravity="center_horizontal"
+                            android:textColor="#ffffff"
+                            android:includeFontPadding="false"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+                <TextView
+                    android:id="@+id/order_paymode_item_discount"
+                    android:layout_marginTop="@dimen/margin_9"
+                    android:layout_width="@dimen/margin_38.3"
+                    android:layout_height="@dimen/margin_21"
+                    android:layout_below="@+id/order_transition_item_title_layout"
+                    android:text="5折"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/mytv_history_count"
+                    android:focusable="false"
+                    android:textSize="@dimen/margin_17"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/order_paymode_price_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:layout_below="@+id/order_transition_item_title_layout"
+                    android:layout_marginTop="@dimen/margin_20"
+                    >
+
+                    <TextView
+                        android:id="@+id/order_paymode_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20.00"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/margin_37.5"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:focusable="false"
+                        />
+                    <TextView
+                        android:id="@+id/order_paymode_price_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元/月"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/order_list_price_small_size"
+                        android:gravity="center"
+                        android:focusable="false"
+                        android:includeFontPadding="false"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/order_paymode_item_discountprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_paymode_price_layout"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_centerHorizontal="true"
+                    android:text="原价：39.9元/月"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/order_list_price"
+                    android:textSize="@dimen/margin_16"
+                    />
+                <TextView
+                    android:id="@+id/order_paymode_item_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_paymode_item_discountprice"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_centerHorizontal="true"
+                    android:text="连续包月"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/order_list_price"
+                    android:textSize="@dimen/margin_16"
+                    />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/order_transition_sellingpoint"
+                android:layout_width="@dimen/order_transition_describe_width"
+                android:layout_height="@dimen/margin_102"
+                android:layout_below="@+id/order_transition_title_image"
+                android:layout_toEndOf="@+id/order_transition_item_layout"
+                android:layout_marginTop="@dimen/margin_46"
+                android:layout_marginStart="@dimen/margin_55"
+                android:focusable="false"
+                android:scaleType="fitXY"
+                />
+            <com.pukka.ydepg.common.extview.VerticalScrollTextView
+                android:visibility="invisible"
+                android:id="@+id/order_transition_describe"
+                android:background="@drawable/order_transition_textview_bg_selected"
+                android:layout_width="@dimen/order_transition_describe_width"
+                android:layout_height="@dimen/margin_93"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingStart="@dimen/margin_5"
+                android:layout_below="@+id/order_transition_sellingpoint"
+                android:layout_toRightOf="@+id/order_transition_item_layout"
+                android:layout_marginStart="@dimen/margin_55"
+                android:textSize="@dimen/margin_17"
+                android:textColor="@color/order_list_price"
+                android:lineSpacingExtra="@dimen/margin_2"
+                android:ellipsize="marquee"
+                app:tv_line="4"
+                android:focusable="true"
+                android:includeFontPadding="false"
+                />
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/order_transition_event_describe_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_transition_item_layout"
+                android:layout_marginStart="@dimen/margin_146"
+                android:layout_marginEnd="@dimen/margin_137"
+                android:layout_marginTop="@dimen/margin_20"
+                >
+                <TextView
+                    android:id="@+id/order_transition_event_describe_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_paymode_eventtip"
+                    android:textColor="@color/order_list_price"
+                    android:includeFontPadding="false"
+                    android:textSize="@dimen/margin_14"
+                    android:focusable="false"
+                    />
+                <com.pukka.ydepg.common.extview.VerticalScrollTextView
+                    android:id="@+id/order_transition_event_describe"
+                    android:background="@drawable/order_transition_textview_bg_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/order_transition_event_describe_height"
+                    android:layout_below="@+id/order_transition_event_describe_title"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:textSize="@dimen/margin_14"
+                    android:textColor="@color/order_list_price"
+                    android:lineSpacingExtra="@dimen/margin_7"
+                    android:ellipsize="marquee"
+                    app:tv_line="2"
+                    android:focusable="true"
+                    android:paddingLeft="@dimen/margin_9"
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:visibility="invisible"
+                android:id="@+id/order_transition_confirm_btn"
+                android:layout_width="@dimen/pan_height_200"
+                android:layout_height="@dimen/margin_56"
+                android:layout_below="@+id/order_transition_event_describe_layout"
+                android:layout_marginTop="@dimen/margin_36"
+                android:background="@drawable/order_tarnsition_btn_selector"
+                android:text="确认支付"
+                android:textColor="@color/order_paymode_buttom_textcolor"
+                android:textSize="@dimen/unipay_btntextsize"
+                android:layout_centerHorizontal="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/order_transition_recommend_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_transition_recommend_text"
+                android:layout_below="@+id/order_transition_confirm_btn"
+                android:layout_marginStart="@dimen/margin_146"
+                android:includeFontPadding="false"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/margin_24"
+                android:focusable="false"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:id="@+id/order_transition_recommend_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_transition_recommend_list_height"
+                android:layout_marginStart="@dimen/margin_137"
+                android:layout_marginEnd="@dimen/margin_126.3"
+                android:layout_marginBottom="@dimen/margin_61"
+                android:layout_below="@+id/order_transition_recommend_textview"
+                android:focusable="false">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/order_transition_bg">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/order_transition_bg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitXY"/>-->
+
+        <!---->
+
+
+    <!--</RelativeLayout>-->
+
+
+
+
+</RelativeLayout>

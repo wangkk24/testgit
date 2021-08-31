@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingLeft="@dimen/style_four_text_padding"
+            android:paddingRight="@dimen/style_four_text_padding"
+            android:id="@+id/tv_topic_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/style_four_text_marginTop"
+            android:text=""
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/style_four_text_textSize" />
+
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_topic_title"
+            android:layout_height="@dimen/style_four_gridH_height"
+            android:layout_marginTop="@dimen/style_four_grid_marginTop"
+            android:layout_alignParentBottom="true"
+            android:clipToPadding="false"
+            android:layout_marginLeft="@dimen/movies_list_margin_left"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingRight="@dimen/style_four_gridH_paddingRight"
+            android:paddingTop="@dimen/style_four_gridH_paddingTop"
+            android:paddingLeft="@dimen/style_four_gridH_paddingLeft"
+            android:paddingBottom="@dimen/style_four_gridH_paddingBottom"
+            android:visibility="visible" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.moudule.mytv.MessageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg"
+    android:paddingBottom="@dimen/margin_30"
+    android:orientation="vertical">
+<!---->
+    <RelativeLayout
+        android:id="@+id/activity_my_movie_menu"
+        android:layout_width="@dimen/movie_menu_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/movie_menu_marginleft">
+
+        <TextView
+            android:id="@+id/activity_mytv_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/style_two_gridV_paddingRight"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/message_title"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/movie_menu_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_mytv_movie_history"
+            android:layout_width="@dimen/movie_menu_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_below="@+id/activity_mytv_movie_title"
+            android:layout_marginTop="@dimen/search_hot_item_height"
+            android:background="@drawable/message_btn_bg"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/message_history"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size" />
+
+        <TextView
+            android:id="@+id/activity_mytv_movie_collection"
+            android:layout_width="@dimen/movie_menu_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_below="@+id/activity_mytv_movie_history"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/message_btn_bg"
+            android:focusable="true"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/message_setting"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size" />
+    </RelativeLayout>
+    <!--android:src="@drawable/line"-->
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="@dimen/movies_list_view_width"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/margin_70"
+        android:layout_marginLeft="@dimen/margin_36"
+        android:layout_marginTop="@dimen/my_deviceversion_margin_top"
+        android:layout_toRightOf="@+id/activity_my_movie_menu"
+        android:background="@color/c24_color" />
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/paylink_relativelayout_margintop"
+        android:layout_marginTop="@dimen/my_playHistory_width"
+        android:layout_toRightOf="@+id/line"
+        android:clipToPadding="false"
+        android:descendantFocusability="afterDescendants"
+        android:layout_marginRight="@dimen/margin_30"></androidx.leanback.widget.VerticalGridView>
+
+    <RelativeLayout
+        android:id="@+id/background_rela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_50"
+        android:visibility="gone"
+        android:background="@drawable/box_64"
+        android:layout_marginTop="@dimen/my_playHistory_width"
+        android:layout_toRightOf="@+id/line">
+
+    </RelativeLayout>
+
+</com.pukka.ydepg.moudule.mytv.MessageView>

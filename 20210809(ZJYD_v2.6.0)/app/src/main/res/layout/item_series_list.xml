@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="344px"
+    android:layout_height="48px"
+    android:background="@drawable/choose_episode_item_selector"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+    android:textColor="@color/c21_color"
+    android:textSize="@dimen/T23_C21_Light_size" />

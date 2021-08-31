@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+<ImageView
+    android:id="@+id/activity_detail_img_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/default_detail_bg"
+    android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/activity_detail_shadow"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/transparent_50"/>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <androidx.leanback.widget.BrowseFrameLayout
+            android:id="@+id/detail_root"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/details_browser_width">
+
+            <androidx.leanback.widget.NonOverlappingFrameLayout
+                android:id="@+id/details_background_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/details_fragment_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <include
+                    android:id="@+id/details_description_view"
+                    layout="@layout/activity_voddetail_content" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_description_view"
+
+                    android:layout_marginRight="@dimen/details_view_margin"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/details_trailers_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/details_view_margin"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/details_trailers_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_15"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:text="片花"
+                            android:textColor="@color/c24_color"
+                            android:textSize="@dimen/T12_C24_Bold_size"
+                            android:textStyle="bold" />
+
+                        <androidx.leanback.widget.HorizontalGridView
+                            android:id="@+id/details_trailers"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/details_trailers_height"
+                            android:layout_below="@id/details_trailers_title" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/details_credits_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/details_credits_view_height"
+                        android:layout_below="@id/details_trailers_view"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/details_credits_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/details_view_margin"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:layout_marginTop="@dimen/margin_13"
+                            android:text="演职员"
+                            android:textColor="@color/c24_color"
+                            android:textSize="@dimen/T12_C24_Bold_size"
+                            android:textStyle="bold" />
+
+                        <androidx.leanback.widget.HorizontalGridView
+                            android:id="@+id/details_credits"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/details_star_view_to_title_margin"
+                            android:layout_height="@dimen/details_credits_height"
+                            android:layout_below="@id/details_credits_title" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/details_still_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/details_view_margin"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_below="@id/details_credits_view">
+
+                        <TextView
+                            android:id="@+id/details_still_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:text="剧照"
+                            android:textColor="@color/c24_color"
+                            android:textSize="@dimen/T12_C24_Bold_size"
+                            android:textStyle="bold" />
+
+                        <androidx.leanback.widget.HorizontalGridView
+                            android:id="@+id/details_still"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/details_still_height"
+                            android:layout_below="@id/details_still_title" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/details_recommend_view"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/details_view_margin"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/details_still_view"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/details_recommend_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:layout_marginTop="@dimen/margin_20"
+                            android:text="相关推荐"
+                            android:textColor="@color/c24_color"
+                            android:textSize="@dimen/T12_C24_Bold_size"
+                            android:textStyle="bold" />
+
+                        <androidx.leanback.widget.VerticalGridView
+                            android:id="@+id/details_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/details_recommend_title" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.leanback.widget.BrowseFrameLayout>
+    </ScrollView>
+    <ProgressBar
+        android:id="@+id/details_progress"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/tvplay_progress_loading"
+        android:layout_width="@dimen/margin_50"
+        android:layout_height="@dimen/margin_50"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

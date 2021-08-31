@@ -1,0 +1,803 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">易视频</string>
+
+    <!--http start-->
+    <string name="http_timeout">网络超时,请重试</string>
+    <string name="http_connect_error">网络中断,请检查您的网络状态</string>
+    <string name="http_error">网络错误:</string>
+    <string name="http_nodata">无数据</string>
+    <string name="http_exception_error">ERROR</string>
+    <string name="http_parse_exception">服务暂时不可用</string>
+    <string name="http_connect_exception">服务暂时不可用</string>
+    <string name="http_unknown_error">服务暂时不可用</string>
+    <string name="network_error">网络连接异常\n\n正在重新连接(%1$s)...</string>
+    <string name="network_error2">对不起,无法连接到网络,您可以选择</string>
+
+    <string name="http_errorcode_400">错误请求</string>
+    <string name="http_errorcode_401">请求授权失败</string>
+    <string name="http_errorcode_403">请求的资源不允许访问</string>
+    <string name="http_errorcode_404">服务器找不到你请求的资源</string>
+    <string name="http_errorcode_408">请求超时</string>
+    <string name="http_errorcode_500">服务器产生内部错误</string>
+    <string name="http_errorcode_502">服务器暂时不可用</string>
+    <string name="http_errorcode_503">服务器服务暂时不可用</string>
+    <string name="http_errorcode_504">网关超时</string>
+
+    <string name="socket_errorcode_700">服务器返回错误</string>
+    <string name="socket_errorcode_701">服务器返回解析错误</string>
+    <string name="socket_errorcode_702">服务器连接失败</string>
+    <string name="socket_errorcode_703">Socket超时</string>
+    <!--http end -->
+    <!--==========点播 开始==========-->
+    <string name="details_description_info_str">%1$s|%2$s</string>
+    <string name="details_source_data_dot">● </string>
+    <string name="details_4k_warnning">4K节目，该机顶盒不支持，可拨打10086进行机顶盒更换</string>
+    <string name="details_4k_warnning_new">4K节目，该机顶盒不支持</string>
+    <string name="notice_free_trial_play">您可以免费观看%1$s，观看完整版请点击</string>
+    <string name="notice_free_trial_play_new">试看%1$s，因版权方要求，观看完整版请按</string>
+    <string name="notice_free_trial_play_pause_new">%1$s试看已结束，因版权方要求，观看完整版请按</string>
+    <string name="notice_free_trial_play_alacarte">您的VIP点播权限还有%1$s片，本片您可免费观看%1$s，观看完整版请点击</string>
+    <string name="notice_sure_back_to_liveTv">确认返回直播吗？</string>
+    <string name="notice_no_orderable_product">无可订购产品!</string>
+    <string name="notice_media_auth_failed">媒资鉴权失败！</string>
+    <string name="notice_not_allowed_free_trial_forNow">本片暂不支持试看</string>
+    <string name="notice_location_is_limited">地理受限！</string>
+    <string name="notice_play_url_is_empty">播放地址为空！</string>
+    <!--==========点播 结束==========-->
+
+
+    <!--==========直播 开始==========-->
+    <string name="authentic_fail">没有权限</string>
+    <!--==========直播 结束==========-->
+
+
+    <!--==========发现 开始==========-->
+
+    <!--==========发现 结束==========-->
+
+    <!--==========播放器 开始==========-->
+    <string name="code_rate_auto">自动</string>
+    <string name="player_sd">标清</string>
+    <string name="player_hd">高清</string>
+    <string name="player_sc">超清</string>
+    <string name="backslash"> / </string>
+    <string name="minus">-</string>
+    <string name="player_can_not_get_play_url">获取播放地址失败</string>
+    <string name="enter_and_player">\"确认键\"</string>
+    <!--==========播放器 结束==========-->
+
+
+    <!--==========dialog start==========-->
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+
+    <string name="note">提示</string>
+    <string name="message_network_wifi">WIFI已连接</string>
+    <string name="message_network_wifi_to_3g">正在使用手机流量</string>
+    <string name="message_network_3g">当前正在使用 3G/4G 网络.</string>
+    <string name="message_network">正在使用手机流量，暂停下载任务</string>
+    <string name="message_network_disconnect">网络异常，请检查网络设置</string>
+
+    <!--==========dialog end==========-->
+
+    <!--==========pullto refresh start==========-->
+    <string name="loading">正在加载...</string>
+    <!--==========pullto refresh end==========-->
+
+    <!--==========other==========-->
+
+    <string name="tips_delete_profile_pin">删除用户需要输入PIN码.</string>
+    <!--==========详情 开始==========-->
+    <!--==========详情 结束==========-->
+    <!--==========我的 开始==========-->
+    <string name="login">登录</string>
+    <string name="login_fail">服务暂时不可用</string>
+    <string name="setting">设置</string>
+    <string name="unknow">未知</string>
+    <string name="my_used_space">已用空间:%1$sGB / %2$sGB</string>
+    <string name="my_app_title">我的应用（%1$s）</string>
+    <!--==========我的 结束==========-->
+
+
+    <!--==========注册相关 开始==========-->
+    <!--==========注册相关 结束==========-->
+
+    <!--======================会员======================-->
+
+
+    <!--==========登录 开始==========-->
+    <string name="enter_password">密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="gain_verification_code">获取验证码</string>
+    <string name="again_get">s后重新获取</string>
+    <string name="password_error">密码错误</string>
+
+    <string name="no_net_work">网络异常，请检查网络设置</string>
+
+    <!--==========登录 结束==========-->
+
+    <!--==========视频聊天 开始==========-->
+    <!--==========视频聊天 结束==========-->
+
+    <!--search-->
+
+    <!--search-->
+
+    <!--Share-->
+
+
+    <!--分享-->
+    <!--Share-->
+
+
+    <!--DLNA-->
+
+
+    <!--voip-->
+    <!--更新相关-->
+    <string name="upgrade_force_hint">点击确定更新应用</string>
+    <string name="upgrade_check_sdcard">请确定您的手机有sd卡.</string>
+    <string name="upgrade_download_fail">下载失败，点击重新下载</string>
+    <string name="upgrade_download_succeed">下载成功，点击安装</string>
+    <string name="app_update_tip">应用更新提示</string>
+    <string name="app_edition">版本</string>
+    <string name="update_now_btn">立即更新</string>
+    <string name="later_to_say_again_btn">稍后再说</string>
+
+
+    <!--多屏互动-->
+    <string name="add_device_fail">设备添加失败</string>
+    <string name="remove_device_failure">设备解绑失败</string>
+    <string name="query_device_failure">设备查询失败</string>
+    <string name="dialog_unbind">解绑</string>
+    <string name="dialog_hind">您确定要解绑此设备吗?</string>
+
+    <!--流量-->
+
+
+    <!--通用错误-->
+    <string name="session_timeout_tip">服务暂不可用</string>
+
+
+    <!--截屏分享-->
+    <!--关于-->
+    <!--个推-->
+    <string name="device_admin_disable_warning">关闭服务之后，Heads-up 某些功能可能不会正常工作。</string>
+    <string name="device_admin_enable_explanation">启用设备管理将允许Heads-up关闭你的屏幕。当显示弹窗后屏幕不关闭或口袋模式工作不正常请启用设备管理。</string>
+
+
+    <!--test-->
+
+    <string name="caas_login_error">账号登录异常,请重新登录</string>
+    <string name="error_code_nomal">系统异常,请重试</string>
+
+    <!--DSV-->
+    <string name="live_tv_collection">收藏</string>
+
+    <string name="profile_user_name">用户名</string>
+
+    <string name="profile_pwd_empty_tips">密码不能为空</string>
+    <string name="dialog_lock_title">请输入密码解锁</string>
+    <string name="setting_device_name">设备名称</string>
+
+    <string name="vip_sub_remanentCredit0">余额不足,无法订购</string>
+
+
+    <string name="terminal_match_otherletters">输入的%1$s只支持 "%2$s" 中的一个或多个特殊字符</string>
+    <string name="terminal_match_no_otherletters">输入的%1$s不能包含特殊字符</string>
+
+    <string name="terminal_pwd_check_limt">密码最小长度为%1$s位</string>
+    <string name="terminal_pwd_uppercaseletters">输入的密码必须含有大写字母</string>
+    <string name="terminal_pwd_lowercaseletters">输入的密码必须含有小写字母</string>
+    <string name="terminal_pwd_need_numbers">输入的密码中必须含有数字</string>
+    <string name="terminal_pwd_no_need_space">密码不支持空格</string>
+
+    <string name="terminal_name_check_limt">用户名最小长度为%1$s位</string>
+    <string name="terminal_name_check_maxlimt">用户名最大长度为%1$s位</string>
+    <string name="terminal_name_uppercaseletters">输入的用户名不能含有大写字母</string>
+    <string name="terminal_name_lowercaseletters">输入的用户名不能含有小写字母</string>
+    <string name="terminal_name_need_numbers">输入的用户名中不能含有数字</string>
+    <string name="terminal_name_no_need_space">用户名不支持空格</string>
+
+    <string name="terminal_devicename_check_limt">设备名称最小长度为%1$s位</string>
+    <string name="terminal_devicename_check_maxlimt">设备名称最大长度为%1$s位</string>
+    <string name="terminal_devicename_uppercaseletters">输入的设备名称不能含有大写字母</string>
+    <string name="terminal_devicename_lowercaseletters">输入的设备名称不能含有小写字母</string>
+    <string name="terminal_devicename_need_numbers">输入的设备名称不能含有数字</string>
+    <string name="terminal_devicename_no_need_space">设备名称不支持空格</string>
+
+    <string name="main_tab_name_select">精选</string>
+
+    <string name="et_search_hint_text">输入片名、人名的首字母或全拼</string>
+    <string name="search_tips">1.支持 “汉字拼音首字母” 搜索\n  &#160;  如搜索电影：《英雄》，输入首字母：YX\n\n2.支持“演员”和“中文热词”搜索\n
+      &#160;&#160;如搜索演员：邓超，输入首字母：DC\n&#160;&#160;&#160;如输入：ZRC，联想热词：真人秀</string>
+    <string name="search_association">你是不是在找</string>
+    <string name="keyboard_symbol">#+-</string>
+    <string name="keyboard_symbol_abc">abc</string>
+    <string name="search_hot">最热推荐</string>
+    <string name="vod_search_ranking">电影搜索排行</string>
+    <string name="search_result_num">搜索结果(%1$s)</string>
+    <string name="search_result_type_all">全部</string>
+    <string name="search_result_type_film">电影</string>
+    <string name="search_result_type_tvPlay">电视剧</string>
+    <string name="search_result_type_tvActor">演员</string>
+    <string name="search_result_type_Variety">综艺</string>
+    <string name="search_result_type_Live">直播节目</string>
+    <string name="search_result_type_miplay">咪咕爱看</string>
+    <string name="search_result_page_index"> <![CDATA[<font color="#c5663e">%1$s</font>/<font color="#c5663e">%1$s</font>  ]]> </string>
+    <string name="search_everyone_search">大家都在搜</string>
+    <string name="search_actor_child">动画大咖</string>
+    <string name="search_actor">影人</string>
+    <string name="search_hot_video">热搜视频</string>
+
+    <!--桌面-->
+    <!--我的-->
+    <string name="my_userinfo_bussness_account">业务账号：</string>
+    <string name="launcher_my_user_info">用户信息</string>
+    <string name="launcher_my_user_name">用户名：</string>
+    <string name="launcher_my_product_end">产品到期时间：</string>
+    <string name="launcher_my_device_version">设备型号：</string>
+    <string name="launcher_my_stbId">STBID：</string>
+    <string name="launcher_my_function">常用功能</string>
+    <string name="launcher_my_order">订购记录</string>
+    <string name="launcher_my_reserve">我的预约</string>
+    <string name="launcher_my_base_info">基本信息</string>
+    <string name="launcher_my_message">消息通知</string>
+    <string name="launcher_my_bind">绑定账户</string>
+    <string name="launcher_my_help">帮助</string>
+    <string name="launcher_my_play_history">播放历史</string>
+    <string name="launcher_my_collect">我的收藏</string>
+    <string name="launcher_my_more_history">更多历史</string>
+    <string name="mytv_movie_title">我的影片</string>
+
+    <string name="mytv_history_tv">宽带电视</string>
+    <string name="mytv_history_phone">咪咕爱看</string>
+
+    <string name="mytv_history_delete">删除</string>
+    <string name="mytv_history_deleteAll">清空</string>
+
+    <string name="mytv_history_list_today">今天</string>
+    <string name="mytv_history_list_yesterday">昨天</string>
+    <string name="mytv_history_list_thisweek">一周内</string>
+    <string name="mytv_history_list_thismouth">更早</string>
+    <string name="mytv_history_list_less_1min">观看不足一分钟</string>
+    <string name="mytv_history_list_min">分钟</string>
+
+    <!--收藏-->
+    <string name="mytv_movie_collection">收藏</string>
+    <string name="has_no_film">还没有收藏的影片。\n点击下面的按钮去添加感兴趣的内容</string>
+    <string name="add">添加</string>
+    <string name="mytv_all_choose">全选</string>
+    <string name="mytv_film_type">电影</string>
+    <string name="mytv_tv_num">共%1$s集</string>
+    <string name="dis_all_choose">取消全选</string>
+    <string name="mytv_order_type">类型:</string>
+    <string name="mytv_order_director">导演:</string>
+    <string name="mytv_order_actor">演员:</string>
+    <string name="mytv_order_level">级别:</string>
+    <string name="mytv_order_unknown">未知</string>
+    <string name="clear_all">清除全部</string>
+    <string name="mytv_dialog_title">确定</string>
+    <string name="mytv_dialog_content">确实要删除所选内容吗?</string>
+    <string name="mytv_dialog_content_deleteAll">确实要删除所有内容吗?</string>
+    <string name="mytv_dialog_sure">确定</string>
+    <string name="mytv_dialog_cancel">取消</string>
+    <string name="ordered_list_total_count"> / %1$s</string>
+    <string name="order_list_item_price">%1$s</string>
+    <string name="ordered_list_title_filter">筛选</string>
+    <string name="ordered_list_title">我的订购</string>
+    <string name="order_list_tv_indate">有效期：%1$s</string>
+    <string name="order_list_tv_detail">详情：%1$s</string>
+    <string name="order_list_tv_price">￥：%1$s</string>
+    <string name="order_list_nhour">%1$s小时</string>
+    <string name="order_list_amonth">一个月</string>
+    <string name="order_list_onday">一天</string>
+    <string name="order_list_aweek">一周</string>
+    <string name="order_list_nweek">%1$s周</string>
+    <string name="order_list_nday">%1$s天</string>
+    <string name="order_list_oneday">一天</string>
+    <string name="order_list_nmonth">%1$s月</string>
+    <string name="order_pay_text_hint">温馨提示：订购立即生效，%1$s之内可观看，不可退订</string>
+    <string name="order_pay_sendverification_code">重新发送(%1$s)</string>
+    <string name="order_pay_resend_code">重新发送</string>
+    <string name="input_phonenumber_error">请输入正确的移动手机号码</string>
+    <string name="input_verificationcode_hint">请输入验证码</string>
+    <string name="input_phonenumber_range">请输入0~9的数字</string>
+    <string name="input_charset_maxlimit">输入的字符已达上限</string>
+    <string name="sms_code_upper_limit">获取短信验证码次数达到上限</string>
+    <string name="sms_code_senderror">发送短信失败</string>
+    <string name="sms_code_sendsuccess" tools:ignore="MissingTranslation">发送短信成功</string>
+    <string name="sms_code_checkerror" tools:ignore="MissingTranslation">验证码错误</string>
+
+    <string name="mytv_all">全部</string>
+    <string name="mytv_one">按次</string>
+    <string name="mytv_month">包周期</string>
+    <string name="mytv_can_use">可用的</string>
+    <string name="has_no_order">没有订购记录。</string>
+    <string name="mytv_order_name">名称:</string>
+    <string name="mytv_order_introduce">介绍:</string>
+    <string name="order_time">%1$s小时之后过期</string>
+    <string name="order_day_time">%1$s天后过期</string>
+    <string name="on_index_list">,第%1$s集</string>
+    <string name="mytv_movie_history">观看记录</string>
+    <string name="has_no_watch_history">还没有观看记录。\n点击下面的按钮去观看感兴趣的内容</string>
+    <string name="has_no_watch_history_new">您还没有观看记录\n快去观看您感兴趣的影片吧</string>
+    <string name="notificationd">通知</string>
+    <string name="instructions_1">点播类节目的更新时间</string>
+    <string name="instructions_detail_1">点播类节目每日各频道均有更新，独家电视剧与卫视同步，电影基本保证在院线下映一个月后上映，其余频道比爱奇艺主站晚1天。</string>
+    <string name="instructions_2">如何观看上次未看完的视频</string>
+    <string name="instructions_detail_2">您好，您可以在首屏中找到 —‘我的’进入，点击‘播放记录’，会显示您最近观看的播放表，点击可以继续观看。</string>
+    <string name="instructions_3">电视节目的位置及频道</string>
+    <string name="instructions_detail_3">您好，观看电视节目可以从第一个页面“推荐”中的“栏目点播”进入。进入口，左侧大框“精彩导视”可直接进入正在播放的电视节目。右侧“一周精选”，可根据需求选择一周内的电视节目进行回看。进入“精彩导视”，当前正在播出的电视节目按照电视剧、电影、综艺、新闻、体育、儿童、其它进行分类，选择某个节目进入后，从当前时间开始播。也可以按快退键回退至节目开始，按快进键可快进到目前播放的时间点，显示“已到达录播点”。该节目结束后，弹出下图推荐选择框，推荐5-8个当前时间正在播的节目，其中当前频道的节目列在第一个，按确认键可继续观看当前电视频道正在播放节目。</string>
+    <string name="instructions_4">个别直播频道无声音现象如何处理？</string>
+    <string name="instructions_detail_4">这种情况需要确定联网和线路是否都连接正常；老式电视红黄白三线是否连接正确，电视端口上的红线是需要拔下的；如果是高清线HDMI连接，则电视需要尝试切换声道，或者声道平衡调为负值。</string>
+    <string name="instructions_5">初次网络连接的方法</string>
+    <string name="instructions_detail_5">a.有线插上网线→关闭机顶盒wifi连接方式b.无线进入“我的--设置--wifi”→开启无线网→在无线设置中找到家中对于无线名称，输入密码即可c. PPPOE浪潮：进入“我的--设置--更多”→点击“PPPOE设置”→输入账户、密码→点击“开启PPPOE”贝尔：进入“我的--设置--以太网”→点击“更多-PPPOE”→输入账户、密码→点击“开启PPPOE”</string>
+    <string name="instructions_6">如何调整屏幕分辨率使画面比例与屏幕相符？</string>
+    <string name="instructions_detail_6">a.贝尔：点击“我的—设置—显示—输出模式”调整屏幕分辨率，使其与屏幕相符b.浪潮：点击“我的—设置—显示—屏幕切边” 使其与屏幕相符</string>
+    <string name="instructions_7">直播和点播可观看的内容有哪些？</string>
+    <string name="instructions_detail_7" formatted="false">点播有12个频道：电视剧、电影、动漫、综艺、纪录片、教育、少儿、音乐、搞笑、娱乐、体育、时尚生活。来源主要是爱奇异、PPS\江苏卫视、M1905电影网提供的内容。电视剧：覆盖一线卫视90%，与卫视平台的同步上线，独播剧更能优先于卫视上线。电影：覆盖电视屏的院线电影90%，影院下线一个月同步上线。动漫：覆盖四大动漫卫视95%。点播内容以超清、1080P为主。</string>
+    <string name="problem_1">提示“业务尚未开通”</string>
+    <string name="problem_detail_1">操作引导：您好，请您使用您家的网络连接电脑或手机，进入网页，百度搜索“ip地址”，确认您家网络是否为浙江移动网络；若未解决：搜索结果为浙江移动网络，并将搜索到的ip地址记录反馈；</string>
+    <string name="problem_2">提示“E0000004 业务尚未开通”</string>
+    <string name="problem_detail_2">操作引导：您好，这可能是因为网络不稳定或者网络异常，请您检查网络连接是否正常，重新连网后进行重启。若未解决：派单装维。</string>
+    <string name="problem_3">遥控器学习不成功</string>
+    <string name="problem_detail_3">操作引导：
+        a.长按遥控器电视机按键区的“电源键”按键约 5 秒钟，直至遥控器红色指示灯变为长亮状态，此时进入学习状态。
+        b.按一下要学习的按键，红色指示灯闪烁，此时处于学习接收状态。c.手持被学习遥控器，对准机顶盒遥控器，距离大约 3-5mm，按下被学习的按键。d.学习成功后红色指示灯快速闪烁三下后继续保持长亮，可以再次选择其他学习按键进行学习。e.如学习失败则红灯闪烁 5 次，返回学习状态，重复步骤 2-4。f.学习完毕后，按电视按键区以外的任意其他按键退出学习状态，红色指示灯熄灭。若未解决：派单装维。</string>
+    <string name="problem_4">直播或点播卡顿，经常出现在晚上高峰时期</string>
+    <string name="problem_detail_4">（1）首先需要确认用户网络连接状况、网络状态等，如果网络确认连上，进入第二步；（2） 若用户使用的是无线网络，请用户换成有线连接进行测试（需将机顶盒上的wifi关闭），排查是否是由于无线网络不稳定造成的卡顿（3）若有线网络也卡顿，需要对用户家的环境进行网络测速，排查带宽问题（4）若带宽正常，建议重启路由器，确认是否是由于路由器问题造成的卡顿（如：因为有多个设备连接造成的网络拥塞）（5）若上述测试均正常且重启后直播仍然卡顿的情况，则需上报故障单，等待银河技术人员排查定位问题解决反馈，工单中需记录用户机顶盒的品牌、型号、序列号、MAC号、版本号（软件版本号、launcher版本、APK版本号）等相关信息；</string>
+    <string name="problem_5">连接机顶盒后屏幕没有任何显示或提示无信号</string>
+    <string name="problem_detail_5">操作引导：请您手动切换一下电视的信号源。若未解决：派单装维。</string>
+    <string name="problem_6">开机一直停留在“GITV”logo，或者一直在切换图片，到不了主页</string>
+    <string name="problem_detail_6">操作引导：机顶盒硬件问题，请您到营业厅做换盒子处理。</string>
+    <string name="problem_7">点播电视剧、电影会出现闪退现象（播放过程中自动退出）</string>
+    <string name="problem_detail_7">操作引导：media player底层播放器问题，类似电脑上网看视频闪退的问题。这是机顶盒本身的问题。如果非常频繁，请您到营业厅做换盒子处理。</string>
+    <string name="problem_8">看天下，全屏时可上下切换频道，呼出菜单后却无法上下切换</string>
+    <string name="problem_detail_8">操作引导：这是机顶盒本身的问题，如果非常频繁，请您到营业厅做换盒子处理。</string>
+    <string name="problem_9">开机成功，正常加载EPG后，提示“程序出错啦，null”</string>
+    <string name="problem_detail_9">操作引导：请您重启机顶盒，并确认网络连接正常。若未解决：请客户到营业厅做换盒子处理。</string>
+    <string name="problem_10">关电视机，不关机顶盒，第二天重新开启电视机，出现黑屏现象</string>
+    <string name="problem_detail_10">操作引导：请您重启机顶盒，并确认网络连接正常。若未解决：请客户到营业厅做换盒子处理。</string>
+    <string name="help">帮助</string>
+    <string name="common_operating_instructions">常见操作引导</string>
+    <string name="fault_class_problem">故障类问题</string>
+
+    <!--浙江移动TV项目新增字符串-->
+    <string name="pip_playback_txt_exit">退出</string>
+    <string name="pip_playback_txt_replay">重新播放</string>
+    <string name="pip_playback_playcontinue">继续播放</string>
+    <string name="pip_playback_backtvpoint">返回电视看点</string>
+    <string name="pip_playback_detail">详情</string>
+    <string name="account_bind_comp">打开咪咕爱看APP，点击首页右上角机顶盒标志，扫描此二维码绑定手机号和盒子账号</string>
+    <string name="account_bind_desc">绑定手机号后，立即体验手机遥控器、甩屏播放、播放记录断点续播等精彩多屏互动功能</string>
+    <string name="multi_screen_action">多屏互动操作提示</string>
+    <string name="account_bind">绑定账户</string>
+    <string name="account">账户：</string>
+    <string name="account_name">账户:139****5165</string>
+    <string name="again_bind">重新绑定</string>
+    <string name="account_bind_count">1个账号已绑定</string>
+    <string name="account_tv_tips">TV主账户未绑定手机号</string>
+    <string name="account_manager">账户管理</string>
+    <string name="cancel_bind">解除绑定</string>
+    <string name="operation_tips">浏览操作提示</string>
+    <string name="account_time_out_refresh">刷新</string>
+    <string name="account_time_out_content">抱歉，当前二维码已经过期，请刷新。</string>
+    <string name="account_time_out_sure">刷新</string>
+    <string name="account_info">%d个账号已绑定</string>
+    <string name="account_bind_success">账户绑定成功！</string>
+    <string name="account_not_bind">TV主账户未绑定手机号</string>
+    <string name="account_bind_tips">个账号已绑定</string>
+    <string name="unbind_tips">解绑</string>
+    <string name="account_manager2">账号管理</string>
+    <string name="account_choose_tips">请选择要解绑的账号</string>
+    <string name="account_unbind_success">账户解绑成功！</string>
+    <string name="account_unbind_failed">账户解绑失败！</string>
+    <string name="profile_flow_text">基本信息</string>
+    <string name="profile_flow_users">用户名:</string>
+    <string name="profile_flow_consumption_limit">消费限制</string>
+    <string name="profile_flow_consumption_limit_reset">重置</string>
+    <string name="profile_flow_consumption_limit_preservation">保存</string>
+    <string name="epglist_date_today">今天</string>
+    <string name="epglist_date_yesterday">昨天</string>
+    <string name="epglist_recommend">推荐</string>
+    <string name="channel_playbill_name_empty">电视节目</string>
+    <string name="channel_playbill_totaltime">剩余%1$s分钟</string>
+    <string name="no_channel">没有该频道</string>
+    <string name="no_play_channel">当前用户无权限观看此频道</string>
+    <string name="query_unipay_failed">查询统一账号错误</string>
+    <string name="unipay_account_notfound">统一账号不存在</string>
+    <string name="unipay_product_price">%1$s元</string>
+
+    <string-array name="instructions">
+        <item>点播类节目的更新时间</item>
+        <item>如何观看上次未看完的视频</item>
+        <item>电视节目的位置及频道</item>
+        <item>个别直播频道无声音现象如何处理？</item>
+        <item>初次网络连接的方法</item>
+        <item>如何调整屏幕分辨率使画面比例与屏幕相符？</item>
+        <item>直播和点播可观看的内容有哪些？</item>
+    </string-array>
+    <string-array name="instructions_detail" formatted="false">
+        <item>点播类节目每日各频道均有更新，独家电视剧与卫视同步，电影基本保证在院线下映一个月后上映，其余频道比爱奇艺主站晚1天。</item>
+        <item>您好，您可以在首屏中找到 —‘我的’进入，点击‘播放记录’，会显示您最近观看的播放表，点击可以继续观看。</item>
+        <item>您好，观看电视节目可以从第一个页面“推荐”中的“栏目点播”进入。进入口，左侧大框“精彩导视”可直接进入正在播放的电视节目。右侧“一周精选”，可根据需求选择一周内的电视节目进行回看。进入“精彩导视”，当前正在播出的电视节目按照电视剧、电影、综艺、新闻、体育、儿童、其它进行分类，选择某个节目进入后，从当前时间开始播。也可以按快退键回退至节目开始，按快进键可快进到目前播放的时间点，显示“已到达录播点”。该节目结束后，弹出下图推荐选择框，推荐5-8个当前时间正在播的节目，其中当前频道的节目列在第一个，按确认键可继续观看当前电视频道正在播放节目。</item>
+        <item>这种情况需要确定联网和线路是否都连接正常；老式电视红黄白三线是否连接正确，电视端口上的红线是需要拔下的；如果是高清线HDMI连接，则电视需要尝试切换声道，或者声道平衡调为负值。</item>
+        <item>a.有线插上网线→关闭机顶盒wifi连接方式b.无线进入“我的--设置--wifi”→开启无线网→在无线设置中找到家中对于无线名称，输入密码即可c. PPPOE浪潮：进入“我的--设置--更多”→点击“PPPOE设置”→输入账户、密码→点击“开启PPPOE”贝尔：进入“我的--设置--以太网”→点击“更多-PPPOE”→输入账户、密码→点击“开启PPPOE”</item>
+        <item>a.点击“我的—设置—显示—输出模式”调整屏幕分辨率，使其与屏幕相符b.点击“我的—设置—显示—屏幕切边” 使其与屏幕相符</item>
+        <item>点播有12个频道：电视剧、电影、动漫、综艺、纪录片、教育、少儿、音乐、搞笑、娱乐、体育、时尚生活。来源主要是爱奇异、PPS、江苏卫视、M1905电影网提供的内容。电视剧：覆盖一线卫视90%，与卫视平台的同步上线，独播剧更能优先于卫视上线。电影：覆盖电视屏的院线电影90%，影院下线一个月同步上线。动漫：覆盖四大动漫卫视95%。点播内容以超清、1080P为主。</item>
+    </string-array>
+    <string-array name="programs">
+        <item>提示“业务尚未开通”</item>
+        <item>提示“E0000004 业务尚未开通”</item>
+        <item>遥控器学习不成功</item>
+        <item>直播或点播卡顿，经常出现在晚上高峰时期</item>
+        <item>连接机顶盒后屏幕没有任何显示或提示无信号</item>
+        <item>开机一直停留在“GITV”logo，或者一直在切换图片，到不了主页</item>
+        <item>点播电视剧、电影会出现闪退现象（播放过程中自动退出）</item>
+        <item>看天下，全屏时可上下切换频道，呼出菜单后却无法上下切换</item>
+        <item>开机成功，正常加载EPG后，提示“程序出错啦，null”</item>
+        <item>关电视机，不关机顶盒，第二天重新开启电视机，出现黑屏现象</item>
+    </string-array>
+    <string-array name="programs_detail">
+        <item>操作引导：您好，请您使用您家的网络连接电脑或手机，进入网页，百度搜索“ip地址”，确认您家网络是否为浙江移动网络；若未解决：搜索结果为浙江移动网络，并将搜索到的ip地址记录反馈；</item>
+        <item>操作引导：您好，这可能是因为网络不稳定或者网络异常，请您检查网络连接是否正常，重新连网后进行重启。若未解决：派单装维。</item>
+        <item>操作引导：
+        a.长按遥控器电视机按键区的“电源键”按键约 5 秒钟，直至遥控器红色指示灯变为长亮状态，此时进入学习状态。
+        b.按一下要学习的按键，红色指示灯闪烁，此时处于学习接收状态。c.手持被学习遥控器，对准机顶盒遥控器，距离大约 3-5mm，按下被学习的按键。d.学习成功后红色指示灯快速闪烁三下后继续保持长亮，可以再次选择其他学习按键进行学习。e.如学习失败则红灯闪烁 5 次，返回学习状态，重复步骤 2-4。f.学习完毕后，按电视按键区以外的任意其他按键退出学习状态，红色指示灯熄灭。若未解决：派单装维。</item>
+        <item>（1）首先需要确认用户网络连接状况、网络状态等，如果网络确认连上，进入第二步；（2） 若用户使用的是无线网络，请用户换成有线连接进行测试（需将机顶盒上的wifi关闭），排查是否是由于无线网络不稳定造成的卡顿（3）若有线网络也卡顿，需要对用户家的环境进行网络测速，排查带宽问题（4）若带宽正常，建议重启路由器，确认是否是由于路由器问题造成的卡顿（如：因为有多个设备连接造成的网络拥塞）（5）若上述测试均正常且重启后直播仍然卡顿的情况，则需上报故障单，等待银河技术人员排查定位问题解决反馈，工单中需记录用户机顶盒的品牌、型号、序列号、MAC号、版本号（软件版本号、launcher版本、APK版本号）等相关信息；</item>
+        <item>操作引导：请您手动切换一下电视的信号源。若未解决：派单装维。</item>
+        <item>操作引导：机顶盒硬件问题，请您到营业厅做换盒子处理。</item>
+        <item>操作引导：media player底层播放器问题，类似电脑上网看视频闪退的问题。这是机顶盒本身的问题。如果非常频繁，请您到营业厅做换盒子处理。</item>
+        <item>操作引导：这是机顶盒本身的问题，如果非常频繁，请您到营业厅做换盒子处理。</item>
+        <item>操作引导：请您重启机顶盒，并确认网络连接正常。若未解决：请客户到营业厅做换盒子处理。</item>
+        <item>操作引导：请您重启机顶盒，并确认网络连接正常。若未解决：请客户到营业厅做换盒子处理。</item>
+    </string-array>
+    <string name="no_data">没有内容</string>
+    <string name="no_data_title">没有内容。</string>
+    <string name="no_data_content">没有找到相关内容。\n请更换关键字后重新搜索。</string>
+
+    <string-array name="template_control">
+        <item>PannelSubjectNavigation_14</item>
+        <item>PannelSubjectNavigation_15M</item>
+        <item>PannelSubjectNavigation_16M</item>
+        <item>PannelSubjectNavigation_13</item>
+        <item>PannelPoster_16</item>
+        <item>PannelPoster_13M</item>
+        <item>PannelPoster_12</item>
+        <item>PannelPoster_13</item>
+        <item>PannelPoster_12_23</item>
+        <item>PannelPoster_11</item>
+        <item>PannelPoster_15_21</item>
+        <item>PannelPoster_14</item>
+        <item>PannelPoster_11_25</item>
+        <item>PannelPoster_11_21_35</item>
+        <item>PannelPoster_13_26</item>
+
+
+    </string-array>
+
+    <string name="netWork_request_failed">接口请求失败</string>
+
+    <string name="vod_watch_tips">请到咪咕爱看app进行观看!</string>
+
+    <!--我的-->
+    <string name="my_account_name">业务账号  :  </string>
+    <string name="my_user_name">用户编号&#160;:&#160; </string>
+    <string name="my_device_no">设备型号&#160;:&#160; </string>
+    <string name="my_stb_id">STBID&#160;:&#160;</string>
+    <string name="my_product_end_time">产品到期时间&#160;:&#160; </string>
+    <string name="launcher_updating">桌面正在更新，请稍后 </string>
+    <string name="my_version_name">版本名称&#160;:&#160; </string>
+    <!--统一支付错误码开始-->
+    <string name="orrder_error_code_1">参数不合法</string>
+    <string name="orrder_error_code_2">用户不存在或用户状态不可用</string>
+    <string name="orrder_error_code_3">网络异常</string>
+    <string name="orrder_error_code_4">数据库异常</string>
+    <string name="orrder_error_code_5">应用程序异常</string>
+    <string name="orrder_error_code_100">系统异常缺省错误码</string>
+    <string name="orrder_error_code_101">扩展信息解析错误</string>
+    <string name="orrder_error_code_102">自动续订标志错误</string>
+    <string name="orrder_error_code_103">产品不存在或产品未激活</string>
+    <string name="orrder_error_code_104">产品已订购</string>
+    <string name="orrder_error_code_105">影片价格未定义</string>
+    <string name="orrder_error_code_106">余额已不足，请及时充值</string>
+    <string name="orrder_error_code_107">扣费处理失败，请稍后再试</string>
+    <string name="orrder_error_code_108">订购级别不够</string>
+    <string name="orrder_error_code_109">内容不存在</string>
+    <string name="orrder_error_code_201">订购关系不存在</string>
+    <string name="orrder_error_code_202">不支持在线订购</string>
+    <string name="orrder_error_code_203">产品将下线，不支持订购</string>
+    <string name="orrder_error_code_204">包月产品不允许订购/退订基本包产品</string>
+    <string name="orrder_error_code_500">处理失败，缺省错误码</string>
+    <string name="orrder_error_code_501">产品不存在或状态不可用</string>
+    <string name="orrder_error_code_502">服务不存在或状态不可用</string>
+    <string name="orrder_error_code_503">订购的产品不在使用期内</string>
+    <string name="orrder_error_code_504">用户没有订购相应产品或订购关系已失效或未生效，返回可订购产品列表</string>
+    <string name="orrder_error_code_505">服务列表和产品列表和内容列表至少有一个不能为空</string>
+    <string name="orrder_error_code_unknown">未知的错误码</string>
+    <string name="order_error_code_10030050">订购失败</string>
+    <string name="order_payment_failed">订购失败!</string>
+    <!--统一支付错误码结束-->
+    <string name="payment_success_tips">已支付成功，费用将由户主：%1$s统一支付。</string>
+    <string name="autoextend_msg">自动续订</string>
+    <string name="private_phone_pay">个人手机话费支付</string>
+    <string name="family_uni_pay">家庭统一支付</string>
+    <string name="uni_pay_content">你的宽带电视已办理统一支付业务,\n每月宽带电视的费用,</string>
+    <string name="uni_pay__qrcode_content_1">为了保证业务顺畅使用,本业务需要先办理“统一支\n付业务”后才可以订购。</string>
+    <string name="uni_pay__qrcode_content_2">请先使用浙江移动手机营业厅\n扫码办理“统一支付”</string>
+    <string name="valide_hint">有效期:</string>
+    <string name="mouth_valide_hint">有效期:订购首月按天计费,\n月底到期自动续订。</string>
+    <string name="mouth_content_hint">汇聚海内外院线刚下映的新片,\n以及经典口碑大片，让您足不出\n户享受沙发院线。如需退订包月\n,&#160;请至&#160;“&#160;我的&#160;”&#160;\——&#160;“&#160;个人中心&#160;”\n\——&#160;“&#160;订单&#160;”&#160;中操作，退订下个月\n生效。</string>
+    <string name="desc_hint">描述信息:</string>
+    <string name="name_hint">内容名称:</string>
+    <string name="detail_hint">详情:</string>
+    <string name="subscribe_hint">账户信息:</string>
+    <string name="uni_qrcode_hint">本业务需要先办理“统一支付业务”后才可订购</string>
+    <string name="trysee_finish_hint">免费试看已结束，观看完整版请点击</string>
+    <string name="order_setting">订购设置</string>
+    <string name="order_month">元/月</string>
+    <string name="children_lock">短信验证开关</string>
+    <string name="confirmation_open">已开启</string>
+    <string name="confirmation_close">已关闭</string>
+    <string name="open_children_lock">打开短信验证开关，订购付费内容时将增加户主的短信确认。</string>
+    <string name="uni_children_lock_hint">温馨提示：为避免儿童误操作，您可\n至\"我的\"-\"个人中心\"开启 <font color='#FF24B5F1'>订购验证</font> 功\n能。开启后需要户主短信验证才能完成\n订购。</string>
+    <string name="uni_content_hint"> 您的宽带电视已经办理统一支付，每月\n宽带电视的费用，将由户主\n【%1$s】 支付，请确认是否\n继续订购？</string>
+    <string name="valide_remain">订购之日起算</string>
+    <string name="valide_remain_series">有效期内可整剧观看</string>
+    <string name="pay_success">支付成功</string>
+
+
+    <!--我的消息-->
+    <string name="message_title">我的消息</string>
+    <string name="message_history">消息记录</string>
+    <string name="message_setting">消息设置</string>
+    <string name="message_cancel">返回</string>
+    <string name="message_play">立刻观看</string>
+    <string name="message_i_know">知道了</string>
+    <string name="uni_children_hint">您的宽带电视账号暂未开通统一支付功能</string>
+    <string name="send_verification">发送验证码</string>
+    <string name="local_play">本地播放</string>
+    <string name="switch_profile">账号切换</string>
+    <!--咪咕爱看界面 -->
+    <string name="migu_title">温馨提示</string>
+    <string name="migu_prompt">此内容因版权原因，仅能在咪咕爱看app上播放，请使用咪咕爱看APP（“个人中心”
+        左上角或首页&#160;&#160;“宽带电视”&#160;&#160;入口）扫码直接观看或投大屛观看。</string>
+
+    <!--推送-->
+    <string name="noti_user_nodata">当前用户无可观看直播频道</string>
+    <string name="pay_img_code_hint">温馨提示:\n该宽带电视未开通关联手机号码支付，请使用户主手机号码，登录\n浙江移动手机营业厅扫码开通！</string>
+    <string name="pay_img_code_hint_new">该宽带电视未开通关联手机号码支付，请使用户主手机号码，登录浙江移动手机营业厅扫码开通！</string>
+    <string name="uni_pay_child">温馨提示：为避免儿童误操作，您可至 \"我的\" - \"常用功能\" - \"订购设\n置\"开启短信验证开关功能。开启后需要户主短信验证才能完成订购。</string>
+    <string name="uni_pay_child_new">温馨提示：为避免儿童误操作，您可至\“我的\”—\“订购记录\”—\“订购
+设置\”开启订购验证功能。开启后需要户主短信验证才能完成订购。</string>
+    <string name="uni_pay_verification">本电视已开通短信验证开关功能，验证码已发送至关联手机\n号，请输入验证码。</string>
+    <string name="pay_mode_other_phone">支付方式</string>
+    <string name="pay_mode_uni_phone">支付方式</string>
+    <string name="code_hint">请先使用浙江移动手机营业厅扫码办理\"统一支付\"</string>
+
+    <!--故障二维码-->
+    <string name="window_error_back">返回</string>
+    <string name="window_error_error_message">账号 %1$s  %2$s，错误码：%3$s，请扫描以下二维码向平台反馈。</string>
+
+    <!--订购中心-->
+    <string name="order_center_title">订购中心</string>
+    <string name="order_center_base_business_label">基本业务</string>
+    <string name="order_center_business_scan_title">扫码续包</string>
+    <string name="order_center_business_scan_title_new">续包</string>
+    <string name="order_center_go_order_label">我要订购</string>
+    <string name="order_center_my_order_label">我的订购</string>
+    <string name="order_center_order_setting_label">订购设置</string>
+    <string name="order_center_other_setting_label">其他设置</string>
+    <string name="my_order_order_list_title">订购记录</string>
+    <string name="my_order_header_type">类型</string>
+    <string name="my_order_header_name">名称</string>
+    <string name="my_order_header_price">资费</string>
+    <string name="my_order_header_expriydate">有效期</string>
+    <string name="my_order_header_ordertime">订购时间</string>
+    <string name="my_order_header_unsubscribetime">失效时间</string>
+    <string name="my_order_header_state">状态</string>
+    <string name="my_order_statement">*具体活动细则见浙江移动手机营业厅相关活动页面</string>
+    <string name="my_order_broadband_tv_title">宽带电视续包</string>
+    <string name="my_order_broadband_tv_subtitle">海量佳片任您观看</string>
+    <string name="my_order_broadband_title">宽带续包</string>
+    <string name="my_order_broadband_subtitle">享门店同等优惠+30元话费</string>
+    <string name="my_order_type_single">单点</string>
+    <string name="my_order_type_period">包%1s</string>
+    <string name="my_order_type_vod_end">部</string>
+    <string name="broadband_account">宽带账号</string>
+    <string name="my_order_filter_all_date">全部日期&#160;&#160;▼</string>
+    <string name="my_order_filter_format">%1s&#160;&#160;▼</string>
+    <string name="my_order_filter_year_title">年份:</string>
+    <string name="my_order_filter_month_title">月份:</string>
+    <string name="my_order_filter_all">全部</string>
+    <string name="my_order_unsubscribe_fail">退订失败</string>
+    <string name="go_order_price_format">%1s元</string>
+    <string name="go_order_price_format_new">%1s元/月</string>
+    <string name="main_guide_skip">跳过本页</string>
+    <string name="go_order_include_4K">(含4K)</string>
+
+    <string name="tvod_cloumn_name">精彩回顾</string>
+    <string name="tvod_channel_all_num">共%1s个频道</string>
+    <string name="tvod_channel_program_size">共%1s个节目</string>
+    <string name="miunte">分钟</string>
+    <string name="second">秒</string>
+
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="open_fail">组播开关打开失败</string>
+    <string name="close_falil">组播开关关闭失败</string>
+    <string name="multicate_switch">组播开关</string>
+    <string name="multicate_switch_editpassword">请输入密码</string>
+
+
+    <item type="id" name="tag_first"/>
+    <item type="id" name="tag_second"/>
+
+    <string name="big_small_product_conflict">已订购同类产品,无需订购</string>
+    <string name="big_small_product_mutex">您已经订购了同类产品，无法订购该产品</string>
+    <!--观影券支付-->
+    <string name="pay_benefit_install">请使用咪咕爱看扫描二维码完成支付</string>
+    <string name="pay_benefit_uninstall">如未安装咪咕爱看 请先扫码下载</string>
+    <string name="pay_benefit">观影券支付</string>
+    <string name="subscirbe_fail">订购失败，请重试</string>
+
+    <string name="third_part_payment">第三方支付</string>
+    <string name="user_state_validation_failed">抱歉，宽带电视用户状态异常，无法使用第三方支付</string>
+    <string name="third_part_payment_success">已支付成功</string>
+    <string name="third_part_payment_load_failed_notification_message">页面加载失败，请稍后重试</string>
+    <string name="third_part_payment_order_has_been_canceled">订单已失效,请重新加载</string>
+    <string name="is_comfirm_subscribe">是否确认订购</string>
+    <string name="reminder_back">暂不提醒</string>
+    <string name="reminder_continue">继续观看</string>
+    <string name="reminder_title">您正在手机上观看</string>
+    <string name="comfirm_pay">确认支付</string>
+    <string name="subscribed_hint">已订购，无需重复订购</string>
+    <string name="payment_not_enough">您的账户余额不足，请先充值再订购！</string>
+
+    <!--儿童版-->
+    <string name="children_epg">儿童版</string>
+    <string name="normal_epg">普通版</string>
+    <string name="simple_epg">简版</string>
+    <string name="switch_epg">界面切换</string>
+    <string name="single_duration">单次时长</string>
+    <string name="single_duration_hint">达到单次时间后，会休息30分钟</string>
+    <string name="single_all_duration">总时长</string>
+    <string name="single_all_duration_hint">达到总时长后，今日无法再继续观看</string>
+    <string name="parent_default_name">小宝贝</string>
+    <string name="parent_female">小公主</string>
+    <string name="parent_male">小王子</string>
+    <string name="parent_gender">性别</string>
+    <string name="parent_birthday">生日</string>
+    <string name="parent_year">年</string>
+    <string name="parent_month">月</string>
+    <string name="parent_day">日</string>
+    <string name="parent_blacklist_hint">黑名单</string>
+    <string name="parent_content_control">内容控制</string>
+    <string name="parent_time_control">观看时长控制</string>
+    <string name="parent_baby_info">宝贝昵称</string>
+    <string name="parent_baby_info_hint">宝贝信息</string>
+    <string name="children_lock_hint">开启后观看时长控制即时生效</string>
+    <string name="children_lock_title">童锁开关</string>
+    <string name="parent_set_center">家长中心</string>
+    <string name="parent_set_center_pwd">家长密码</string>
+    <string name="set_pwd">请设置您的家长密码</string>
+    <string name="set_pwd_confirm">请确认您的家长密码</string>
+    <string name="set_new_pwd_">请输入新的家长密码</string>
+    <string name="set_new_pwd_confirm">请确认新的家长密码</string>
+    <string name="input_pwd_">请输入家长密码</string>
+    <string name="input_twice_pwd_hint">请确认两次输入的密码相同</string>
+    <string name="pwd_error">请确认两次输入的密码相同</string>
+    <string name="show_qr_img_hint">该宽带电视未开通关联手机号支付，请使用户主手机号码，</string>
+    <string name="show_qr_img_hint_2">登录浙江移动手机营业厅扫码开通！</string>
+    <string name="show_qr_img_sub_hint">请先使用浙江移动手机营业厅扫码办理“统一支付”</string>
+    <string name="your_phone_num">您的手机号：</string>
+    <string name="send_check_code">发送验证码</string>
+    <string name="input_check_code">请输入验证码</string>
+    <string name="input_right_check_code">请输入正确的验证码</string>
+    <string name="check_code_success">√ 验证成功</string>
+    <string name="forget_pwd_hint">忘记密码</string>
+    <string name="pwd_error_hint">密码错误</string>
+    <string name="set_pwd_success">设置密码成功</string>
+    <string name="reset_pwd">重设密码</string>
+    <string name="no_set_pwd">未设置</string>
+    <string name="children_unlock_title">请输入以下题目的结果</string>
+    <string name="children_unlock_result_error">结果错误！</string>
+    <string name="children_unlock_delete">删除</string>
+    <string name="children_unlock_num_one">1</string>
+    <string name="children_unlock_num_two">2</string>
+    <string name="children_unlock_num_three">3</string>
+    <string name="children_unlock_num_four">4</string>
+    <string name="children_unlock_num_five">5</string>
+    <string name="children_unlock_num_six">6</string>
+    <string name="children_unlock_num_seven">7</string>
+    <string name="children_unlock_num_eight">8</string>
+    <string name="children_unlock_num_night">9</string>
+    <string name="children_unlock_num_zero">0</string>
+    <string name="unlock_hint_2line">_ _</string>
+    <string name="unlock_hint_1line">_</string>
+    <string name="parent_switch_on">已开启</string>
+    <string name="parent_switch_off">未开启</string>
+    <string name="parent_input_hint">请输入</string>
+    <string name="parent_not_limited">不限制</string>
+    <string name="parent_noset">未设置</string>
+    <string name="toast_child_no_data">当前用户儿童模式无数据</string>
+    <string name="child_play_complete">小朋友，可以多做\n做户外运动 增强体质,\n身体棒棒哦~</string>
+    <string name="parent_center_birthday_select_error_toast">请选择有效出生日期</string>
+    <string name="collect_error">系统异常,请重试</string>
+
+    <string name="search_keyboard_btn_delete">退格</string>
+    <string name="search_keyboard_btn_clear">清空</string>
+    <string name="player_back_to_start">按【左键】从头播放</string>
+    <string name="vod_detail_score">评分</string>
+
+    <string name="player_order_price_product_type_0_day">元/%1$s天</string>
+    <string name="player_order_price_product_type_0_week">元/%1$s周</string>
+    <string name="player_order_price_product_type_0_month">元/%1$s月</string>
+    <string name="player_order_price_product_type_1">元/次</string>
+
+    <string name="order_paymode_ordertip">您将订购</string>
+    <string name="order_paymode_eventtip">活动详情 >></string>
+    <string name="order_paymode_phonepay_editphone">请输入手机号码</string>
+    <string name="order_paymode_phonepay_verification_code">请输入验证码</string>
+    <string name="order_transition_recommend_text">热片推荐</string>
+
+    <string name="child_back_top_hint" tools:ignore="MissingTranslation">返回键可置顶</string>
+
+    <string name="score_pay_tips">温馨提示：本次订购将会通过短信验证的方式，扣除指定移动手机号的帐号积分。</string>
+    <!--故障二维码-->
+    <string name="err_message">错误信息：%1$s</string>
+    <string name="err_code">错误码：%1$s</string>
+    <string name="qr_scan_tip">手机扫描二维码处理更快哦</string>
+    <string name="qr_net_setting">网络设置</string>
+    <string name="qr_reboot">立即重启</string>
+
+    <string name="voddetail_playview_tip">按[OK]键全屏播放</string>
+
+    <string name="live_order_title">本频道为付费频道，\n请购买后观看。</string>
+
+    //空间视频
+    <string name="backTip">再次按返回键退出播放</string>
+    <string name="current_screen">默认</string>
+    <string name="update_tip_nointface">无升级接口</string>
+    <string name="screen_change_tip">屏幕的偏移或分辨率已更改。请重放视频。</string>
+    <!--文件选择-->
+    <string name="pick_file_return_to_root">返回根目录</string>
+    <string name="pick_file_return_to_the_previous">返回上一级目录</string>
+    <string name="pick_file_use_inside">使用APK内置地址</string>
+    <string name="pick_file_tip_jsonfile">请选择正确的json文件</string>
+    <string name="pick_file_tip_filepath_fail">文件路径获取失败</string>
+    <string name="pick_file_tip_file_fail">文件解析失败</string>
+    <string name="pick_file_tip_success">播放地址获取成功!</string>
+    <!--文件选择-->
+    <!--配置-->
+    <string name="setting_choice">配置选择</string>
+    <string name="setting_choice_json">播放列表配置</string>
+    <string name="setting_choice_loglevel">日志级别配置</string>
+    <string name="setting_choice_loglevel_title">日志级别选择</string>
+    <!--配置-->
+
+    <!--更新-->
+    <string name="loading_tip">加载中:</string>
+    <string name="network_error_tip">网络请求失败</string>
+    <string name="json_set_error_tip">配置json文件格式有误</string>
+    <string name="update_success_tip">升级成功，点击确定返回</string>
+    <string name="button_ok">确定</string>
+    <string name="button_cancel">取消</string>
+    <string name="update_checkupdate_tip">是否升级到最新版本?</string>
+    <string name="update_checkupdate">已经进行过升级检查</string>
+    <string name="update_downloading">正在下载安装包…</string>
+    <string name="update_tip_last">当前已是最新版本</string>
+    <string name="update_file_download_fail">更新文件下载失败</string>
+    <!--更新-->
+
+    <!--播放-->
+    <string name="tip_exit">当前确认是否退出?</string>
+    <string name="play_error_tip_param">无法播放,请检查传参!</string>
+    <string name="play_mute">播放器静音</string>
+    <string name="play_mute_dis">播放器恢复声音</string>
+    <string name="play_placomplete">播放完毕</string>
+    <string name="play_enter_bullettime">进入子弹时间</string>
+    <string name="play_out_bullettime">退出子弹时间</string>
+    <!--播放-->
+</resources>

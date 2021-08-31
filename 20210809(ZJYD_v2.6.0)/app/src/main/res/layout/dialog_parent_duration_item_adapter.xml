@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.FrameLayoutFocusLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:id="@+id/fm_container">
+
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:gravity="center"
+        android:id="@+id/tv_duration"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="20 分钟"
+        android:textSize="@dimen/parent_set_center_title"
+        android:textColor="@color/white_0" />
+
+</com.pukka.ydepg.customui.focusView.FrameLayoutFocusLayout>

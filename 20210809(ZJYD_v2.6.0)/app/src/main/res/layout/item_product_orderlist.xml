@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.ProductListRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                              xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                              android:id="@+id/rl_order_container"
+                                                              android:layout_marginLeft="@dimen/orderlist_paddingLeft"
+                                                              android:layout_marginRight="@dimen/orderlist_paddingRight"
+                                                              android:layout_width="@dimen/orderlist_item_width"
+                                                              android:layout_height="@dimen/orderlist_item_height"
+                                                              android:focusable="true"
+                                                              android:background="@drawable/product_orderlist_itemselector"
+    >
+
+  <ImageView
+      android:id="@+id/iv_product"
+      android:layout_width="match_parent"
+      android:scaleType="fitXY"
+      android:padding="@dimen/featured_detail_3dp"
+      android:layout_height="match_parent" />
+  <LinearLayout
+      android:id="@+id/title_ly"
+      android:orientation="vertical"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/featured_detail_90px">
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="@dimen/T11_C21_Light_size"
+        android:textColor="@color/c21_color"
+        android:text="美国队长"
+        />
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="@dimen/T31_C21_Light_size"
+        android:textColor="@color/c21_color"
+        android:text="(连续包月)"
+        />
+
+  </LinearLayout>
+
+
+
+  <LinearLayout
+      android:id="@+id/price_ly"
+      android:layout_alignParentBottom="true"
+      android:layout_width="wrap_content"
+      android:layout_marginBottom="@dimen/orderlist_paddingtTop"
+      android:layout_centerHorizontal="true"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      >
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9.9"
+        android:textSize="@dimen/orderpay_title_textsize"
+        android:textColor="@color/c37_color"/>
+
+    <TextView
+        android:id="@+id/ratetv"
+        android:layout_marginLeft="@dimen/unipay_countflag_marginright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="元/部"
+        android:textSize="@dimen/style_three_text_size"
+        android:textColor="@color/c37_color"/>
+  </LinearLayout>
+  <FrameLayout
+      android:layout_below="@id/title_ly"
+      android:layout_above="@+id/price_ly"
+      android:layout_width="match_parent"
+      android:paddingLeft="@dimen/my_itemView_more_textSize"
+      android:paddingRight="@dimen/my_itemView_more_textSize"
+      android:paddingTop="@dimen/epglist_rvprogram_bottomspace"
+      android:paddingBottom="@dimen/epglist_rvprogram_bottomspace"
+      android:layout_height="wrap_content">
+
+    <com.pukka.ydepg.common.extview.VerticalScrollTextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pan_height_193"
+        android:textSize="@dimen/epgitem_channel_cnamesize"
+        app:tv_line="10"
+        android:ellipsize="end"
+        android:textColor="@color/c21_color"
+        />
+    <LinearLayout
+        android:id="@+id/once_ly"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/epgitem_channel_recommendtext_size"
+          android:text="片名:"
+          android:textColor="@color/c21_color"
+          android:textStyle="bold"/>
+      <TextView
+          android:id="@+id/vod_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/T252_C25_Light_size"
+          android:text="头号玩家"
+
+          android:textColor="@color/c21_color"
+          />
+      <TextView
+          android:layout_marginTop="20dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/epgitem_channel_recommendtext_size"
+          android:text="有效期:"
+          android:textColor="@color/c21_color"
+          android:textStyle="bold"/>
+      <TextView
+          android:id="@+id/tv_indate"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="@dimen/T252_C25_Light_size"
+          android:text="头号玩家"
+          android:textColor="@color/c21_color"
+          />
+
+    </LinearLayout>
+
+  </FrameLayout>
+
+</com.pukka.ydepg.customui.focusView.ProductListRelativeLayout>

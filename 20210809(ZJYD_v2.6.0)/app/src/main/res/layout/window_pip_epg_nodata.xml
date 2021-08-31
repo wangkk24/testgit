@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/rl_nodata"
+      android:layout_width="@dimen/epglist_rlerror_width"
+      android:focusable="false"
+      android:focusableInTouchMode="false"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/epglist_rlerror_marginleft"
+      android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/img_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/box_64"
+        />
+
+    <TextView
+        android:id="@+id/text_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_nodata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/epglist_texterror_margintop"
+        android:text="当前没有符合条件的节目"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/epgitem_channel_nodatatext_size"
+        />
+
+    <TextView
+        android:id="@+id/text_other_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_nodata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/epglist_texterror_margintop"
+        android:text="可以去看看其他推荐"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/epgitem_channel_recommendtext_size"
+        />
+
+  </RelativeLayout>

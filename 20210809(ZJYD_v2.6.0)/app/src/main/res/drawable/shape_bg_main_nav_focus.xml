@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/details_poster_height"></corners>
+    <gradient
+        android:angle="270"
+        android:endColor="@color/blue_5faaea"
+        android:startColor="@color/blue_6389de" />
+</shape>

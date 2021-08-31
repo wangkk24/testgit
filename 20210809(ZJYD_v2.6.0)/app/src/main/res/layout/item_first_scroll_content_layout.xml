@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.launcher.view.ReflectRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:posterType="0"
+    android:focusable="false">
+
+    <com.pukka.ydepg.common.extview.ShimmerImageView
+        android:id="@+id/iv_ads"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        app:shimmer_scaleType="fitXY"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pan_layer_height"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/phm_shadow_layer"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_24"
+        android:layout_marginRight="@dimen/margin_24"
+        android:layout_marginBottom="@dimen/margin_24"
+        android:focusable="false"
+        android:textColor="@color/color_template_title"
+        android:textSize="@dimen/pan_common_title_textSize" />
+</com.pukka.ydepg.launcher.view.ReflectRelativeLayout>

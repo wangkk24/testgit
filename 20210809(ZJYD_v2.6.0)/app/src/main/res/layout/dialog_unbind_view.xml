@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.LinearLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/dialog_content"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bg_alert_dialog_corner">
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/featured_detail_10dp"
+        android:layout_marginTop="@dimen/featured_detail_20dp"
+        android:textColor="@color/color_text_normal"
+        android:gravity="center"
+        style="@style/T2"
+        android:text="@string/dialog_unbind"/>
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/tv_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/featured_detail_10dp"
+        android:textColor="@color/color_text_normal"
+        android:gravity="center"
+        android:textSize="@dimen/middle_text_size_18"
+        android:text="@string/dialog_hind"/>
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/featured_detail_20dp"
+        android:textColor="@color/color_text_normal"
+        android:gravity="center"
+        android:textSize="@dimen/middle_text_size_18"
+        android:text="@string/dialog_hind"/>
+
+
+    <com.pukka.ydepg.common.extview.LinearLayoutExt
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_linearlayout_height"
+        android:orientation="vertical">
+
+        <!-- 分隔横线 -->
+        <com.pukka.ydepg.common.extview.ImageViewExt
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black_29"
+            android:scaleType="fitXY" />
+
+        <com.pukka.ydepg.common.extview.LinearLayoutExt
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_linearlayout_height"
+            android:orientation="horizontal">
+
+            <!-- Cancel -->
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/negativeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/gray_1b"
+                android:textSize="@dimen/middle_text_size_18" />
+
+            <!-- 分隔竖线 -->
+            <com.pukka.ydepg.common.extview.ImageViewExt
+                android:id="@+id/between_btn_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/black_29"
+                android:scaleType="fitXY" />
+
+            <!-- OK -->
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/positiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/color_text_normal"
+                android:textSize="@dimen/middle_text_size_18" />
+
+        </com.pukka.ydepg.common.extview.LinearLayoutExt>
+    </com.pukka.ydepg.common.extview.LinearLayoutExt>
+</com.pukka.ydepg.common.extview.LinearLayoutExt>

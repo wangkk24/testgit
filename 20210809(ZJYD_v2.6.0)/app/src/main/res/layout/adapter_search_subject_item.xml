@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/search_subject_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/search_type_item_bg"
+        android:focusable="true"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingBottom="@dimen/margin_5"
+        android:textColor="@drawable/search_type_text_selector"
+        android:textSize="@dimen/search_hot_tip_size" />
+
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

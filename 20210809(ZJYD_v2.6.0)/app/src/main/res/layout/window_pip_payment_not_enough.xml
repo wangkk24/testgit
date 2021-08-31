@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="@dimen/window_not_enough_width"
+        android:layout_height="@dimen/window_not_enough_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_pip_payment_comfirm"
+        >
+
+        <ImageView
+            android:id="@+id/iv_payment_succ"
+            android:layout_width="@dimen/margin_46"
+            android:layout_height="@dimen/margin_46"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:rotation="180"
+            android:layout_marginTop="@dimen/margin_46"
+            android:src="@drawable/info_96"
+            />
+
+        <TextView
+            android:id="@+id/tv_payment_tips"
+            android:layout_width="wrap_content"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_payment_succ"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_32"
+            android:gravity="center_horizontal"
+            android:text="@string/payment_not_enough"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/margin_24"
+            />
+
+        <Button
+            android:id="@+id/confirm_btn"
+            android:layout_width="@dimen/margin_200"
+            android:layout_height="@dimen/unipay_btnconfirm_height"
+            android:layout_marginBottom="@dimen/margin_67.5"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_payment_tips"
+            android:layout_marginTop="@dimen/margin_55"
+            android:background="@drawable/detail_button_selector"
+            android:text="确定"
+            android:layout_marginRight="@dimen/margin_15"
+            android:textColor="@drawable/pay_text_color_selector"
+            android:textSize="@dimen/unipay_btntextsize"/>
+    </RelativeLayout>
+
+</RelativeLayout>

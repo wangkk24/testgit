@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="end"
+    android:paddingTop="@dimen/margin_30"
+    android:background="@drawable/bg_popwindow"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/mytv_dialog_filter_title"
+        android:layout_width="@dimen/order_dialog_width"
+        android:textSize="@dimen/order_title_text_size"
+        android:text="@string/ordered_list_title_filter"
+        android:paddingLeft="@dimen/margin_24"
+        android:layout_marginTop="@dimen/margin_45"
+        android:textColor="@color/c21_color"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/mytv_dialog_filter_title"
+        android:id="@+id/mytv_filter_time_title"
+        android:layout_marginTop="@dimen/margin_24"
+        android:paddingLeft="@dimen/margin_43.6"
+        android:text="周期"
+        android:textSize="@dimen/order_title_text_size"
+        android:textColor="@color/c24_color"
+        android:layout_width="@dimen/order_dialog_width"
+        android:layout_height="wrap_content" />
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/my_tv_dialog_time"
+        android:layout_marginTop="@dimen/margin_7.5"
+        android:layout_below="@+id/mytv_filter_time_title"
+        android:layout_width="176dp"
+        android:layout_height="match_parent">
+        </androidx.leanback.widget.VerticalGridView>
+
+    <TextView
+        android:layout_below="@+id/mytv_dialog_filter_title"
+        android:id="@+id/mytv_filter_type_title"
+        android:layout_marginTop="@dimen/margin_24"
+        android:paddingLeft="@dimen/margin_43.6"
+        android:text="类型"
+        android:layout_marginLeft="@dimen/margin_7.5"
+        android:layout_toRightOf="@+id/my_tv_dialog_time"
+        android:textSize="@dimen/order_title_text_size"
+        android:textColor="@color/c24_color"
+        android:layout_width="@dimen/order_dialog_width"
+        android:layout_height="wrap_content" />
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/my_tv_dialog_type"
+        android:layout_width="176dp"
+        android:layout_marginLeft="@dimen/margin_7.5"
+        android:layout_marginTop="@dimen/margin_7.5"
+        android:layout_marginRight="@dimen/margin_54"
+        android:layout_below="@+id/mytv_filter_type_title"
+        android:layout_toRightOf="@+id/my_tv_dialog_time"
+        android:layout_height="match_parent">
+    </androidx.leanback.widget.VerticalGridView>
+
+</RelativeLayout>

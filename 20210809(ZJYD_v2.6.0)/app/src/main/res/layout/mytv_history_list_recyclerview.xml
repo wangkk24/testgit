@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:descendantFocusability="afterDescendants"
+        android:layout_marginRight="@dimen/history_list_dele_width"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_16"
+        >
+
+    </androidx.leanback.widget.VerticalGridView>
+
+    <TextView
+        android:id="@+id/history_list_dele"
+        android:layout_width="@dimen/history_list_dele_btn_width"
+        android:layout_height="@dimen/history_list_dele_height"
+        android:text="删除"
+        android:gravity="center"
+        android:textSize="@dimen/T22_C24_Bold_size"
+        android:textColor="@drawable/activity_launcher_text_selector"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/margin_28.5"
+        android:layout_marginRight="@dimen/margin_7"
+        android:background="@drawable/my_movie_btn_bg"
+        />
+
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:focusable="false"
+        android:layout_width="@dimen/movie_no_data_width"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/no_data_intro"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/c29_color"
+            android:focusable="false"
+            android:textSize="@dimen/movie_no_data_text_size"
+            android:text="@string/has_no_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="@dimen/margin_10"
+            />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/no_data_btn"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="@drawable/my_dialog_btn_foucs"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="@dimen/margin_10"-->
+            <!--android:layout_marginLeft="@dimen/margin_60"-->
+            <!--android:layout_marginRight="@dimen/margin_60"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageView-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/adds_96"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+                <!--android:layout_marginTop="@dimen/margin_10"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="@dimen/movie_no_data_text_size"-->
+                <!--android:id="@+id/no_data_action"-->
+                <!--android:textColor="@color/c01_color"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="@string/add"-->
+                <!--android:layout_marginBottom="@dimen/margin_10"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

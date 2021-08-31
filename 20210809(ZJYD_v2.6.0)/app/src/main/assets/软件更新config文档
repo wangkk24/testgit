@@ -1,0 +1,13 @@
+[STB_ZYSJ]
+Version=1668
+FileName=MultiView_20201026_113124_1.0.0.apk
+LastForceUpgradeVersion=0
+ForceUpdate=0
+
+Version:新版本的apk版本号
+FileName:新版本的apk名称
+LastForceUpgradeVersion:上次强制更新的版本号
+ForceUpdate：本版本是否强制更新   "1" 强制更新   "0" 非强制更新
+注意事项：
+1.不要随意添加空格
+2.注意各参数的大小写

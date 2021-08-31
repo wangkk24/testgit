@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:roundiv="http://schemas.android.com/tools"
+    android:background="@color/transparent">
+
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/play_rela"
+        android:layout_width="@dimen/margin_453.33"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <com.pukka.ydepg.launcher.view.CustomRoundImageView
+            android:id="@+id/image_view"
+            android:layout_width="@dimen/margin_453.33"
+            android:layout_height="@dimen/margin_366.67"
+            android:scaleType="fitCenter"
+            app:left_top_radius="@dimen/margin_10"
+            app:right_top_radius="@dimen/margin_10" />
+
+        <com.pukka.ydepg.moudule.home.view.MarqueeText
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_108.2"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:visibility="gone"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/margin_26"
+            android:textStyle="bold" />
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/content_play_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/title_tv"
+            android:layout_marginEnd="@dimen/margin_64"
+            android:ellipsize="end"
+            android:lineSpacingExtra="1.3dp"
+            android:maxLines="3"
+            android:focusable="false"
+            android:visibility="gone"
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/margin_16" />
+
+        <com.pukka.ydepg.common.extview.LinearLayoutExt
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/content_play_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_33"
+            android:orientation="horizontal">
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/cancel_play_tv"
+                android:layout_width="@dimen/margin_150"
+                android:layout_height="@dimen/margin_53"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select_message_btn"
+                android:gravity="center"
+                android:textSize="@dimen/err_code_textsize"
+                android:textColor="@color/white_0"
+                android:text="返回"
+                android:focusable="true" />
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/play_tv"
+                android:layout_width="@dimen/margin_150"
+                android:layout_height="@dimen/margin_53"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_40"
+                android:background="@drawable/select_message_btn"
+                android:gravity="center"
+                android:text="立即前往"
+                android:textSize="@dimen/err_code_textsize"
+                android:textColor="@color/white_0"
+                android:focusable="true" />
+
+        </com.pukka.ydepg.common.extview.LinearLayoutExt>
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_countdown"
+            android:layout_width="@dimen/message_countdown_width_and_height"
+            android:layout_height="@dimen/message_countdown_width_and_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/message_content_tip_margintop"
+            android:background="@drawable/countdown"
+            android:gravity="center"
+            android:textSize="@dimen/message_countdown_txtsize"
+            android:textColor="@color/white_0" />
+
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

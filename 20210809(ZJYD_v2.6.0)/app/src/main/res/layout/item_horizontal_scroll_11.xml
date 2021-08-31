@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/my_moreItem_width"
+    android:layout_height="@dimen/my_moreItem_width"
+    android:focusable="true"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:padding="@dimen/margin_2"
+    android:background="@drawable/select_vertical_scroll_item_bg"
+    android:id="@+id/rr_item_my_function"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.pukka.ydepg.common.extview.ShimmerImageView
+        android:layout_width="@dimen/my_moreItem_width"
+        android:layout_height="@dimen/my_moreItem_width"
+        app:shimmer_scaleType="fitXY" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pan_layer_height"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/phm_shadow_layer" />
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+        android:layout_marginRight="@dimen/margin_20"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/phmTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/my_function_item_title_textSize"
+            tools:text="银河"/>
+
+        <TextView
+            style="@style/phmSubTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+            android:textSize="@dimen/my_function_item_subTitle_textSize"
+            tools:text="热门电影包"/>
+    </LinearLayout>
+</com.pukka.ydepg.launcher.view.ReflectRelativeLayout>

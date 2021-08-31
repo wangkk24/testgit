@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/margin_104"
+    android:paddingLeft="72dp"
+    android:paddingRight="72dp"
+    android:paddingTop="@dimen/margin_104"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_manager2"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/account_dialog_list_title_size" />
+
+        <TextView
+            android:id="@+id/tv_dialog_account_bind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/account_dialog_content_size"
+            tools:text="3个账号绑定" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dialog_account_bind"
+            android:layout_width="@dimen/account_dialog_list_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16"/>
+
+        <Button
+            android:id="@+id/btn_dialog_account_unbind"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/margin_48"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/activity_update_btn_selector"
+            android:paddingLeft="96dp"
+            android:paddingRight="96dp"
+            android:text="@string/unbind_tips"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/account_dialog_content_size" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

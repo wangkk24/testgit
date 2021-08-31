@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_popwindow"
+    android:layout_height="match_parent">
+
+     <TextView
+         android:id="@+id/help_title"
+         android:layout_width="@dimen/dialog_width"
+         android:layout_height="wrap_content"
+         android:textColor="@color/c21_color"
+         android:textSize="@dimen/help_title_size"
+         android:textStyle="bold"
+         android:layout_alignLeft="@+id/help_problem_rel"
+         android:text="@string/instructions_1"
+         android:layout_alignParentRight="true"
+         android:layout_marginTop="@dimen/margin_146"
+         android:layout_marginRight="@dimen/margin_104"
+         />
+
+    <RelativeLayout
+        android:id="@+id/help_problem_rel"
+        android:layout_below="@+id/help_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="104dp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/popupwindow_content_height">
+    <TextView
+        android:id="@+id/help_detail"
+        android:layout_width="@dimen/popupwindow_content_height"
+        android:layout_height="wrap_content"
+        android:text="@string/problem_detail_3"
+        android:textSize="@dimen/help_detail_dialog_content_size"
+        android:textColor="@color/c24_color"
+        />
+
+    <TextView
+        android:id="@+id/help_ok"
+        android:layout_width="@dimen/dialog_width"
+        android:layout_height="@dimen/margin_48"
+        android:text="@string/ok"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/help_detail_dialog_content_size"
+        android:focusable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/help_detail"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_50"
+        android:background="@drawable/bg_help_ok"
+        />
+    </RelativeLayout>
+</RelativeLayout>

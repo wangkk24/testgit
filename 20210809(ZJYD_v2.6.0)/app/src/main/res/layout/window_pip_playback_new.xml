@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mantle_pouse"
+    >
+
+    <LinearLayout
+        android:id="@+id/playback_button_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_46">
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="@dimen/margin_167"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginStart="@dimen/margin_17"
+            android:layout_marginEnd="@dimen/margin_17"
+            android:background="@drawable/playback_next_button_selector"
+            />
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="@dimen/margin_167"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginStart="@dimen/margin_17"
+            android:layout_marginEnd="@dimen/margin_17"
+            android:background="@drawable/playback_exit_button_selector"
+            />
+        <Button
+            android:id="@+id/button_countie"
+            android:layout_width="@dimen/margin_167"
+            android:layout_height="@dimen/margin_60"
+            android:layout_marginStart="@dimen/margin_17"
+            android:layout_marginEnd="@dimen/margin_17"
+            android:background="@drawable/playback_contiune_button_selector"
+            />
+        
+    </LinearLayout>
+
+    <androidx.leanback.widget.HorizontalGridView
+        android:id="@+id/playback_recommand_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_261.33"
+        android:layout_above="@+id/playback_button_layout"
+        android:layout_marginBottom="@dimen/margin_40"
+        android:focusable="true"
+        android:descendantFocusability="afterDescendants"
+        >
+    </androidx.leanback.widget.HorizontalGridView>
+
+
+
+
+</RelativeLayout>

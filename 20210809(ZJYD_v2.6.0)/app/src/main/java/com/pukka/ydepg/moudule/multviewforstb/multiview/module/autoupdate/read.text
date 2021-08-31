@@ -1,0 +1,29 @@
+/* 自动检测更新  */
+1. 登录调度
+2.获取登录参数
+3.下载config文件
+4.下载apk进行更新
+
+/* */
+bean:
+    apk 更新使用的相关类
+http:
+    网络请求相关
+util
+    apk更新相关方法 主要UpgradeHelper类
+UpgradeApk
+
+
+
+1.LoginRoute
+通过登录调度，获取vsp服务器的访问地址
+2.Login
+根据vsp服务器地址+"VSP/V3/Login" 以及参数"deviceModel":"STB_ZYSJ"
+获取升级服务器地址upgradeDomain
+3.下载升级的UpgradeConfig.ini
+通过upgradeDomain，拼接下载的url ：upgradeDomain+"/jsp/upgrade.jsp" ，
+参数：TYPE="STB_ZYSJ"&VER=1 进行请求下载UpgradeConfig.ini 文件 解析成UpdateBean
+4.下载apk
+通过upgradeDomain，拼接下载的url ：upgradeDomain+"/jsp/upgrade.jsp"
+参数：TYPE="STB_ZYSJ"&VER=1&FILENAME=UpdateBean.getFileName下载apk文件
+5.安装apk Android 4.4

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/default_detail_bg"
+    android:id="@+id/main_collection_layout"
+    android:layout_height="match_parent">
+    <!--title-->
+    <RelativeLayout
+        android:id="@+id/collection_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/collection_title_height">
+        <TextView
+            android:id="@+id/collection_title"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/collection_title_text_size"
+            android:layout_marginStart="@dimen/margin_104"
+            android:textColor="@color/c21_color"
+            android:layout_marginBottom="@dimen/margin_42"
+            android:text="@string/mytv_movie_collection"
+            android:paddingEnd="@dimen/margin_20"
+            android:layout_height="wrap_content" />
+        <!-- 数目-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/margin_20"
+            android:layout_toEndOf="@+id/collection_title"
+            android:layout_marginBottom="@dimen/margin_42"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/collection_title_select_number"
+                android:layout_width="wrap_content"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/collection_title_text_size"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/collection_title_total_count"
+                android:layout_width="wrap_content"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/collection_title_text_size"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--list-->
+    <RelativeLayout
+        android:id="@+id/collection_List_layout"
+        android:layout_width="@dimen/history_list_width"
+        android:layout_below="@+id/collection_title_layout"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="64dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginBottom="@dimen/margin_60"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/collection_list"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/margin_50"
+            android:clipToPadding="false"
+            android:descendantFocusability="afterDescendants"
+            android:layout_height="match_parent">
+        </androidx.leanback.widget.VerticalGridView>
+    </RelativeLayout>
+    <!--detail-->
+    <!-- 模版一-->
+    <RelativeLayout
+        android:layout_below="@+id/collection_title_layout"
+        android:id="@+id/collection_detail_layout"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginEnd="@dimen/margin_104"
+        android:layout_toEndOf="@+id/collection_List_layout"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl_image_totalview"
+            android:layout_width="@dimen/history_detail_image_width"
+            android:layout_height="@dimen/history_detail_image_height"
+            android:layout_marginBottom="32dp">
+            <ImageView
+                android:id="@+id/collection_detail_icon"
+                android:layout_width="match_parent"
+                android:src="@drawable/default_poster"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/vipimg"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_height="@dimen/margin_26"
+                android:layout_marginStart="@dimen/margin_10"
+                android:scaleType="fitStart"/>
+            <ImageView
+                android:id="@+id/collection_img_4k"
+                android:layout_width="@dimen/my_itemView_hd_size"
+                android:layout_height="@dimen/my_itemView_hd_size"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"/>
+        </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/collection_detail_icon"-->
+            <!--android:layout_width="@dimen/collection_detail_image_width"-->
+            <!--android:src="@drawable/default_poster"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:layout_marginBottom="32dp"-->
+            <!--android:layout_height="@dimen/collection_detail_image_height" />-->
+        <View
+            android:id="@+id/shadow"
+            android:layout_marginTop="62dp"
+            android:layout_width="@dimen/collection_detail_image_width"
+            android:layout_height="@dimen/collection_shade_height"
+            android:background="@drawable/mytv_list_shadow" />
+        <TextView
+            android:id="@+id/collection_info_score"
+            android:layout_alignRight="@+id/rl_image_totalview"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:textSize="@dimen/collection_detail_text_size"
+            android:textColor="@color/c21_color"
+            android:layout_alignBottom="@+id/rl_image_totalview"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/collection_info_type"
+            android:layout_below="@+id/rl_image_totalview"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/collection_detail_text_size"
+            android:textColor="@color/c21_color"
+            android:maxWidth="@dimen/collection_detail_text_width"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/collection_info_introduce"
+            android:layout_below="@+id/collection_info_type"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/collection_detail_text_size"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/c21_color"
+            android:layout_marginTop="@dimen/my_8dp"
+            android:maxWidth="@dimen/collection_detail_text_width"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/collection_info_director"
+            android:layout_below="@+id/collection_info_introduce"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/collection_detail_text_size"
+            android:textColor="@color/c21_color"
+            android:maxWidth="@dimen/collection_detail_text_width"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/my_8dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/collection_info_performer"
+            android:layout_below="@+id/collection_info_director"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/collection_detail_text_size"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/c21_color"
+            android:maxWidth="@dimen/collection_detail_text_width"
+            android:layout_marginTop="@dimen/my_8dp"
+            android:layout_height="wrap_content" />
+        <!-- -->
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/no_data"
+        android:layout_centerInParent="true"
+        android:layout_width="400dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="@dimen/collection_no_data_height">
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/c01_color"
+            android:textSize="@dimen/collection_no_data_text_size"
+            android:text="@string/has_no_film"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/no_data_btn"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:focusable="true"
+            android:background="@drawable/no_data_bg"
+            android:layout_marginLeft="@dimen/margin_60"
+            android:layout_marginRight="@dimen/margin_60"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/adds_96"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/c01_color"
+                android:textSize="@dimen/collection_no_data_text_size"
+                android:text="@string/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

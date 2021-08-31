@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root">
+
+    <ImageView
+        android:id="@+id/activity_detail_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#2A3549"
+        android:scaleType="centerCrop"/>
+
+
+    <com.pukka.ydepg.moudule.featured.view.CustomScrollView
+        android:id="@+id/detail_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/detail_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--列表-->
+            <LinearLayout
+                android:id="@+id/detail_list_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/new_voddetail_list_margin_top"
+                android:orientation="vertical"
+                android:focusable="false">
+
+                <RelativeLayout
+                    android:id="@+id/episodes_lly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:layout_marginBottom="@dimen/margin_25"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/episodes_lly_icon_left"
+                        android:layout_width="@dimen/margin_15"
+                        android:layout_height="@dimen/margin_27"
+                        android:layout_alignParentStart="true"
+                        android:layout_above="@+id/total_episodes"
+                        android:layout_marginStart="@dimen/margin_33"
+                        android:src="@drawable/episodes_lly_icon_left"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        />
+                    <ImageView
+                        android:id="@+id/episodes_lly_icon_right"
+                        android:layout_width="@dimen/margin_15"
+                        android:layout_height="@dimen/margin_27"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/margin_33"
+                        android:layout_above="@+id/total_episodes"
+                        android:src="@drawable/episodes_lly_icon_right"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"/>
+
+                    <androidx.leanback.widget.HorizontalGridView
+                        android:id="@+id/choose_episodes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:layout_marginStart="@dimen/margin_64"
+                        android:layout_marginEnd="@dimen/margin_56"/>
+
+                    <androidx.leanback.widget.HorizontalGridView
+                        android:id="@+id/total_episodes"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/unipay_marginleft_40"
+                        android:layout_marginStart="@dimen/margin_72.1"
+                        android:layout_marginEnd="@dimen/margin_60"
+                        android:focusable="false"
+                        android:layout_below="@+id/choose_episodes"/>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/clear_view"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:focusable="false">
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/voddetail_recent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vod_recom_list_height"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/margin_25"
+                    android:layout_marginStart="@dimen/margin_61"
+                    android:layout_marginEnd="@dimen/margin_46"
+                    android:focusable="false"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/voddetail_recent_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:text="相关推荐"
+                        android:textSize="@dimen/margin_30"
+                        android:focusable="false"/>
+
+                    <androidx.leanback.widget.VerticalGridView
+                        android:id="@+id/voddetail_recent_recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_13"
+                        android:focusable="false">
+
+                    </androidx.leanback.widget.VerticalGridView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/voddetail_guess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vod_recom_list_height"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="@dimen/margin_25"
+                    android:layout_marginStart="@dimen/margin_61"
+                    android:layout_marginEnd="@dimen/margin_46"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/voddetail_guess_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:text="猜你喜欢"
+                        android:textSize="@dimen/margin_30"
+                        android:focusable="false"/>
+
+                    <androidx.leanback.widget.VerticalGridView
+                        android:id="@+id/voddetail_guess_recycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_13"
+                        android:focusable="false">
+
+                    </androidx.leanback.widget.VerticalGridView>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_20">
+                </View>
+
+            </LinearLayout>
+
+            <!--预播放窗口-->
+            <RelativeLayout
+                android:id="@+id/voddetail_playview_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_65"
+                android:layout_marginLeft="@dimen/margin_72.1"
+                android:padding="@dimen/margin_2"
+                android:focusable="true"
+                android:background="@drawable/activity_voddetail_playview_bg"
+                android:visibility="gone">
+                
+                <!--海报布局-->
+                <ImageView
+                    android:id="@+id/voddetail_playview_poster"
+                    android:layout_width="@dimen/margin_231.3"
+                    android:layout_height="@dimen/new_voddetail_playview_height"
+                    android:layout_marginEnd="@dimen/margin_50"
+                    android:src="@drawable/default_poster"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:id="@+id/detail_poster_left_icon"
+                    android:layout_width="@dimen/movies_list_no_content_img_width"
+                    android:layout_height="@dimen/movies_list_no_content_img_width"
+                    android:scaleType="fitXY"
+                    android:visibility="gone"/>
+                <View
+                    android:id="@+id/detail_poster_right_icon"
+                    android:layout_width="@dimen/movies_list_no_content_img_width"
+                    android:layout_height="@dimen/movies_list_no_content_img_width"
+                    android:layout_alignEnd="@+id/voddetail_playview_poster"
+                    android:visibility="gone"/>
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/detail_description_update_poster_layout"-->
+<!--                    android:layout_width="@dimen/margin_231.3"-->
+<!--                    android:layout_height="@dimen/margin_86"-->
+<!--                    android:layout_alignEnd="@+id/voddetail_playview_poster"-->
+<!--                    android:layout_alignTop="@+id/voddetail_playview_poster"-->
+<!--                    android:visibility="gone">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/undate_layout_bg">-->
+<!--                    </ImageView>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/detail_description_update_poster"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:maxWidth="@dimen/margin_200"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="@dimen/margin_17"-->
+<!--                        android:ellipsize="marquee"-->
+<!--                        android:marqueeRepeatLimit="1"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="#f3f6f6"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_marginEnd="@dimen/margin_10"-->
+<!--                        android:layout_marginTop="@dimen/margin_14"-->
+<!--                        android:visibility="gone"/>-->
+<!--                </RelativeLayout>-->
+
+
+                <!--4k海报-->
+                <RelativeLayout
+                    android:id="@+id/playview_4k_tips_layout"
+                    android:layout_width="@dimen/new_voddetail_playview_width"
+                    android:layout_height="@dimen/new_voddetail_playview_height"
+                    android:background="#000000"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/playview_4k_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="@dimen/margin_480"
+                        android:textSize="@dimen/margin_17"
+                        android:layout_centerInParent="true"
+                        android:textColor="#ffffff">
+                    </TextView>
+
+                </RelativeLayout>
+                
+                
+                <!--预播放布局-->
+
+                <com.pukka.ydepg.common.extview.FrameLayoutExt
+                    android:id="@+id/frame_playvideo"
+                    android:layout_width="@dimen/new_voddetail_playview_width"
+                    android:layout_height="@dimen/new_voddetail_playview_height"
+                    android:focusable="false"
+                    android:background="#000000"
+                    android:visibility="gone"/>
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/detail_description_update_layout"-->
+<!--                    android:layout_width="@dimen/new_voddetail_playview_width"-->
+<!--                    android:layout_height="@dimen/margin_86"-->
+<!--                    android:layout_alignEnd="@+id/frame_playvideo"-->
+<!--                    android:layout_alignTop="@+id/frame_playvideo"-->
+<!--                    android:visibility="gone">-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:scaleType="fitXY"-->
+<!--                        android:src="@drawable/undate_layout_bg">-->
+<!--                    </ImageView>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/detail_description_update"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="@dimen/margin_17"-->
+<!--                        android:ellipsize="marquee"-->
+<!--                        android:marqueeRepeatLimit="1"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:text=""-->
+<!--                        android:textColor="#f3f6f6"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_marginEnd="@dimen/margin_14"-->
+<!--                        android:layout_marginTop="@dimen/margin_14"-->
+<!--                        android:visibility="gone"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+
+                <!-- 蒙版-->
+                <LinearLayout
+                    android:id="@+id/manban_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/vod_menban_margintop"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/detail_playview_menban"
+                        android:layout_width="@dimen/new_voddetail_playview_width"
+                        android:layout_height="@dimen/margin_36"
+                        android:src="@drawable/detail_playview_menban"
+                        android:scaleType="fitXY">
+                    </ImageView>
+                    <ImageView
+                        android:id="@+id/detail_poster_menban"
+                        android:layout_width="@dimen/margin_231.3"
+                        android:layout_height="@dimen/margin_36"
+                        android:src="@drawable/detail_playview_menban"
+                        android:scaleType="fitXY"
+                        android:visibility="gone">
+                    </ImageView>
+
+                </LinearLayout>
+
+
+                <!--vod来源信息-->
+                <LinearLayout
+                    android:id="@+id/comefrom_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <!-- 海报样式的vod来源信息布局-->
+                    <LinearLayout
+                        android:id="@+id/details_comefrom_poster_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_290"
+                        android:visibility="gone">
+                        <TextView
+                            android:id="@+id/details_comefrom_poster_JM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/margin_7"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:focusable="false"
+                            android:paddingStart="@dimen/margin_5"
+                            android:layout_gravity="center_vertical"
+                            android:alpha="0.8"
+                            />
+                        <TextView
+                            android:id="@+id/details_comefrom_poster_source"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/margin_13"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:focusable="false"
+                            android:alpha="0.8"
+                            />
+                    </LinearLayout>
+
+                    <!-- 播放样式的vod来源信息布局-->
+                    <LinearLayout
+                        android:id="@+id/details_comefrom_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_290">
+                        <TextView
+                            android:id="@+id/details_comefrom_JM"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/margin_10"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:focusable="false"
+                            android:paddingStart="@dimen/margin_5"
+                            android:layout_gravity="center_vertical"
+                            />
+                        <TextView
+                            android:id="@+id/details_comefrom_source"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/margin_17"
+                            android:includeFontPadding="false"
+                            android:text=""
+                            android:focusable="false"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <!--右下角的按OK键全屏-->
+                <ImageView
+                    android:id="@+id/voddetail_playview_tip"
+                    android:layout_width="@dimen/margin_146"
+                    android:layout_height="@dimen/margin_26"
+                    android:layout_marginStart="@dimen/margin_407"
+                    android:layout_marginTop="@dimen/margin_285"
+                    android:src="@drawable/detail_fullscreen_tip"
+                    android:scaleType="fitXY"
+                    android:focusable="false"
+                    android:visibility="gone"/>
+
+                <!--小屏结束试看提示-->
+                <RelativeLayout
+                    android:id="@+id/preplay_trysee_tip_layout"
+                    android:layout_width="@dimen/new_voddetail_playview_width"
+                    android:layout_height="@dimen/new_voddetail_playview_height"
+                    android:background="#99000000"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="试看已结束，点击"
+                            android:textSize="@dimen/margin_20"
+                            android:textColor="#ffffff">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="【OK】"
+                            android:textSize="@dimen/margin_20"
+                            android:textColor="#4498ff">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="键进入全屏观看完整视频"
+                            android:textSize="@dimen/margin_20"
+                            android:textColor="#ffffff">
+                        </TextView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--左下角的跳过片头片尾提示-->
+                <TextView
+                    android:id="@+id/voddetail_playview_skip_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_26"
+                    android:layout_marginTop="@dimen/margin_285"
+                    android:layout_marginStart="@dimen/margin_10"
+                    android:gravity="center"
+                    android:text="已为您跳过片头"
+                    android:textSize="@dimen/margin_15"
+                    android:textColor="#ffffff"
+                    android:paddingStart="@dimen/margin_12"
+                    android:paddingEnd="@dimen/margin_12"
+                    android:background="#66000000"
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <!--vod顶部信息布局-->
+            <RelativeLayout
+                android:id="@+id/detail_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/details_describe_height"
+                android:layout_toRightOf="@+id/voddetail_playview_layout"
+                android:layout_marginStart="@dimen/margin_22.5"
+                android:layout_marginEnd="@dimen/margin_56"
+                android:layout_marginTop="@dimen/margin_60"
+                android:visibility="gone"
+                android:focusable="false"
+                >
+
+                <!--vod名称-->
+                <LinearLayout
+                    android:id="@+id/details_description_title_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="@dimen/margin_5">
+                    <TextView
+                        android:id="@+id/details_description_title"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="@dimen/new_voddetail_title_width"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="1"
+                        android:singleLine="true"
+                        android:textColor="#fefdfe"
+                        android:textSize="@dimen/margin_40"
+                        android:includeFontPadding="false"
+                        android:text=""
+                        android:layout_marginEnd="@dimen/margin_2"/>
+
+                    <TextView
+                        android:id="@+id/detail_description_update"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="@dimen/margin_155"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/margin_17"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#f3f6f6"
+                        android:layout_marginStart="@dimen/margin_10"
+                        />
+                </LinearLayout>
+
+                <!--vod评分-->
+                <LinearLayout
+                    android:id="@+id/details_description_score_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/details_description_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#f8c800"
+                        android:textSize="@dimen/margin_40"
+                        android:text="8.5"
+                        android:paddingEnd="@dimen/margin_3"/>
+
+                    <TextView
+                        android:id="@+id/details_description_score_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/margin_16"
+                        android:textColor="#f3f6f6"
+                        android:text="评分"
+                        android:layout_marginStart="@dimen/margin_10"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+                <!--演职员列表和简介-->
+                <LinearLayout
+                    android:id="@+id/details_credits_and_descriptions_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_182"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/details_description_title_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_8"
+                        android:layout_marginStart="@dimen/margin_5">
+
+                        <ImageView
+                            android:id="@+id/voddetail_icon_vip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_18"
+                            android:src="@drawable/voddetail_icon_vip"
+                            android:scaleType="fitStart"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:layout_marginEnd="@dimen/margin_5"/>
+
+                        <ImageView
+                            android:id="@+id/detail_pbs_mark_first"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_18"
+                            android:scaleType="fitStart"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:layout_marginEnd="@dimen/margin_5">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/detail_pbs_mark_second"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_18"
+                            android:scaleType="fitStart"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:layout_marginEnd="@dimen/margin_5">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/detail_pbs_mark_third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_18"
+                            android:scaleType="fitStart"
+                            android:visibility="gone"
+                            android:layout_marginTop="@dimen/margin_4"
+                            android:layout_marginEnd="@dimen/margin_5">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/details_description_info_font"
+                            android:layout_width="@dimen/margin_5"
+                            android:layout_height="@dimen/margin_5"
+                            android:background="#00000000"
+                            android:visibility="gone">
+                        </ImageView>
+                        
+                        <TextView
+                            android:id="@+id/details_description_info"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#f4f4f4"
+                            android:textSize="@dimen/margin_17"
+                            android:layout_marginTop="@dimen/margin_2"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text=""/>
+                        
+                    </LinearLayout>
+                    
+
+                    <!--演职员列表-->
+                    <androidx.leanback.widget.HorizontalGridView
+                        android:id="@+id/details_credits"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_30"
+                        android:layout_marginTop="@dimen/margin_17"
+                        />
+                    <!--简介-->
+                    <com.pukka.ydepg.moudule.vod.utils.DetailVerticalScrollTextView
+                        android:id="@+id/details_descriptions"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/margin_7"
+                        android:lineSpacingExtra="@dimen/margin_5"
+                        android:letterSpacing="0.05"
+                        android:layout_height="@dimen/margin_50"
+                        android:paddingStart="@dimen/margin_3"
+                        android:paddingEnd="@dimen/margin_3"
+                        android:paddingTop="@dimen/margin_5"
+                        android:background="@drawable/detail_des_selector"
+                        android:textColor="#f4f4f4"
+                        android:singleLine="false"
+                        app:tv_line="3"
+                        android:textSize="@dimen/margin_17"
+                        android:text=""
+                        android:focusable="true"
+                        />
+
+
+                    <!--4k提示-->
+                    <TextView
+                        android:id="@+id/details_4k_warnning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fddf87"
+                        android:textSize="@dimen/margin_14"
+                        android:text="4K节目，该机顶盒不支持，可拨打10086进行机顶盒更换"
+                        android:includeFontPadding="false"
+                        android:focusable="false"
+                        android:paddingStart="@dimen/margin_5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        />
+                </LinearLayout>
+
+                <!--按钮布局-->
+                <LinearLayout
+                    android:id="@+id/detail_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_121"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/details_credits_and_descriptions_layout"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="@dimen/margin_2"
+                    >
+
+
+                    <!--播放按钮-->
+                    <RelativeLayout
+                        android:id="@+id/play_layout"
+                        android:layout_width="@dimen/new_voddetail_button_height"
+                        android:layout_height="@dimen/new_voddetail_button_height"
+                        android:layout_marginStart="@dimen/margin_7"
+                        android:layout_marginEnd="@dimen/margin_4.5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/activity_voddetail_button_bg"
+                        android:focusable="true"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/play_layout_icon"
+                            android:layout_width="@dimen/margin_26"
+                            android:layout_height="@dimen/margin_26"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:layout_centerHorizontal="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/detail_button_play_selector" />
+                        <TextView
+                            android:id="@+id/play_layout_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8"
+                            android:textSize="@dimen/margin_17"
+                            android:textColor="#ffffff"
+                            android:text="播放"
+                            android:layout_below="@+id/play_layout_icon"
+                            android:includeFontPadding="false"
+                            android:layout_centerHorizontal="true"/>
+
+
+                    </RelativeLayout>
+
+                    <!--订购按钮-->
+                    <RelativeLayout
+                        android:id="@+id/buy_layout"
+                        android:layout_width="@dimen/new_voddetail_button_height"
+                        android:layout_height="@dimen/new_voddetail_button_height"
+                        android:layout_marginStart="@dimen/margin_4.5"
+                        android:layout_marginEnd="@dimen/margin_4.5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/activity_voddetail_button_bg"
+                        android:focusable="false"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/buy_layout_icon"
+                            android:layout_width="@dimen/margin_26"
+                            android:layout_height="@dimen/margin_26"
+                            android:paddingEnd="@dimen/margin_3"
+                            android:src="@drawable/activity_voddetail_buy_selector"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:scaleType="fitXY"/>
+                        <TextView
+                            android:id="@+id/buy_layout_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8"
+                            android:textSize="@dimen/margin_17"
+                            android:textColor="#ffffff"
+                            android:text="订购"
+                            android:layout_below="@+id/buy_layout_icon"
+                            android:includeFontPadding="false"
+                            android:layout_centerHorizontal="true"/>
+                    </RelativeLayout>
+
+                    <!--收藏按钮-->
+                    <RelativeLayout
+                        android:id="@+id/favorate_layout"
+                        android:layout_width="@dimen/new_voddetail_button_height"
+                        android:layout_height="@dimen/new_voddetail_button_height"
+                        android:layout_marginStart="@dimen/margin_4.5"
+                        android:layout_marginEnd="@dimen/margin_4.5"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:background="@drawable/activity_voddetail_button_bg"
+                        android:focusable="true"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/favorate_layout_icon"
+                            android:layout_width="@dimen/margin_26"
+                            android:layout_height="@dimen/margin_26"
+                            android:src="@drawable/activity_voddetail_fav_selector"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/margin_18"
+                            android:scaleType="fitXY"/>
+                        <TextView
+                            android:id="@+id/favorate_layout_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_8"
+                            android:textSize="@dimen/margin_17"
+                            android:textColor="#ffffff"
+                            android:includeFontPadding="false"
+                            android:text="收藏"
+                            android:layout_below="@+id/favorate_layout_icon"
+                            android:layout_centerHorizontal="true"/>
+
+
+
+                    </RelativeLayout>
+
+                    <!--广告布局-->
+                    <RelativeLayout
+                        android:id="@+id/advert_layout"
+                        android:layout_height="@dimen/new_voddetail_adv_height"
+                        android:layout_width="@dimen/new_voddetail_adv_layout_width"
+                        android:layout_marginTop="@dimen/margin_3"
+                        android:layout_marginStart="@dimen/margin_2"
+                        android:padding="@dimen/margin_2"
+                        android:background="@drawable/activity_voddetail_playview_bg_ridus"
+                        android:visibility="gone">
+                        <com.pukka.ydepg.launcher.view.CustomRoundImageView
+                            android:id="@+id/advert"
+                            android:layout_width="@dimen/new_voddetail_adv_width"
+                            android:layout_height="@dimen/new_voddetail_button_height"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone"
+                            app:radius_imageview="@dimen/margin_4"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            
+
+        </RelativeLayout>
+
+    </com.pukka.ydepg.moudule.featured.view.CustomScrollView>
+
+    <FrameLayout
+        android:id="@+id/vod_playview_fullWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/vod_playview_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="gone">
+
+        <com.pukka.ydepg.view.loadingball.MonIndicator
+            android:id="@+id/monIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:circleRadius="10dp"
+            app:circleSpacing="20dp"
+            app:cycle="600" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moudule.multviewforstb.multiview.module.main.MainActivity">
+
+    <ImageView
+        android:id="@+id/cl_main_bg"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/screen_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:text="@string/current_screen"
+        android:background="@color/textTipBg"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/cover_text_size" />
+
+    <TextView
+        android:id="@+id/player_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/textTipBg"
+        android:layout_gravity="bottom|center_horizontal"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/player_text_size" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_play_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/recycler_padding"
+        android:paddingTop="@dimen/recycler_padding" />
+
+</FrameLayout>

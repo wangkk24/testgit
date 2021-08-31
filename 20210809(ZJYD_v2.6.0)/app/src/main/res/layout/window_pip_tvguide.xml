@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.TVGuideManagerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/epg_managerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c07_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+  <com.pukka.ydepg.common.extview.BrowseFrameLayoutExt
+      android:id="@+id/browse_container"
+      android:layout_width="@dimen/epglist_rlwidth"
+      android:layout_height="match_parent"
+      >
+      <RelativeLayout
+          android:id="@+id/rl_epgcontainer"
+          android:layout_width="@dimen/epglist_rlwidth"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:focusable="false"
+          >
+
+        <com.pukka.ydepg.customui.focusView.TVGuideRecycleView
+            android:id="@+id/rv_column"
+            android:layout_width="@dimen/margin_176"
+            app:autoMeasureEnable="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/epglist_rvcolumn_marginleft"
+            android:layout_marginTop="@dimen/epglist_rvcolumn_margintop"
+            android:scrollbars="none"
+            />
+
+        <View
+            android:id="@+id/v_columnline"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/epglist_viewline_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/epglist_viewline_marginleft"
+            android:layout_toRightOf="@id/rv_column"
+            android:background="@drawable/onlive_line"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/v_columnline"
+            android:scaleType="centerInside"
+            android:src="@drawable/left_30"
+            android:visibility="gone"
+            />
+
+        <com.pukka.ydepg.customui.focusView.TVGuideRecycleView
+            android:id="@+id/rv_channel"
+            android:layout_width="@dimen/epglist_rvchannel_width"
+            app:autoMeasureEnable="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/epglist_rvchannel_marginleft"
+            android:layout_marginTop="@dimen/epglist_rvchannel_height"
+            android:layout_toRightOf="@+id/v_columnline"
+            android:scrollbars="none"
+            />
+        <include
+              android:layout_width="@dimen/epglist_rlerror_width"
+              android:layout_height="match_parent"
+              android:layout_marginLeft="@dimen/epglist_rlerror_marginleft"
+              android:layout_toRightOf="@+id/v_columnline"
+              android:visibility="gone"
+             layout="@layout/window_pip_epg_nodata"/>
+
+        <View
+            android:id="@+id/v_channel_line"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/epglist_viewline_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/epglist_viewline_marginleft2"
+            android:layout_toRightOf="@id/rv_channel"
+            android:background="@drawable/onlive_line"
+            android:visibility="invisible"
+            />
+
+        <com.pukka.ydepg.customui.focusView.TVGuideRecycleView
+            android:id="@+id/rv_datelist"
+            android:layout_width="@dimen/epglist_rvdate_width"
+            app:autoMeasureEnable="true"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/epglist_rvdate_marginleft"
+            android:layout_marginTop="@dimen/epglist_rvdate_margintop"
+            android:layout_toRightOf="@id/v_channel_line"
+            android:visibility="invisible"
+            />
+
+        <View
+            android:id="@+id/v_date_line"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/epglist_viewline_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/epglist_rvdate_marginleft"
+            android:layout_toRightOf="@id/rv_datelist"
+            android:background="@drawable/onlive_line"
+            android:visibility="invisible"
+            />
+
+        <com.pukka.ydepg.customui.focusView.TVGuideRecycleView
+            android:id="@+id/rv_program"
+            android:layout_width="@dimen/epglist_rvprogram_width"
+            app:autoMeasureEnable="true"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/epglist_rvprogram_marginbottom"
+            android:layout_marginLeft="@dimen/epglist_rvprogram_marginleft"
+            android:layout_marginTop="@dimen/epglist_rvprogram_margintop"
+            android:layout_toRightOf="@id/v_date_line"
+            android:visibility="invisible"
+            />
+
+      </RelativeLayout>
+  </com.pukka.ydepg.common.extview.BrowseFrameLayoutExt>
+
+
+</com.pukka.ydepg.customui.focusView.TVGuideManagerView>

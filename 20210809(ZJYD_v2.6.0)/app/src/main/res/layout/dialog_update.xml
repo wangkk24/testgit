@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    swipe:bgRLayoutColor="@color/transparent_00"
+    android:background="@color/transparent_00">
+
+
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/update_dialog_height"
+        android:layout_marginLeft="@dimen/update_dialog_marginleft_or_marginright"
+        android:layout_marginRight="@dimen/update_dialog_marginleft_or_marginright"
+        swipe:bgRLayout="@drawable/bg_alert_dialog_corner"
+        android:background="@drawable/bg_alert_dialog_corner"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+         <com.pukka.ydepg.common.extview.LinearLayoutExt
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             >
+        <com.pukka.ydepg.common.extview.LinearLayoutExt
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/title_layout_marginleft_or_marginright"
+            android:layout_marginRight="@dimen/title_layout_marginleft_or_marginright"
+            android:layout_marginTop="@dimen/me_margin_20dp"
+            android:orientation="vertical">
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_update_tip"
+                swipe:textTxt="@string/app_update_tip"
+                android:textColor="@color/programs_progress_bg"
+                swipe:bgTxtColor="@color/programs_progress_bg"
+                android:textSize="@dimen/title_text_size" />
+
+            <com.pukka.ydepg.common.extview.LinearLayoutExt
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_8dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                >
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/app_edition"
+                    swipe:textTxt="@string/app_edition"
+                    android:textColor="@color/app_update_edition"
+                   swipe:colorTxt="@color/app_update_edition"
+                    android:textSize="@dimen/update_text_size" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="1.2.1.2"
+                    swipe:colorTxt="@color/app_update_edition"
+                    android:textColor="@color/app_update_edition"
+                    android:textSize="@dimen/update_text_size" />
+            </com.pukka.ydepg.common.extview.LinearLayoutExt>
+        </com.pukka.ydepg.common.extview.LinearLayoutExt>
+
+        <com.pukka.ydepg.common.extview.LinearLayoutExt
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp">
+
+            <com.pukka.ydepg.common.extview.ScrollViewExt
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:minHeight="60dp"
+                    android:textColor="@color/app_update_text"
+                    swipe:colorTxt="@color/app_update_text"
+                    android:textSize="@dimen/normal_text_size" />
+            </com.pukka.ydepg.common.extview.ScrollViewExt>
+        </com.pukka.ydepg.common.extview.LinearLayoutExt>
+           </com.pukka.ydepg.common.extview.LinearLayoutExt>
+        <com.pukka.ydepg.common.extview.LinearLayoutExt
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_linearlayout_height"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+
+            <!-- 分隔横线 -->
+            <com.pukka.ydepg.common.extview.ImageViewExt
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f6f6f6"
+                android:scaleType="fitXY" />
+
+            <com.pukka.ydepg.common.extview.LinearLayoutExt
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dialog_linearlayout_height"
+                android:orientation="horizontal"
+                >
+                <!-- Cancel -->
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/negativeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/later_to_say_again_btn"
+                    swipe:textTxt="@string/later_to_say_again_btn"
+                    android:textColor="@color/app_update_tip"
+                    swipe:colorTxt="@color/app_update_tip"
+                    android:textSize="@dimen/middle_text_size_18" />
+
+                <!-- 分隔竖线 -->
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/between_btn_line"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="#f6f6f6"
+                    android:scaleType="fitXY" />
+
+                <!-- OK -->
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/positiveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/update_now_btn"
+                    swipe:textTxt="@string/update_now_btn"
+                    android:textColor="@color/gray_1b"
+                    swipe:colorTxt="@color/gray_1b"
+                    android:textSize="@dimen/middle_text_size_18" />
+
+            </com.pukka.ydepg.common.extview.LinearLayoutExt>
+        </com.pukka.ydepg.common.extview.LinearLayoutExt>
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

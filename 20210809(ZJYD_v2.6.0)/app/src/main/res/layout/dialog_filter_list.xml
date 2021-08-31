@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupwindow_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popup_dialog_bg_shadow">
+
+        <TextView
+            android:id="@+id/filter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/filter_title_margin_left"
+            android:layout_marginTop="@dimen/filter_title_margin_top"
+            android:text="筛选"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T12_C21_Bold_size"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/filter_sort_layout"
+            android:layout_width="@dimen/filter_sort_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_title"
+            android:layout_marginLeft="@dimen/filter_layout_margin_left"
+            android:layout_marginTop="@dimen/filter_layout_margin_top">
+            <TextView
+                android:id="@+id/filter_sort_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="排序"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+
+            <androidx.leanback.widget.VerticalGridView
+                android:paddingLeft="10dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="19dp"
+                android:id="@+id/filter_sort_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_list_height"
+                android:layout_below="@id/filter_sort_title"
+                android:layout_marginTop="@dimen/filter_list_margin_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/filter_catagory_layout"
+            android:layout_width="@dimen/filter_sort_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_title"
+            android:layout_marginLeft="@dimen/filter_catagory_layout_margin_left"
+            android:layout_marginTop="@dimen/filter_layout_margin_top"
+            android:layout_toRightOf="@id/filter_sort_layout">
+
+            <TextView
+                android:id="@+id/filter_catagory_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="类别"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+
+            <androidx.leanback.widget.VerticalGridView
+                android:paddingLeft="10dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="19dp"
+                android:id="@+id/filter_catagory_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_list_height"
+                android:layout_below="@id/filter_catagory_title"
+                android:layout_marginTop="@dimen/filter_list_margin_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/filter_area_layout"
+            android:layout_width="@dimen/filter_sort_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_title"
+            android:layout_marginLeft="@dimen/filter_catagory_layout_margin_left"
+            android:layout_marginTop="@dimen/filter_layout_margin_top"
+            android:layout_toRightOf="@id/filter_catagory_layout">
+
+            <TextView
+                android:id="@+id/filter_area_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="区域"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+
+            <androidx.leanback.widget.VerticalGridView
+                android:paddingLeft="10dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="19dp"
+                android:id="@+id/filter_area_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_list_height"
+                android:layout_below="@id/filter_area_title"
+                android:layout_marginTop="@dimen/filter_list_margin_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/filter_year_layout"
+            android:layout_width="@dimen/filter_sort_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/filter_title"
+            android:layout_marginLeft="@dimen/filter_catagory_layout_margin_left"
+            android:layout_marginTop="@dimen/filter_layout_margin_top"
+            android:layout_toRightOf="@id/filter_area_layout">
+
+            <TextView
+                android:id="@+id/filter_year_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="年份"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+
+            <androidx.leanback.widget.VerticalGridView
+                android:paddingLeft="10dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="19dp"
+                android:id="@+id/filter_year_list"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/filter_list_height"
+                android:layout_below="@id/filter_year_title"
+                android:layout_marginTop="@dimen/filter_list_margin_top" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.leanback.widget.BrowseFrameLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutNoFocus xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false">
+
+    <!-- 背景 -->
+    <ImageView
+        android:id="@+id/iv_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_detail_bg1"
+        android:focusable="false"
+        android:scaleType="fitXY"
+        android:visibility="invisible"/>
+
+    <!-- 内容布局 -->
+    <com.pukka.ydepg.common.extview.BrowseFrameLayoutExt
+        android:id="@+id/bl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:visibility="invisible">
+
+        <com.pukka.ydepg.launcher.view.FocusRelativeLayoutExt
+            android:id="@+id/rl_main_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:focusable="false">
+            <RelativeLayout
+                android:id="@+id/top_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!--android:background="@drawable/logo1"-->
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_logo1"
+                    android:layout_width="@dimen/launcher_logo1_width"
+                    android:layout_height="@dimen/launcher_logo1_height"
+                    android:layout_marginLeft="@dimen/margin_33"
+                    android:layout_marginTop="@dimen/launcher_logo1_margin_top"
+                    android:layout_alignBottom="@id/linear_2"
+                    android:focusable="false" />
+                    <com.pukka.ydepg.common.extview.MarqueeEpgTextView
+                        android:layout_marginStart="@dimen/margin_32"
+                        android:layout_marginEnd="@dimen/margin_102"
+                        android:layout_toEndOf="@id/iv_logo1"
+                        android:layout_toStartOf="@+id/linear_2"
+                        android:layout_alignTop="@+id/linear_2"
+                        android:id="@+id/tv_epg_scroll_ads"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/main_refresh_butn_height"
+                        android:textColor="@color/epg_scroll_ads_textcolor"
+                        android:background="@drawable/selector_epg_top_scroll_ads"
+                        android:textSize="@dimen/search_tips_size"
+                        android:paddingStart="@dimen/margin_10"
+                        android:paddingEnd="@dimen/margin_10"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:nextFocusLeft="@id/tv_epg_scroll_ads"
+                        tools:ignore="NotSibling" />
+
+                <com.pukka.ydepg.common.extview.LinearLayoutExt
+                    android:id="@+id/linear_2"
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/launcher_logo2_margin_top"
+                    android:layout_marginRight="@dimen/margin_14"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content">
+                    <com.pukka.ydepg.common.extview.LinearLayoutExt
+                        android:id="@+id/linear_content_group_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/main_refresh_butn_height"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_10"
+                        android:orientation="horizontal"/>
+
+                    <!--右上角Profile整体UI-->
+                    <RelativeLayout
+                        android:id="@+id/profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/margin_25"
+                        android:visibility="gone">
+                        <RelativeLayout
+                            android:id="@+id/tv_user_title_bg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/margin_26"
+                            android:maxWidth="@dimen/margin_113"
+                            android:paddingEnd="@dimen/margin_10"
+                            android:background="@drawable/select_epg_change_user"
+                            android:focusable="true">
+                            <com.pukka.ydepg.common.extview.ImageViewExt
+                                android:id="@+id/iv_user_head_icon"
+                                android:layout_width="@dimen/margin_26"
+                                android:layout_height="@dimen/margin_26"
+                                android:visibility="visible"
+                                android:src="@drawable/default_main_user_icon"
+                                android:focusable="false" />
+                            <com.pukka.ydepg.common.extview.TextViewExt
+                                android:id="@+id/tv_user_title"
+                                android:layout_width="wrap_content"
+                                android:maxWidth="@dimen/margin_80"
+                                android:layout_height="@dimen/margin_26"
+                                android:layout_marginLeft="@dimen/margin_2"
+                                android:layout_toRightOf="@+id/iv_user_head_icon"
+                                android:text="管理员"
+                                android:visibility="visible"
+                                android:paddingTop="@dimen/margin_2"
+                                android:textColor="@color/main_refresh_font_color_focus"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/margin_16"
+                                android:focusable="false" />
+                        </RelativeLayout>
+                        <com.pukka.ydepg.common.extview.TextViewExt
+                            android:id="@+id/tv_change_user_btn"
+                            android:layout_width="@dimen/margin_91"
+                            android:layout_height="@dimen/margin_26"
+                            android:visibility="visible"
+                            android:gravity="center"
+                            android:layout_toRightOf="@+id/tv_user_title_bg"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:background="@drawable/select_epg_change_user"
+                            android:text="个人信息"
+                            android:textSize="@dimen/margin_16"
+                            android:textColor="@color/main_refresh_font_color_focus"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:nextFocusRight="@id/tv_change_user_btn"/>
+                    </RelativeLayout>
+
+                    <TextClock
+                        android:id="@+id/tc_textClock"
+                        android:layout_width="@dimen/margin_114"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_toRightOf="@id/profile"
+                        android:focusable="false"
+                        android:format12Hour="yyyy/MM/dd"
+                        android:format24Hour="yyyy/MM/dd"
+                        android:textColor="@color/c24_color"
+                        android:textSize="@dimen/launcher_textClock_textSize"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        />
+
+                    <TextClock
+                        android:id="@+id/tc_textClock_time"
+                        android:layout_width="@dimen/margin_114"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_6"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_toRightOf="@id/profile"
+                        android:focusable="false"
+                        android:format12Hour="EE HH:mm"
+                        android:format24Hour="EE HH:mm"
+                        android:textColor="@color/c24_color"
+                        android:textSize="@dimen/launcher_textClock_textSize"
+                        android:textStyle="normal"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        />
+
+                    <com.pukka.ydepg.common.extview.ImageViewExt
+                        android:id="@+id/iv_NetworkStatus"
+                        android:layout_width="@dimen/launcher_network_size"
+                        android:layout_height="@dimen/launcher_network_size"
+                        android:focusable="false"
+                        android:layout_marginRight="@dimen/margin_33"
+                        />
+
+                    <com.pukka.ydepg.common.extview.ImageViewExt
+                        android:id="@+id/iv_logo2"
+                        android:layout_width="@dimen/launcher_logo2_width"
+                        android:layout_height="@dimen/launcher_logo2_height"
+                        android:layout_marginStart="@dimen/launcher_network_margin_right"
+                        android:visibility="gone"
+                        android:focusable="false" />
+
+                </com.pukka.ydepg.common.extview.LinearLayoutExt>
+
+                <com.pukka.ydepg.customui.tv.widget.ReflectItemView
+                    android:id="@+id/ri_simple_search"
+                    android:layout_width="@dimen/launcher_search_size"
+                    android:layout_height="@dimen/launcher_search_size"
+                    android:layout_alignBottom="@+id/linear_2"
+                    android:layout_marginRight="@dimen/margin_16"
+                    android:layout_toLeftOf="@+id/linear_2"
+                    android:visibility="gone"
+                    app:isShape="true"
+                    app:radius="@dimen/launcher_search_radius">
+
+                    <com.pukka.ydepg.common.extview.ImageViewExt
+                        android:id="@+id/iv_simple_search"
+                        android:layout_width="@dimen/launcher_search_iv_size"
+                        android:layout_height="@dimen/launcher_search_iv_size"
+                        android:background="@drawable/activity_launcher_search_selector"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:nextFocusLeft="@+id/simple_epg_item1" />
+                </com.pukka.ydepg.customui.tv.widget.ReflectItemView>
+                <RelativeLayout
+                    android:id="@+id/rela_nav_for_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/over_special_poster_view"
+                    android:focusable="false">
+
+                    <com.pukka.ydepg.customui.tv.widget.RecyclerViewTV
+                        android:id="@+id/rv_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/launcher_nav_margin_left"
+                        android:layout_marginRight="@dimen/margin_70"
+                        android:layout_centerVertical="true"
+                        android:focusable="false"
+                        android:nextFocusLeft="@+id/ri_search" />
+                    <com.pukka.ydepg.customui.tv.widget.ReflectItemView
+                        android:id="@+id/ri_search"
+                        android:layout_width="@dimen/launcher_search_size"
+                        android:layout_centerVertical="true"
+                        android:layout_height="@dimen/launcher_search_size"
+                        android:layout_marginLeft="@dimen/launcher_search_margin_left"
+                        app:isShape="true"
+                        app:radius="@dimen/launcher_search_radius">
+
+                        <com.pukka.ydepg.common.extview.ImageViewExt
+                            android:id="@+id/iv_search"
+                            android:layout_width="@dimen/launcher_search_iv_size"
+                            android:layout_height="@dimen/launcher_search_iv_size"
+                            android:background="@drawable/activity_launcher_search_selector"
+                            android:clickable="true"
+                            android:focusable="true" />
+                    </com.pukka.ydepg.customui.tv.widget.ReflectItemView>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <com.pukka.ydepg.launcher.view.ViewPagerFocusExt
+                android:id="@+id/vp_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:focusable="false" />
+
+            <FrameLayout
+                android:id="@+id/simple_epg_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false">
+
+            </FrameLayout>
+
+            <com.pukka.ydepg.customui.tv.widget.MainUpView
+                android:id="@+id/mp_mainUpView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false" />
+        </com.pukka.ydepg.launcher.view.FocusRelativeLayoutExt>
+
+
+    </com.pukka.ydepg.common.extview.BrowseFrameLayoutExt>
+
+    <!-- 开机数据加载等待页面/开机广告播放页面 -->
+    <com.pukka.ydepg.common.ad.ui.WelcomeRelativeLayout
+        android:id="@+id/ll_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</com.pukka.ydepg.common.extview.RelativeLayoutNoFocus>

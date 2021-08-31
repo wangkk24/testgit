@@ -1,0 +1,9 @@
+<resources>
+    <string name="player_setting_record">按上键查看更多</string>
+    <string name="player_skip_start">已为您跳过片头</string>
+    <string name="player_skip_end">即将为您跳过片尾...</string>
+    <string name="player_not_skip_start">点击上键设置，跳过片头...</string>
+    <string name="player_not_skip_end">点击上键设置，跳过片尾...</string>
+    <string name="player_record_1">【上】键选集</string>
+    <string name="player_record_2">【左】【右】键拖动进度条</string>
+</resources>

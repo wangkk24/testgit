@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/main_search" android:state_focused="true"></item>
+    <item android:drawable="@drawable/main_search_default"></item>
+    <!--<item android:drawable="@drawable/search_test_focus" android:state_focused="true"></item>
+    <item android:drawable="@drawable/search_test"></item>-->
+</selector>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/pan_width_1280"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rv_title"
+        layout="@layout/home_pannel_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rela_group_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rv_title"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:focusable="false"
+        android:layout_height="wrap_content" />
+</merge>

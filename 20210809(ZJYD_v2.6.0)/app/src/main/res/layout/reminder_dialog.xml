@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/reminder_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="33dp"
+        android:background="@drawable/reminder_corner"
+        android:orientation="vertical"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mobile" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/reminder_title"
+                    android:textColor="#ccffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6">
+
+                <TextView
+                    android:id="@+id/vod_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:singleLine="true"
+                    android:textColor="@color/white_0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tool:text="权力的游戏 第五季 第3级 丹妮丽丝的奇幻梦之夜" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/reminder_shadow"
+                    android:lines="1"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_continue"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:background="@drawable/reminder_button"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/reminder_continue"
+                android:textColor="#ebebeb"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="140dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/reminder_button"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/reminder_back"
+                android:textColor="#ebebeb"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

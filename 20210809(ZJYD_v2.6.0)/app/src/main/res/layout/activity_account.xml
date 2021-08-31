@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_content_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/details_view_margin"
+    android:paddingBottom="@dimen/margin_9"
+    android:background="@drawable/default_detail_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_bind"
+        android:layout_marginLeft="@dimen/margin_104"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/account_title_size_two" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_54">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/account_content_qrcode_width"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_account_bind_qrcode"
+                android:layout_width="@dimen/account_content_qrcode_width"
+                android:layout_height="@dimen/account_content_qrcode_width" />
+
+            <ImageView
+                android:id="@+id/bind_pic"
+                android:layout_width="@dimen/account_content_browseicon_width"
+                android:layout_height="@dimen/account_content_browseicon_height"
+                android:layout_marginLeft="@dimen/margin_60"
+                android:src="@drawable/account_bind_1"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_migu_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/account_tips_size"
+            android:textColor="@color/c24_color"
+            android:layout_marginTop="@dimen/margin_28.5"
+            android:text="@string/account_bind_comp"/>
+
+        <TextView
+            android:id="@+id/bind_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c25_color"
+            android:layout_marginTop="@dimen/margin_22"
+            android:textSize="@dimen/account_tips_size"
+            android:text="@string/account_bind_desc"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_12"
+            android:paddingTop="@dimen/margin_6"
+            android:paddingBottom="@dimen/margin_6">
+
+            <TextView
+                android:id="@+id/tv_account_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c21_color"
+                android:text=""/>
+
+            <LinearLayout
+                android:id="@+id/account_info"
+                android:layout_toLeftOf="@+id/center_point"
+                android:layout_marginRight="@dimen/margin_25"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/account_bind_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account_bind_count"
+                    android:textColor="@color/c21_color"
+                    android:textSize="@dimen/account_title_size" />
+
+                <TextView
+                    android:id="@+id/account_name_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:text="@string/account_name"
+                    android:textColor="@color/c21_color"
+                    android:textSize="@dimen/account_title_size" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_operation_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_64"
+                android:layout_marginLeft="@dimen/margin_64"
+                android:paddingLeft="@dimen/margin_72.1"
+                android:paddingRight="@dimen/margin_72.1"
+                android:background="@drawable/activity_update_btn_selector"
+                android:textSize="@dimen/account_tips_size"
+                android:textColor="@color/c21_color"
+                android:text="@string/operation_tips"/>
+
+            <Button
+                android:id="@+id/btn_account_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_64"
+                android:layout_marginLeft="@dimen/margin_64"
+                android:paddingLeft="@dimen/margin_72.1"
+                android:paddingRight="@dimen/margin_72.1"
+                android:background="@drawable/activity_update_btn_selector"
+                android:textSize="@dimen/account_tips_size"
+                android:textColor="@color/c21_color"
+                android:text="@string/cancel_bind"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

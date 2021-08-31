@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/movies_list_filter_item_height"
+    android:background="@drawable/movies_list_filter_item_selector"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/movies_list_filter_item_img"
+        android:layout_width="@dimen/movies_list_filter_item_img_width"
+        android:layout_height="@dimen/movies_list_filter_item_img_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/movies_list_filter_item_img_margin_left"
+        android:layout_marginRight="@dimen/movies_list_filter_item_img_margin_right"
+        android:visibility="invisible"
+        android:src="@drawable/filter_item_choose_icon" />
+
+    <TextView
+        android:id="@+id/movies_list_filter_item_text"
+        android:layout_toRightOf="@id/movies_list_filter_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T24_C21_Light_size" />
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.FrameLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/fm_ondemand_container"
+    android:layout_height="match_parent">
+    <com.pukka.ydepg.view.PlayView
+        android:id="@+id/play_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:play_type="TYPE_NATIVE"
+        app:play_resize_mode="AUTO"
+        app:ControlViewBackground="@drawable/playcontrolview_background"
+        app:AutoPlay="false"
+        app:isLittle="true"
+        app:isVodDetail="true"/>
+    <include layout="@layout/player_order_button"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/tryseelayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_224"
+        android:layout_height="@dimen/margin_50">
+        <TextView
+            android:id="@+id/seehinttv"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#4D000000"
+            android:text=""
+            android:textSize="@dimen/margin_28.5"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/margin_20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#4498ff"
+            android:background="#4D000000"
+            android:text=" 【OK】 "
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/featured_detail_32sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#4D000000"
+            android:text="键订购"
+            android:textSize="@dimen/featured_detail_32sp"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/margin_20"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tryseelayout_down"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/margin_113"
+        android:layout_marginBottom="@dimen/margin_124"
+        android:layout_height="@dimen/margin_40"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/seehinttv_down"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#4D000000"
+            android:text="试看5分钟，观看完整版请按"
+            android:textSize="@dimen/margin_22"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/margin_10"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="#4498ff"
+            android:background="#4D000000"
+            android:text=" 【OK】 "
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/margin_22"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffff"
+            android:background="#4D000000"
+            android:text="键订购"
+            android:textSize="@dimen/margin_22"
+            android:layout_height="match_parent"
+            android:paddingEnd="@dimen/margin_10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/marketing_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/marketing_content"
+            android:layout_width="@dimen/marketing_content_width"
+            android:layout_height="@dimen/marketing_content_height"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/marketing_content_margin_bottom"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"/>
+    </LinearLayout>
+    <com.pukka.ydepg.common.ad.ui.CountDownRelativeLayouyt
+        android:id="@+id/advert_hint"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/ad_container"
+        android:layout_width="@dimen/coner_ad_width"
+        android:layout_height="@dimen/coner_ad_height"
+        android:layout_gravity="bottom|left"
+        android:layout_marginLeft="@dimen/coner_ad_left"
+        android:layout_marginBottom="@dimen/coner_ad_bottom"
+        android:visibility="gone">
+
+        <com.pukka.ydepg.common.extview.ImageViewExt
+            android:id="@+id/ad_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"/>
+
+        <com.pukka.ydepg.common.extview.ImageViewExt
+            android:id="@+id/ad_top_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/adicon" />
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+
+</com.pukka.ydepg.common.extview.FrameLayoutExt>

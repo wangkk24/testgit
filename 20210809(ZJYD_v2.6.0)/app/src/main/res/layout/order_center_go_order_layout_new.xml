@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:paddingLeft="@dimen/margin_86"
+    android:paddingRight="@dimen/margin_86"
+    >
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/order_center_go_order_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:layout_marginTop="@dimen/margin_26"
+        android:paddingRight="@dimen/margin_10"
+        >
+
+    </androidx.leanback.widget.VerticalGridView>
+</RelativeLayout>

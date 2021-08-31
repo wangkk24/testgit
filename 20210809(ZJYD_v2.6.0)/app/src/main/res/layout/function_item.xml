@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.LinearLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/tv_epg_function_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/main_refresh_butn_height"
+        android:text="123456"
+        android:paddingStart="@dimen/margin_10"
+        android:visibility="gone"
+        android:gravity="center"
+        android:paddingEnd="@dimen/margin_10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_marginEnd="@dimen/margin_7"
+        android:background="@drawable/selector_epg_top_scroll_ads"
+        android:textSize="@dimen/search_tips_size"
+        android:textColor="@color/main_refresh_font_color_focus" />
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/rl_main_refresh"
+        android:layout_width="@dimen/margin_80"
+        android:layout_height="@dimen/main_refresh_butn_height"
+        android:visibility="gone"
+        android:layout_marginEnd="@dimen/margin_7">
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_main_refresh_btn"
+            android:layout_width="@dimen/margin_80"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_epg_top_scroll_ads"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableStart="@drawable/manual_refresh_focus_icon"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/margin_10"
+            android:paddingStart="@dimen/margin_10"
+            android:text="@string/account_time_out_refresh"
+            android:singleLine="true"
+            android:textColor="@color/main_refresh_font_color_focus"
+            android:textSize="@dimen/search_tips_size"
+            android:visibility="visible" />
+
+        <com.pukka.ydepg.common.extview.ImageViewExt
+            android:id="@+id/im_main_refresh_btn"
+            android:layout_width="@dimen/margin_8"
+            android:layout_height="@dimen/margin_8"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/shape_red_circle"
+            android:visibility="gone" />
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+</com.pukka.ydepg.common.extview.LinearLayoutExt>

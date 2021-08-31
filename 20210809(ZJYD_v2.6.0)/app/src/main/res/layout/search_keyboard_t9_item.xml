@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_102">
+
+    <RelativeLayout
+        android:id="@+id/item_t9_layout"
+        android:paddingLeft="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_5"
+        android:paddingBottom="@dimen/margin_3.75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:background="@drawable/keyboard_item_selector">
+        <!--T9键盘数字-->
+        <TextView
+            android:id="@+id/item_t9_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/content_text_size"
+            android:text="2"
+            android:textColor="@color/c24_color" />
+        <!--T9键盘字母-->
+        <TextView
+            android:id="@+id/item_t9_char"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_24"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/search_text_size"
+            android:text="ABC"
+            android:textColor="@color/c24_color" />
+    </RelativeLayout>
+
+    <!--T9圆盘-->
+    <com.pukka.ydepg.moudule.search.view.CircleT9View
+        android:id="@+id/t9_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:focusable="false"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

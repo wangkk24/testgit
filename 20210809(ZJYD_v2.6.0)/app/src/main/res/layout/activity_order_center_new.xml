@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentView_order_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_center_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_order_center_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_86"
+        >
+
+        <TextView
+            android:id="@+id/tv_order_center_base_business_label"
+            android:layout_width="@dimen/order_center_top_menu_width"
+            android:layout_height="@dimen/order_center_top_menu_height"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/margin_114"
+            android:background="@drawable/order_center_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/order_center_base_business_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/order_center_top_menu_size" />
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_order_center_my_order_label"-->
+<!--            android:layout_width="@dimen/order_center_top_menu_width"-->
+<!--            android:layout_height="@dimen/order_center_top_menu_height"-->
+<!--            android:layout_toLeftOf="@+id/tv_order_center_base_business_label"-->
+<!--            android:layout_marginRight="@dimen/margin_114"-->
+<!--            android:background="@drawable/order_center_btn_bg"-->
+<!--            android:focusable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/order_center_my_order_label"-->
+<!--            android:textColor="@drawable/activity_launcher_text_selector"-->
+<!--            android:textSize="@dimen/order_center_top_menu_size" />-->
+
+        <TextView
+            android:id="@+id/tv_order_center_order_setting_label"
+            android:layout_width="@dimen/order_center_top_menu_width"
+            android:layout_height="@dimen/order_center_top_menu_height"
+            android:layout_toRightOf="@+id/tv_order_center_base_business_label"
+            android:layout_marginLeft="@dimen/margin_114"
+            android:background="@drawable/order_center_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/order_center_order_setting_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/order_center_top_menu_size" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_order_center_go_order_label"-->
+<!--            android:layout_width="@dimen/order_center_top_menu_width"-->
+<!--            android:layout_height="@dimen/order_center_top_menu_height"-->
+<!--            android:layout_toLeftOf="@+id/tv_order_center_my_order_label"-->
+<!--            android:layout_marginRight="@dimen/margin_114"-->
+<!--            android:background="@drawable/order_center_btn_bg"-->
+<!--            android:focusable="true"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/order_center_go_order_label"-->
+<!--            android:textColor="@drawable/activity_launcher_text_selector"-->
+<!--            android:textSize="@dimen/order_center_top_menu_size" />-->
+
+        <TextView
+            android:id="@+id/tv_order_center_multicast_switch_label"
+            android:layout_width="@dimen/order_center_top_menu_width"
+            android:layout_height="@dimen/order_center_top_menu_height"
+            android:layout_toRightOf="@+id/tv_order_center_order_setting_label"
+            android:layout_marginLeft="@dimen/margin_114"
+            android:background="@drawable/order_center_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/order_center_other_setting_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/order_center_top_menu_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_order_center_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_158"
+        android:focusable="false">
+    </FrameLayout>
+
+</androidx.leanback.widget.BrowseFrameLayout>

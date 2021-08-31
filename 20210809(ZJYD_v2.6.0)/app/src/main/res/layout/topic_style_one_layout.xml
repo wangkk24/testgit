@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="@dimen/style_one_title_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/style_one_title_marginLeft"
+        android:layout_marginTop="@dimen/style_one_title_marginTop">
+
+        <TextView
+            android:id="@+id/tv_topic_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c21_color"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/style_one_title_size"
+            android:textStyle="bold"
+            android:text=""/>  <!--那些年，我们追过的武侠-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/style_one_title_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/style_one_title_marginLeft"
+        android:layout_marginTop="@dimen/style_one_subTitle_marginTop">
+
+        <TextView
+            android:id="@+id/tv_topic_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T30_C21_Bold_size"
+            android:lineSpacingExtra="@dimen/style_one_topic_desc_extra"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lines="3"
+            android:text=""/><!-- 那些年，我们追过的武侠,作为。。。 -->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/movies_no_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="@dimen/movies_list_no_content_img_width"
+                android:layout_height="@dimen/movies_list_no_content_img_height"
+                android:src="@drawable/movies_list_no_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="无内容"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.pukka.ydepg.launcher.view.MyHorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/style_one_scroll_height"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/style_one_scroll_marginLeft"
+        android:layout_marginTop="@dimen/style_one_scroll_marginTop"
+       >
+
+        <RelativeLayout
+            android:layout_width="@dimen/style_one_grid_width"
+            android:layout_height="match_parent">
+
+            <androidx.leanback.widget.VerticalGridView
+                android:id="@+id/movies_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/style_one_grid_paddingTop"
+                android:paddingBottom="@dimen/style_one_grid_paddingBottom"
+                android:paddingLeft="@dimen/style_one_grid_paddingLeft"
+                />
+        </RelativeLayout>
+    </com.pukka.ydepg.launcher.view.MyHorizontalScrollView>
+
+</merge>

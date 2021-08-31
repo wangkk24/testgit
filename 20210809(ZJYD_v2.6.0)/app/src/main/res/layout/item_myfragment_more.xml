@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.pukka.ydepg.common.extview.RelativeLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_container"
+    android:layout_marginRight="@dimen/my_itemView_big_margin"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/my_itemView_big_margin">
+
+    <com.pukka.ydepg.customui.tv.widget.ReflectItemView
+        android:id="@+id/rt_moreItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:focusable="true"
+        app:isShape="true"
+        app:radius="@dimen/my_moreItem_radius">
+
+        <com.pukka.ydepg.common.extview.RelativeLayoutExt
+            android:id="@+id/rl_moreItem"
+            android:layout_width="@dimen/my_moreItem_width"
+            android:layout_height="@dimen/my_moreItem_height">
+
+            <com.pukka.ydepg.common.extview.ImageViewExt
+                android:id="@+id/iv_moreImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@drawable/more"
+                android:scaleType="centerCrop" />
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/tv_moreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="150dp"
+                android:text="@string/launcher_my_more_history"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/T23_C21_Light_size" />
+        </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+    </com.pukka.ydepg.customui.tv.widget.ReflectItemView>
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

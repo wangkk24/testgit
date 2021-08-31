@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/margin_45"
+    android:background="@drawable/controller_toast_bg"
+    android:paddingStart="@dimen/margin_33"
+    android:paddingEnd="@dimen/margin_33"
+    android:id="@+id/parent_view">
+    <TextView
+        android:id="@+id/controller_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="即将为您跳过片尾"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/margin_20"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        >
+
+    </TextView>
+
+</RelativeLayout>

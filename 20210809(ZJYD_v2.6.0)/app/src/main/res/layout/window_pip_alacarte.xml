@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="@dimen/alacarte_bg_width"
+        android:layout_height="@dimen/alacarte_bg_height"
+        android:layout_centerInParent="true"
+        android:background="@drawable/alacarte_bg"
+        android:focusable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_113"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/alacarte_text_single"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_86"
+                android:singleLine="false"
+                android:gravity="center"
+                android:text=""
+                android:lineSpacingExtra="@dimen/margin_10"
+                android:paddingStart="@dimen/margin_20"
+                android:paddingEnd="@dimen/margin_20"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/margin_30"
+                android:textColor="#333333"
+                android:focusable="false"
+                android:visibility="gone">
+            </TextView>
+
+            <TextView
+                android:id="@+id/alacarte_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:lineSpacingExtra="@dimen/margin_10"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/margin_30"
+                android:textColor="#333333"
+                android:focusable="false"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/alacarte_text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:lineSpacingExtra="@dimen/margin_10"
+                android:includeFontPadding="false"
+                android:textSize="@dimen/margin_30"
+                android:textColor="#333333"
+                android:focusable="false"
+                >
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/alacarte_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_52"
+            android:focusable="false"
+            >
+
+            <com.pukka.ydepg.moudule.vod.view.ChangeTextViewSpace
+                android:id="@+id/alacarte_confirm_btn"
+                android:layout_width="@dimen/margin_160"
+                android:layout_height="@dimen/margin_72.1"
+                android:background="@drawable/window_alacarte_btn_bg"
+                android:textSize="@dimen/margin_29"
+                android:textColor="#ffffff"
+                android:focusable="true"
+                android:gravity="center"
+                >
+            </com.pukka.ydepg.moudule.vod.view.ChangeTextViewSpace>
+
+            <com.pukka.ydepg.moudule.vod.view.ChangeTextViewSpace
+                android:id="@+id/alacarte_cancel_btn"
+                android:layout_width="@dimen/margin_160"
+                android:layout_height="@dimen/margin_72.1"
+                android:background="@drawable/window_alacarte_btn_bg"
+                android:text="取消"
+                android:textSize="@dimen/margin_29"
+                android:textColor="#6FA2EF"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/margin_50"
+                >
+            </com.pukka.ydepg.moudule.vod.view.ChangeTextViewSpace>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

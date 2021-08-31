@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="player_seekbar_backgroundcolor">#4DEBEBEB</color>
+  <color name="player_seekbar_progresscolor">#FFFCCB35</color>
+  <!--<color name="player_seekbar_secondprogresscolor">#50fccb35</color>-->
+  <color name="player_view_bgcolor">#000000</color>
+
+  <!--loadingball颜色-->
+  <color name="loading_yellow">#FF9900</color>
+  <color name="loading_green">#33FF66</color>
+  <color name="loading_blue">#0078FF</color>
+
+  <color name="error_window_divider">#4CFFFFFF</color>
+</resources>

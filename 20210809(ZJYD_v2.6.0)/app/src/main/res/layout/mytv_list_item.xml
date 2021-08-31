@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_64">
+
+    <ImageView
+        android:id="@+id/mytv_list_image"
+        android:layout_width="@dimen/margin_30"
+        android:layout_height="@dimen/margin_30"
+        android:src="@drawable/icon_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/margin_22"
+        />
+
+
+
+    <TextView
+        android:id="@+id/mytv_list_name"
+        android:textSize="@dimen/movie_list_item_name_big_size"
+        android:textColor="@color/c21_color"
+        android:maxWidth="@dimen/movie_list_name_min_width"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/movie_list_name_height" />
+
+    <TextView
+        android:id="@+id/mytv_list_time"
+        android:textSize="@dimen/movie_list_item_time_big_size"
+        android:textColor="@color/c24_color"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/margin_32"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_48" />
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/search_actor_item_width"
+    android:layout_height="@dimen/search_actor_item_height"
+    android:id="@+id/actor_item_layout"
+    android:focusable="true"
+    android:layout_marginBottom="@dimen/margin_7"
+    android:background="@drawable/search_actor_selector">
+
+    <TextView
+        android:id="@+id/actor_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/search_actor_item_text_size"
+        android:gravity="center"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="@color/c50_color" />
+
+</RelativeLayout>

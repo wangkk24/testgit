@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/style_view_no_focusable"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg"
+    android:orientation="horizontal">
+
+    <include layout="@layout/item_tvod_column"/>
+
+    <RelativeLayout
+        style="@style/style_view_no_focusable"
+        android:paddingLeft="@dimen/tVodProgramList_Content_MarginLeft"
+        android:paddingRight="@dimen/tVodProgramList_Content_MarginLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_program_count"
+            style="@style/style_view_no_focusable"
+            android:textColor="@color/tVodProgramList_Content_Title_TextColor"
+            android:layout_marginTop="@dimen/tVodProgramList_Content_Title_MarginTop"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textSize="@dimen/tVodProgramList_Content_Title_TextSize"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/list_page_right"
+            android:layout_toRightOf="@+id/v_line"
+            style="@style/style_view_focusable"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/tVodProgramList_Content_MarginTop"
+            android:layout_below="@+id/tv_program_count"
+            android:layout_above="@+id/tv_page_index"
+            android:layout_height="match_parent"/>
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="@dimen/margin_2"
+            style="@style/style_view_no_focusable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/tVodProgramList_Content_VLine_MarginLeft"
+            android:layout_marginRight="@dimen/tVodProgramList_Content_VLine_MarginRight"
+            android:layout_below="@+id/tv_program_count"
+            android:layout_above="@+id/tv_page_index"
+            android:layout_marginTop="@dimen/tVodProgramList_Content_VLine_MarginTop"
+            android:layout_marginBottom="@dimen/tVodProgramList_Content_VLine_MarginBottom"
+            android:layout_height="match_parent"
+            android:alpha="0.1"
+            android:background="@color/white_0"/>
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/list_page_left"
+            style="@style/style_view_focusable"
+            android:layout_toLeftOf="@+id/v_line"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/tVodProgramList_Content_MarginTop"
+            android:layout_below="@+id/tv_program_count"
+            android:layout_above="@+id/tv_page_index"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_page_index"
+            style="@style/style_view_no_focusable"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="top"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/tVodProgramList_Content_PageIndex_height"
+            android:textSize="@dimen/tVodProgramList_Content_PageIndex_TextSize"
+            android:textColor="@color/tVodProgramList_Content_PageIndex_TextColor"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_no_program_data"
+            android:visibility="gone"
+            style="@style/style_view_no_focusable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/no_data_image"
+                android:focusable="false"
+                android:layout_width="@dimen/pan_l1_r4_right_item_height"
+                android:layout_height="@dimen/pan_l1_r4_right_item_height"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_notificationd_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_below="@id/no_data_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="@string/no_data_title"
+                android:textColor="@drawable/activity_search_subject_text_selector"
+                android:textSize="@dimen/no_data_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

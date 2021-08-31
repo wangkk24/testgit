@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <solid android:color="@color/c41_color" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/c01_color" />
+            <corners
+                android:topLeftRadius="@dimen/history_list_item_radius"
+                android:topRightRadius="@dimen/history_list_item_radius"
+                android:bottomRightRadius="@dimen/history_list_item_radius"
+                android:bottomLeftRadius="@dimen/history_list_item_radius"
+                />
+        </shape>
+    </item>
+
+</layer-list>

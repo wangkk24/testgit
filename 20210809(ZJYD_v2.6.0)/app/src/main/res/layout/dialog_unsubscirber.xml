@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_unsubscriber"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/unSubscriber_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_248"
+        android:gravity="center"
+        android:text="确认退订？"
+        android:textColor="@color/white_0"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_92.6"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/unSubscriber_dialog_cancel"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:background="@drawable/my_dialog_ok_bg"
+            android:focusable="true"
+
+            android:gravity="center"
+            android:text="@string/message_cancel"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/search_hot_item_text_size" />
+
+        <TextView
+            android:id="@+id/unSubscriber_dialog_sure"
+            android:layout_width="192dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:background="@drawable/my_dialog_ok_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/mytv_dialog_sure"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/search_hot_item_text_size" />
+
+    </LinearLayout>
+    <!--  android:layout_marginRight="104dp"-->
+</LinearLayout>

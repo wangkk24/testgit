@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/movies_list_item_width"
+    android:layout_height="@dimen/movies_list_item_height"
+    android:layout_marginBottom="@dimen/movies_list_item_margin_bottom"
+    android:layout_marginTop="@dimen/movies_list_item_margin_top"
+    android:layout_marginLeft="@dimen/movies_list_item_margin_left"
+    android:layout_marginRight="@dimen/movies_list_item_margin_right"
+    android:focusable="true">
+
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/movies_list_item_img_bg"
+        android:layout_width="@dimen/movies_list_item_img_bg_width"
+        android:layout_height="@dimen/movies_list_item_img_bg_height"
+        android:padding="@dimen/movies_list_item_img_bg_padding"
+        android:background="@drawable/movies_list_item_selector">
+
+        <com.pukka.ydepg.common.extview.ImageViewExt
+            android:id="@+id/movies_list_item_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster" />
+        <com.pukka.ydepg.common.extview.ViewExt
+            android:id="@+id/movies_list_poster_right_view"
+            android:layout_width="48px"
+            android:layout_height="48px"
+            android:layout_alignParentRight="true"/>
+
+        <com.pukka.ydepg.common.extview.ViewExt
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movies_list_item_view_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/movies_list_shadow" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/movies_list_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/movies_list_item_score_margin_bottom"
+            android:layout_marginRight="@dimen/movies_list_item_score_margin_right"
+            android:text="8.0"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T252_C24_Light_size" />
+
+        <ImageView
+            android:id="@+id/vipimg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_26"
+            android:layout_marginStart="@dimen/margin_10"
+            android:scaleType="fitStart"/>
+
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/movies_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/movies_list_item_name_margin_left"
+        android:layout_marginRight="@dimen/movies_list_item_name_margin_right"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="惊天魔盗团惊天魔盗团惊天魔盗团"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T24_C21_Light_size" />
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

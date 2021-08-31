@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.ChannelLinearLayoutFocusView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_focusview"
+    android:orientation="horizontal"
+    android:layout_width="@dimen/epgitem_program_rlwidth"
+    android:layout_height="@dimen/epgitem_program_rlheight"
+    android:gravity="center_vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+  <RelativeLayout
+      android:id="@+id/rl_content"
+      android:layout_width="@dimen/epgitem_channel_inrlwidth"
+      android:layout_height="@dimen/epgitem_program_rlheight"
+      android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_program_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/epgitem_channel_rlpaddingleft">
+
+      <ImageView
+          android:id="@+id/iv_program_play"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:scaleType="centerInside"
+          android:src="@drawable/play_16"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/tv_program_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="@dimen/epgitem_channel_pnamemarginleft"
+          android:layout_toRightOf="@id/iv_program_play"
+          android:ellipsize="marquee"
+          android:marqueeRepeatLimit="marquee_forever"
+          android:singleLine="true"
+          android:text="秀才遇到兵"
+          android:textColor="@color/c24_color"
+          android:textSize="@dimen/epgitem_channel_pnamesize" />
+    </RelativeLayout>
+  </RelativeLayout>
+
+</com.pukka.ydepg.customui.focusView.ChannelLinearLayoutFocusView>

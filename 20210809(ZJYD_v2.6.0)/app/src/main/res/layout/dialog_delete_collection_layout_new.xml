@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="right"
+    android:background="@drawable/bg_popwindow"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/mytv_dialog_title"
+        android:layout_width="@dimen/dialog_width"
+        android:textSize="@dimen/dialog_title_text_size"
+        android:text="@string/mytv_dialog_title"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/margin_146"
+        android:layout_marginRight="@dimen/margin_104"
+        android:textColor="@color/c21_color"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/pop_detail"
+        android:layout_marginTop="40dp"
+        android:layout_width="@dimen/dialog_width"
+        android:textSize="@dimen/dialog_content_text_size"
+        android:layout_marginRight="@dimen/margin_104"
+        android:textColor="@color/c24_color"
+        android:text="@string/mytv_dialog_content_deleteAll"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/mytv_dialog_sure"
+        android:layout_marginTop="51dp"
+        android:layout_width="@dimen/dialog_width"
+        android:text="@string/mytv_dialog_sure"
+        android:background="@drawable/my_dialog_ok_bg"
+        android:focusable="true"
+        android:layout_marginRight="@dimen/margin_104"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_content_text_size"
+        android:textColor="@color/c21_color"
+        android:layout_height="@dimen/dialog_button_height" />
+    <TextView
+        android:id="@+id/mytv_dialog_cancel"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="@dimen/dialog_width"
+        android:text="@string/mytv_dialog_cancel"
+        android:background="@drawable/my_dialog_ok_bg"
+        android:focusable="true"
+        android:layout_marginRight="@dimen/margin_104"
+        android:gravity="center"
+        android:textSize="@dimen/dialog_content_text_size"
+        android:textColor="@color/c21_color"
+        android:layout_height="@dimen/dialog_button_height" />
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/margin_176"
+    android:layout_height="@dimen/collection_detail_image_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/margin_2"
+    android:background="@drawable/mytv_history_list_item_selector"
+    android:focusable="true">
+    
+    <com.pukka.ydepg.launcher.view.CustomRoundImageView
+        android:id="@+id/playback_list_item_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:radius_imageview="8dp"
+        android:src="@drawable/default_poster"/>
+
+    <View
+        android:id="@+id/playback_list_item_mantle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_60"
+        android:background="@drawable/playback_shadow_layout"
+        android:layout_alignParentBottom="true"
+        >
+    </View>
+
+    <TextView
+        android:id="@+id/playback_list_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/margin_16"
+        android:textColor="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/margin_5"
+        android:paddingEnd="@dimen/margin_5"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:layout_alignParentBottom="true"
+        android:text="唐人街探案"/>
+
+    <ImageView
+        android:id="@+id/vipimg"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/margin_26"
+        android:layout_marginStart="@dimen/margin_10"
+        android:scaleType="fitStart"/>
+</RelativeLayout>

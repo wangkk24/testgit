@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentView_order_center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_order_center_menu"
+        android:layout_width="@dimen/order_center_items_width"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/activity_order_center_title"
+            android:layout_width="@dimen/search_ranking_result_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/movie_menu_margintop"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/order_center_title"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/movie_list_item_name_size"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_order_center_base_business_label"
+            android:layout_width="@dimen/search_ranking_result_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_below="@+id/activity_order_center_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_48"
+            android:background="@drawable/my_movie_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/order_center_base_business_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size" />
+
+        <TextView
+            android:id="@+id/tv_order_center_go_order_label"
+            android:layout_width="@dimen/search_ranking_result_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_below="@+id/tv_order_center_base_business_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/my_movie_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/order_center_go_order_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size" />
+
+        <TextView
+            android:id="@+id/tv_order_center_my_order_label"
+            android:layout_width="@dimen/search_ranking_result_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_below="@+id/tv_order_center_go_order_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/my_movie_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/order_center_my_order_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size" />
+
+        <TextView
+            android:id="@+id/tv_order_center_order_setting_label"
+            android:layout_width="@dimen/search_ranking_result_width"
+            android:layout_height="@dimen/margin_48"
+            android:layout_below="@+id/tv_order_center_my_order_label"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/my_movie_btn_bg"
+            android:focusable="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_24"
+            android:paddingRight="@dimen/margin_24"
+            android:text="@string/order_center_order_setting_label"
+            android:textColor="@drawable/activity_launcher_text_selector"
+            android:textSize="@dimen/movie_menu_title_size" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_order_center_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/help_menu_width"
+        android:focusable="false"></FrameLayout>
+
+</androidx.leanback.widget.BrowseFrameLayout>

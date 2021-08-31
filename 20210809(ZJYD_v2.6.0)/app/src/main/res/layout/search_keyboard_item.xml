@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_61">
+
+    <TextView
+        android:id="@+id/keyboard_item_text"
+        android:layout_width="@dimen/margin_42"
+        android:layout_height="@dimen/margin_45"
+        android:layout_centerInParent="true"
+        android:focusable="true"
+        android:background="@drawable/keyboard_item_selector"
+        android:gravity="center"
+        android:textSize="@dimen/keyboard_item_text_size"
+        android:textColor="@color/c24_color"/>
+
+</RelativeLayout>

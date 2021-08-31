@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.FrameLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fm_channel_menu"
+    android:focusable="false"
+    android:visibility="gone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="@dimen/channel_menu_info_width"
+      android:layout_height="@dimen/channel_menu_info_height"
+      android:layout_gravity="right"
+      android:layout_marginEnd="@dimen/channel_menu_info_margin_end"
+      android:layout_marginTop="@dimen/channel_menu_info_margin_top"
+      android:background="@color/transparent_60"
+      android:focusable="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/channel_menu_info_margin_start">
+
+      <TextView
+          android:id="@+id/tv_playbill"
+          android:layout_width="@dimen/channel_menu_info_name_width"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white_0"
+          android:textSize="@dimen/channel_menu_info_name_size"
+          android:singleLine="true"
+          android:text=""
+          android:ellipsize="marquee"
+          android:marqueeRepeatLimit="1"
+          />
+
+      <TextView
+          android:id="@+id/tv_totaltime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_playbill"
+          android:layout_marginTop="@dimen/channel_menu_info_name_time_margin_top"
+          android:textColor="#dfdfdf"
+          android:textSize="@dimen/channel_menu_info_name_time_size"
+          android:text=""
+          />
+
+
+      <TextView
+          android:id="@+id/tv_line"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_playbill"
+          android:layout_marginTop="@dimen/channel_menu_info_name_time_margin_top"
+          android:layout_toRightOf="@id/tv_totaltime"
+          android:text=" | "
+          android:visibility="gone"
+          android:textColor="#dfdfdf"
+          android:textSize="@dimen/channel_menu_info_name_time_size"
+          />
+
+      <TextView
+          android:id="@+id/tv_channelname"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/tv_playbill"
+          android:layout_marginTop="@dimen/channel_menu_info_name_time_margin_top"
+          android:layout_toRightOf="@id/tv_line"
+          android:textColor="#dfdfdf"
+          android:textSize="@dimen/channel_menu_info_name_time_size"
+          android:text=""
+          />
+    </RelativeLayout>
+  </RelativeLayout>
+
+</com.pukka.ydepg.common.extview.FrameLayoutExt>

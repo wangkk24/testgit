@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+    android:id="@+id/tv_token_title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="token:" />
+
+    <TextView
+    android:id="@+id/tv_token_content"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_alignTop="@id/tv_token_title"
+    android:layout_toRightOf="@id/tv_token_title" />
+
+    <TextView
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/tv_token_title"
+    android:id="@+id/tv_url_title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="url:" />
+
+    <TextView
+    android:id="@+id/tv_url_content"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_alignTop="@id/tv_url_title"
+    android:layout_toRightOf="@id/tv_url_title" />
+
+    <TextView
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/tv_url_title"
+    android:id="@+id/tv_userID_title"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:text="userId:" />
+
+    <TextView
+    android:id="@+id/tv_userID_content"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_alignTop="@id/tv_userID_title"
+    android:layout_toRightOf="@id/tv_userID_title" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_userID_title"
+        android:id="@+id/tv_session_title"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="sessionId:" />
+
+    <TextView
+        android:id="@+id/tv_session_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_session_title"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_session_title"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_session_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="退出" />
+
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

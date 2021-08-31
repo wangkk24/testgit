@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pan_poster1125_rightItem_height"
+        android:background="#B0C4DE"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_poster_bb" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_poster_bb" />
+
+        <ImageView
+            android:id="@+id/clip_image"
+            android:layout_width="0dip"
+            android:layout_height="270dp"
+            android:paddingBottom="@dimen/margin_70"
+            android:layout_weight="1.0"
+            android:focusable="false"
+            android:src="@drawable/test_clip"
+            android:layout_gravity="bottom"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_poster_bb" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_poster_bb" />
+    </LinearLayout>
+
+</RelativeLayout>

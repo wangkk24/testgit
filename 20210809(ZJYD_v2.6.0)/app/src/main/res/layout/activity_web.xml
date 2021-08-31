@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg"
+    tools:context=".launcher.ui.fragment.WebActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </WebView>
+
+    <RelativeLayout
+        android:id="@+id/playview_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/playview_parent_match"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_0"
+        android:visibility="gone" />
+
+    <com.pukka.ydepg.view.loadingball.MonIndicator
+        android:id="@+id/monIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:circleRadius="10dp"
+        app:circleSpacing="20dp"
+        app:cycle="600" />
+
+    <TextView
+        android:id="@+id/tv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white_transparent_50"
+        android:gravity="center" />
+
+    <com.pukka.ydepg.common.extview.ImageViewExt
+        android:id="@+id/iv_ad_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+</RelativeLayout>

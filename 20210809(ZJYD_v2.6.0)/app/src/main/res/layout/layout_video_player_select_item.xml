@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:focusable="true"
+    android:background="@drawable/view_light_player_status_select"
+    android:layout_width="@dimen/x228"
+    android:layout_height="@dimen/x128">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_select_icon"
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/x228"
+        android:layout_height="@dimen/x128" />
+    <TextView
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:id="@+id/tv_select_name"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

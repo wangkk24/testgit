@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circleRadius">10dp</dimen>
+    <dimen name="circleRadius_page">5dp</dimen>
+    <dimen name="circleSpacing">20dp</dimen>
+
+
+    <dimen name="margin_13dp">13dp</dimen>
+    <dimen name="margin_20sp">20sp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_27dp">27dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_32dp">32dp</dimen>
+    <dimen name="margin_33dp">33dp</dimen>
+    <dimen name="margin_36sp">36sp</dimen>
+    <dimen name="margin_44dp">44dp</dimen>
+    <dimen name="margin_25dp">25dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_63dp">63dp</dimen>
+    <dimen name="margin_66dp">66dp</dimen>
+
+    <dimen name="margin_54dp">54dp</dimen>
+    <dimen name="margin_42dp">42dp</dimen>
+    <dimen name="margin_12dp">12dp</dimen>
+    <dimen name="margin_75dp">75dp</dimen>
+    <dimen name="margin_48dp">48dp</dimen>
+
+    <dimen name="margin_90dp">90dp</dimen>
+    <dimen name="margin_170dp">170dp</dimen>
+    <dimen name="margin_300dp">300dp</dimen>
+
+    <dimen name="progressbar_width">1281dp</dimen>
+    <dimen name="progressbar_layout_width">1329dp</dimen>
+
+    <dimen name="controller_height">250dp</dimen>
+</resources>

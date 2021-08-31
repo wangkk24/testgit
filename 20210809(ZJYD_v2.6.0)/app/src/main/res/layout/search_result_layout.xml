@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_vod_bg"
+    android:layout_width="@dimen/search_result_width"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_20"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:id="@+id/movies_list_item_img_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_result_image_height"
+        android:background="@drawable/movies_list_item_selector"
+        android:padding="@dimen/movies_list_item_img_bg_padding">
+
+        <ImageView
+            android:id="@+id/search_result_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster" />
+
+        <ImageView
+            android:id="@+id/search_result_item_hd"
+            android:layout_width="@dimen/search_result_hd_size"
+            android:layout_height="@dimen/search_result_hd_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_result_view_height"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/movies_list_shadow" />
+
+        <TextView
+            android:id="@+id/search_result_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/movies_list_item_score_margin_right"
+            android:text="8.0"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/search_result_score_text_size" />
+
+        <ImageView
+            android:id="@+id/vipimg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_26"
+            android:layout_marginStart="@dimen/margin_10"
+            android:scaleType="fitEnd"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/search_result_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movies_list_item_img_bg"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginRight="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_10"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:scrollHorizontally="true"
+        android:gravity="center_vertical"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text=""
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/search_result_name_text_size" />
+
+</RelativeLayout>

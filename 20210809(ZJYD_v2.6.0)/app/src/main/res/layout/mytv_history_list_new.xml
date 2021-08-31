@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/history_list_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_65"
+            >
+            <View
+                android:id="@+id/history_list_tv_bg"
+                android:layout_width="@dimen/history_list_top_width"
+                android:layout_height="@dimen/history_list_top_height"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:background="@drawable/my_movie_btn_bg"
+                >
+            </View>
+            <TextView
+                android:id="@+id/history_list_tv"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/history_list_top_width"
+                android:gravity="center"
+                android:focusable="true"
+                android:text="@string/mytv_history_tv"
+                android:textColor="@drawable/activity_launcher_text_selector"
+                android:textSize="@dimen/movie_menu_title_size"
+                android:layout_height="@dimen/history_list_top_height" />
+
+            <View
+                android:id="@+id/history_list_phone_bg"
+                android:layout_width="@dimen/history_list_top_width"
+                android:layout_height="@dimen/history_list_top_height"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:background="@drawable/my_movie_btn_bg"
+                android:layout_toRightOf="@+id/history_list_tv"
+                android:layout_marginLeft="@dimen/margin_40"
+                >
+            </View>
+
+            <TextView
+                android:id="@+id/history_list_phone"
+                android:layout_width="@dimen/history_list_top_width"
+                android:layout_height="@dimen/history_list_top_height"
+                android:layout_alignStart="@+id/history_list_phone_bg"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="@dimen/margin_40"
+                android:layout_toRightOf="@+id/history_list_tv"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/mytv_history_phone"
+                android:textColor="@drawable/activity_launcher_text_selector"
+                android:textSize="@dimen/movie_menu_title_size" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/history_List_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/history_list_menu"
+            android:focusable="true"
+            android:descendantFocusability="afterDescendants"
+
+            >
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.leanback.widget.BrowseFrameLayout>

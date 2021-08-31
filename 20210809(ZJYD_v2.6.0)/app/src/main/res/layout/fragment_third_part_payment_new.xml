@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    tools:context=".moudule.mytv.ordercenter.newOrderCenter.NewThirdPartPaymentFragment">
+
+    <!--<TextView-->
+    <!--android:id="@+id/go_to_third_part_pay"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="@string/btn_go_to_third_part_pay"-->
+    <!--android:focusable="true"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/load_third_part_payment"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="@dimen/unipay_btnconfirm_height"-->
+    <!--android:background="@drawable/detail_button_selector"-->
+    <!--android:text="@string/btn_go_to_third_part_pay"-->
+    <!--android:textColor="@color/c30_color"-->
+    <!--android:textSize="@dimen/unipay_btntextsize"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_114"
+        android:layout_marginLeft="@dimen/margin_114"
+        android:layout_marginTop="@dimen/margin_32"
+        android:layout_marginBottom="@dimen/margin_32">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="252"
+            android:background="@drawable/order_paymode_bg">
+
+            <TextView
+                android:id="@+id/order_paymode_ordertip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin_22.5"
+                android:text="@string/order_paymode_ordertip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_70"
+                android:textColor="#E9E9E9"
+                />
+
+            <RelativeLayout
+                android:id="@+id/order_paymode_item"
+                android:layout_width="@dimen/order_list_bg_width_muti"
+                android:layout_height="@dimen/order_list_bg_height_muti"
+                android:layout_below="@+id/order_paymode_ordertip"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_21"
+                >
+                <View
+                    android:id="@+id/order_paymode_bg_up"
+                    android:layout_width="@dimen/order_list_bg_width_muti"
+                    android:layout_height="@dimen/margin_60"
+                    android:background="@drawable/order_paymode_item_bg_up">
+                </View>
+                <View
+                    android:layout_width="@dimen/order_list_bg_width_muti"
+                    android:layout_height="@dimen/margin_106"
+                    android:layout_below="@+id/order_paymode_bg_up"
+                    android:background="@drawable/order_paymode_item_bg_down">
+                </View>
+
+                <TextView
+                    android:id="@+id/order_paymode_item_title"
+                    android:layout_width="@dimen/order_list_title_width_muti"
+                    android:layout_height="@dimen/order_list_title_height"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin_21"
+                    android:textColor="#2F4ECD"
+                    android:text=""
+                    android:focusable="false"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:scrollHorizontally="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/order_paymode_item_discount"
+                    android:layout_marginTop="@dimen/margin_9"
+                    android:layout_width="@dimen/margin_38.3"
+                    android:layout_height="@dimen/margin_21"
+                    android:layout_below="@+id/order_paymode_item_title"
+                    android:text="5折"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/mytv_history_count"
+                    android:focusable="false"
+                    android:textSize="@dimen/margin_17"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/order_paymode_price_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:focusable="false"
+                    android:layout_below="@+id/order_paymode_item_title"
+                    android:layout_marginTop="@dimen/margin_20"
+                    >
+
+                    <TextView
+                        android:id="@+id/order_paymode_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#1C33A0"
+                        android:textSize="@dimen/margin_45"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:focusable="false"
+                        />
+                    <TextView
+                        android:id="@+id/order_paymode_price_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#1C33A0"
+                        android:textSize="@dimen/order_list_price_small_size"
+                        android:gravity="center"
+                        android:focusable="false"
+                        android:includeFontPadding="false"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/order_paymode_item_discountprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/order_paymode_price_layout"
+                    android:layout_centerHorizontal="true"
+                    android:text="原价：39.9元/月"
+                    android:includeFontPadding="false"
+                    android:textColor="#1C33A0"
+                    android:textSize="@dimen/margin_16"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/order_paymode_event_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/order_paymode_item"
+                android:layout_marginStart="@dimen/margin_31.5"
+                android:layout_marginTop="@dimen/margin_20"
+                android:text="@string/order_paymode_eventtip"
+                android:textColor="#E9E9E9"
+                android:textSize="@dimen/margin_12"
+                android:includeFontPadding="false"
+                />
+
+            <com.pukka.ydepg.common.extview.VerticalScrollTextView
+                android:id="@+id/order_paymode_event_text"
+                android:background="@drawable/order_transition_textview_bg_selected"
+                android:layout_width="@dimen/order_paymode_item_autoscroll_width"
+                android:layout_height="@dimen/margin_128"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_below="@+id/order_paymode_event_tip"
+                android:layout_marginStart="@dimen/margin_31.5"
+                android:textSize="@dimen/margin_12"
+                android:textColor="#E9E9E9"
+                android:lineSpacingExtra="@dimen/margin_5"
+                android:ellipsize="end"
+                app:tv_line="6"
+                android:focusable="true"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="352"
+            android:background="#F2F2F2"
+            >
+
+            <WebView
+                android:id="@+id/third_part_pay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

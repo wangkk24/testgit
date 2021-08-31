@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:background="@color/transparent_30"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/single_lly"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/today_completetv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white_0"
+            android:text="今日观看时间已全部用完"
+            android:textSize="@dimen/T29_C21_Bold_size"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/single_completetv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/tVodProgramList_Content_Title_TextColor"
+            android:text="继续观看倒计时:"
+            android:textSize="@dimen/T21_C21_Bold_size"
+            android:layout_height="wrap_content"/>
+        <TextView
+
+            android:id="@+id/single_timetv"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white_0"
+            android:text="00:29:59"
+            android:textSize="@dimen/T26_C21_Bold_size"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/deblockingtv"
+                android:layout_width="@dimen/pan_height_234"
+                android:gravity="center"
+                android:textColor="@color/white_0"
+                android:background="@drawable/bg_child_complete_btn_selector"
+                android:layout_height="@dimen/margin_55"
+                android:textSize="@dimen/T21_C21_Bold_size"
+                android:layout_marginRight="@dimen/margin_20"
+                android:text="即刻解锁"/>
+            <TextView
+                android:id="@+id/backtv"
+                android:text="返回"
+                android:textColor="@color/white_0"
+                android:background="@drawable/bg_child_complete_btn_selector"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:textSize="@dimen/T21_C21_Bold_size"
+                android:layout_width="@dimen/pan_height_234"
+                android:gravity="center"
+                android:layout_height="@dimen/margin_55"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/margin_30"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:layout_width="wrap_content"
+        android:src="@drawable/panda"
+        android:layout_height="wrap_content"/>
+     <TextView
+         android:id="@+id/today_tv"
+         android:layout_width="180dp"
+         android:textSize="@dimen/T31_C21_Light_size"
+         android:visibility="gone"
+         android:textColor="@color/white_0"
+         android:gravity="center_horizontal"
+         android:layout_alignParentBottom="true"
+         android:layout_marginLeft="177dp"
+         android:layout_marginBottom="137dp"
+         android:text="@string/child_play_complete"
+         android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/single_tv"
+        android:layout_width="160dp"
+        android:visibility="gone"
+        android:textSize="@dimen/collection_title_text_size"
+        android:textColor="@color/white_0"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="180dp"
+        android:layout_marginBottom="146dp"
+        android:text="小朋友，眼睛需要休息喽~"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

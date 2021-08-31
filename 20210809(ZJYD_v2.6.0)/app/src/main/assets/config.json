@@ -1,0 +1,16 @@
+{
+  "edsUrl": "https://218.4.33.72:33428/",
+  "epgURL": "",
+  "edsUrlHttp": "https://218.4.33.72:33428/",
+  "vspURL": "",
+  "useHttps": true,
+  "webURL":"http://www.izaodao.com/Api/",
+  "shareURL":"http://211.143.154.35:33200/drc/index.html",
+  "registerURL":"",
+  "queryAdvAndUpdateURL":"https://fjbmvapp.hvs.fj.chinamobile.com/appUpgrade/",
+  "wxServiceURL":"https://api.weixin.qq.com/",
+  "xmppIP":"",
+  "xmppPort":5222,
+  "caasName":"",
+  "caasPassword":""
+}

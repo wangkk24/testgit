@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/switch_state"
+        android:layout_width="@dimen/order_center_other_setting_width"
+        android:layout_height="@dimen/order_center_other_setting_height"
+        android:background="@drawable/multicate_switch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_137"
+        android:focusable="false"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multicate_switch"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_52"
+            android:focusable="false"
+            android:textSize="@dimen/margin_22.5"
+            android:textColor="@color/c30_color"
+            />
+
+        <TextView
+            android:id="@+id/switch_state_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/open"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_56"
+            android:focusable="false"
+            android:textSize="@dimen/margin_22.5"
+            android:textColor="@color/c30_color"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/order_center_other_setting_width"
+        android:layout_height="@dimen/order_center_other_setting_btn_height"
+        android:layout_below="@+id/switch_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_78"
+        >
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="@dimen/order_center_other_setting_edit_width"
+            android:layout_height="@dimen/order_center_other_setting_btn_height"
+            android:paddingLeft="@dimen/featured_detail_10px"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/phone_edit_seletor"
+            android:hint="@string/multicate_switch_editpassword"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/c21_color"
+            android:textColorHint="@color/c24_color"
+            android:textCursorDrawable="@drawable/edittext_cursor"
+            android:textSize="@dimen/margin_22.5"
+            android:focusable="true"
+
+            />
+
+        <Button
+            android:id="@+id/comfirm_btn"
+            android:layout_width="@dimen/order_center_other_setting_btn_width"
+            android:layout_height="@dimen/order_center_other_setting_btn_height"
+            android:background="@drawable/detail_button_selector"
+            android:layout_alignParentRight="true"
+            android:text="@string/close"
+            android:textColor="@color/c30_color"
+            android:textSize="@dimen/margin_22.5" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

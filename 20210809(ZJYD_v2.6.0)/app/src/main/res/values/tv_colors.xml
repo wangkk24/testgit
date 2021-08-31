@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--Pip PlayBack-->
+  <color name="pip_playback_continue_txtcolor">#FFEBEBEB</color>
+  <!--BASIC-->
+  <color name="c00_color">#FF000000</color>
+  <color name="c01_color">#FFEBEBEB</color>
+  <color name="c02_color">#80EBEBEB</color>
+  <color name="c03_color">#4DEBEBEB</color>
+  <color name="c04_color">#33EBEBEB</color>
+  <color name="c05_color">#4DEBEBEB</color>
+  <color name="c06_color">#FFFCCB35</color>
+  <color name="c07_color">#B3000000</color>
+  <color name="c08_color">#E6000000</color>
+  <color name="c09_color">#80000000</color>
+  <color name="c10_color">#4D000000</color>
+  <color name="c11_color">#33000000</color>
+  <color name="c12_color">#00000000</color>
+  <color name="c13_color">#FF181818</color>
+  <color name="c14_color">#80181818</color>
+  <color name="c15_color">#FF2F2F2F</color>
+  <color name="c16_color">#FF3F3F3F</color>
+  <color name="c17_color">#FF474747</color>
+  <color name="c18_color">#FF767676</color>
+  <color name="c19_color">#CC000000</color>
+  <!--TEXT-->
+  <color name="c21_color">#FFEBEBEB</color>
+  <color name="c22_color">#FFE62117</color>
+  <color name="c23_color">#4DEBEBEB</color>
+  <color name="c24_color">#b2EBEBEB</color>
+  <color name="c25_color">#FFFCCB35</color>
+  <color name="c26_color">#FF181818</color>
+  <color name="c27_color">#FF24B5F1</color>
+
+  <color name="c28_color">#FF5F2A2A</color>
+  <color name="c29_color">#7febebeb</color>
+  <color name="c30_color">#ebebeb</color>
+  <color name="c30_3_color">#3eebebeb</color>
+  <color name="e6_color">#FFE6E6E6</color>
+
+  <!--ICON-->
+  <color name="c31_color">#FFEBEBEB</color>
+  <color name="c32_color">#FFE62117</color>
+  <color name="c33_color">#FF767676</color>
+  <color name="c34_color">#FFEED81F</color>
+  <color name="c35_color">#FF474747</color>
+  <color name="c36_color">#ebebeb</color>
+  <color name="c37_color">#fccb35</color>
+  <color name="c38_color">#80ffffff</color>
+  <color name="c39_color">#3a4e5f</color>
+  <color name="c40_color">#5f2a2a</color>
+  <color name="c41_color">#4cA2A2A2</color>
+  <color name="c42_color">#BCA2A2A2</color>
+  <color name="c43_color">#E6E6E6</color>
+  <color name="c44_color">#59000000</color>
+  <color name="c45_color">#3324B5F1</color>
+  <color name="c46_color">#F2000000</color>
+  <color name="c47_color">#E6000000</color>
+  <color name="c48_color">#A6000000</color>
+  <color name="c49_color">#99FEFEFE</color>
+  <color name="c50_color">#FEFEFE</color>
+
+    <color name="c51_color">#374157</color>
+    <color name="c52_color">#1E1F2D</color>
+    <color name="c53_color">#404261</color>
+    <color name="C54_color">#D91E1F2D</color>
+    <color name="c55_color">#D9374157</color>
+    <color name="c56_color">#D91E1F2D</color>
+    <color name="c57_color">#AAAAAA</color>
+  <color name="transparent_0">#00000000</color><!--透明度0-->
+  <color name="transparent_10">#19000000</color><!--透明度10-->
+  <color name="transparent_20">#32000000</color><!--透明度20-->
+  <color name="transparent_30">#4D000000</color><!--透明度30-->
+  <color name="transparent_40">#66000000</color><!--透明度40-->
+  <color name="transparent_50">#80000000</color><!--透明度50-->
+  <color name="transparent_60">#99000000</color><!--透明度60-->
+  <color name="transparent_70">#B3000000</color><!--透明度70-->
+  <color name="transparent_80">#C8000000</color><!--透明度80-->
+  <color name="transparent_85">#D9000000</color><!--透明度85-->
+  <color name="white_transparent_15">#21FFFFFF</color><!--透明度15-->
+  <color name="white_transparent_20">#32FFFFFF</color><!--透明度20-->
+  <color name="white_transparent_30">#4DA5A5A5</color><!--透明色 -->
+  <color name="white_transparent_50">#44FFFFFF</color><!--透明色 -->
+  <color name="white_transparent_60">#99FFFFFF</color><!--透明色 -->
+  <color name="white_grey_20">#32A5A5A5</color><!--透明度20-->
+  <color name="white_grey_50">#44A5A5A5</color><!--透明度20-->
+
+  <color name="transparent">#00000000</color>
+  <color name="blue_5faaea">#5faaea</color>
+  <color name="blue_6389de">#6389de</color>
+  <!--纯黑色 透明度0%-->
+  <color name="black_0">#FF000000</color>
+  <color name="black_33">#333333</color>
+  <color name="dialog_lock_input_shapecolor">#a0a0a0</color>
+
+  <color name="programs_progress_bg">#303030</color>
+  <color name="app_update_tip">#1f1f1f</color>
+  <color name="app_update_edition">#282828</color>
+  <color name="app_update_text">#282828</color>
+
+  <!--纯白色 透明度0%-->
+  <color name="white_0">#FFFFFFFF</color>
+  <color name="white_1">#80ffffff</color>
+  <color name="white_20">#10ffffff</color>
+  <color name="guide_bg">#151618</color>
+  <!--透明度百分之50白色-->
+  <color name="white_50">#7fffffff</color>
+  <color name="white_60">#99FFFFFF</color>
+  <color name="white_40">#66FFFFFF</color>
+
+  <color name="white_80">#C8bbb2a1</color>
+
+  <!--Toast 背景-->
+  <color name="toast_bg">#B3000000</color>
+  <color name="toast_textcolor">#FFEBEBEB</color>
+
+  <!--遥控器新改-->
+  <color name="color_text_normal">#fff</color>
+
+  <color name="gray_1b">#1BB790</color>
+  <color name="black_29">#292929</color>
+  <color name="transparent_00">#00ffffff</color>
+  <color name="titlebar_bgcolor">#00c9bd</color>
+  <!--模板标题-->
+  <color name="color_template_title">#FFFFFFFF</color>
+  <!--跑马灯颜色-->
+  <color name="marquee_color">#ebebeb</color>
+  <!--垂直滚动文字静态资源位背景-->
+  <color name="scroll_static_resource_item_bg">#3c6edf</color>
+  <!--咪咕爱看界面字体颜色-->
+  <color name="migu_text_color">#ebebeb</color>
+  <color name="migu_line_color">#4DEBEBEB</color>
+  <color name="message_info">#ccebebeb</color>
+
+  <!--频道回看节目单列表-->
+  <color name="tVodProgramList_MenuItem_TextColor">#A2A2A2</color>
+  <color name="tVodProgramList_Content_Item_TextColor_NoFocus">#e6e6e6</color>
+  <color name="tVodProgramList_Content_Item_TextColor_Focus">#ffffff</color>
+  <color name="tVodProgramList_Content_PageIndex_TextColor">#e1d4d3</color>
+  <color name="tVodProgramList_Content_Title_TextColor">#e6e7e6</color>
+
+  <color name="tVod_cloumn_name_TextColor">#A2A2A2</color>
+
+  <color name="pay_benefit">#fe6f00</color>
+
+  <!--家长中心-->
+  <color name="parent_set_center_bg_color">#1E1F2D</color>
+  <color name="parent_set_center_bg">#404261</color>
+  <color name="children_unlock_bg">#24253D</color>
+  <color name="caff_color">#52CAFF</color>
+  <color name="children_unlock_error">#FF6074</color>
+
+  <!--搜索-->
+  <color name="search_switch_keyboard_text_unselect_color">#BABABA</color>
+  <color name="search_btn_background_color">#5a595c</color>
+  <color name="search_match_key_highlight_color">#21b02f</color>
+
+  <!--观看记录-->
+  <color name="mytv_history_downlayout_bg">#4a7ac9</color>
+  <color name="mytv_history_count">#fbcf20</color>
+
+  <!--首页  右上角 刷新按钮 字体颜色  背景颜色-->
+  <color name="main_refresh_font_color_no_focus">#a4b2c6</color>
+  <color name="main_refresh_font_color_focus">#e2e7eb</color>
+  <color name="main_refresh_bg_color_no_focus">#602e85f1</color>
+  <color name="main_refresh_bg_color_focus">#2e85f1</color>
+
+
+  <!--订购中心item蒙板-->
+  <color name="order_center_item_cover">#99009688</color>
+
+  <color name="order_list_price">#98a4cb</color>
+  <color name="order_list_title">#1e328f</color>
+  <color name="order_list_price_org">#606290</color>
+
+  <color name="payment_button_bg">#3c68fd</color>
+  <color name="go_order_yellowsuperscript_color">#4b1800</color>
+  <color name="go_order_redsuperscript_color">#ffffff</color>
+  <color name="my_order_unsubscribe_button_Text_color">#4389ef</color>
+
+  <color name="player_order_product_name">#724A34</color>
+  <color name="player_order_product_desc">#805B44</color>
+  <color name="order_paymode_buttom_textcolor">#3859D0</color>
+
+  <color name="epg_scroll_ads_textcolor">#edc368</color>
+  <color name="epg_scroll_ads_bgcolor_no_focus">#32ffffff</color>
+  <color name="epg_scroll_ads_bgcolor_focus">#5080e9</color>
+  <color name="err_pop_text_color">#333333</color>
+
+
+  <!--新的详情页-->
+  <color name="voddetail_definition_textcolor_yellow">#9b7712</color>
+  <color name="voddetail_total_textcolor">#64aeff</color>
+
+  <color name="voddetail_definition_textcolor_z4k">#895932</color>
+
+  <color name="voddetail_order_text_color_unenable">#dfdfdf</color>
+  <color name="controller_item_title_color_selected">#72afff</color>
+
+  <color name="controller_toast_text_color">#ffc66f</color>
+  <color name="color_1675ff">#2365da</color>
+  <color name="color_f1f3f7">#f1f3f7</color>
+
+  <color name="color_5EA7FB">#5EA7FB</color>
+  <color name="color_BCDAFD">#BCDAFD</color>
+  <color name="color_364653">#364653</color>
+  <color name="color_d7dee3">#d7dee3</color>
+  <color name="color_7F8E99">#7F8E99</color>
+  <color name="color_FE3C38">#FE3C38</color>
+  <color name="color_5ba9ef">#5ba9ef</color>
+  <color name="color_b4d9fe">#b4d9fe</color>
+  <color name="color_dbdad6">#dbdad6</color>
+  <color name="color_327BF4">#327BF4</color>
+  <color name="color_6C726D">#4D6C726D</color>
+  <color name="color_4Dffffff">#4Dffffff</color>
+
+  <color name="detail_btn_text_unable">#cccccc</color>
+
+  <color name="colorPrimary">#3F51B5</color>
+  <color name="colorPrimaryDark">#303F9F</color>
+  <color name="colorAccent">#FF4081</color>
+
+  <color name="everyBg">#4DB5B5B5</color>
+
+  <!--player start-->
+  <color name="seekBarBg">#B9FFFFFF</color>
+  <color name="seekBarSecondaryProgressBg">#862196F3</color>
+  <color name="seekBarProgressBg">#03A9F4</color>
+  <color name="playBottomBg">#54000000</color>
+  <!--player end-->
+
+  <color name="playBg">#2A2A2A</color>
+  <color name="mainBg">#2A2A2A</color>
+
+  <!--player start-->
+  <color name="aerialViewBg">#AEAEAE</color>
+  <color name="aerialBgColor">#842196F3</color>
+  <color name="aerialTextColor">#FFFFFF</color>
+  <color name="aerialColor">#88FFFFFF</color>
+  <color name="textTipBg">#26000000</color>
+  <color name="borderColorRes">#FFFFFF</color>
+  <color name="shadowColorRes">#FFFFFF</color>
+  <!--player end-->
+
+  <color name="alacarte_btn_color_selected">#70a2ef</color>
+  <color name="alacarte_btn_color_unselected">#ffffff</color>
+  <color name="alacarte_number_color">#a54a00</color>
+
+  <color name="alacarte_btn_color_unfocused">#FF6FA2EF</color>
+</resources>

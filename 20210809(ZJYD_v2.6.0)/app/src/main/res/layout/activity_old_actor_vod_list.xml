@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/default_detail_bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/movies_list_catagory_list_margin_left"
+        android:layout_marginTop="@dimen/movies_list_catagory_list_margin_top">
+
+        <TextView
+            android:id="@+id/root_catagory_string"
+            android:layout_width="150px"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c21_color"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textSize="@dimen/T12_C21_Bold_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/page_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/movies_list_page_num_margin_left"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T23_C21_Light_size" />
+
+        <TextView
+            android:id="@+id/page_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/c23_color"
+            android:textSize="@dimen/T23_C23_Light_size" />
+    </LinearLayout>
+
+    <com.pukka.ydepg.moudule.vod.view.FocusVerticalGridView
+        android:id="@+id/movies_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:layout_marginTop="@dimen/movies_list_margin_top"
+        android:layout_marginBottom="@dimen/movies_list_margin_bottom"
+        android:paddingLeft="@dimen/movies_list_margin_left"
+        android:paddingRight="@dimen/movies_list_margin_right"
+        android:paddingTop="@dimen/movies_list_padding_top" />
+
+    <RelativeLayout
+        android:id="@+id/content_list_no_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/movies_list_no_content_img_width"
+                android:layout_height="@dimen/movies_list_no_content_img_height"
+                android:src="@drawable/movies_list_no_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/movies_list_no_content_text_margin_top"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="无内容"
+                android:textColor="@color/c24_color"
+                android:textSize="@dimen/T24_C24_Light_size" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

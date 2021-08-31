@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="false"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c24_color"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:textSize="@dimen/my_userInfo_textSize"
+        tools:text="即将播出" />
+    <com.pukka.ydepg.moudule.home.view.MarqueeText
+        android:id="@+id/tv_marquee_title"
+        android:layout_marginTop="@dimen/margin_6"
+        android:layout_marginRight="@dimen/margin_72.1"
+        android:layout_toRightOf="@id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_alignTop="@id/tv_title"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pan_poster1326_expendText_marginLeft"
+        style="@style/phmSubTitleStyle"
+        android:textColor="@color/marquee_color"
+        android:drawableLeft="@drawable/lama_14x20"
+        android:drawablePadding="@dimen/margin_10"
+        android:textSize="@dimen/pan_poster1326_expendText_textSize"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:tag="marquee"
+        android:visibility="gone"
+        android:focusable="false"
+        />
+</RelativeLayout>

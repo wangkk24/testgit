@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pukka.ydepg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 模拟发送按键功能需要此权限-->
+    <uses-permission android:name="android.permission.INJECT_EVENT" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.chinamobile.middleware.auth.contentprovider.READ" />
+
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- SecDroid扫描要求删除的无用权限 VR播放器可能要用的权限-->
+    <!-- uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /-->
+
+    <!-- SecDroid扫描要求删除的无用权限 -->
+    <!--uses-permission android:name="android.permission.READ_PHONE_STATE" /-->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <!-- Session超时的权限 start -->
+    <uses-permission android:name="com.easier.zjyd.session.TIMEOUT" />
+
+    <permission
+        android:name="com.pukka.ydepg.session.TIMEOUT"
+        android:protectionLevel="signature" />
+    <!-- Session超时的权限 end -->
+
+
+    <!-- Determine currently running task -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- Turn the screen on. Not kept for longer than one minute unless "keep screen on" is enabled -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- TV Permission config start -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.huawei.stb.xmpp.permission.XMPPSERVICE" />
+    <!--为ParentControlService添加权限-->
+    <permission android:name="com.pukka.ydepg.child.parentcontrol"
+        android:protectionLevel="normal"/>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+
+    <application
+        android:name=".OTTApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:logo="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- MainActivity -->
+        <activity
+            android:name=".launcher.ui.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".moudule.vod.activity.VodDetailActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+
+                <!--<data-->
+                    <!--android:host="com.pukka.ydepg"-->
+                    <!--android:path="/detail"-->
+                    <!--android:scheme="ydepg" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".moudule.vod.activity.NewVodDetailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.pukka.ydepg"
+                    android:path="/detail"
+                    android:scheme="ydepg" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".moudule.search.SearchActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".launcher.ui.ChildLauncherActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:launchMode="standard"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".moudule.player.ui.OnDemandVideoActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".moudule.player.ui.LiveTVActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".moudule.mytv.CollectionActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".moudule.mytv.ProductOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/PayTheme" />
+        <activity
+            android:name=".moudule.mytv.ordercenter.newOrderCenter.NewProductOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/PayTheme" />
+        <activity
+            android:name=".moudule.mytv.ordercenter.newOrderCenter.ProductTransitionActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/PayTheme" />
+        <activity
+            android:name=".moudule.mytv.OrderedListActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".moudule.mytv.MessageActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".moudule.mytv.MessageWebViewActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".moudule.mytv.AccountManagerActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/PayTheme"/>
+        <activity
+            android:name=".moudule.mytv.NewMyMovieActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".moudule.vod.activity.ChildModeVodDetailActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".moudule.catchup.activity.CatchUpActivity"
+            android:launchMode="singleTask" />
+
+        <activity
+            android:name=".service.NetworkExceptionDialog"
+            android:launchMode="singleTask"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".moudule.mytv.ZjYdUniAndPhonePayActivty"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape"
+            android:theme="@style/PayTheme"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name=".launcher.ui.fragment.WebActivity"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".moudule.mytv.MyOrderActivity"
+            android:configChanges="keyboard|keyboardHidden|navigation"
+            android:screenOrientation="landscape" />
+
+        <activity android:name=".launcher.ui.activity.PlayH5LiveTvActivity" />
+        <activity android:name=".launcher.ui.activity.AllAppInfoActivity" />
+        <activity android:name=".launcher.ui.activity.TopicActivity" />
+        <activity android:name=".moudule.mytv.ordercenter.newOrderCenter.NewMyPayModeActivity" />
+        <activity android:name=".moudule.mytv.ordercenter.newOrderCenter.NewOrderCenterActivity" />
+        <activity android:name=".moudule.catchup.activity.TVODProgramListActivity" />
+        <activity android:name=".moudule.children.activity.ParentSetCenterActivity" />
+        <activity android:name=".moudule.vod.activity.VodMainActivity" />
+        <activity android:name=".moudule.vod.activity.ActorActivity" />
+        <activity android:name=".moudule.vod.activity.OldActorActivity" />
+        <activity android:name=".moudule.vod.activity.PicBrowserActivity" />
+        <!--空间视频-->
+        <activity
+            android:name=".moudule.vrplayer.vrplayer.MainActivity">
+        </activity>
+        <activity
+            android:name=".moudule.vrplayer.vrplayer.VrPlayerActivity"
+            android:launchMode="singleInstance">
+        </activity>
+        <activity android:name=".moudule.vrplayer.vrplayer.module.config.PickFileActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+        <activity
+            android:name=".moudule.multviewforstb.multiview.module.main.MainActivity"
+            android:screenOrientation="landscape">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".moudule.multviewforstb.multiview.module.play.TVPlayActivity"
+            android:exported="true"
+            android:theme="@style/ColorTheme"
+            android:screenOrientation="landscape">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".moudule.multviewforstb.multiview.module.config.PickFileActivity"
+            android:exported="false"
+            android:theme="@style/ColorTheme"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".moudule.multviewforstb.multiview.module.play.freecamera.FreeCameraPlayActivity"
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+            <!--                <category android:name="android.intent.category.DEFAULT" />-->
+            <!--            </intent-filter>-->
+        </activity>
+
+        <meta-data
+            android:name="com.huawei.stb.multiview.PictureGlideModule"
+            android:value="GlideModule" />
+
+        <!-- 注册服务 -->
+        <service android:name=".moudule.children.service.ParentControlService"
+                android:exported="true"
+                android:permission="com.pukka.ydepg.child.parentcontrol">
+            <intent-filter>
+                <action android:name="com.pukka.ydepg.children.parentcontrolservice" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.NtpTimeService" />
+        <service android:name=".service.HeartBeatService" />
+
+
+
+
+
+        <!-- 注册广播 -->
+        <receiver android:name=".service.NetworkReceiver"
+            android:protectionLevel="signatureOrSystem">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".moudule.voice.VoiceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.iflytek.xiri.action.LIVE" />
+                <data   android:mimeType="xiri/com.iflytek.xiri.zjmhw.livechannels" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".moudule.voice.CatchUpVoiceReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.iflytek.xiri.action.TVBACK" />
+                <data   android:mimeType="xiri/com.iflytek.xiri.zjmhw.tvback" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data
+            android:name="OttGlideModule"
+            android:value="GlideModule" />
+
+    </application>
+</manifest>

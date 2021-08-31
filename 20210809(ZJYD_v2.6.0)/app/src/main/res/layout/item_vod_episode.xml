@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80px"
+    android:layout_height="50px"
+    android:background="@drawable/choose_episode_item_selector"
+    android:focusable="true">
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ondemand_episodes_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T23_C21_Light_size" />
+
+    <ImageView
+        android:id="@+id/vipimg"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/margin_19"
+        android:visibility="gone"
+        android:scaleType="fitStart"/>
+</RelativeLayout>

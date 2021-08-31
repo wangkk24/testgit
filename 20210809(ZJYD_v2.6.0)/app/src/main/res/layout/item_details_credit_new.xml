@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_5"
+    android:layout_marginRight="@dimen/margin_5"
+    android:focusable="true"
+    >
+    <TextView
+        android:id="@+id/credit_text"
+        android:layout_width="@dimen/margin_82"
+        android:layout_height="@dimen/margin_30"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="@dimen/margin_19"
+        android:textColor="#f3f6f6"
+        android:gravity="center"
+        android:background="@drawable/credit_bg_selector"
+        android:scrollHorizontally="true"
+        />
+</RelativeLayout>

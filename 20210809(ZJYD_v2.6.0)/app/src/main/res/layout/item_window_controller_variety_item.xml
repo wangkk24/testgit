@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_3"
+    >
+
+    <RelativeLayout
+        android:layout_width="@dimen/vod_controller_variety_item_width"
+        android:layout_height="@dimen/vod_controller_variety_item_height">
+
+        <ImageView
+            android:id="@+id/controller_item_bg"
+            android:layout_width="@dimen/vod_controller_variety_item_width"
+            android:layout_height="@dimen/vod_controller_variety_item_height"
+            android:src="@drawable/controller_variety_item_selector"
+            android:scaleType="fitXY"
+            android:focusable="true"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/vipimg"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_height="@dimen/margin_19"
+            android:scaleType="fitStart"
+            android:focusable="false"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/margin_30"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_18"
+        android:focusable="false">
+
+        <ImageView
+            android:id="@+id/controller_playing_icon"
+            android:layout_width="@dimen/margin_14"
+            android:layout_height="@dimen/margin_20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="@dimen/margin_14"
+            android:focusable="false"
+            android:paddingTop="@dimen/margin_6"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/controller_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_20"
+            android:textColor="@color/c38_color"
+            android:includeFontPadding="false"
+            android:layout_alignParentBottom="true"
+            android:text="18"
+            android:layout_toRightOf="@+id/controller_playing_icon"
+            android:maxWidth="@dimen/vod_controller_variety_text_maxwidth"
+
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="end"
+            android:focusable="false"
+
+            android:scrollHorizontally="true">
+
+        </TextView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

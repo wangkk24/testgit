@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/order_center_base_padding">
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/my_order_content_common_marginTop">
+
+        <TextView
+            android:id="@+id/tv_userinfo_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="@string/launcher_my_user_info"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/my_userInfo_textSize" />
+
+
+        <com.pukka.ydepg.moudule.featured.view.CircleImageView
+            android:id="@+id/cirleIv_my_function_avatar"
+            android:layout_width="@dimen/order_center_user_avatar_width"
+            android:layout_height="@dimen/order_center_user_avatar_width"
+            android:layout_below="@id/tv_userinfo_title"
+            android:layout_marginTop="@dimen/margin_28.5"
+            android:focusable="false"
+            android:src="@drawable/order_center_default_avatar" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_my_function_busness_account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cirleIv_my_function_avatar"
+            android:layout_marginLeft="@dimen/margin_70"
+            android:layout_toRightOf="@id/cirleIv_my_function_avatar"
+            android:focusable="false"
+            android:textColor="@color/white_0"
+            android:textSize="@dimen/order_center_userinfo_textsize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_below="@id/tv_my_function_busness_account_title"
+            android:layout_alignLeft="@id/tv_my_function_busness_account_title"
+            android:focusable="false"
+            android:textColor="@color/white_0"
+            android:textSize="@dimen/order_center_userinfo_textsize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_deviceVersion"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_userName"
+            android:layout_alignLeft="@id/tv_userName"
+            android:focusable="false"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/order_center_userinfo_textsize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_deviceVersion"
+            android:layout_alignLeft="@id/tv_deviceVersion"
+            android:layout_marginTop="@dimen/margin_8"
+            android:focusable="false"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/order_center_userinfo_textsize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_expiretime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_versionName"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_alignLeft="@id/tv_deviceVersion"
+            android:focusable="false"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/order_center_userinfo_textsize" />
+
+        <ImageView
+            android:id="@+id/iv_order_center_userinfo_QRcode"
+            android:layout_width="@dimen/order_center_userinfo_QRCode_width"
+            android:layout_height="@dimen/order_center_userinfo_QRCode_width"
+            android:layout_alignTop="@id/cirleIv_my_function_avatar"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/order_center_userinfo_QRCode_marginRight" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/order_center_line_width"
+            android:layout_height="@dimen/order_center_line_height"
+            android:layout_marginTop="@dimen/margin_30"
+            android:background="@color/white_transparent_20" />
+
+        <TextView
+            android:id="@+id/scan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginTop="@dimen/margin_30"
+            android:textColor="@color/c24_color"
+            android:text="@string/order_center_business_scan_title"
+            android:textSize="@dimen/my_userInfo_textSize" />
+
+        <LinearLayout
+            android:id="@+id/scan_left_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scan_title"
+            android:layout_marginLeft="@dimen/order_center_left_QRCode_marginLeft"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_order_center_broadband_tv_QR"
+                android:layout_width="@dimen/order_center_broadband_QRCode_width"
+                android:layout_height="@dimen/order_center_broadband_QRCode_width" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6"
+                android:text="@string/my_order_broadband_tv_title"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/order_center_scan_content_textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_order_broadband_tv_subtitle"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/order_center_scan_content_textSize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scan_title"
+            android:layout_marginLeft="@dimen/order_center_right_QRCode_marginLeft"
+            android:layout_toRightOf="@id/scan_left_container"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_order_center_broadband_QR"
+                android:layout_width="@dimen/order_center_broadband_QRCode_width"
+                android:layout_height="@dimen/order_center_broadband_QRCode_width" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_6"
+                android:text="@string/my_order_broadband_title"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/order_center_scan_content_textSize" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my_order_broadband_subtitle"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/order_center_scan_content_textSize" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/scan_left_container"
+            android:layout_marginLeft="@dimen/margin_248"
+            android:layout_marginTop="@dimen/margin_24"
+            android:text="@string/my_order_statement"
+            android:textColor="@color/c29_color"
+            android:textSize="@dimen/order_center_business_statement_textsize" />
+    </RelativeLayout>
+</LinearLayout>

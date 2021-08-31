@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+                                                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                  android:layout_width="match_parent"
+                                                  android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.pukka.ydepg.view.loadingball.MonIndicator
+        android:id="@+id/monIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:circleRadius="10dp"
+        app:circleSpacing="20dp"
+        app:cycle="600" />
+
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

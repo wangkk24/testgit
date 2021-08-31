@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_20">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/title_top"
+            android:gravity="center"
+            android:text="@string/migu_title"
+            android:textColor="@color/migu_text_color"
+            android:textSize="@dimen/featured_detail_32px" />
+
+        <ImageView
+            android:id="@+id/iv_line"
+            android:layout_width="900dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@color/migu_line_color" />
+
+        <TextView
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:maxWidth="900dp"
+            android:lineSpacingExtra="14px"
+            android:text="@string/migu_prompt"
+            android:textColor="@color/migu_text_color"
+            android:textSize="@dimen/margin_24"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rl_qrcode"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="284dp">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/iv_migulogo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/migu_logo"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/iv_close"
+            android:layout_width="230dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/rl_qrcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:background="@drawable/migu_close_button"
+            android:focusable="true"
+            android:text="关闭"
+            android:textStyle="bold"
+            android:textColor="@color/migu_text_color"
+            android:textSize="@dimen/margin_24" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/search_keyboard_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <!-- 三个键盘VIEW同时只展示一个-->
+    <!--全键盘-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyboard_char"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_keyboard_layout_height"
+        android:focusable="false">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--T9键盘-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyboard_t9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_keyboard_layout_height"
+        android:focusable="false"
+        android:visibility="gone">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!--数字键盘-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/keyboard_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_keyboard_layout_height"
+        android:focusable="false"
+        android:visibility="gone">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <!-- 底部[清空][0/Z][退格]公共布局 -->
+    <RelativeLayout
+        android:id="@+id/keyboard_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:layout_marginTop="@dimen/margin_6">
+
+        <!-- [清空]按键 -->
+        <LinearLayout
+            android:id="@+id/keyboard_clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/keyboard_Z_0"
+            android:layout_marginRight="@dimen/margin_19"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:background="@drawable/keyboard_item_selector"
+            android:focusable="true"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/margin_25"
+                android:layout_height="@dimen/margin_25"
+                android:paddingRight="@dimen/margin_3.75"
+                android:src="@drawable/search_clear"
+                android:scaleType="fitXY"
+                android:focusable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:gravity="center"
+                android:text="@string/search_keyboard_btn_clear"
+                android:singleLine="true"
+                android:textSize="@dimen/keyboard_item_change_text_size"
+                android:textColor="@color/c24_color"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <!-- [0/Z]按键 -->
+        <TextView
+            android:id="@+id/keyboard_Z_0"
+            android:layout_width="@dimen/margin_42"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Z"
+            android:textSize="@dimen/keyboard_item_text_size"
+            android:textColor="@color/c24_color"
+            android:background="@drawable/keyboard_item_selector"/>
+
+        <!-- [删除]按键 -->
+        <LinearLayout
+            android:id="@+id/keyboard_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/keyboard_Z_0"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:background="@drawable/keyboard_item_selector"
+            android:focusable="true"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="@dimen/margin_33"
+                android:layout_height="@dimen/margin_25"
+                android:paddingRight="@dimen/margin_2"
+                android:src="@drawable/search_delete"
+                android:scaleType="fitXY"
+                android:focusable="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:gravity="center"
+                android:text="@string/search_keyboard_btn_delete"
+                android:singleLine="true"
+                android:textSize="@dimen/keyboard_item_change_text_size"
+                android:textColor="@color/c24_color"
+                android:focusable="false"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <!-- 底部[全键盘][T9键盘][数字键盘]切换键盘公共布局 -->
+    <LinearLayout
+        android:id="@+id/keyboard_switch_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45"
+        android:layout_marginTop="@dimen/margin_8"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/switch_char_keyboard"
+            android:layout_width="@dimen/margin_75"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_background_drawable_selector"
+            android:layout_marginLeft="@dimen/margin_17"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="全键盘"
+            android:textSize="@dimen/keyboard_symbol_size"
+            android:textColor="@drawable/search_switch_keyboard_text_selector"/>
+
+        <TextView
+            android:id="@+id/switch_t9_keyboard"
+            android:layout_width="@dimen/margin_75"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_background_drawable_selector"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="T9键盘"
+            android:textSize="@dimen/keyboard_symbol_size"
+            android:textColor="@drawable/search_switch_keyboard_text_selector" />
+
+        <TextView
+            android:id="@+id/switch_number_keyboard"
+            android:layout_width="@dimen/margin_75"
+            android:layout_height="match_parent"
+            android:background="@drawable/search_background_drawable_selector"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="123"
+            android:textSize="@dimen/keyboard_symbol_size"
+            android:textColor="@drawable/search_switch_keyboard_text_selector"/>
+    </LinearLayout>
+
+</LinearLayout>

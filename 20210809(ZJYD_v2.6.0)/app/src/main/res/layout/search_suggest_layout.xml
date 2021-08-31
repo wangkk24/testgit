@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_suggest_item_height"
+    android:id="@+id/search_suggest_item_layout"
+    android:paddingLeft="@dimen/margin_20"
+    android:paddingTop="@dimen/margin_5"
+    android:paddingBottom="@dimen/margin_5"
+    android:focusable="true"
+    android:background="@drawable/keyboard_item_selector">
+    <TextView
+        android:id="@+id/search_suggest_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/search_result_name_text_size"
+        android:textColor="@drawable/search_associationn_item_selector" />
+</RelativeLayout>

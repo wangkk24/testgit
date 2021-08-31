@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="@dimen/detail_total_episode_bg_width"
+    android:layout_height="@dimen/margin_86"
+    android:focusable="true"
+    android:layout_marginTop="@dimen/featured_detail_10px"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:layout_marginStart="@dimen/margin_8"
+    android:layout_marginEnd="@dimen/margin_4"
+    android:background="@drawable/detail_episode_item_veriety_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/font_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_15"
+        android:paddingEnd="@dimen/margin_12"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/playimg"
+            android:layout_marginStart="@dimen/margin_3"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/detail_selected_icon"
+            android:layout_width="@dimen/margin_8"
+            android:layout_height="@dimen/margin_13"
+            android:scaleType="fitXY"
+            android:src="@drawable/detail_selected_icon"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <com.pukka.ydepg.moudule.vod.utils.DetailVerticalScrollTextView
+        android:id="@+id/episodes_name"
+        android:layout_marginTop="@dimen/margin_15"
+        android:layout_marginEnd="@dimen/margin_27"
+        android:layout_toRightOf="@+id/font_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_52"
+        android:paddingLeft="@dimen/margin_4"
+        android:paddingTop="@dimen/margin_2.5"
+        app:tv_line="2"
+        android:textColor="@color/white_0"
+        android:textSize="@dimen/margin_20"
+        android:focusable="true"
+        />
+
+    <ImageView
+        android:id="@+id/vipimg"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/margin_19"
+        android:scaleType="fitStart"/>
+
+    <ImageView
+        android:id="@+id/episodes_mark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/detail_episode_mark"
+        android:visibility="gone"/>
+</RelativeLayout>

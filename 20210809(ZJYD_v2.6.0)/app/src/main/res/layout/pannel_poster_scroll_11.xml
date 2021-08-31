@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/pan_width_1280"
+    android:layout_height="wrap_content"
+    android:focusable="false">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/home_pannel_title_layout" />
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:id="@+id/rl_container_auto_scroll_tem"
+        android:layout_width="@dimen/pan_poster11_item_width"
+        android:layout_height="@dimen/pan_poster11_item_height"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+        android:layout_below="@id/rl_title"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:focusable="true">
+
+        <com.pukka.ydepg.customui.tv.autoscroll.AutoScrollViewPager
+            android:id="@+id/auto_scroll_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dot_marginleft="@dimen/margin_12"
+            app:dot_selected="@drawable/auto_scroll_pager_dot_focused"
+            app:dot_unselect="@drawable/auto_scroll_pager_dot_unfocused"
+            app:dots_marginBottom="@dimen/margin_25"
+            app:dots_marginRight="@dimen/margin_36"
+            android:focusable="false">
+
+        </com.pukka.ydepg.customui.tv.autoscroll.AutoScrollViewPager>
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/simple_epg_shimmer_imageview"
+            />
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+
+</merge>

@@ -1,0 +1,27 @@
+<!-- 背景图片长宽比 3.43-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_upgrade_width"
+    android:layout_height="@dimen/dialog_upgrade_confirm_height"
+    android:background="@drawable/upgrade_notification"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/upgrade_btn_cancel"
+        android:layout_width="@dimen/dialog_upgrade_confirm_btn_width"
+        android:layout_height="@dimen/dialog_upgrade_confirm_btn_height"
+        android:layout_marginStart="@dimen/dialog_upgrade_confirm_btn_cancel_posX"
+        android:layout_marginTop="@dimen/dialog_upgrade_confirm_btn_cancel_posY"
+        android:src="@drawable/selector_upgrade_confirm_cancel"
+        android:focusable="true"/>
+
+    <ImageView
+        android:id="@+id/upgrade_btn_ok"
+        android:layout_width="@dimen/dialog_upgrade_confirm_btn_width"
+        android:layout_height="@dimen/dialog_upgrade_confirm_btn_height"
+        android:layout_alignTop="@id/upgrade_btn_cancel"
+        android:layout_toRightOf="@id/upgrade_btn_cancel"
+        android:layout_marginStart="@dimen/dialog_upgrade_confirm_btn_ok_posX"
+        android:src="@drawable/selector_upgrade_confirm_ok"
+        android:focusable="true"/>
+
+</RelativeLayout>

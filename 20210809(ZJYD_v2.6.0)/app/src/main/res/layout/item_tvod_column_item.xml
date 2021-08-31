@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.FrameLayoutFocusLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fm_container"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_width="@dimen/tVodProgramList_MenuItem_ItemWidth"
+    android:layout_height="@dimen/tVodProgramList_MenuItem_ItemHeight_NoSelect">
+
+    <TextView
+        android:id="@+id/tv_content_name"
+        android:gravity="center"
+        android:layout_gravity="center"
+        style="@style/style_view_no_focusable"
+        android:paddingRight="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_8"
+        android:textSize="@dimen/unipay_productprice_textsize"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:layout_width="match_parent"
+        android:textColor="@drawable/tvod_program_menuitem_textselector"
+        android:layout_height="@dimen/tVodProgramList_MenuItem_ItemHeight_NoSelect"/>
+</com.pukka.ydepg.customui.focusView.FrameLayoutFocusLayout>

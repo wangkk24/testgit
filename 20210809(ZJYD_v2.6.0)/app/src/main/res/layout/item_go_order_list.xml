@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/go_order_item_width"
+    android:layout_height="@dimen/order_center_my_go_item_heigh"
+    android:layout_marginLeft="@dimen/margin_16"
+    android:layout_marginTop="@dimen/margin_16"
+    android:background="@drawable/movies_list_item_selector"
+    android:focusable="true"
+    android:padding="@dimen/movies_list_item_img_bg_padding">
+
+
+    <ImageView
+        android:id="@+id/iv_go_order_item_poster"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/go_order_item_poster_height"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_go_order_item_superscript"
+        android:layout_width="@dimen/go_order_item_superscript_width"
+        android:layout_height="@dimen/go_order_item_superscript_width"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/superscript_bg" />
+
+
+    <TextView
+        android:id="@+id/tv_go_order_item_superscript"
+        android:layout_width="@dimen/go_order_item_superscript_width"
+        android:layout_height="@dimen/go_order_item_superscript_width"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:rotation="45"
+        android:singleLine="true"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/go_order_item_superscript_textSize"
+        android:layout_marginTop="-10dp"
+        android:layout_marginRight="-8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/go_order_item_bottom_height"
+        android:layout_below="@id/iv_go_order_item_poster"
+        android:background="@color/c30_3_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_go_order_item_name"
+            android:layout_width="@dimen/go_order_item_name_with"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/white_transparent_60"
+            android:textSize="@dimen/go_order_item_name_textSize" />
+
+        <TextView
+            android:id="@+id/tv_go_order_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@color/c37_color"
+            android:textSize="@dimen/go_order_item_price_textSize" />
+    </LinearLayout>
+</RelativeLayout>

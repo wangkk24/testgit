@@ -1,0 +1,199 @@
+{
+  "background": "",
+  "isShowPlayVersion": true,
+  "loginRouteForUpgrade":"",
+  "crashPolicy":"1",
+  "isShowSpeed": false,
+  "showLogcat": false,
+  "showCameraView": false,
+  "allVideoConfig": [
+    {
+      "ResourcePlayURL": [
+        "http://173.8.255.56/88888888/16/20200803/268436600/268436600.mpd"
+      ],
+      "ResourceName": "傣族舞蹈",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "mainCameraId": 0,
+      "CameraDegree": 360,
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200616/268436400/268436400.mpd"
+      ],
+      "ResourceName": "拳击",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "mainCameraId": 0,
+      "CameraDegree": 360,
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      },
+      "isRecyclePlay": false
+    },
+    {
+      "ResourcePlayURL": [
+        "http://10.164.180.209/88888888/16/202000811/279430006/279430006.mpd"
+      ],
+      "ResourceName": "内网傣族舞蹈",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "mainCameraId": 0,
+      "CameraDegree": 360,
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200723/268436549/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200723/268436551/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200723/268436550/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200723/268436552/index.m3u8"
+      ],
+      "ResourceName": "多机位点播长稳4h",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200605/268436372/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200605/268436374/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200605/268436371/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200605/268436373/index.m3u8"
+      ],
+      "ResourceName": "1080多机位PTS",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200605/268436372/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200605/268436374/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200605/268436371/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200605/268436373/index.m3u8"
+      ],
+      "ResourceName": "1080多机位PTS-4平分",
+      "MediaType": 2,
+      "Viewtype": 1,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200603/268436351/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200603/268436353/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200603/268436352/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200603/268436350/index.m3u8"
+      ],
+      "ResourceName": "0603多机位机顶盒0510",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200520/268436263/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200520/268436262/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200520/268436261/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200520/268436260/index.m3u8"
+      ],
+      "ResourceName": "多机位机顶盒0520",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/88888888/16/20200520/268436263/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200520/268436262/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200520/268436261/index.m3u8",
+        "http://192.170.107.128/88888888/16/20200520/268436260/index.m3u8"
+      ],
+      "ResourceName": "duojiwei_2h48m_PTS_three1080P_one4k_25fps",
+      "MediaType": 2,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    },
+    {
+      "ResourcePlayURL": [
+        "http://192.170.107.128/PLTV/88888888/224/3221225660/index.m3u8",
+        "http://192.170.107.128/PLTV/88888888/224/3221225658/index.m3u8",
+        "http://192.170.107.128/PLTV/88888888/224/3221225659/index.m3u8",
+        "http://192.170.107.128/PLTV/88888888/224/3221225661/index.m3u8"
+      ],
+      "ResourceName": "多机位直播真实流",
+      "MediaType": 1,
+      "Viewtype": 0,
+      "Bookmark": 0,
+      "ContentID": "",
+      "ReturnURL": "",
+      "enforceProgressiveScanning": "",
+      "picture": {
+        "playBackground": "",
+        "posterUrl": ""
+      }
+    }
+  ]
+}

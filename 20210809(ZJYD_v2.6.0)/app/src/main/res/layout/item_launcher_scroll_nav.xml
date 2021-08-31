@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--focusableInTouchMode只是测试鼠标效果-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/tv_nav_parent"
+    android:layout_height="@dimen/launcher_nav_item_height"
+
+    android:focusable="true"
+    android:gravity="center">
+    <!--android:background="@drawable/activity_launcher_nav_selector"-->
+
+    <RelativeLayout
+        android:id="@+id/rl_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/launcher_nav_item_height"
+        android:paddingLeft="@dimen/launcher_nav_item_padding"
+        android:paddingRight="@dimen/launcher_nav_item_padding"
+        android:layout_gravity="center"
+        android:focusable="false">
+        <ImageView
+            android:id="@+id/im_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:layout_height="@dimen/launcher_nav_item_height" />
+        <TextView
+            android:id="@+id/tv_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="item1"
+            android:textColor="@color/transparent"
+            android:textSize="@dimen/launcher_nav_item_textSize" />
+    </RelativeLayout>
+</FrameLayout>

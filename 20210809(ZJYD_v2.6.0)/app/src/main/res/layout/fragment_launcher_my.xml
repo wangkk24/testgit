@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.FrameLayoutExt xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.pukka.ydepg.launcher.view.FocusRelativeLayoutExt
+        android:id="@+id/rl_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/my_container_marginTop"
+        android:clipChildren="false"
+        android:focusable="false"
+        android:clipToPadding="false">
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/my_userInfo_marginLeft"
+            android:layout_marginTop="@dimen/my_userInfo_marginTop"
+            android:focusable="false"
+            android:text="@string/launcher_my_user_info"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/my_userInfo_textSize"
+            android:textStyle="bold" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/maccountname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_marginTop="88dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:text="@string/launcher_my_user_name"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_productEnd_textSize" />
+
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_marginTop="112dp"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxEms="15"
+            android:singleLine="true"
+            android:text="@string/launcher_my_user_name"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_productEnd_textSize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_productEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_marginTop="@dimen/my_versionname_margin_top"
+            android:focusable="false"
+            android:text="@string/launcher_my_product_end"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_productEnd_textSize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_deviceVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_marginTop="@dimen/my_deviceversion_margin_top"
+            android:focusable="false"
+            android:text="@string/launcher_my_device_version"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_productEnd_textSize" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_versionName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_marginTop="@dimen/my_versionname_margin_top"
+            android:focusable="false"
+            android:text="@string/launcher_my_stbId"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_productEnd_textSize" />
+
+
+        <!--<com.pukka.ydepg.common.extview.TextViewExt-->
+        <!--android:id="@+id/tv_appVersion"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@id/tv_userInfo"-->
+        <!--android:layout_below="@id/tv_deviceVersion"-->
+        <!--android:layout_marginTop="@dimen/my_productEnd_margin_top"-->
+        <!--android:focusable="false"-->
+        <!--android:text="STBID：xxxxxx"-->
+        <!--android:textColor="@color/c21_color"-->
+        <!--android:textSize="@dimen/my_productEnd_textSize" />-->
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_stbId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_marginTop="@dimen/my_stbId_margin_top"
+            android:focusable="false"
+            android:text="@string/launcher_my_stbId"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/my_productEnd_textSize" />
+
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/tv_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_36"
+            android:layout_marginLeft="@dimen/my_function_margin_left"
+            android:focusable="false"
+            android:text="@string/launcher_my_function"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/my_userInfo_textSize"
+            android:textStyle="bold" />
+
+        <com.pukka.ydepg.common.extview.RelativeLayoutExt
+            android:id="@+id/rl_btnLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/my_btnLayout_height"
+            android:focusable="false"
+            android:layout_alignLeft="@id/tv_function"
+            android:layout_alignTop="@id/maccountname"
+            android:layout_marginBottom="@dimen/my_btnLayout_margin_bottom">
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_layoutOrder"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:background="@color/c09_color"
+                android:focusable="true"
+                android:nextFocusDown="@+id/tv_playHistory"
+                android:nextFocusLeft="@+id/tv_playHistory">
+
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_order"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/my_order" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_order"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:text="@string/launcher_my_order"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutNoFocus
+                android:id="@+id/rl_layoutMySubscrible"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:layout_toRightOf="@id/rl_layoutOrder"
+                android:background="@color/c09_color"
+                android:visibility="gone">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_reserve"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/reserve_48" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_reserve"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:text="@string/launcher_my_reserve"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutNoFocus>
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_layoutInfo"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:visibility="gone"
+                android:layout_toRightOf="@id/rl_layoutMySubscrible"
+                android:background="@color/c09_color"
+                android:focusable="false"
+                android:nextFocusDown="@+id/tv_playHistory">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_admin"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/admin_48"
+                    android:focusable="false" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_admin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:focusable="false"
+                    android:text="@string/launcher_my_base_info"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_layoutMessage"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:layout_toRightOf="@id/rl_layoutInfo"
+                android:background="@color/c09_color"
+                android:focusable="true"
+                android:nextFocusDown="@+id/tv_playHistory">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_message"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/message_48"
+                    android:focusable="false" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_message"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:focusable="false"
+                    android:text="@string/launcher_my_message"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_layoutAccount"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:layout_toRightOf="@id/rl_layoutMessage"
+                android:background="@color/c09_color"
+                android:focusable="true"
+                android:nextFocusDown="@+id/tv_playHistory">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_bind"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/bind_48"
+                    android:focusable="false" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_bind"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:focusable="false"
+                    android:text="@string/launcher_my_bind"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_layoutHelp"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:layout_toRightOf="@id/rl_layoutAccount"
+                android:background="@color/c09_color"
+                android:focusable="true"
+                android:nextFocusDown="@+id/tv_playHistory">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_help"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/help"
+                    android:focusable="false" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_help"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:focusable="false"
+                    android:text="@string/launcher_my_help"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_switchprf"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:layout_toRightOf="@id/rl_layoutAccount"
+                android:background="@color/c09_color"
+                android:focusable="true"
+                android:nextFocusDown="@+id/tv_playHistory">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_switchprf"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/switchprofile"
+                    android:focusable="false" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_switchprf"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:focusable="false"
+                    android:text="@string/switch_profile"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_localplay"
+                android:layout_width="@dimen/my_layout_item_width"
+                android:focusable="true"
+                android:layout_height="@dimen/my_layout_item_height"
+                android:layout_marginLeft="@dimen/my_btnItem_margin_left"
+                android:layout_toRightOf="@id/rl_switchprf"
+                android:background="@color/c09_color"
+                android:visibility="visible"
+                android:nextFocusDown="@+id/tv_playHistory">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_localplay"
+                    android:layout_width="@dimen/my_btn_image_size"
+                    android:layout_height="@dimen/my_btn_image_size"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_image_margin_top"
+                    android:background="@drawable/localplay"
+                    android:focusable="false" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_localplay"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_btn_text_margin_top"
+                    android:focusable="false"
+                    android:text="老人桌面"
+                    android:textColor="@color/c24_color"
+                    android:textSize="@dimen/my_productEnd_textSize"
+                    android:textStyle="bold" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+
+        </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+        <com.pukka.ydepg.common.extview.RelativeLayoutExt
+            android:id="@+id/rl_historyFav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_btnLayout"
+            android:layout_marginLeft="@dimen/my_userInfo_marginLeft"
+            android:layout_marginTop="@dimen/my_history_margin_top_new"
+            android:focusable="false">
+
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/tv_playHistory"
+                android:layout_width="@dimen/my_playHistory_width"
+                android:layout_height="@dimen/my_playHistory_height"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusRight="@+id/tv_collect"
+                android:text="@string/launcher_my_play_history"
+                android:textColor="@drawable/activity_launcher_text_selector"
+                android:textSize="@dimen/my_userInfo_textSize" />
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/tv_collect"
+                android:layout_width="@dimen/my_playHistory_width"
+                android:layout_height="@dimen/my_playHistory_height"
+                android:layout_marginLeft="@dimen/my_collect_margin_left"
+                android:layout_toRightOf="@id/tv_playHistory"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusLeft="@id/tv_playHistory"
+                android:text="@string/launcher_my_collect"
+                android:textColor="@drawable/activity_launcher_text_selector"
+                android:textSize="@dimen/my_userInfo_textSize" />
+
+            <!--<com.pukka.ydepg.common.extview.TextViewExt-->
+                <!--android:id="@+id/tv_test"-->
+                <!--android:layout_width="@dimen/my_playHistory_width"-->
+                <!--android:layout_height="@dimen/my_playHistory_height"-->
+                <!--android:layout_marginLeft="@dimen/my_collect_margin_left"-->
+                <!--android:layout_toRightOf="@id/tv_collect"-->
+                <!--android:focusable="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/launcher_my_collect"-->
+                <!--android:textColor="@drawable/activity_launcher_text_selector"-->
+                <!--android:textSize="@dimen/my_userInfo_textSize" />-->
+
+        </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+        <com.pukka.ydepg.common.extview.RelativeLayoutExt
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:focusable="false"
+            android:layout_alignLeft="@id/tv_userInfo"
+            android:layout_below="@id/rl_historyFav"
+            android:layout_marginTop="@dimen/my_list_margin_top"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="326dp"
+                android:focusable="false" />
+
+            <com.pukka.ydepg.customui.tv.widget.RecyclerViewTV
+                android:id="@+id/rv_viewPlayRecord"
+                android:layout_width="@dimen/launcher_playrecord_width"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:focusable="false" />
+
+            <com.pukka.ydepg.customui.tv.widget.ReflectItemView
+                android:visibility="invisible"
+                android:layout_toRightOf="@id/rv_viewPlayRecord"
+                android:layout_alignTop="@id/rv_viewPlayRecord"
+                android:id="@+id/rt_moreItem"
+                app:isShape="true"
+                app:radius="@dimen/my_moreItem_radius"
+                android:layout_width="@dimen/my_itemView_history_width"
+                android:layout_height="@dimen/my_itemView_movies_pic_height"
+                android:clipChildren="false"
+                android:focusable="true">
+
+                <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                    android:id="@+id/rl_moreItem"
+                    android:layout_width="@dimen/my_itemView_history_width"
+                    android:layout_height="@dimen/my_itemView_movies_pic_height">
+
+                    <com.pukka.ydepg.common.extview.ImageViewExt
+                        android:id="@+id/iv_moreImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/more"
+                        android:scaleType="centerCrop" />
+
+                    <com.pukka.ydepg.common.extview.TextViewExt
+                        android:id="@+id/tv_moreText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/my_moreText_margin_top"
+                        android:text="@string/launcher_my_more_history"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/T23_C21_Light_size" />
+                </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+            </com.pukka.ydepg.customui.tv.widget.ReflectItemView>
+        </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+
+    </com.pukka.ydepg.launcher.view.FocusRelativeLayoutExt>
+</com.pukka.ydepg.common.extview.FrameLayoutExt>

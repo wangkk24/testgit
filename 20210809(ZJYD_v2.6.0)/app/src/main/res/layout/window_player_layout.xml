@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.tv.PlayViewWindow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playview_window"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:visibility="gone"
+    app:AutoPlay="true"
+    app:isLittle="true"
+    app:play_resize_mode="AUTO"
+    app:play_type="TYPE_EXO">
+
+</com.pukka.ydepg.customui.tv.PlayViewWindow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_bg_layout"
+    android:layout_width="@dimen/new_voddetail_item_withouttitle_width"
+    android:layout_height="@dimen/margin_137"
+    android:padding="@dimen/margin_2"
+    android:background="@drawable/mytv_history_list_item_selector"
+    android:focusable="true"
+    android:layout_marginStart="@dimen/margin_1.5">
+
+    <com.pukka.ydepg.launcher.view.CustomRoundImageView
+        android:id="@+id/item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_poster_bg"
+        app:radius_imageview="8dp"
+        android:focusable="false"
+        />
+    <ImageView
+        android:id="@+id/vipimg"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="@dimen/margin_26"
+        android:layout_marginStart="@dimen/margin_10"
+        android:scaleType="fitStart"/>
+    
+</RelativeLayout>

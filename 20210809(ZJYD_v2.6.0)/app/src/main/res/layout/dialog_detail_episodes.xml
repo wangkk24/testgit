@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280px"
+    android:layout_height="720px"
+    android:background="@drawable/popup_dialog_bg_shadow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="740px"
+        android:layout_marginTop="96px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20px"
+            android:layout_marginLeft="30px"
+            android:text="选集"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T12_C21_Bold_size"
+            android:textStyle="bold" />
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/total_episodes"
+            android:layout_width="400px"
+            android:layout_height="60px" />
+
+        <View
+            android:id="@+id/episodes_line"
+            android:layout_width="400px"
+            android:layout_height="1px"
+            android:layout_marginTop="10px"
+            android:background="@color/c17_color" />
+
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/choose_episodes"
+            android:layout_width="400px"
+            android:layout_height="350px"
+            android:layout_marginTop="10px" />
+    </LinearLayout>
+</RelativeLayout>

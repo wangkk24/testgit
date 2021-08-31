@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/style_two_item_width"
+    android:layout_height="@dimen/style_two_item_height"
+    android:layout_marginBottom="@dimen/style_one_item_margin"
+    android:layout_marginTop="@dimen/style_one_item_margin"
+    android:layout_marginLeft="@dimen/style_one_item_margin"
+    android:layout_marginRight="@dimen/style_one_item_margin"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/movies_list_item_img_bg"
+        android:layout_width="@dimen/style_two_item_width"
+        android:layout_height="@dimen/style_two_item_height"
+        android:background="@drawable/movies_list_item_selector"
+        >
+
+        <ImageView
+            android:id="@+id/movies_list_item_img"
+            android:layout_width="@dimen/style_two_item_width"
+            android:layout_height="@dimen/style_two_item_height"
+            android:padding="@dimen/style_image_padding"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_poster_bg" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/movies_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/style_two_text_margin"
+            android:layout_marginLeft="@dimen/style_two_text_margin"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/style_two_text_size" />
+    </RelativeLayout>
+</LinearLayout>

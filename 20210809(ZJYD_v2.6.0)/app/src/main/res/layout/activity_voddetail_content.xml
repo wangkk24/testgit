@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginRight="@dimen/details_view_margin"
+    android:layout_marginTop="@dimen/details_view_top">
+
+
+    <TextView
+        android:id="@+id/details_description_title"
+        android:layout_width="@dimen/details_descriptions_width"
+        android:layout_marginLeft="@dimen/details_view_margin"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="1"
+        android:singleLine="true"
+        android:textColor="@color/c21_color"
+        android:textSize="@dimen/T27_C21_Bold_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/detail_infos"
+        android:layout_marginLeft="@dimen/details_view_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_description_title"
+        android:layout_marginTop="@dimen/details_star_view_to_title_top"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/details_description_star_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                style="@style/detailRatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/details_description_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/details_description_score_margin_left"
+            android:textColor="@color/c21_color"
+            android:textSize="@dimen/T24_C21_Light_size" />
+
+        <TextView
+            android:id="@+id/details_description_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/details_description_info_margin_left"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T24_C24_Light_size" />
+
+        <ImageView
+            android:id="@+id/details_description_video_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/details_description_video_info1_margin_left" />
+
+        <ImageView
+            android:id="@+id/details_description_video_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/details_description_video_info2_margin_left" />
+    </LinearLayout>
+    <!--描述-->
+    <!--<ScrollView-->
+        <!--android:id="@+id/details_descriptions_scroll"-->
+        <!--android:layout_width="@dimen/details_descriptions_width"-->
+        <!--android:layout_height="@dimen/details_descriptions_height"-->
+        <!--android:layout_below="@id/detail_infos"-->
+        <!--android:layout_marginTop="@dimen/details_description_padding"-->
+        <!--android:background="@drawable/detail_des_selector"-->
+        <!--android:padding="@dimen/details_description_padding"-->
+        <!--android:scrollbars="none">-->
+
+        <com.pukka.ydepg.common.extview.VerticalScrollTextView
+            android:id="@+id/details_descriptions"
+            android:layout_marginLeft="@dimen/details_star_view_to_title_margin"
+            android:layout_below="@id/detail_infos"
+            android:padding="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_width="@dimen/details_descriptions_width"
+            android:layout_height="@dimen/details_descriptions_height"
+            android:lineSpacingExtra="@dimen/details_descriptions_lineSpacingExtra"
+            android:background="@drawable/detail_des_selector"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T24_C24_Light_size" />
+    <!--</ScrollView>-->
+    <!--vod背景-->
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/profile_limit_width"
+        android:layout_marginTop="@dimen/margin_20"
+        android:focusable="false"
+        android:layout_toRightOf="@id/details_descriptions"
+        android:layout_width="@dimen/details_poster_width"
+        android:layout_height="@dimen/details_poster_height">
+    <ImageView
+        android:id="@+id/details_poster"
+        android:layout_width="@dimen/details_poster_width"
+        android:layout_height="@dimen/details_poster_height"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/default_poster238" />
+    <ImageView
+        android:id="@+id/detail_poster_left_icon"
+        android:layout_width="@dimen/movies_list_no_content_img_width"
+        android:layout_height="@dimen/movies_list_no_content_img_width"
+        android:scaleType="fitXY"
+         />
+    <View
+        android:id="@+id/detail_poster_right_icon"
+        android:layout_width="@dimen/movies_list_no_content_img_width"
+        android:layout_height="@dimen/movies_list_no_content_img_width"
+        android:layout_alignParentRight="true"
+       />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/details_data_source"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/details_view_margin"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_descriptions"
+        android:layout_marginTop="@dimen/margin_30"
+        android:textColor="@color/c24_color"
+        android:textSize="@dimen/T24_C24_Light_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_4k_warnning"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/details_view_margin"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_data_source"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/c34_color"
+        android:textSize="@dimen/T24_C24_Light_size"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/details_buttons"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/details_view_margin"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_4k_warnning"
+        android:layout_marginTop="@dimen/featured_detail_15dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <RelativeLayout
+            android:id="@+id/play_rel"
+            android:layout_width="@dimen/details_buttons_height"
+            android:layout_height="@dimen/details_buttons_height"
+            android:background="@drawable/detail_button_circle_selector"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/playimg"
+                android:layout_width="@dimen/margin_24"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin_24"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/details_descriptions_margin_top"
+                android:focusable="false"
+                android:src="@drawable/play_16" />
+
+            <TextView
+                android:id="@+id/play_buy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_1.5"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:text="播放"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/middle_text_size_18" />
+
+            <ImageView
+                android:id="@+id/play_mark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/detail_btn_mark"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/col_rel"
+            android:layout_width="@dimen/details_buttons_height"
+            android:layout_height="@dimen/details_buttons_height"
+            android:layout_marginLeft="@dimen/featured_detail_32px"
+            android:background="@drawable/detail_button_circle_selector"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/colimg"
+                android:layout_width="@dimen/margin_24"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin_24"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/details_descriptions_margin_top"
+                android:focusable="false"
+                android:src="@drawable/details_button_favorite_icon" />
+
+            <TextView
+                android:id="@+id/colbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/colimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_1.5"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:text="收藏"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/middle_text_size_18" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buy_rel"
+            android:layout_width="@dimen/details_buttons_height"
+            android:layout_height="@dimen/details_buttons_height"
+            android:layout_marginLeft="@dimen/featured_detail_32px"
+            android:background="@drawable/detail_button_circle_selector"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/vipimg"
+                android:layout_width="@dimen/margin_33"
+                android:scaleType="fitXY"
+                android:layout_height="@dimen/margin_16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/details_buttion_img_top"
+                android:focusable="false"
+                android:src="@drawable/details_button_vip" />
+
+            <TextView
+                android:id="@+id/buybutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vipimg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/me_margin_5dp"
+                android:focusable="false"
+                android:gravity="center_vertical"
+                android:text="订购"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/middle_text_size_18" />
+
+            <ImageView
+                android:id="@+id/vip_mark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:background="@drawable/detail_btn_mark"/>
+        </RelativeLayout>
+
+        <com.pukka.ydepg.common.extview.RelativeLayoutExt
+            android:id="@+id/advert_bg"
+            android:layout_width="@dimen/details_poster_height"
+            android:layout_height="@dimen/details_buttons_height"
+            android:layout_marginLeft="@dimen/featured_detail_32px"
+            android:background="@drawable/movies_list_item_selector"
+            android:focusable="false"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/advert"
+                android:layout_width="@dimen/details_poster_height"
+                android:layout_height="@dimen/details_buttons_height"
+                android:padding="@dimen/margin_2"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:focusable="false"/>
+        </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/episodes_lly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_buttons"
+        android:layout_marginTop="@dimen/margin_12"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.leanback.widget.HorizontalGridView
+            android:id="@+id/total_episodes"
+            android:layout_marginLeft="@dimen/details_view_margin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unipay_marginleft_40" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/choose_episodes"
+            android:layout_marginLeft="@dimen/progress_dialog_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

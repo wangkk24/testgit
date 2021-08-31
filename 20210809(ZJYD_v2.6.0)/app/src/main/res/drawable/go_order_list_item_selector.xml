@@ -1,0 +1,7 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/go_order_list_item_bg_focused"
+          android:state_selected="true" />
+    <item android:drawable="@drawable/go_order_list_item_bg_focused"
+        android:state_focused="true" />
+    <item android:drawable="@drawable/go_order_list_item_bg" />
+</selector>

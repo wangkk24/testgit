@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        style="@style/style_view_no_focusable"
+        android:layout_width="@dimen/tVodProgramList_MenuItem_ItemWidth"
+        android:background="#80070707"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_column_name"
+            style="@style/style_view_no_focusable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/movies_list_filter_img_margin_left"
+            android:layout_marginTop="@dimen/tVodProgramList_MenuItem_ItemTitle_MarginTop"
+            android:text="栏目标题"
+            android:textColor="@color/tVodProgramList_MenuItem_TextColor"
+            android:textSize="@dimen/tVodProgramList_MenuItem_ItemTitle_TextSize"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            />
+
+        <androidx.leanback.widget.VerticalGridView
+            android:id="@+id/list_column"
+            style="@style/style_view_focusable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/tv_mine_list_title"
+        android:layout_width="@dimen/my_playHistory_width"
+        android:layout_height="@dimen/my_playHistory_height"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+        android:layout_marginTop="@dimen/margin_8"
+        android:focusable="false"
+        android:textColor="@color/c24_color"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:textSize="@dimen/my_userInfo_textSize" />
+    <include layout="@layout/home_pannel_title_layout"
+        android:id="@+id/rl_title"/>
+
+    <com.pukka.ydepg.common.extview.RelativeLayoutExt
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <com.pukka.ydepg.customui.tv.widget.RecyclerViewTV
+            android:id="@+id/rv_viewPlayRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            android:focusable="false" />
+
+        <com.pukka.ydepg.customui.tv.widget.RecyclerViewTV
+            android:id="@+id/rv_viewPlayRecord_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:visibility="gone"
+            android:focusable="false" />
+
+        <com.pukka.ydepg.customui.tv.widget.ReflectItemView
+            android:id="@+id/rt_moreItem"
+            android:layout_width="@dimen/my_itemView_history_width"
+            android:layout_height="@dimen/my_itemView_movies_pic_height"
+            android:layout_alignTop="@id/rv_viewPlayRecord_my"
+            android:layout_toRightOf="@id/rv_viewPlayRecord_my"
+            android:clipChildren="false"
+            android:focusable="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:visibility="invisible"
+            app:isShape="true"
+            app:radius="@dimen/my_moreItem_radius">
+
+            <com.pukka.ydepg.common.extview.RelativeLayoutExt
+                android:id="@+id/rl_moreItem"
+                android:layout_width="@dimen/my_itemView_history_width"
+                android:layout_height="@dimen/my_itemView_movies_pic_height">
+
+                <com.pukka.ydepg.common.extview.ImageViewExt
+                    android:id="@+id/iv_moreImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/more"
+                    android:scaleType="centerCrop" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/tv_moreText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/my_moreText_margin_top"
+                    android:text="@string/launcher_my_more_history"
+                    android:textColor="@color/c21_color"
+                    android:textSize="@dimen/T23_C21_Light_size" />
+            </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+        </com.pukka.ydepg.customui.tv.widget.ReflectItemView>
+    </com.pukka.ydepg.common.extview.RelativeLayoutExt>
+
+</merge>

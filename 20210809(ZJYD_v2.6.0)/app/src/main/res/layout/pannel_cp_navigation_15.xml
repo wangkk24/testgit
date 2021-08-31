@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/pan_width_1280"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="false">
+    <include layout="@layout/home_pannel_title_layout"
+        android:id="@+id/rl_title"/>
+    <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+        app:posterType="1"
+        android:id="@+id/rl_item_container01"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+        android:layout_width="@dimen/pan_nav_cp15_item_width"
+        android:layout_height="@dimen/pan_nav_cp15_item_height"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_8"
+        android:focusable="true">
+
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_scaleType="fitXY"/>
+        <!--标题-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pan_layer_height"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/phm_shadow_layer" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/phmTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pan_nav_cp15_title_textSize"
+                tools:text="银河"/>
+
+            <TextView
+                style="@style/phmSubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                android:textSize="@dimen/pan_nav_cp15_subTitle_textSize"
+                tools:text="热门电影包"/>
+        </LinearLayout>
+    </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+    <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+        app:posterType="1"
+        android:layout_alignTop="@id/rl_item_container01"
+        android:layout_toRightOf="@id/rl_item_container01"
+        android:layout_marginLeft="@dimen/pan_nav_cp15_item_margin_left"
+        android:id="@+id/rl_item_container02"
+        android:layout_width="@dimen/pan_nav_cp15_item_width"
+        android:layout_height="@dimen/pan_nav_cp15_item_height"
+        android:focusable="true">
+
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_scaleType="fitXY"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pan_layer_height"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/phm_shadow_layer" />
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/phmTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+            <TextView
+                style="@style/phmSubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+        </LinearLayout>
+    </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+    <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+        app:posterType="1"
+        android:layout_alignTop="@id/rl_item_container01"
+        android:layout_toRightOf="@id/rl_item_container02"
+        android:layout_marginLeft="@dimen/pan_nav_cp15_item_margin_left"
+        android:id="@+id/rl_item_container03"
+        android:layout_width="@dimen/pan_nav_cp15_item_width"
+        android:layout_height="@dimen/pan_nav_cp15_item_height"
+        android:focusable="true">
+
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_scaleType="fitXY"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pan_layer_height"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/phm_shadow_layer" />
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/phmTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+            <TextView
+                style="@style/phmSubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+        </LinearLayout>
+    </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+    <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+        app:posterType="1"
+        android:layout_alignTop="@id/rl_item_container01"
+        android:layout_toRightOf="@id/rl_item_container03"
+        android:layout_marginLeft="@dimen/pan_nav_cp15_item_margin_left"
+        android:id="@+id/rl_item_container04"
+        android:layout_width="@dimen/pan_nav_cp15_item_width"
+        android:layout_height="@dimen/pan_nav_cp15_item_height"
+        android:focusable="true">
+
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_scaleType="fitXY"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pan_layer_height"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/phm_shadow_layer" />
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/phmTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+            <TextView
+                style="@style/phmSubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+        </LinearLayout>
+    </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+
+    <com.pukka.ydepg.launcher.view.ReflectRelativeLayout
+        app:posterType="1"
+        android:layout_alignTop="@id/rl_item_container01"
+        android:layout_toRightOf="@id/rl_item_container04"
+        android:layout_marginLeft="@dimen/pan_nav_cp15_item_margin_left"
+        android:id="@+id/rl_item_container05"
+        android:layout_width="@dimen/pan_nav_cp15_item_width"
+        android:layout_height="@dimen/pan_nav_cp15_item_height"
+        android:focusable="true">
+
+        <com.pukka.ydepg.common.extview.ShimmerImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_scaleType="fitXY"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pan_layer_height"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/phm_shadow_layer" />
+        <!--标题-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pan_poster1326_bottomText_margin"
+            android:layout_marginRight="@dimen/margin_20"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/phmTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/pan_nav_cp15_title_textSize" />
+
+            <TextView
+                style="@style/phmSubTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pan_nav_cp15_item_margin_top"
+                android:textSize="@dimen/pan_nav_cp15_subTitle_textSize" />
+        </LinearLayout>
+    </com.pukka.ydepg.launcher.view.ReflectRelativeLayout>
+</merge>

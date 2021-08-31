@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:focusable="false"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/rl_title"
+        layout="@layout/home_pannel_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/pan_l1_r4_left"
+        android:layout_width="@dimen/pan_l1_r4_left_item_width"
+        android:layout_height="@dimen/pan_l1_r4_left_item_height"
+        android:layout_below="@id/rl_title"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/pan_common_group_marginLeft"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:focusable="true">
+
+
+        <com.pukka.ydepg.customui.tv.PlayViewWindow
+            android:id="@+id/pan_l1_r4_video"
+            android:layout_width="@dimen/pan_l1_r4_left_item_width"
+            android:layout_height="@dimen/pan_l1_r4_left_item_height"
+            android:focusable="false"
+            app:AutoPlay="true"
+            app:isLittle="true"
+            app:play_resize_mode="AUTO"
+            app:play_type="TYPE_NATIVE" />
+
+        <ImageView
+            android:id="@+id/iv_pan_l1_r4_left_poster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:scaleType="fitXY"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_pan_l1_r4_item0"
+        android:layout_width="@dimen/pan_l1_r4_right_item_width"
+        android:layout_height="@dimen/pan_l1_r4_right_item_height"
+        android:layout_alignTop="@id/pan_l1_r4_left"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_toRightOf="@id/pan_l1_r4_left"
+        android:background="@color/c09_color"
+        android:nextFocusLeft="@id/pan_l1_r4_left"
+        android:focusable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_pan_l1_r4_item0"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_28.5"
+            android:focusable="false"
+            android:src="@drawable/details_button_play_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_pan_l1_r4_right_item0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_9"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_toRightOf="@id/iv_pan_l1_r4_item0"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/color_template_title"
+            android:textSize="@dimen/T30_C29_Bold_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pan_l1_r4_item1"
+        android:layout_width="@dimen/pan_l1_r4_right_item_width"
+        android:layout_height="@dimen/pan_l1_r4_right_item_height"
+        android:layout_below="@id/rl_pan_l1_r4_item0"
+        android:layout_alignLeft="@id/rl_pan_l1_r4_item0"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/c09_color"
+        android:nextFocusLeft="@id/pan_l1_r4_left"
+        android:focusable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_pan_l1_r4_item1"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_28.5"
+            android:focusable="false"
+            android:src="@drawable/details_button_play_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_pan_l1_r4_right_item1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_9"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_toRightOf="@id/iv_pan_l1_r4_item1"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/color_template_title"
+            android:textSize="@dimen/T30_C29_Bold_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pan_l1_r4_item2"
+        android:layout_width="@dimen/pan_l1_r4_right_item_width"
+        android:layout_height="@dimen/pan_l1_r4_right_item_height"
+        android:layout_below="@id/rl_pan_l1_r4_item1"
+        android:layout_alignLeft="@id/rl_pan_l1_r4_item1"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/c09_color"
+        android:nextFocusLeft="@id/pan_l1_r4_left"
+        android:focusable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_pan_l1_r4_item2"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_28.5"
+            android:focusable="false"
+            android:src="@drawable/details_button_play_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_pan_l1_r4_right_item2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_9"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_toRightOf="@id/iv_pan_l1_r4_item2"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/color_template_title"
+            android:textSize="@dimen/T30_C29_Bold_size" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pan_l1_r4_item3"
+        android:layout_width="@dimen/pan_l1_r4_right_item_width"
+        android:layout_height="@dimen/pan_l1_r4_right_item_height"
+        android:layout_below="@id/rl_pan_l1_r4_item2"
+        android:layout_alignLeft="@id/rl_pan_l1_r4_item0"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/c09_color"
+        android:nextFocusLeft="@id/pan_l1_r4_left"
+        android:focusable="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_pan_l1_r4_item3"
+            android:layout_width="@dimen/margin_15"
+            android:layout_height="@dimen/margin_15"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_28.5"
+            android:focusable="false"
+            android:src="@drawable/details_button_play_icon"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_pan_l1_r4_right_item3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_9"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_toRightOf="@id/iv_pan_l1_r4_item3"
+            android:ellipsize="marquee"
+            android:focusable="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textColor="@color/color_template_title"
+            android:textSize="@dimen/T30_C29_Bold_size" />
+    </RelativeLayout>
+</merge>

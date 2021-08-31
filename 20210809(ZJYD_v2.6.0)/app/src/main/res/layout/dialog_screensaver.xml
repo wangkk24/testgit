@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 主广告图片 -->
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:focusable="true"/>
+
+    <!-- 右上角 广告标志 -->
+    <ImageView
+        android:id="@+id/advert_flag"
+        android:layout_width="@dimen/margin_46"
+        android:layout_height="@dimen/margin_26"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_28.5"
+        android:layout_marginEnd="@dimen/margin_28.5"
+        android:src="@drawable/screen_ad_flag"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:focusable="false"/>
+
+    <!-- 右下角 可操作提示 -->
+    <ImageView
+        android:id="@+id/advert_click"
+        android:layout_width="@dimen/margin_200"
+        android:layout_height="@dimen/margin_33"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/margin_28.5"
+        android:layout_marginEnd="@dimen/margin_28.5"
+        android:src="@drawable/screen_jump_text"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:focusable="false"/>
+
+</RelativeLayout>

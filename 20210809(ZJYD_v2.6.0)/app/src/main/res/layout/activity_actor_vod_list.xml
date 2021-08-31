@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.common.extview.RelativeLayoutExt
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pukka.ydepg.common.extview.ImageViewExt
+        android:id="@+id/bgimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_detail_bg"
+        />
+
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:id="@+id/actor_name"
+        android:layout_marginTop="@dimen/margin_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/help_line_marginbottom"
+        android:layout_marginRight="@dimen/help_line_marginbottom"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white_0"
+        android:textSize="@dimen/T27_C21_Bold_size"/>
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:layout_below="@+id/actor_name"
+        android:id="@+id/actor_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/help_line_marginbottom"
+        android:layout_marginRight="@dimen/help_line_marginbottom"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/white_0"
+        android:textSize="@dimen/T24_C23_Light_size"/>
+    <com.pukka.ydepg.common.extview.TextViewExt
+        android:layout_below="@+id/actor_type"
+        android:id="@+id/description"
+        android:layout_marginLeft="@dimen/help_line_marginbottom"
+        android:layout_width="@dimen/message_list_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:textColor="@color/e6_color"
+        android:textSize="@dimen/T24_C23_Light_size"/>
+
+    <androidx.leanback.widget.HorizontalGridView
+        android:id="@+id/movies_list"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/help_line_marginbottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/featured_detail_340px"
+        android:layout_marginTop="@dimen/margin_30"
+        />
+
+
+</com.pukka.ydepg.common.extview.RelativeLayoutExt>

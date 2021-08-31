@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pukka.ydepg.customui.focusView.LinearLayoutFoucsView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_focusview"
+    android:layout_width="@dimen/epgitem_date_width"
+    android:layout_height="@dimen/epgitem_date_height"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/c24_color"
+        android:textSize="@dimen/epgitem_date_textsize" />
+</com.pukka.ydepg.customui.focusView.LinearLayoutFoucsView>

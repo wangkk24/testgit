@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.leanback.widget.BrowseFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_detail_bg">
+
+    <com.pukka.ydepg.moudule.search.view.FocusLinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_45">
+
+        <!-- 左侧整体布局 -->
+        <LinearLayout
+            android:layout_width="@dimen/search_left_width"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_12"
+            android:orientation="vertical">
+
+            <!-- 搜索词输入框 -->
+            <RelativeLayout
+                android:layout_width="@dimen/search_keyboard_width"
+                android:layout_height="@dimen/margin_38"
+                android:layout_marginStart="@dimen/margin_67.5">
+                <EditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_2"
+                    android:layout_marginTop="@dimen/margin_7"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/search"
+                    android:drawablePadding="@dimen/margin_2"
+                    android:focusable="false"
+                    android:hint="@string/et_search_hint_text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/c21_color"
+                    android:textColorHint="@color/c02_color"
+                    android:textSize="@dimen/search_text_size"
+                    android:theme="@style/custom_edittext" />
+                <!-- 分隔横线 -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_2"
+                    android:layout_alignParentBottom="true"
+                    android:background="#80EBEBEB" />
+            </RelativeLayout>
+
+            <!-- 输入键盘 -->
+            <com.pukka.ydepg.moudule.search.view.SearchKeyBoardView
+                android:id="@+id/search_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_18"
+                android:layout_marginStart="@dimen/margin_67.5"/>
+
+            <!-- 键盘下边的引导图片 -->
+            <ImageView
+                android:id="@+id/search_tip"
+                android:layout_width="@dimen/search_keyboard_width"
+                android:layout_height="@dimen/search_guide_height"
+                android:layout_marginTop="@dimen/margin_16"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="@dimen/margin_67.5"
+                android:src="@drawable/search_voice_guide"/>
+
+            <!-- 和键盘下引导图片"@+id/search_tip"同位置的关键词联想 -->
+            <LinearLayout
+                android:id="@+id/search_association"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_22.5"
+                android:layout_marginStart="@dimen/margin_47.5"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/search_suggest_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/search_association"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:textSize="@dimen/main_1_24"
+                    android:textColor="@color/white_0" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/search_association_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <!-- 中间分割竖线 -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h_544"
+            android:layout_gravity="bottom"
+            android:focusable="false"
+            android:src="@drawable/line" />
+
+
+
+        <!-- 右边整体布局(包括【[大家都在搜][影人]和[热搜视频]】布局和【搜索结果整体布局】,二者同时只能展示其一) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_16"
+            android:focusable="false"
+            android:orientation="vertical">
+
+            <!-- [大家都在搜][影人]和[热搜视频]-->
+            <LinearLayout
+                android:id="@+id/search_default_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!--[大家都在搜]-->
+                <LinearLayout
+                    android:layout_width="@dimen/search_hot_width"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/margin_27"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_hot_tip_height"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/margin_17"
+                        android:text="@string/search_everyone_search"
+                        android:textColor="@color/c36_color"
+                        android:textSize="@dimen/search_hot_tip_size" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/search_everyone_search_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:layout_marginTop="@dimen/margin_21"
+                        android:focusableInTouchMode="false"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/h_544"
+                    android:layout_gravity="bottom"
+                    android:focusable="false"
+                    android:src="@drawable/line" />
+                <!--[影人]和[热搜视频]-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <TextView
+                        android:id="@+id/search_actor_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_hot_tip_height"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_67.5"
+                        android:layout_marginStart="@dimen/margin_36"
+                        android:text="@string/search_actor"
+                        android:textColor="@color/c49_color"
+                        android:textSize="@dimen/search_hot_tip_size" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_line_height"
+                        android:layout_marginEnd="@dimen/margin_67.5"
+                        android:layout_marginStart="@dimen/margin_36"
+                        android:background="@color/c23_color"
+                        android:focusable="false"
+                        android:visibility="visible" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/search_actor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginEnd="@dimen/margin_67.5"
+                        android:layout_marginStart="@dimen/margin_36"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_7"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/margin_67.5"
+                        android:layout_marginStart="@dimen/margin_36"
+                        android:text="@string/search_hot_video"
+                        android:textColor="@color/c49_color"
+                        android:textSize="@dimen/search_hot_tip_size" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/search_vod_ranking_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipToPadding="false"
+                        android:layout_marginStart="@dimen/margin_20"
+                        android:paddingRight="@dimen/margin_15"
+                        android:paddingTop="@dimen/margin_15"
+                        android:paddingBottom="@dimen/margin_15"
+                        android:paddingLeft="@dimen/margin_15"
+                        android:layout_marginEnd="@dimen/margin_52.5"
+                        android:focusableInTouchMode="false"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 【搜索结果整体布局】(包含【搜索分类栏目】和【搜索结果】) -->
+            <LinearLayout
+                android:id="@+id/search_result_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginEnd="@dimen/margin_53"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- 搜索结果总数量 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_38"
+                    android:layout_marginLeft="@dimen/margin_15">
+                    <TextView
+                        android:id="@+id/search_result_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:text="@string/search_result_num"
+                        android:textColor="@color/c24_color"
+                        android:textSize="@dimen/search_hot_tip_size" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_line_height"
+                        android:background="#6b6767"
+                        android:focusable="false"
+                        android:layout_alignParentBottom="true"
+                        android:focusableInTouchMode="false"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <!-- 已废弃 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:focusable="false"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_search_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_16"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_all"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_hot_tip_size" />
+
+                    <TextView
+                        android:id="@+id/tv_search_film"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/tv_search_all"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_16"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_film"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_hot_tip_size" />
+
+                    <TextView
+                        android:id="@+id/tv_search_tvPlay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/tv_search_film"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_16"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_tvPlay"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_hot_tip_size" />
+
+                    <TextView
+                        android:id="@+id/tv_search_Variety"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/tv_search_tvPlay"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_16"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_Variety"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_hot_tip_size" />
+
+                    <TextView
+                        android:id="@+id/tv_search_tvActor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/tv_search_Variety"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_16"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_tvActor"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_hot_tip_size" />
+
+
+                    <TextView
+                        android:id="@+id/tv_search_Live"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/tv_search_tvActor"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/search_hot_tip_size"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_Live"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_tips_size"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_search_miplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_toEndOf="@+id/tv_search_Live"
+                        android:background="@drawable/search_type_item_bg"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/margin_16"
+                        android:paddingTop="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_16"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:text="@string/search_result_type_miplay"
+                        android:textColor="@drawable/search_type_text_selector"
+                        android:textSize="@dimen/search_hot_tip_size" />
+                </RelativeLayout>
+
+                <!-- 【搜索分类栏目】标题栏(含结果行数 1/4497) -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_12"
+                    android:layout_marginLeft="@dimen/margin_15"
+                    android:focusable="false"
+                    android:orientation="horizontal">
+
+                    <!-- 右侧行号 1/4497 的 1 -->
+                    <TextView
+                        android:id="@+id/search_current_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_toLeftOf="@+id/search_line_separator"
+                        android:focusable="false"
+                        android:textColor="@color/c21_color"
+                        android:textSize="@dimen/search_tips_size" />
+
+                    <!-- 中间斜杠 1/4497 的 / -->
+                    <TextView
+                        android:id="@+id/search_line_separator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_toLeftOf="@+id/search_total_line"
+                        android:focusable="false"
+                        android:text="/"
+                        android:textColor="@color/c24_color"
+                        android:textSize="@dimen/search_tips_size" />
+
+                    <!-- 右侧总行数 1/4497 的 4497 -->
+                    <TextView
+                        android:id="@+id/search_total_line"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:focusable="false"
+                        android:textColor="@color/c24_color"
+                        android:textSize="@dimen/search_tips_size" />
+
+                    <!-- 搜索栏目标题栏 -->
+                    <com.pukka.ydepg.customui.tv.widget.RecyclerViewTV
+                        android:id="@+id/tv_search_subject_recycleview"
+                        android:layout_width="650dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"/>
+
+                </RelativeLayout>
+
+                <!-- 【搜索结果】 -->
+                <com.pukka.ydepg.moudule.featured.view.LimitScrollViewPager
+                    android:id="@+id/search_result_viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.pukka.ydepg.moudule.search.view.FocusLinearLayout>
+
+    <!-- 引导页面(首次进入显示) -->
+    <ImageView
+        android:id="@+id/search_first_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/search_guide"
+        android:focusable="true"
+        android:nextFocusUp="@+id/search_first_guide"
+        android:nextFocusRight="@+id/search_first_guide"
+        android:nextFocusDown="@+id/search_first_guide"
+        android:nextFocusLeft="@+id/search_first_guide"
+        android:visibility="gone"/>
+
+</androidx.leanback.widget.BrowseFrameLayout>

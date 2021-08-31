@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/history_list_item_timeSlot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天"
+        android:textColor="@color/white_0"
+        android:textSize="@dimen/T11_C21_Light_size"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/margin_5"
+        />
+
+    <RelativeLayout
+        android:id="@+id/history_list_item_top_layojut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_list_item_timeSlot"
+        android:layout_marginTop="@dimen/margin_13"
+        android:layout_marginLeft="@dimen/margin_5"
+        >
+
+        <TextView
+            android:id="@+id/history_list_item_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10月8日 共观看5部"
+            android:textColor="@color/white_0"
+            android:textSize="@dimen/T31_C21_Light_size" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/movies_list_view_width"
+            android:background="@color/c30_3_color"
+            android:layout_toRightOf="@+id/history_list_item_count"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginRight="@dimen/margin_7"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mytv_history_list_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/history_list_heignt"
+        android:layout_below="@+id/history_list_item_top_layojut"
+        android:focusable="false"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

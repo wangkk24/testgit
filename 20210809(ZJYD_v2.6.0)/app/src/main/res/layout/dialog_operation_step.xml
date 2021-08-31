@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/default_detail_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multi_screen_action"
+        android:textColor="@color/c21_color"
+        android:layout_marginLeft="@dimen/margin_104"
+        android:layout_marginTop="@dimen/details_view_margin"
+        android:textSize="@dimen/account_title_size_two" />
+
+    <LinearLayout
+        android:id="@+id/pic_desc"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/margin_78"
+        android:layout_marginRight="@dimen/margin_78"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/account_bind_browse_width"
+            android:layout_height="@dimen/account_bind_browse_height"
+            android:paddingRight="8dp"
+            android:src="@drawable/operation_bind_2"/>
+
+        <ImageView
+            android:layout_width="@dimen/account_bind_browse_width"
+            android:layout_height="@dimen/account_bind_browse_height"
+            android:paddingRight="8dp"
+            android:src="@drawable/operation_bind_3"/>
+
+        <ImageView
+            android:layout_width="@dimen/account_bind_browse_width"
+            android:layout_height="@dimen/account_bind_browse_height"
+            android:paddingRight="8dp"
+            android:src="@drawable/operation_bind_4"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/margin_36"
+        android:layout_below="@+id/pic_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/center_point"
+            android:layout_marginRight="@dimen/margin_25"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/account_bind_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account_bind_count"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/account_title_size" />
+
+            <TextView
+                android:id="@+id/account_name_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_7"
+                android:text="@string/account_name"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/account_title_size" />
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/center_point"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/layout_again_bind"
+            android:focusable="true"
+            android:background="@drawable/activity_update_btn_selector"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_25"
+            android:layout_toRightOf="@+id/center_point"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/style_item_layer_size"
+            android:paddingRight="@dimen/style_item_layer_size"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/epgitem_program_rlheight">
+
+            <ImageView
+                android:id="@+id/small_qrcode"
+                android:layout_width="@dimen/margin_24"
+                android:layout_height="@dimen/margin_24"/>
+
+            <TextView
+                android:id="@+id/again_bind"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/epgitem_program_rlheight"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_42"
+                android:text="@string/again_bind"
+                android:gravity="center"
+                android:textColor="@color/c21_color"
+                android:textSize="@dimen/account_title_size" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

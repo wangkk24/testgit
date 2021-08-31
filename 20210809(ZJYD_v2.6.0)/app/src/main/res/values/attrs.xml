@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <declare-styleable name="PullToRefreshLayout">
+        <attr name="ptr_head_layout" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ImageViewExt">
+        <attr name="bgImgNinePatch" format="reference" />
+        <attr name="bgImg" format="reference" />
+        <attr name="bgImgNormal" format="reference" />
+        <attr name="bgImgSelected" format="reference" />
+        <attr name="bgImgFocused" format="reference" />
+        <attr name="bgImgColor" format="reference" />
+        <attr name="bgImgColorNormal" format="reference" />
+        <attr name="bgImgColorSelected" format="reference" />
+        <attr name="srcImg" format="reference" />
+        <attr name="srcImgNormal" format="reference" />
+        <attr name="srcImgSelected" format="reference" />
+        <attr name="srcImgFocused" format="reference" />
+        <attr name="srcImgColor" format="reference" />
+        <attr name="srcImgColorNormal" format="reference" />
+        <attr name="srcImgColorSelected" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="TextViewExt">
+        <attr name="bgTxtNinePatch" format="reference" />
+        <attr name="bgTxt" format="reference" />
+        <attr name="bgTxtColor" format="reference" />
+        <attr name="textTxt" format="reference" />
+        <attr name="colorTxt" format="reference" />
+        <attr name="colorTxtNormal" format="reference" />
+        <attr name="colorTxtSelected" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="EditTextExt">
+        <attr name="bgEditNinePatch" format="reference" />
+        <attr name="bgEdit" format="reference" />
+        <attr name="bgColorEdit" format="reference" />
+        <attr name="colorEdit" format="reference" />
+        <attr name="colorHintEdit" format="reference" />
+        <attr name="textHintEdit" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RelativeLayoutExt">
+        <attr name="bgRLayoutNinePatch" format="reference" />
+        <attr name="bgRLayout" format="reference" />
+        <attr name="bgRLayoutNormal" format="reference" />
+        <attr name="bgRLayoutSelected" format="reference" />
+        <attr name="bgRLayoutColor" format="reference" />
+        <attr name="bgRLayoutColorNormal" format="reference" />
+        <attr name="bgRLayoutColorSelected" format="reference" />
+        <attr name="bgRLayoutColorFocused" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="LinearLayoutExt">
+        <attr name="bgLLayoutNinePatch" format="reference" />
+        <attr name="bgLLayout" format="reference" />
+        <attr name="bgLLayoutNormal" format="reference" />
+        <attr name="bgLLayoutSelected" format="reference" />
+        <attr name="bgLLayoutColor" format="reference" />
+        <attr name="bgLLayoutColorNormal" format="reference" />
+        <attr name="bgLLayoutColorSelected" format="reference" />
+        <attr name="bgLLayoutColorFocused" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoScrollViewPager">
+        <!-- 指示器选中效果-->
+        <attr name="dot_selected" format="reference" />
+        <!--指示器未选中效果-->
+        <attr name="dot_unselect" format="reference" />
+        <!--指示器水平间隔-->
+        <attr name="dot_marginleft" format="dimension" />
+        <!--指示器距底部边距-->
+        <attr name="dots_marginBottom" format="dimension" />
+        <!--指示器距右侧边距-->
+        <attr name="dots_marginRight" format="dimension" />
+    </declare-styleable>
+    <!-- 播放器抽屉效果自定义控件的属性 配置 -->
+    <declare-styleable name="Panel">
+        <!-- Defines panel animation duration in ms. -->
+        <attr name="animationDuration" format="integer" />
+        <!-- Defines panel position on the screen. -->
+        <attr name="position">
+            <!-- Panel placed at top of the screen. -->
+            <enum name="top" value="0" />
+            <!-- Panel placed at bottom of the screen. -->
+            <enum name="bottom" value="1" />
+            <!-- Panel placed at left of the screen. -->
+            <enum name="left" value="2" />
+            <!-- Panel placed at right of the screen. -->
+            <enum name="right" value="3" />
+        </attr>
+        <!-- Identifier for the child that represents the panel's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the panel's content. -->
+        <attr name="content" format="reference" />
+        <!-- Defines if flying gesture forces linear interpolator in animation. -->
+        <attr name="linearFlying" format="boolean" />
+        <!-- Defines size relative to parent (must be in form: nn%p). -->
+        <attr name="weight" format="fraction" />
+        <!-- Defines opened handle (drawable/color). -->
+        <attr name="openedHandle" format="reference|color" />
+        <!-- Defines closed handle (drawable/color). -->
+        <attr name="closedHandle" format="reference|color" />
+    </declare-styleable>
+    <!--定义StickyScrollView相关属性,此组件为开源组件需要这些属性  -->
+    <declare-styleable name="StickyScrollView">
+        <attr name="stuckShadowHeight" format="dimension" />
+        <attr name="stuckShadowDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MovieList">
+        <attr name="horSpacing" format="dimension" />
+        <attr name="verSpacing" format="dimension" />
+        <attr name="columns" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="PullList">
+        <attr name="emptyViewStyle" format="string" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FlowLayout">
+        <attr name="lineSpacing" format="dimension" />
+        <attr name="maxLine" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="XRefreshView">
+        <attr name="isHeightMatchParent" format="boolean" />
+        <attr name="isWidthMatchParent" format="boolean" />
+        <attr name="autoRefresh" format="boolean" />
+        <attr name="autoLoadMore" format="boolean" />
+    </declare-styleable>
+
+    <!-- RichText -->
+    <declare-styleable name="RichText">
+        <attr name="drawable_src" format="reference" />
+        <attr name="drawable_height" format="dimension" />
+        <attr name="drawable_width" format="dimension" />
+        <attr name="drawable_location">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SquareImageView">
+        <attr name="equalWidth" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PageIndicator">
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_color" format="color" />
+        <attr name="indicator_sel_color" format="color" />
+        <attr name="indicator_padding" format="dimension" />
+        <attr name="indicator_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBarExtend">
+        <attr name="title_bar_title" format="string" />
+        <attr name="title_bar_right_text" format="string" />
+        <attr name="title_bar_title_color" format="color" />
+        <attr name="title_bar_position" format="enum">
+            <enum name="position_left" value="0" />
+            <enum name="position_center" value="1" />
+            <enum name="position_right" value="2" />
+        </attr>
+        <attr name="title_bar_img" format="reference" />
+        <attr name="left_img" format="reference" />
+        <attr name="right_img" format="reference" />
+        <attr name="title_bar_clickable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyAbsListView">
+        <attr name="vertical_divider" format="reference" />
+        <attr name="divider_horizontal" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EasyGridView">
+        <attr name="columnCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="VodItemLayout">
+        <attr name="vod_item_layout_title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <attr name="indexBarTextSize" format="dimension" />
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="swipeEnable" format="boolean" />
+        <attr name="ios" format="boolean" />
+        <attr name="leftSwipe" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CropImageView">
+        <attr name="cropMaskColor" format="color"/>
+        <attr name="cropBorderColor" format="color"/>
+        <attr name="cropBorderWidth" format="dimension"/>
+        <attr name="cropFocusWidth" format="dimension"/>
+        <attr name="cropFocusHeight" format="dimension"/>
+        <attr name="cropStyle" format="enum">
+            <enum name="rectangle" value="0"/>
+            <enum name="circle" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTVRecyclerView">
+        <attr name="spanCount" format="integer"/>
+        <attr name="layout_style" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+            <enum name="grid_vertical" value="2"/>
+            <enum name="grid_horizontal" value="3"/>
+            <enum name="other" value="9"/>
+        </attr>
+        <attr name="autoMeasureEnable" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--TV控件-->
+    <!-- 倒影控件属性 -->
+    <declare-styleable name="reflectItemView">
+        <attr name="isReflect"  format="boolean" />
+        <attr name="isShape"  format="boolean" />
+        <attr name="reflect_height"  format="dimension" />
+        <attr name="radius"  format="dimension" />
+        <attr name="refle_spacing"  format="dimension" />
+    </declare-styleable>
+
+    <!-- 顶层控件属性 -->
+    <declare-styleable name="MainUpView">
+        <attr name="upImageRes"  format="reference" />
+        <attr name="shadowImageRes"  format="reference" />
+    </declare-styleable>
+
+    <!-- 标签控件 -->
+    <declare-styleable name="LabelView">
+        <!-- 设置文字内容 -->
+        <attr name="lv_text" format="string"/>
+        <!-- 设置文字颜色,默认#ffffff -->
+        <attr name="lv_text_color" format="color"/>
+        <!-- 设置文字大小,默认11sp -->
+        <attr name="lv_text_size" format="dimension"/>
+        <!-- 设置文字是否支持加粗,默认true -->
+        <attr name="lv_text_bold" format="boolean"/>
+        <!-- 设置文字是否支持全部大写,默认true-->
+        <attr name="lv_text_all_caps" format="boolean"/>
+        <!-- 设置背景颜色,默认"#FF4081"-->
+        <attr name="lv_background_color" format="color"/>
+        <!-- 设置LabelView所在矩形最小宽高,默认mFillTriangle?35dp:50dp-->
+        <attr name="lv_min_size" format="dimension"/>
+        <!-- 设置文字上下padding,默认3.5dp,mFillTriangle为true时无效-->
+        <attr name="lv_padding" format="dimension"/>
+        <!-- 设置LabelView方向 -->
+        <attr name="lv_gravity" format="enum">
+            <enum name="TOP_LEFT" value="51"/>
+            <enum name="TOP_RIGHT" value="53"/>
+            <enum name="BOTTOM_LEFT" value="83"/>
+            <enum name="BOTTOM_RIGHT" value="85"/>
+        </attr>
+        <!-- 设置是否填充三角区域,默认false -->
+        <attr name="lv_fill_triangle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="TvTabHost">
+        <attr name="cursorRes" format="reference" />
+        <attr name="textColorDefault" format="color" />
+        <attr name="textColorSelected" format="color" />
+        <attr name="titleWidth" format="dimension"></attr>
+        <attr name="titleHeight" format="dimension"></attr>
+        <attr name="titleSpace" format="dimension"></attr>
+        <attr name="textSize" format="dimension" />
+        <attr name="dividerHeight" format="dimension"></attr>
+        <attr name="durationScroll" format="integer"></attr>
+        <attr name="scalable" format="boolean"></attr>
+        <attr name="scale" format="float"></attr>
+        <attr name="animationType">
+            <enum name="DEFAULT" value="0"></enum>
+            <enum name="TRANSLATE" value="1"></enum>
+        </attr>
+        <attr name="durationLarge" format="integer"></attr>
+        <attr name="durationSmall" format="integer"></attr>
+        <attr name="delay" format="integer" />
+        <attr name="cursorWidth" format="dimension"></attr>
+        <attr name="cursorHeight" format="dimension"></attr>
+        <attr name="cursorMarginLeft" format="dimension"></attr>
+        <attr name="cursorMarginTop" format="dimension"></attr>
+        <attr name="cursorMarginRight" format="dimension"></attr>
+        <attr name="cursorMarginBottom" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="TVTemplate">
+        <attr name="posterType" format="integer"></attr>
+        <attr name="posterRadioType" format="boolean"></attr><!--是否圆角-->
+        <attr name="posterIsAlienType" format="boolean"></attr><!--是否是异形海报-->
+        <attr name="posterSpecialHeight" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalScrollTextView">
+        <attr name="auto" format="boolean"/>
+        <attr name="tv_line" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="ProductListRelativeLayout">
+        <attr name="key_down_focus_keep" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ShimmerImageView">
+        <attr name="shimmer_src" format="reference"/>
+        <attr name="shimmer_background" format="reference"/>
+        <attr name="shimmer_scaleType">
+            <enum name="matrix" value="0"/>
+            <enum name="fitXY" value="1"/>
+            <enum name="fitStart" value="2"/>
+            <enum name="fitCenter" value="3"/>
+            <enum name="fitEnd" value="4"/>
+            <enum name="center" value="5"/>
+            <enum name="centerCrop" value="6"/>
+            <enum name="centerInside" value="7"/>
+        </attr>
+        <attr name="shimmer_start" format="boolean"/>
+        <attr name="shimmer_highlightColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeTextView">
+        <attr name="scroll_interval" format="integer" />
+        <attr name="scroll_first_delay" format="integer"/>
+        <attr name="scroll_mode">
+            <enum name="mode_forever" value="100"/>
+            <enum name="mode_once" value="101"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Custom_Round_Image_View">
+        <attr name="radius_imageview" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="AerialView">
+        <attr name="bgColor" format="color" />
+        <attr name="aerialColor" format="color" />
+        <attr name="aerialBgColor" format="color" />
+        <attr name="aerialTextColor" format="color" />
+        <attr name="drawBg" format="boolean" />
+    </declare-styleable>
+</resources>

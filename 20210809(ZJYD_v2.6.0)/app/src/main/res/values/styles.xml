@@ -1,0 +1,144 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置全屏-->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="PayTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置全屏-->
+        <item name="android:windowFullscreen">true</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="base_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 无标题栏theme,用于下载进度对话框-->
+    <style name="download_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>             <!--边框-->
+        <item name="android:windowIsFloating">true</item>         <!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item>      <!--半透明-->
+        <item name="android:windowNoTitle">true</item>            <!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--背景透明,可以去除背景圆角周围的黑边-->
+        <item name="android:backgroundDimEnabled">true</item>     <!--模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>       <!--背景透明度-->
+    </style>
+
+    <style name="filter_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="dialog" parent="base_dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="message_dialog" parent="base_dialog">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="T2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 详情开始 -->
+    <style name="detailRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratings_new</item>
+        <item name="android:minHeight">@dimen/details_min_height</item>
+        <item name="android:maxHeight">@dimen/details_max_height</item>
+    </style>
+
+    <style name="childdetailRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratings_child</item>
+        <item name="android:minHeight">@dimen/details_child_min_height</item>
+        <item name="android:maxHeight">@dimen/details_child_max_height</item>
+    </style>
+    <!-- 详情结束 -->
+
+
+    <style name="custom_edittext" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/c23_color</item>
+        <item name="colorControlActivated">@color/c23_color</item>
+    </style>
+
+    <style name="detailBigRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/big_ratings_new</item>
+        <item name="android:minHeight">@dimen/details_big_min_height</item>
+        <item name="android:maxHeight">@dimen/details_big_max_height</item>
+    </style>
+
+    <!--首页海报名称主标题通用属性设置-->
+    <style name="phmTitleStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/c21_color</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <!--首页海报名称副标题通用属性设置-->
+    <style name="phmSubTitleStyle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/c24_color</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+    </style>
+
+    <style name="style_view_no_focusable">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="style_view_focusable">
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!-- 无标题栏theme,用于屏保-->
+    <style name="dialog_screensaver">  <!-- parent="@android:style/Theme.Dialog"-->
+        <item name="android:windowFrame">@null</item>             <!--无边框-->
+        <item name="android:windowIsFloating">true</item>         <!--浮在activity之上-->
+        <item name="android:windowNoTitle">true</item>            <!--无标题-->
+        <item name="android:windowFullscreen">true</item>         <!--全屏-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--背景透明,可以去除背景圆角周围的黑边-->
+    </style>
+
+    <!--空间视频-->
+    <style name="SeekBarAppTheme">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:focusable">true</item>
+        <item name="android:progressDrawable">
+            @drawable/simple_player_progress_horizontal_holo_dark
+        </item>
+        <item name="android:indeterminateDrawable">
+            @drawable/simple_player_progress_horizontal_holo_dark
+        </item>
+        <item name="android:thumb">@drawable/simple_player_control_selector_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:paddingRight">15.0dip</item>
+    </style>
+
+    <style name="ColorTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/playBg</item>
+    </style>
+</resources>

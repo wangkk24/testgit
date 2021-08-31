@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:focusable="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="@dimen/err_code_container_width"
+        android:layout_height="@dimen/err_code_container_height"
+        android:background="@drawable/popbgforerr"
+        android:focusable="false">
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/window_error_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/window_error_title_top_margin"
+            android:focusable="false"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T24_C24_Light_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/window_error_divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/window_error_divider_height"
+            android:layout_marginTop="@dimen/window_error_divider_top_margin"
+            android:background="@color/error_window_divider"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/window_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/window_error_message_top_margin"
+            android:focusable="false"
+            android:gravity="center"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T24_C24_Light_size"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/qr_container"
+            android:layout_width="@dimen/err_code_width"
+            android:layout_height="@dimen/err_code_height"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/err_code_margin_left"
+            android:layout_marginTop="@dimen/err_code_margin_top"
+            android:background="@drawable/qrcodebg"
+            android:padding="@dimen/err_code_padding">
+
+            <com.pukka.ydepg.common.extview.ImageViewExt
+                android:id="@+id/window_error_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@color/black_0"
+                android:focusable="false"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/scan_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qr_container"
+            android:layout_marginLeft="@dimen/err_code_scantip_left"
+            android:layout_marginTop="@dimen/err_code_scantip_top"
+            android:text="@string/qr_scan_tip"
+            android:textColor="@color/err_pop_text_color"
+            android:textSize="@dimen/err_code_textsize" />
+
+        <LinearLayout
+            android:id="@+id/rl_detail"
+            android:layout_width="@dimen/err_code_detail_width"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/qr_container"
+            android:layout_marginLeft="@dimen/err_code_detail_margin_left"
+            android:layout_toRightOf="@+id/qr_container"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/err_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/err_message"
+                android:textColor="@color/err_pop_text_color"
+                android:textSize="@dimen/err_code_textsize" />
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/err_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/err_message"
+                android:layout_marginTop="@dimen/err_code_tv_code_top"
+                android:singleLine="true"
+                android:text="@string/err_code"
+                android:textColor="@color/err_pop_text_color"
+                android:textSize="@dimen/err_code_textsize" />
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/suggest_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/err_code"
+                android:layout_marginTop="@dimen/err_code_tv_suggest_tip_top"
+                android:singleLine="true"
+                android:text="建议:"
+                android:textColor="@color/err_pop_text_color"
+                android:textSize="@dimen/err_code_textsize"
+                android:visibility="visible" />
+
+            <com.pukka.ydepg.common.extview.TextViewExt
+                android:id="@+id/suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/suggest_tip"
+                android:layout_marginTop="@dimen/err_code_tv_suggest_top"
+                android:singleLine="true"
+                android:text="请正确设置，确认网络连接正常并重启机顶盒"
+                android:textColor="@color/err_pop_text_color"
+                android:textSize="@dimen/err_code_textsize"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/err_code_button_top"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/tv_net_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_qr_btn_bg"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/qr_net_setting"
+                    android:textColor="@color/white_0"
+                    android:textSize="@dimen/err_code_button_textsize"
+                    android:visibility="gone" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/tv_reboot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/err_code_button_reboot_start"
+                    android:background="@drawable/select_qr_btn_bg"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/qr_reboot"
+                    android:textColor="@color/mytv_history_downlayout_bg"
+                    android:textSize="@dimen/err_code_button_textsize"
+                    android:visibility="gone" />
+
+                <com.pukka.ydepg.common.extview.TextViewExt
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/err_code_button_reboot_start"
+                    android:background="@drawable/select_qr_btn_bg"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center"
+                    android:text="@string/window_error_back"
+                    android:textColor="@color/mytv_history_downlayout_bg"
+                    android:textSize="@dimen/err_code_button_textsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.pukka.ydepg.common.extview.TextViewExt
+            android:id="@+id/window_error_back"
+            android:layout_width="@dimen/window_error_back_width"
+            android:layout_height="@dimen/window_error_back_height"
+            android:layout_marginBottom="@dimen/window_error_back_bottom_margin"
+            android:layout_marginTop="@dimen/window_error_back_top_margin"
+            android:background="@drawable/bg_error_window_back"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="@string/window_error_back"
+            android:textColor="@color/c24_color"
+            android:textSize="@dimen/T24_C24_Light_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>
